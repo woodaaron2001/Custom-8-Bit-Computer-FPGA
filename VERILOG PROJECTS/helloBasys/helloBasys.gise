@@ -83,6 +83,7 @@
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
     <transform xil_pn:end_ts="1665097412" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1665097412">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1665097482" xil_pn:in_ck="-4332721003797846778" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1665097482">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -113,6 +114,7 @@
     <transform xil_pn:end_ts="1665097485" xil_pn:in_ck="-4332721003797846778" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="3512018931738993435" xil_pn:start_ts="1665097482">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="stimulus_beh.prj"/>
@@ -122,11 +124,14 @@
     <transform xil_pn:end_ts="1665097485" xil_pn:in_ck="-7603452724689408363" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-8023903897338895138" xil_pn:start_ts="1665097485">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="stimulus_isim_beh.wdb"/>
     </transform>
     <transform xil_pn:end_ts="1665072676" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1665072676">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1665072676" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-1010109385263246132" xil_pn:start_ts="1665072676">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -156,6 +161,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="OutputChanged"/>
@@ -219,6 +225,7 @@
     <transform xil_pn:end_ts="1665072702" xil_pn:in_ck="154288912438" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="5775731546441462550" xil_pn:start_ts="1665072698">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>

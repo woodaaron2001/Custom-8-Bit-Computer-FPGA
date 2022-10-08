@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "C:/Users/redbr/Desktop/fpga-files/VERILOG PROJECTS/z80-Led-Test/z80_top_direct_n.xst" -ofn "C:/Users/redbr/Desktop/fpga-files/VERILOG PROJECTS/z80-Led-Test/z80_top_direct_n.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-cp132-5 "z80_top_direct_n.ngc" z80_top_direct_n.ngd  
+map -intstyle ise -p xc3s250e-cp132-5 -cm area -ir off -pr off -c 100 -o z80_top_direct_n_map.ncd z80_top_direct_n.ngd z80_top_direct_n.pcf 
+par -w -intstyle ise -ol high -t 1 z80_top_direct_n_map.ncd z80_top_direct_n.ncd z80_top_direct_n.pcf 

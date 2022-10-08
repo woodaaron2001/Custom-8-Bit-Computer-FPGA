@@ -1,0 +1,1981 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top"
+Output Format                      : NGC
+Target Device                      : xc3s250e-5-cp132
+
+---- Source Options
+Top Module Name                    : top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "../../CPU FILES/Aaron a-z80 - Py Export/inc_dec_2bit.v" in library work
+Compiling verilog file "../../CPU FILES/Aaron a-z80 - Py Export/alu_slice.v" in library work
+Module <inc_dec_2bit> compiled
+Compiling verilog file "../../CPU FILES/Aaron a-z80 - Py Export/reg_latch.v" in library work
+Module <alu_slice> compiled
+Compiling verilog file "../../CPU FILES/Aaron a-z80 - Py Export/inc_dec.v" in library work
+Module <reg_latch> compiled
+Compiling verilog file "../../CPU FILES/Aaron a-z80 - Py Export/alu_shifter_core.v" in library work
+Module <inc_dec> compiled
+Compiling verilog file "../../CPU FILES/Aaron a-z80 - Py Export/alu_prep_daa.v" in library work
+Module <alu_shifter_core> compiled
+Compiling verilog file "../../CPU FILES/Aaron a-z80 - Py Export/alu_mux_8.v" in library work
+Module <alu_prep_daa> compiled
+Compiling verilog file "../../CPU FILES/Aaron a-z80 - Py Export/alu_mux_4.v" in library work
+Module <alu_mux_8> compiled
+Compiling verilog file "../../CPU FILES/Aaron a-z80 - Py Export/alu_mux_3z.v" in library work
+Module <alu_mux_4> compiled
+Compiling verilog file "../../CPU FILES/Aaron a-z80 - Py Export/alu_mux_2z.v" in library work
+Module <alu_mux_3z> compiled
+Compiling verilog file "../../CPU FILES/Aaron a-z80 - Py Export/alu_mux_2.v" in library work
+Module <alu_mux_2z> compiled
+Compiling verilog file "../../CPU FILES/Aaron a-z80 - Py Export/alu_core.v" in library work
+Module <alu_mux_2> compiled
+Compiling verilog file "../../CPU FILES/Aaron a-z80 - Py Export/alu_bit_select.v" in library work
+Module <alu_core> compiled
+Compiling verilog file "../../CPU FILES/Aaron a-z80 - Py Export/address_mux.v" in library work
+Module <alu_bit_select> compiled
+Compiling verilog file "../../CPU FILES/Aaron a-z80 - Py Export/sequencer.v" in library work
+Module <address_mux> compiled
+Compiling verilog file "../../CPU FILES/Aaron a-z80 - Py Export/resets.v" in library work
+Module <sequencer> compiled
+Compiling verilog file "../../CPU FILES/Aaron a-z80 - Py Export/reg_file.v" in library work
+Module <resets> compiled
+Compiling verilog file "../../CPU FILES/Aaron a-z80 - Py Export/reg_control.v" in library work
+Module <reg_file> compiled
+Compiling verilog file "../../CPU FILES/Aaron a-z80 - Py Export/pla_decode.v" in library work
+Module <reg_control> compiled
+Compiling verilog file "../../CPU FILES/Aaron a-z80 - Py Export/pin_control.v" in library work
+Module <pla_decode> compiled
+Compiling verilog file "../../CPU FILES/Aaron a-z80 - Py Export/memory_ifc.v" in library work
+Module <pin_control> compiled
+Compiling verilog file "../../CPU FILES/Aaron a-z80 - Py Export/ir.v" in library work
+Module <memory_ifc> compiled
+Compiling verilog file "../../CPU FILES/Aaron a-z80 - Py Export/interrupts.v" in library work
+Module <ir> compiled
+Compiling verilog file "../../CPU FILES/Aaron a-z80 - Py Export/execute.v" in library work
+Module <interrupts> compiled
+Compiling verilog include file "../../CPU FILES/Aaron a-z80 - Py Export/exec_module.vh"
+Compiling verilog include file "../../CPU FILES/Aaron a-z80 - Py Export/temp_wires.vh"
+Compiling verilog include file "../../CPU FILES/Aaron a-z80 - Py Export/exec_zero.vh"
+Compiling verilog include file "../../CPU FILES/Aaron a-z80 - Py Export/exec_matrix_compiled.vh"
+Compiling verilog file "../../CPU FILES/Aaron a-z80 - Py Export/decode_state.v" in library work
+Module <execute> compiled
+Compiling verilog file "../../CPU FILES/Aaron a-z80 - Py Export/data_switch_mask.v" in library work
+Module <decode_state> compiled
+Compiling verilog file "../../CPU FILES/Aaron a-z80 - Py Export/data_switch.v" in library work
+Module <data_switch_mask> compiled
+Compiling verilog file "../../CPU FILES/Aaron a-z80 - Py Export/data_pins.v" in library work
+Module <data_switch> compiled
+Compiling verilog file "../../CPU FILES/Aaron a-z80 - Py Export/control_pins_n.v" in library work
+Module <data_pins> compiled
+Compiling verilog file "../../CPU FILES/Aaron a-z80 - Py Export/clk_delay.v" in library work
+Module <control_pins_n> compiled
+Compiling verilog file "../../CPU FILES/Aaron a-z80 - Py Export/bus_switch.v" in library work
+Module <clk_delay> compiled
+Compiling verilog file "../../CPU FILES/Aaron a-z80 - Py Export/bus_control.v" in library work
+Module <bus_switch> compiled
+Compiling verilog file "../../CPU FILES/Aaron a-z80 - Py Export/alu_select.v" in library work
+Module <bus_control> compiled
+Compiling verilog file "../../CPU FILES/Aaron a-z80 - Py Export/alu_flags.v" in library work
+Module <alu_select> compiled
+Compiling verilog file "../../CPU FILES/Aaron a-z80 - Py Export/alu_control.v" in library work
+Module <alu_flags> compiled
+Compiling verilog file "../../CPU FILES/Aaron a-z80 - Py Export/alu.v" in library work
+Module <alu_control> compiled
+Compiling verilog file "../../CPU FILES/Aaron a-z80 - Py Export/address_pins.v" in library work
+Module <alu> compiled
+Compiling verilog file "../../CPU FILES/Aaron a-z80 - Py Export/address_latch.v" in library work
+Module <address_pins> compiled
+Compiling verilog file "../../CPU FILES/Aaron a-z80 - Py Export/z80_top_direct_n.v" in library work
+Module <address_latch> compiled
+Compiling verilog include file "../../CPU FILES/Aaron a-z80 - Py Export/core.vh"
+Compiling verilog include file "../../CPU FILES/Aaron a-z80 - Py Export/globals.vh"
+Compiling verilog include file "../../CPU FILES/Aaron a-z80 - Py Export/coremodules.vh"
+Compiling verilog file "top.v" in library work
+Module <z80_top_direct_n> compiled
+Module <top> compiled
+No errors in compilation
+Analysis of file <"top.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <top> in library <work>.
+
+Analyzing hierarchy for module <z80_top_direct_n> in library <work>.
+
+Analyzing hierarchy for module <clk_delay> in library <work>.
+
+Analyzing hierarchy for module <decode_state> in library <work>.
+
+Analyzing hierarchy for module <execute> in library <work>.
+
+Analyzing hierarchy for module <interrupts> in library <work>.
+
+Analyzing hierarchy for module <ir> in library <work>.
+
+Analyzing hierarchy for module <pin_control> in library <work>.
+
+Analyzing hierarchy for module <pla_decode> in library <work>.
+
+Analyzing hierarchy for module <resets> in library <work>.
+
+Analyzing hierarchy for module <memory_ifc> in library <work>.
+
+Analyzing hierarchy for module <sequencer> in library <work>.
+
+Analyzing hierarchy for module <alu_control> in library <work>.
+
+Analyzing hierarchy for module <alu_select> in library <work>.
+
+Analyzing hierarchy for module <alu_flags> in library <work>.
+
+Analyzing hierarchy for module <alu> in library <work>.
+
+Analyzing hierarchy for module <reg_file> in library <work>.
+
+Analyzing hierarchy for module <reg_control> in library <work>.
+
+Analyzing hierarchy for module <address_latch> in library <work>.
+
+Analyzing hierarchy for module <bus_control> in library <work>.
+
+Analyzing hierarchy for module <bus_switch> in library <work>.
+
+Analyzing hierarchy for module <data_switch> in library <work>.
+
+Analyzing hierarchy for module <data_switch_mask> in library <work>.
+
+Analyzing hierarchy for module <address_pins> in library <work>.
+
+Analyzing hierarchy for module <data_pins> in library <work>.
+
+Analyzing hierarchy for module <control_pins_n> in library <work>.
+
+Analyzing hierarchy for module <alu_mux_4> in library <work>.
+
+Analyzing hierarchy for module <alu_mux_8> in library <work>.
+
+Analyzing hierarchy for module <alu_mux_2> in library <work>.
+
+Analyzing hierarchy for module <alu_core> in library <work>.
+
+Analyzing hierarchy for module <alu_bit_select> in library <work>.
+
+Analyzing hierarchy for module <alu_shifter_core> in library <work>.
+
+Analyzing hierarchy for module <alu_mux_2z> in library <work>.
+
+Analyzing hierarchy for module <alu_mux_3z> in library <work>.
+
+Analyzing hierarchy for module <alu_prep_daa> in library <work>.
+
+Analyzing hierarchy for module <reg_latch> in library <work>.
+
+Analyzing hierarchy for module <address_mux> in library <work>.
+
+Analyzing hierarchy for module <inc_dec> in library <work>.
+
+Analyzing hierarchy for module <alu_slice> in library <work>.
+
+Analyzing hierarchy for module <inc_dec_2bit> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <top>.
+Module <top> is correct for synthesis.
+ 
+Analyzing module <z80_top_direct_n> in library <work>.
+WARNING:Xst:863 - "../../CPU FILES/Aaron a-z80 - Py Export/z80_top_direct_n.v" line 35: Name conflict (<clk> and <CLK>, renaming clk as clk_rnm0).
+WARNING:Xst:863 - "../../CPU FILES/Aaron a-z80 - Py Export/z80_top_direct_n.v" line 32: Name conflict (<nreset> and <nRESET>, renaming nreset as nreset_rnm0).
+Module <z80_top_direct_n> is correct for synthesis.
+ 
+Analyzing module <clk_delay> in library <work>.
+Module <clk_delay> is correct for synthesis.
+ 
+Analyzing module <decode_state> in library <work>.
+Module <decode_state> is correct for synthesis.
+ 
+Analyzing module <execute> in library <work>.
+Module <execute> is correct for synthesis.
+ 
+Analyzing module <interrupts> in library <work>.
+Module <interrupts> is correct for synthesis.
+ 
+Analyzing module <ir> in library <work>.
+Module <ir> is correct for synthesis.
+ 
+Analyzing module <pin_control> in library <work>.
+Module <pin_control> is correct for synthesis.
+ 
+Analyzing module <pla_decode> in library <work>.
+Module <pla_decode> is correct for synthesis.
+ 
+Analyzing module <resets> in library <work>.
+Module <resets> is correct for synthesis.
+ 
+Analyzing module <memory_ifc> in library <work>.
+Module <memory_ifc> is correct for synthesis.
+ 
+Analyzing module <sequencer> in library <work>.
+Module <sequencer> is correct for synthesis.
+ 
+Analyzing module <alu_control> in library <work>.
+Module <alu_control> is correct for synthesis.
+ 
+Analyzing module <alu_mux_4> in library <work>.
+Module <alu_mux_4> is correct for synthesis.
+ 
+Analyzing module <alu_mux_8> in library <work>.
+Module <alu_mux_8> is correct for synthesis.
+ 
+Analyzing module <alu_select> in library <work>.
+Module <alu_select> is correct for synthesis.
+ 
+Analyzing module <alu_flags> in library <work>.
+Module <alu_flags> is correct for synthesis.
+ 
+Analyzing module <alu_mux_2> in library <work>.
+Module <alu_mux_2> is correct for synthesis.
+ 
+Analyzing module <alu> in library <work>.
+Module <alu> is correct for synthesis.
+ 
+Analyzing module <alu_core> in library <work>.
+Module <alu_core> is correct for synthesis.
+ 
+Analyzing module <alu_slice> in library <work>.
+Module <alu_slice> is correct for synthesis.
+ 
+Analyzing module <alu_bit_select> in library <work>.
+Module <alu_bit_select> is correct for synthesis.
+ 
+Analyzing module <alu_shifter_core> in library <work>.
+Module <alu_shifter_core> is correct for synthesis.
+ 
+Analyzing module <alu_mux_2z> in library <work>.
+Module <alu_mux_2z> is correct for synthesis.
+ 
+Analyzing module <alu_mux_3z> in library <work>.
+Module <alu_mux_3z> is correct for synthesis.
+ 
+Analyzing module <alu_prep_daa> in library <work>.
+Module <alu_prep_daa> is correct for synthesis.
+ 
+Analyzing module <reg_file> in library <work>.
+Module <reg_file> is correct for synthesis.
+ 
+Analyzing module <reg_latch> in library <work>.
+Module <reg_latch> is correct for synthesis.
+ 
+Analyzing module <reg_control> in library <work>.
+Module <reg_control> is correct for synthesis.
+ 
+Analyzing module <address_latch> in library <work>.
+Module <address_latch> is correct for synthesis.
+ 
+Analyzing module <address_mux> in library <work>.
+Module <address_mux> is correct for synthesis.
+ 
+Analyzing module <inc_dec> in library <work>.
+Module <inc_dec> is correct for synthesis.
+ 
+Analyzing module <inc_dec_2bit> in library <work>.
+Module <inc_dec_2bit> is correct for synthesis.
+ 
+Analyzing module <bus_control> in library <work>.
+Module <bus_control> is correct for synthesis.
+ 
+Analyzing module <bus_switch> in library <work>.
+Module <bus_switch> is correct for synthesis.
+ 
+Analyzing module <data_switch> in library <work>.
+Module <data_switch> is correct for synthesis.
+ 
+Analyzing module <data_switch_mask> in library <work>.
+Module <data_switch_mask> is correct for synthesis.
+ 
+Analyzing module <address_pins> in library <work>.
+Module <address_pins> is correct for synthesis.
+ 
+Analyzing module <data_pins> in library <work>.
+Module <data_pins> is correct for synthesis.
+ 
+Analyzing module <control_pins_n> in library <work>.
+Module <control_pins_n> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <clk_delay>.
+    Related source file is "../../CPU FILES/Aaron a-z80 - Py Export/clk_delay.v".
+    Found 1-bit register for signal <DFF_inst5>.
+    Found 1-bit register for signal <hold_clk_busrq_ALTERA_SYNTHESIZED>.
+    Found 1-bit register for signal <SYNTHESIZED_WIRE_7>.
+    Found 1-bit register for signal <SYNTHESIZED_WIRE_8>.
+    Found 1-bit register for signal <SYNTHESIZED_WIRE_9>.
+    Summary:
+	inferred   5 D-type flip-flop(s).
+Unit <clk_delay> synthesized.
+
+
+Synthesizing Unit <decode_state>.
+    Related source file is "../../CPU FILES/Aaron a-z80 - Py Export/decode_state.v".
+    Found 1-bit register for signal <in_halt>.
+    Found 1-bit register for signal <DFFE_inst4>.
+    Found 1-bit register for signal <DFFE_instCB>.
+    Found 1-bit register for signal <DFFE_instED>.
+    Found 1-bit register for signal <DFFE_instIY1>.
+    Found 1-bit register for signal <DFFE_instNonRep>.
+    Summary:
+	inferred   6 D-type flip-flop(s).
+Unit <decode_state> synthesized.
+
+
+Synthesizing Unit <execute>.
+    Related source file is "../../CPU FILES/Aaron a-z80 - Py Export/execute.v".
+WARNING:Xst:647 - Input <pla<98>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <pla<94:93>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <pla<90>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <pla<87>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <pla<71>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <pla<67>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <pla<63:62>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <pla<60>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <pla<54>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <pla<41>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <pla<36>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <pla<32>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <pla<22>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <pla<19:18>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <pla<14>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <pla<4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <validPLA> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <setIXIY> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pc_inc_hold> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <nonRep> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ixy_d> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_use_ixiypla59M2T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_use_ixiypla59M2T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_use_ixiypla58M2T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_use_ixiypla58M2T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_use_ixiypla53M2T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_use_ixiypla53M2T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_use_ixiypla52M2T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_use_ixiypla52M2T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_setM1_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla91pla21M4T4_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla91pla21M4T3_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla91pla21M4T2_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla91pla21M4T1_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla91pla20M4T4_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla91pla20M4T3_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla91pla20M4T2_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla91pla20M4T1_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla8pla13M2T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla8npla13M2T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla83M1T4_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla7M3T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla7M3T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla7M2T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla7M2T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla69M3T1_7> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla69M3T1_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla69M2T2_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla64M2T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla64M2T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla57M1T4_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla56M5T3_9> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla56M5T3_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla56M5T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla56M4T3_6> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla56M4T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla56M3T3_6> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla56M3T1_6> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla56M2T1_6> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla56M1T3_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla50npla40M2T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla50npla40M2T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla49M3T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla49M3T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla49M2T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla49M2T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla48M3T5_8> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla48M3T5_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla48M3T4_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla48M3T3_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla48M3T2_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla48M2T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla48M2T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla47M3T5_8> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla47M3T5_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla47M3T4_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla47M3T3_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla47M3T2_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla47M2T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla47M2T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla46M3T3_9> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla46M3T3_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla46M2T3_6> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla45M3T3_9> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla45M3T3_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla45M2T3_6> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla43M3T3_5> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla43M3T3_10> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla43M3T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla43M3T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla43M2T3_6> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla43M2T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla43M2T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla42M5T3_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla42M5T1_6> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla42M4T1_6> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla42M3T3_6> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla42M3T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla42M3T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla42M2T3_6> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla42M2T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla42M2T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla40M3T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla40M3T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla40M2T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla40M2T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla38pla13M4T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla38pla13M3T3_5> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla38pla13M3T3_10> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla38pla13M3T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla38pla13M3T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla38pla13M2T3_6> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla38pla13M2T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla38pla13M2T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla38npla13M4T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla38npla13M4T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla38npla13M3T3_6> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla38npla13M3T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla38npla13M3T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla38npla13M2T3_6> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla38npla13M2T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla38npla13M2T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla37pla28M2T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla37pla28M2T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla37npla28M2T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla37npla28M2T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla35M3T3_9> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla35M3T3_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla35M2T3_6> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla31pla33M5T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla31pla33M4T3_5> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla31pla33M4T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla31pla33M3T3_5> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla31pla33M3T3_10> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla31pla33M3T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla31pla33M3T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla31pla33M2T3_6> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla31pla33M2T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla31pla33M2T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla31npla33M5T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla31npla33M5T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla31npla33M4T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla31npla33M4T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla31npla33M3T3_6> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla31npla33M3T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla31npla33M3T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla31npla33M2T3_6> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla31npla33M2T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla31npla33M2T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla30pla13M5T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla30pla13M4T3_5> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla30pla13M4T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla30pla13M3T3_5> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla30pla13M3T3_10> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla30pla13M3T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla30pla13M3T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla30pla13M2T3_6> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla30pla13M2T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla30pla13M2T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla30npla13M5T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla30npla13M5T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla30npla13M4T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla30npla13M4T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla30npla13M3T3_6> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla30npla13M3T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla30npla13M3T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla30npla13M2T3_6> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla30npla13M2T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla30npla13M2T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla29M3T3_9> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla29M3T3_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla29M3T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla29M3T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla29M2T3_6> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla29M2T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla29M2T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla26M3T5_8> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla26M3T5_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla26M3T4_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla26M3T3_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla26M3T2_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla26M2T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla26M2T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla24M5T3_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla24M5T1_6> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla24M4T1_6> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla24M3T3_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla24M3T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla24M3T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla24M2T3_6> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla24M2T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla24M2T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla17npla50M2T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla17npla50M2T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla15op3M2T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla15nop3M2T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla12M4T4_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla12M4T3_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla12M4T2_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla12M4T1_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla11M4T4_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla11M4T3_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla11M4T2_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla11M4T1_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla10M5T3_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla10M3T3_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_pla10M2T3_6> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_op3pla68M3T1_7> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_op3pla68M3T1_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_op3pla68M2T2_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_nuse_ixiypla74pla55M4T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_nuse_ixiypla74npla55M4T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_nuse_ixiypla73pla55M4T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_nuse_ixiypla73npla55M4T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_nuse_ixiypla72pla55M4T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_nuse_ixiypla72pla55M2T3_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_nuse_ixiypla70pla55M4T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_nuse_ixiypla70npla55M4T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_nuse_ixiypla52M2T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_nop3pla68M3T1_7> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_nop3pla68M3T1_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_nop3pla68M2T2_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_ixy_dT5_7> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_ixy_dT5_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_ixy_dT3_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_1M1T3_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_1M1T2_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_sys_hilo_1M1T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_use_ixiypla58M1T1_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_use_ixiypla53M1T3_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_use_ixiypla52M1T3_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla9M1T5_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla9M1T4_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla92M1T3_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla92M1T2_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla91pla21M3T2_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla91pla21M3T1_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla91pla21M2T3_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla91pla21M2T2_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla91pla21M2T1_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla91pla21M1T3_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla91pla21M1T2_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla91pla20M3T1_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla91pla20M2T3_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla91pla20M2T2_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla91pla20M2T1_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla91pla20M1T5_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla91pla20M1T4_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla91pla20M1T3_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla91pla20M1T2_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla8pla13M2T1_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla8pla13M1T4_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla8npla13M2T1_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla8npla13M1T1_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla89M1T3_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla89M1T2_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla88M1T1_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla86M1T1_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla85M1T1_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla84M1T1_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla83M1T3_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla83M1T2_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla83M1T1_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla82M1T3_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla82M1T2_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla82M1T1_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla81M1T3_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla81M1T2_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla81M1T1_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla80M1T1_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla7M3T1_6> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla7M1T1_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla79M1T1_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla78M1T1_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla77M1T3_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla77M1T2_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla77M1T1_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla6M1T4_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla69M3T2_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla69M2T4_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla69M2T3_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla69M2T1_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla69M1T4_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla69M1T3_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla69M1T2_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla66npla53M1T4nop4op5nop3_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla66npla53M1T3_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla66npla53M1T2_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla66npla53M1T1_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla65npla52M1T4_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla65npla52M1T3_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla65npla52M1T2_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla64M1T4_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla64M1T3_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla64M1T2_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla61npla58npla59M1T4_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla61npla58npla59M1T1_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla5M1T5_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla5M1T4_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla57M1T3_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla56M3T2_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla56M2T3_5> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla56M2T2_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla56M1T5_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla50npla40M3T1_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla49M1T3_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla48M1T3_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla47M1T3_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla46M3T2_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla46M3T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla46M2T2_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla46M2T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla45M3T2_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla45M3T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla45M2T2_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla45M2T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla45M1T3_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla43M1T3_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla42M5T2_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla42M4T3_5> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla42M4T2_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla42M3T4_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla42M1T3_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla38pla13M4T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla38npla13M1T1_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla37pla28M3T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla37pla28M2T3_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla37npla28M3T1_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla37npla28M1T1_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla35M3T2_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla35M3T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla35M2T2_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla35M2T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla31pla33M5T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla31pla33M4T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla31npla33M5T3_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla31npla33M4T3_5> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla30pla13M5T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla30pla13M4T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla30npla13M5T3_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla30npla13M4T3_5> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla27pla34M2T1_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla27pla34M1T4nop4op5nop3_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla27npla34M2T1_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla27npla34M1T3_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla27npla34M1T2_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla27npla34M1T1_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla26M1T5_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla26M1T4_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla26M1T3_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla25M1T4_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla25M1T3_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla25M1T2_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla25M1T1_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla24M5T2_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla24M4T3_5> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla24M4T2_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla24M3T4_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla23pla16M3T2_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla23pla16M3T1_5> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla23pla16M2T3_5> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla23pla16M2T2_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla23pla16M2T1_5> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla23pla16M1T5_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla23npla16M3T3_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla23npla16M3T2_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla23npla16M3T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla23npla16M2T3_5> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla23npla16M2T2_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla23npla16M2T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla17npla50M1T1_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla15op3M2T1_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla15op3M1T3_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla15op3M1T2_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla15op3M1T1_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla15nop3M3T3_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla15nop3M2T1_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla15nop3M1T3_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla15nop3M1T2_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla15nop3M1T1_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla12M3T4_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla12M3T3_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla12M3T2_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla12M3T1_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla12M2T2_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla12M2T1_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla12M1T3_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla12M1T2_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla11M3T4_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla11M3T3_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla11M2T2_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla11M2T1_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla11M1T3_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla11M1T2_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla10M5T4_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla10M5T2_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla10M5T1_5> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla10M4T3_5> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla10M4T2_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla10M4T1_5> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla10M3T4_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla10M3T2_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla10M3T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla10M2T2_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_pla10M2T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_op3pla68M3T2_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_op3pla68M2T4_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_op3pla68M2T3_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_op3pla68M2T1_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_op3pla68M1T4_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_op3pla68M1T3_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_op3pla68M1T2_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_nuse_ixiypla74pla55M2T1_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_nuse_ixiypla74pla55M1T3_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_nuse_ixiypla74npla55M1T4_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_nuse_ixiypla74npla55M1T3_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_nuse_ixiypla74npla55M1T1_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_nuse_ixiypla73pla55M2T1_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_nuse_ixiypla73pla55M1T3_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_nuse_ixiypla73npla55M1T4_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_nuse_ixiypla73npla55M1T3_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_nuse_ixiypla73npla55M1T1_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_nuse_ixiypla72pla55M2T1_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_nuse_ixiypla72pla55M1T3_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_nuse_ixiypla72pla55M1T2_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_nuse_ixiypla72npla55M1T4_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_nuse_ixiypla72npla55M1T3_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_nuse_ixiypla72npla55M1T2_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_nuse_ixiypla70pla55M2T1_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_nuse_ixiypla70pla55M1T3_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_nuse_ixiypla70pla55M1T2_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_nuse_ixiypla70npla55M1T4_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_nuse_ixiypla70npla55M1T3_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_nuse_ixiypla70npla55M1T2_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_nuse_ixiypla70npla55M1T1_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_nuse_ixiypla59M4T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_nuse_ixiypla59M2T1_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_nuse_ixiypla59M1T4_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_nuse_ixiypla58M2T1_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_nuse_ixiypla58M1T1_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_nuse_ixiypla53M2T1_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_nuse_ixiypla53M1T3_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_nuse_ixiypla53M1T2_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_nuse_ixiypla52M4T2_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_nuse_ixiypla52M2T1_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_nuse_ixiypla52M1T3_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_nuse_ixiypla52M1T2_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_nop3pla68M3T2_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_nop3pla68M2T4_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_nop3pla68M2T3_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_nop3pla68M2T1_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_nop3pla68M1T4_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_nop3pla68M1T3_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_nop3pla68M1T2_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_ixy_dT4_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_sel_ixy_dT2_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_use_ixiypla58M1T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_use_ixiypla53M1T3_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_use_ixiypla52M1T3_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla9M1T5_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla9M1T4_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla92M1T3_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla92M1T2_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla91pla21M3T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla91pla21M3T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla91pla21M2T3_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla91pla21M2T2_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla91pla21M2T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla91pla21M1T3_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla91pla21M1T2_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla91pla20M3T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla91pla20M2T3_5> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla91pla20M2T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla91pla20M2T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla91pla20M1T5_5> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla91pla20M1T4_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla91pla20M1T3_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla91pla20M1T2_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla8pla13M2T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla8pla13M1T4_5> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla8npla13M2T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla8npla13M1T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla89M1T3_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla89M1T2_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla88M1T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla86M1T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla85M1T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla84M1T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla83M1T3_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla83M1T2_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla83M1T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla82M1T3_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla82M1T2_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla82M1T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla81M1T3_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla81M1T2_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla81M1T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla80M1T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla7M3T1_7> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla7M1T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla79M1T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla78M1T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla77M1T3_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla77M1T2_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla77M1T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla6M1T4_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla69M3T2_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla69M2T4_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla69M2T3_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla69M2T1_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla69M1T4_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla69M1T3_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla69M1T2_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla66npla53M1T4nop4op5nop3_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla66npla53M1T3_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla66npla53M1T2_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla66npla53M1T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla65npla52M1T4_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla65npla52M1T3_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla65npla52M1T2_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla64M1T4_5> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla64M1T3_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla64M1T2_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla61npla58npla59M1T4_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla61npla58npla59M1T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla5M1T5_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla5M1T4_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla57M1T3_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla56M3T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla56M2T3_6> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla56M2T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla56M1T5_5> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla50npla40M3T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla49M1T3_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla48M1T3_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla47M1T3_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla46M3T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla46M3T1_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla46M2T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla46M2T1_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla45M3T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla45M3T1_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla45M2T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla45M2T1_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla45M1T3_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla43M1T3_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla42M5T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla42M4T3_6> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla42M4T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla42M3T4_5> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla42M1T3_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla38pla13M4T1_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla38npla13M1T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla37pla28M3T1_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla37pla28M2T3_5> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla37npla28M3T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla37npla28M1T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla35M3T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla35M3T1_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla35M2T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla35M2T1_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla31pla33M5T1_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla31pla33M4T1_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla31npla33M5T3_5> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla31npla33M4T3_6> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla30pla13M5T1_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla30pla13M4T1_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla30npla13M5T3_5> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla30npla13M4T3_6> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla27pla34M2T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla27pla34M1T4nop4op5nop3_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla27npla34M2T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla27npla34M1T3_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla27npla34M1T2_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla27npla34M1T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla26M1T5_5> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla26M1T4_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla26M1T3_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla25M1T4_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla25M1T3_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla25M1T2_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla25M1T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla24M5T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla24M4T3_6> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla24M4T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla24M3T4_5> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla23pla16M3T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla23pla16M3T1_6> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla23pla16M2T3_6> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla23pla16M2T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla23pla16M2T1_6> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla23pla16M1T5_5> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla23npla16M3T3_5> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla23npla16M3T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla23npla16M3T1_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla23npla16M2T3_6> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla23npla16M2T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla23npla16M2T1_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla17npla50M1T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla15op3M2T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla15op3M1T3_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla15op3M1T2_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla15op3M1T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla15nop3M3T3_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla15nop3M2T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla15nop3M1T3_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla15nop3M1T2_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla15nop3M1T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla12M3T4_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla12M3T3_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla12M3T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla12M3T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla12M2T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla12M2T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla12M1T3_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla12M1T2_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla11M3T4_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla11M3T3_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla11M2T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla11M2T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla11M1T3_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla11M1T2_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla10M5T4_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla10M5T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla10M5T1_6> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla10M4T3_6> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla10M4T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla10M4T1_6> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla10M3T4_5> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla10M3T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla10M3T1_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla10M2T2_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_pla10M2T1_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_op3pla68M3T2_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_op3pla68M2T4_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_op3pla68M2T3_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_op3pla68M2T1_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_op3pla68M1T4_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_op3pla68M1T3_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_op3pla68M1T2_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_nuse_ixiypla74pla55M2T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_nuse_ixiypla74pla55M1T3_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_nuse_ixiypla74npla55M1T4_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_nuse_ixiypla74npla55M1T3_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_nuse_ixiypla74npla55M1T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_nuse_ixiypla73pla55M2T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_nuse_ixiypla73pla55M1T3_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_nuse_ixiypla73npla55M1T4_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_nuse_ixiypla73npla55M1T3_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_nuse_ixiypla73npla55M1T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_nuse_ixiypla72pla55M2T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_nuse_ixiypla72pla55M1T3_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_nuse_ixiypla72pla55M1T2_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_nuse_ixiypla72npla55M1T4_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_nuse_ixiypla72npla55M1T3_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_nuse_ixiypla72npla55M1T2_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_nuse_ixiypla70pla55M2T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_nuse_ixiypla70pla55M1T3_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_nuse_ixiypla70pla55M1T2_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_nuse_ixiypla70npla55M1T4_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_nuse_ixiypla70npla55M1T3_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_nuse_ixiypla70npla55M1T2_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_nuse_ixiypla70npla55M1T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_nuse_ixiypla59M4T1_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_nuse_ixiypla59M2T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_nuse_ixiypla59M1T4_5> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_nuse_ixiypla58M2T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_nuse_ixiypla58M1T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_nuse_ixiypla53M2T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_nuse_ixiypla53M1T3_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_nuse_ixiypla53M1T2_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_nuse_ixiypla52M4T2_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_nuse_ixiypla52M2T1_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_nuse_ixiypla52M1T3_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_nuse_ixiypla52M1T2_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_nop3pla68M3T2_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_nop3pla68M2T4_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_nop3pla68M2T3_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_nop3pla68M2T1_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_nop3pla68M1T4_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_nop3pla68M1T3_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_nop3pla68M1T2_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_ixy_dT4_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_reg_gp_hilo_ixy_dT2_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_pf_sel_pla91pla21M1T1_8> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_pf_sel_pla91pla20M1T1_9> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_pf_sel_pla88M1T1_8> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_pf_sel_pla86M1T1_8> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_pf_sel_pla85M1T1_8> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_pf_sel_pla84M1T1_8> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_pf_sel_pla83M1T1_19> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_pf_sel_pla82M1T1_16> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_pf_sel_pla80M1T1_8> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_pf_sel_pla79M1T1_8> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_pf_sel_pla78M1T1_8> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_pf_sel_pla77M1T1_14> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_pf_sel_pla76M1T1_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_pf_sel_pla66npla53M1T1_15> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_pf_sel_pla27npla34M1T1_20> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_pf_sel_pla15op3M1T1_18> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_pf_sel_pla15nop3M1T1_18> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_pf_sel_pla12M1T1_12> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_pf_sel_pla11M1T1_11> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_pf_sel_op3pla68M3T1_18> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_pf_sel_nuse_ixiypla72pla55M1T1_10> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_pf_sel_nuse_ixiypla72npla55M1T1_10> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_pf_sel_nuse_ixiypla70pla55M5T1_19> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_pf_sel_nuse_ixiypla70pla55M3T1_19> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_pf_sel_nuse_ixiypla70npla55M5T1_19> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_pf_sel_nuse_ixiypla70npla55M1T1_20> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_pf_sel_nuse_ixiypla53M4T4_14> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_pf_sel_nuse_ixiypla53M2T4_14> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ctl_pf_sel_nop3pla68M3T1_20> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit xor2 for signal <rsel0>.
+    Found 1-bit xor2 for signal <rsel3>.
+Unit <execute> synthesized.
+
+
+Synthesizing Unit <interrupts>.
+    Related source file is "../../CPU FILES/Aaron a-z80 - Py Export/interrupts.v".
+    Found 1-bit register for signal <im1>.
+    Found 1-bit register for signal <im2>.
+    Found 1-bit register for signal <DFFE_inst44>.
+    Found 1-bit register for signal <DFFE_instIFF2>.
+    Found 1-bit register for signal <iff1>.
+    Found 1-bit register for signal <in_nmi_ALTERA_SYNTHESIZED>.
+    Found 1-bit register for signal <int_armed>.
+    Found 1-bit register for signal <nmi_armed>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <interrupts> synthesized.
+
+
+Synthesizing Unit <ir>.
+    Related source file is "../../CPU FILES/Aaron a-z80 - Py Export/ir.v".
+    Found 8-bit register for signal <opcode>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <ir> synthesized.
+
+
+Synthesizing Unit <pin_control>.
+    Related source file is "../../CPU FILES/Aaron a-z80 - Py Export/pin_control.v".
+Unit <pin_control> synthesized.
+
+
+Synthesizing Unit <pla_decode>.
+    Related source file is "../../CPU FILES/Aaron a-z80 - Py Export/pla_decode.v".
+Unit <pla_decode> synthesized.
+
+
+Synthesizing Unit <resets>.
+    Related source file is "../../CPU FILES/Aaron a-z80 - Py Export/resets.v".
+    Found 1-bit register for signal <clrpc_int>.
+    Found 1-bit register for signal <DFFE_intr_ff3>.
+    Found 1-bit register for signal <SYNTHESIZED_WIRE_10>.
+    Found 1-bit register for signal <SYNTHESIZED_WIRE_12>.
+    Found 1-bit register for signal <SYNTHESIZED_WIRE_9>.
+    Found 1-bit register for signal <x1>.
+    Summary:
+	inferred   6 D-type flip-flop(s).
+Unit <resets> synthesized.
+
+
+Synthesizing Unit <memory_ifc>.
+    Related source file is "../../CPU FILES/Aaron a-z80 - Py Export/memory_ifc.v".
+    Found 1-bit register for signal <DFFE_intr_ff3>.
+    Found 1-bit register for signal <DFFE_iorq_ff1>.
+    Found 1-bit register for signal <DFFE_iorq_ff4>.
+    Found 1-bit register for signal <DFFE_m1_ff1>.
+    Found 1-bit register for signal <DFFE_m1_ff3>.
+    Found 1-bit register for signal <DFFE_mrd_ff1>.
+    Found 1-bit register for signal <DFFE_mrd_ff3>.
+    Found 1-bit register for signal <DFFE_mreq_ff2>.
+    Found 1-bit register for signal <DFFE_mwr_ff1>.
+    Found 1-bit register for signal <mwr_wr>.
+    Found 1-bit register for signal <q1>.
+    Found 1-bit register for signal <q2>.
+    Found 1-bit register for signal <SYNTHESIZED_WIRE_15>.
+    Found 1-bit register for signal <SYNTHESIZED_WIRE_16>.
+    Found 1-bit register for signal <SYNTHESIZED_WIRE_17>.
+    Found 1-bit register for signal <wait_iorq>.
+    Found 1-bit register for signal <wait_iorqinta>.
+    Found 1-bit register for signal <wait_m_ALTERA_SYNTHESIZED1>.
+    Found 1-bit register for signal <wait_mrd>.
+    Found 1-bit register for signal <wait_mwr>.
+    Summary:
+	inferred  20 D-type flip-flop(s).
+Unit <memory_ifc> synthesized.
+
+
+Synthesizing Unit <sequencer>.
+    Related source file is "../../CPU FILES/Aaron a-z80 - Py Export/sequencer.v".
+    Found 1-bit register for signal <M5>.
+    Found 1-bit register for signal <T6>.
+    Found 1-bit register for signal <DFFE_M1_ff>.
+    Found 1-bit register for signal <DFFE_M2_ff>.
+    Found 1-bit register for signal <DFFE_M3_ff>.
+    Found 1-bit register for signal <DFFE_M4_ff>.
+    Found 1-bit register for signal <DFFE_T1_ff>.
+    Found 1-bit register for signal <DFFE_T2_ff>.
+    Found 1-bit register for signal <DFFE_T3_ff>.
+    Found 1-bit register for signal <DFFE_T4_ff>.
+    Found 1-bit register for signal <DFFE_T5_ff>.
+    Summary:
+	inferred  11 D-type flip-flop(s).
+Unit <sequencer> synthesized.
+
+
+Synthesizing Unit <alu_select>.
+    Related source file is "../../CPU FILES/Aaron a-z80 - Py Export/alu_select.v".
+Unit <alu_select> synthesized.
+
+
+Synthesizing Unit <reg_control>.
+    Related source file is "../../CPU FILES/Aaron a-z80 - Py Export/reg_control.v".
+    Found 1-bit register for signal <bank_af>.
+    Found 1-bit xor2 for signal <bank_af$xor0000> created at line 260.
+    Found 1-bit register for signal <bank_exx>.
+    Found 1-bit xor2 for signal <bank_exx$xor0000> created at line 324.
+    Found 1-bit register for signal <bank_hl_de1>.
+    Found 1-bit xor2 for signal <bank_hl_de1$xor0000> created at line 310.
+    Found 1-bit register for signal <bank_hl_de2>.
+    Found 1-bit xor2 for signal <bank_hl_de2$xor0000> created at line 290.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <reg_control> synthesized.
+
+
+Synthesizing Unit <bus_control>.
+    Related source file is "../../CPU FILES/Aaron a-z80 - Py Export/bus_control.v".
+    Found 8-bit tristate buffer for signal <db>.
+    Summary:
+	inferred   8 Tristate(s).
+Unit <bus_control> synthesized.
+
+
+Synthesizing Unit <bus_switch>.
+    Related source file is "../../CPU FILES/Aaron a-z80 - Py Export/bus_switch.v".
+Unit <bus_switch> synthesized.
+
+
+Synthesizing Unit <data_switch>.
+    Related source file is "../../CPU FILES/Aaron a-z80 - Py Export/data_switch.v".
+    Found 8-bit tristate buffer for signal <db_down>.
+    Found 8-bit tristate buffer for signal <db_up>.
+    Summary:
+	inferred  16 Tristate(s).
+Unit <data_switch> synthesized.
+
+
+Synthesizing Unit <data_switch_mask>.
+    Related source file is "../../CPU FILES/Aaron a-z80 - Py Export/data_switch_mask.v".
+    Found 8-bit tristate buffer for signal <db_down>.
+    Found 8-bit tristate buffer for signal <db_up>.
+    Summary:
+	inferred  16 Tristate(s).
+Unit <data_switch_mask> synthesized.
+
+
+Synthesizing Unit <address_pins>.
+    Related source file is "../../CPU FILES/Aaron a-z80 - Py Export/address_pins.v".
+    Found 16-bit tristate buffer for signal <abus>.
+    Found 16-bit register for signal <DFFE_apin_latch>.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+	inferred  16 Tristate(s).
+Unit <address_pins> synthesized.
+
+
+Synthesizing Unit <data_pins>.
+    Related source file is "../../CPU FILES/Aaron a-z80 - Py Export/data_pins.v".
+    Found 8-bit tristate buffer for signal <db>.
+    Found 8-bit tristate buffer for signal <D>.
+    Found 8-bit register for signal <dout>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+	inferred  16 Tristate(s).
+Unit <data_pins> synthesized.
+
+
+Synthesizing Unit <control_pins_n>.
+    Related source file is "../../CPU FILES/Aaron a-z80 - Py Export/control_pins_n.v".
+    Found 1-bit tristate buffer for signal <pin_nMREQ>.
+    Found 1-bit tristate buffer for signal <pin_nRD>.
+    Found 1-bit tristate buffer for signal <pin_nWR>.
+    Found 1-bit tristate buffer for signal <pin_nIORQ>.
+    Summary:
+	inferred   4 Tristate(s).
+Unit <control_pins_n> synthesized.
+
+
+Synthesizing Unit <alu_mux_4>.
+    Related source file is "../../CPU FILES/Aaron a-z80 - Py Export/alu_mux_4.v".
+Unit <alu_mux_4> synthesized.
+
+
+Synthesizing Unit <alu_mux_8>.
+    Related source file is "../../CPU FILES/Aaron a-z80 - Py Export/alu_mux_8.v".
+Unit <alu_mux_8> synthesized.
+
+
+Synthesizing Unit <alu_mux_2>.
+    Related source file is "../../CPU FILES/Aaron a-z80 - Py Export/alu_mux_2.v".
+Unit <alu_mux_2> synthesized.
+
+
+Synthesizing Unit <alu_bit_select>.
+    Related source file is "../../CPU FILES/Aaron a-z80 - Py Export/alu_bit_select.v".
+Unit <alu_bit_select> synthesized.
+
+
+Synthesizing Unit <alu_shifter_core>.
+    Related source file is "../../CPU FILES/Aaron a-z80 - Py Export/alu_shifter_core.v".
+Unit <alu_shifter_core> synthesized.
+
+
+Synthesizing Unit <alu_mux_2z>.
+    Related source file is "../../CPU FILES/Aaron a-z80 - Py Export/alu_mux_2z.v".
+Unit <alu_mux_2z> synthesized.
+
+
+Synthesizing Unit <alu_mux_3z>.
+    Related source file is "../../CPU FILES/Aaron a-z80 - Py Export/alu_mux_3z.v".
+Unit <alu_mux_3z> synthesized.
+
+
+Synthesizing Unit <alu_prep_daa>.
+    Related source file is "../../CPU FILES/Aaron a-z80 - Py Export/alu_prep_daa.v".
+WARNING:Xst:647 - Input <low<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <alu_prep_daa> synthesized.
+
+
+Synthesizing Unit <alu_slice>.
+    Related source file is "../../CPU FILES/Aaron a-z80 - Py Export/alu_slice.v".
+Unit <alu_slice> synthesized.
+
+
+Synthesizing Unit <reg_latch>.
+    Related source file is "../../CPU FILES/Aaron a-z80 - Py Export/reg_latch.v".
+    Found 8-bit tristate buffer for signal <db>.
+    Found 8-bit register for signal <latch>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+	inferred   8 Tristate(s).
+Unit <reg_latch> synthesized.
+
+
+Synthesizing Unit <address_mux>.
+    Related source file is "../../CPU FILES/Aaron a-z80 - Py Export/address_mux.v".
+Unit <address_mux> synthesized.
+
+
+Synthesizing Unit <inc_dec_2bit>.
+    Related source file is "../../CPU FILES/Aaron a-z80 - Py Export/inc_dec_2bit.v".
+    Found 1-bit xor2 for signal <d1_out>.
+    Found 1-bit xor2 for signal <d0_out>.
+Unit <inc_dec_2bit> synthesized.
+
+
+Synthesizing Unit <alu_control>.
+    Related source file is "../../CPU FILES/Aaron a-z80 - Py Export/alu_control.v".
+    Found 8-bit tristate buffer for signal <db>.
+    Found 1-bit register for signal <flags_cond_true>.
+    Found 1-bit xor2 for signal <condition>.
+    Found 1-bit register for signal <DFFE_latch_pf_tmp>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+	inferred   8 Tristate(s).
+Unit <alu_control> synthesized.
+
+
+Synthesizing Unit <alu_flags>.
+    Related source file is "../../CPU FILES/Aaron a-z80 - Py Export/alu_flags.v".
+    Found 8-bit tristate buffer for signal <db>.
+    Found 1-bit register for signal <flags_hf2>.
+    Found 1-bit register for signal <DFFE_inst_latch_cf>.
+    Found 1-bit register for signal <DFFE_inst_latch_cf2>.
+    Found 1-bit register for signal <DFFE_inst_latch_hf>.
+    Found 1-bit register for signal <DFFE_inst_latch_nf>.
+    Found 1-bit register for signal <DFFE_inst_latch_pf>.
+    Found 1-bit register for signal <DFFE_inst_latch_sf>.
+    Found 1-bit register for signal <flags_xf>.
+    Found 1-bit register for signal <flags_yf>.
+    Found 1-bit xor2 for signal <SYNTHESIZED_WIRE_23>.
+    Found 1-bit xor2 for signal <SYNTHESIZED_WIRE_24>.
+    Found 1-bit register for signal <SYNTHESIZED_WIRE_39>.
+    Summary:
+	inferred  10 D-type flip-flop(s).
+	inferred   8 Tristate(s).
+Unit <alu_flags> synthesized.
+
+
+Synthesizing Unit <reg_file>.
+    Related source file is "../../CPU FILES/Aaron a-z80 - Py Export/reg_file.v".
+    Found 8-bit tristate buffer for signal <db_lo_as>.
+    Found 8-bit tristate buffer for signal <db_lo_ds>.
+    Found 8-bit tristate buffer for signal <db_hi_as>.
+    Found 8-bit tristate buffer for signal <db_hi_ds>.
+    Found 8-bit tristate buffer for signal <gdfx_temp0>.
+    Found 8-bit tristate buffer for signal <gdfx_temp1>.
+    Summary:
+	inferred  64 Tristate(s).
+Unit <reg_file> synthesized.
+
+
+Synthesizing Unit <alu_core>.
+    Related source file is "../../CPU FILES/Aaron a-z80 - Py Export/alu_core.v".
+    Found 1-bit xor2 for signal <vf_out>.
+Unit <alu_core> synthesized.
+
+
+Synthesizing Unit <inc_dec>.
+    Related source file is "../../CPU FILES/Aaron a-z80 - Py Export/inc_dec.v".
+    Found 2-bit xor2 for signal <address_ALTERA_SYNTHESIZED<15:14>>.
+    Found 1-bit xor2 for signal <address_ALTERA_SYNTHESIZED<11>>.
+    Found 1-bit xor2 for signal <address_ALTERA_SYNTHESIZED<6>>.
+    Found 1-bit xor2 for signal <SYNTHESIZED_WIRE_12>.
+    Found 1-bit xor2 for signal <SYNTHESIZED_WIRE_16>.
+    Found 1-bit xor2 for signal <SYNTHESIZED_WIRE_40>.
+    Found 1-bit xor2 for signal <SYNTHESIZED_WIRE_41>.
+    Found 1-bit xor2 for signal <SYNTHESIZED_WIRE_42>.
+    Found 1-bit xor2 for signal <SYNTHESIZED_WIRE_43>.
+    Found 1-bit xor2 for signal <SYNTHESIZED_WIRE_44>.
+    Found 1-bit xor2 for signal <SYNTHESIZED_WIRE_45>.
+    Found 1-bit xor2 for signal <SYNTHESIZED_WIRE_46>.
+    Found 1-bit xor2 for signal <SYNTHESIZED_WIRE_48>.
+    Found 1-bit xor2 for signal <SYNTHESIZED_WIRE_49>.
+    Found 1-bit xor2 for signal <SYNTHESIZED_WIRE_5>.
+    Found 1-bit xor2 for signal <SYNTHESIZED_WIRE_50>.
+    Found 1-bit xor2 for signal <SYNTHESIZED_WIRE_52>.
+    Found 1-bit xor2 for signal <SYNTHESIZED_WIRE_53>.
+Unit <inc_dec> synthesized.
+
+
+Synthesizing Unit <alu>.
+    Related source file is "../../CPU FILES/Aaron a-z80 - Py Export/alu.v".
+    Found 8-bit tristate buffer for signal <db>.
+    Found 1-bit xor5 for signal <alu_parity_out>.
+    Found 4-bit tristate buffer for signal <db_high>.
+    Found 4-bit tristate buffer for signal <db_low>.
+    Found 4-bit register for signal <op1_high>.
+    Found 4-bit register for signal <op1_low>.
+    Found 4-bit register for signal <op2_high>.
+    Found 4-bit register for signal <op2_low>.
+    Found 4-bit register for signal <result_lo>.
+    Summary:
+	inferred  20 D-type flip-flop(s).
+	inferred   1 Xor(s).
+	inferred  48 Tristate(s).
+Unit <alu> synthesized.
+
+
+Synthesizing Unit <address_latch>.
+    Related source file is "../../CPU FILES/Aaron a-z80 - Py Export/address_latch.v".
+    Found 16-bit tristate buffer for signal <abus>.
+    Found 16-bit register for signal <Q>.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+	inferred  16 Tristate(s).
+Unit <address_latch> synthesized.
+
+
+Synthesizing Unit <z80_top_direct_n>.
+    Related source file is "../../CPU FILES/Aaron a-z80 - Py Export/z80_top_direct_n.v".
+WARNING:Xst:646 - Signal <wait_m1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <test_db_low> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <test_db_high> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <pin_nWR> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <pin_nRFSH> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <pin_nRD> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <pin_nMREQ> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <pin_nM1> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <pin_nIORQ> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <pin_nHALT> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <pin_nBUSACK> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <db> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <abus> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit register for signal <fpga_reset>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <z80_top_direct_n> synthesized.
+
+
+Synthesizing Unit <top>.
+    Related source file is "top.v".
+WARNING:Xst:646 - Signal <tmp> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <DataHold> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit register for signal <clk_out>.
+    Found 26-bit up counter for signal <count>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <top> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 26-bit up counter                                     : 1
+# Registers                                            : 111
+ 1-bit register                                        : 74
+ 16-bit register                                       : 2
+ 4-bit register                                        : 5
+ 8-bit register                                        : 30
+# Tristates                                            : 444
+ 1-bit tristate buffer                                 : 444
+# Xors                                                 : 42
+ 1-bit xor2                                            : 41
+ 1-bit xor5                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1426 - The value init of the FF/Latch fpga_reset hinder the constant cleaning in the block inst1.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:1710 - FF/Latch <SYNTHESIZED_WIRE_7> (without init value) has a constant value of 0 in block <clk_delay_>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SYNTHESIZED_WIRE_9> (without init value) has a constant value of 0 in block <clk_delay_>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SYNTHESIZED_WIRE_8> (without init value) has a constant value of 0 in block <clk_delay_>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <nmi_armed> (without init value) has a constant value of 0 in block <interrupts_>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <int_armed> (without init value) has a constant value of 0 in block <interrupts_>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <hold_clk_busrq_ALTERA_SYNTHESIZED> (without init value) has a constant value of 0 in block <clk_delay_>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DFF_inst5> (without init value) has a constant value of 0 in block <clk_delay_>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <in_nmi_ALTERA_SYNTHESIZED> (without init value) has a constant value of 0 in block <interrupts_>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DFFE_inst44> (without init value) has a constant value of 0 in block <interrupts_>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <DFFE_apin_latch_7> of sequential type is unconnected in block <address_pins_>.
+WARNING:Xst:2677 - Node <DFFE_apin_latch_8> of sequential type is unconnected in block <address_pins_>.
+WARNING:Xst:2677 - Node <DFFE_apin_latch_9> of sequential type is unconnected in block <address_pins_>.
+WARNING:Xst:2677 - Node <DFFE_apin_latch_10> of sequential type is unconnected in block <address_pins_>.
+WARNING:Xst:2677 - Node <DFFE_apin_latch_11> of sequential type is unconnected in block <address_pins_>.
+WARNING:Xst:2677 - Node <DFFE_apin_latch_12> of sequential type is unconnected in block <address_pins_>.
+WARNING:Xst:2677 - Node <DFFE_apin_latch_13> of sequential type is unconnected in block <address_pins_>.
+WARNING:Xst:2677 - Node <DFFE_apin_latch_14> of sequential type is unconnected in block <address_pins_>.
+WARNING:Xst:2677 - Node <DFFE_apin_latch_15> of sequential type is unconnected in block <address_pins_>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <DFFE_mrd_ff1> is unconnected in block <memory_ifc_>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <wait_mrd> is unconnected in block <memory_ifc_>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <wait_iorqinta> is unconnected in block <memory_ifc_>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <DFFE_iorq_ff1> is unconnected in block <memory_ifc_>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <SYNTHESIZED_WIRE_15> is unconnected in block <memory_ifc_>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <wait_iorq> is unconnected in block <memory_ifc_>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <DFFE_mwr_ff1> is unconnected in block <memory_ifc_>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <wait_mwr> is unconnected in block <memory_ifc_>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <im1> is unconnected in block <interrupts_>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <im2> is unconnected in block <interrupts_>.
+WARNING:Xst:2677 - Node <DFFE_m1_ff1> of sequential type is unconnected in block <memory_ifc_>.
+WARNING:Xst:2677 - Node <wait_m_ALTERA_SYNTHESIZED1> of sequential type is unconnected in block <memory_ifc_>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 26-bit up counter                                     : 1
+# Registers                                            : 366
+ Flip-Flops                                            : 366
+# Xors                                                 : 42
+ 1-bit xor2                                            : 41
+ 1-bit xor5                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1426 - The value init of the FF/Latch fpga_reset hinder the constant cleaning in the block z80_top_direct_n.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:1710 - FF/Latch <SYNTHESIZED_WIRE_9> (without init value) has a constant value of 0 in block <clk_delay>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SYNTHESIZED_WIRE_8> (without init value) has a constant value of 0 in block <clk_delay>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <hold_clk_busrq_ALTERA_SYNTHESIZED> (without init value) has a constant value of 0 in block <clk_delay>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <nmi_armed> (without init value) has a constant value of 0 in block <interrupts>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <int_armed> (without init value) has a constant value of 0 in block <interrupts>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <in_nmi_ALTERA_SYNTHESIZED> (without init value) has a constant value of 0 in block <interrupts>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DFFE_inst44> (without init value) has a constant value of 0 in block <interrupts>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <iff1> is unconnected in block <interrupts>.
+WARNING:Xst:2677 - Node <inst1/address_pins_/DFFE_apin_latch_7> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <inst1/address_pins_/DFFE_apin_latch_8> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <inst1/address_pins_/DFFE_apin_latch_9> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <inst1/address_pins_/DFFE_apin_latch_10> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <inst1/address_pins_/DFFE_apin_latch_11> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <inst1/address_pins_/DFFE_apin_latch_12> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <inst1/address_pins_/DFFE_apin_latch_13> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <inst1/address_pins_/DFFE_apin_latch_14> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <inst1/address_pins_/DFFE_apin_latch_15> of sequential type is unconnected in block <top>.
+WARNING:Xst:1710 - FF/Latch <inst1/clk_delay_/SYNTHESIZED_WIRE_7> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <inst1/clk_delay_/DFF_inst5> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2042 - Unit bus_control: 8 internal tristates are replaced by logic (pull-up yes): db<0>, db<1>, db<2>, db<3>, db<4>, db<5>, db<6>, db<7>.
+WARNING:Xst:2042 - Unit data_switch: 16 internal tristates are replaced by logic (pull-up yes): db_down<0>, db_down<1>, db_down<2>, db_down<3>, db_down<4>, db_down<5>, db_down<6>, db_down<7>, db_up<0>, db_up<1>, db_up<2>, db_up<3>, db_up<4>, db_up<5>, db_up<6>, db_up<7>.
+WARNING:Xst:2042 - Unit data_switch_mask: 16 internal tristates are replaced by logic (pull-up yes): db_down<0>, db_down<1>, db_down<2>, db_down<3>, db_down<4>, db_down<5>, db_down<6>, db_down<7>, db_up<0>, db_up<1>, db_up<2>, db_up<3>, db_up<4>, db_up<5>, db_up<6>, db_up<7>.
+WARNING:Xst:2042 - Unit data_pins: 16 internal tristates are replaced by logic (pull-up yes): D<0>, D<1>, D<2>, D<3>, D<4>, D<5>, D<6>, D<7>, db<0>, db<1>, db<2>, db<3>, db<4>, db<5>, db<6>, db<7>.
+WARNING:Xst:2042 - Unit alu_control: 8 internal tristates are replaced by logic (pull-up yes): db<0>, db<1>, db<2>, db<3>, db<4>, db<5>, db<6>, db<7>.
+WARNING:Xst:2042 - Unit alu_flags: 8 internal tristates are replaced by logic (pull-up yes): db<0>, db<1>, db<2>, db<3>, db<4>, db<5>, db<6>, db<7>.
+WARNING:Xst:2042 - Unit reg_file: 16 internal tristates are replaced by logic (pull-up yes): db_hi_ds<0>, db_hi_ds<1>, db_hi_ds<2>, db_hi_ds<3>, db_hi_ds<4>, db_hi_ds<5>, db_hi_ds<6>, db_hi_ds<7>, db_lo_ds<0>, db_lo_ds<1>, db_lo_ds<2>, db_lo_ds<3>, db_lo_ds<4>, db_lo_ds<5>, db_lo_ds<6>, db_lo_ds<7>.
+WARNING:Xst:2040 - Unit reg_file: 32 multi-source signals are replaced by logic (pull-up yes): db_hi_as<0>, db_hi_as<1>, db_hi_as<2>, db_hi_as<3>, db_hi_as<4>, db_hi_as<5>, db_hi_as<6>, db_hi_as<7>, db_lo_as<0>, db_lo_as<1>, db_lo_as<2>, db_lo_as<3>, db_lo_as<4>, db_lo_as<5>, db_lo_as<6>, db_lo_as<7>, gdfx_temp0<0>, gdfx_temp0<1>, gdfx_temp0<2>, gdfx_temp0<3>, gdfx_temp0<4>, gdfx_temp0<5>, gdfx_temp0<6>, gdfx_temp0<7>, gdfx_temp1<0>, gdfx_temp1<1>, gdfx_temp1<2>, gdfx_temp1<3>, gdfx_temp1<4>, gdfx_temp1<5>, gdfx_temp1<6>, gdfx_temp1<7>.
+WARNING:Xst:2042 - Unit alu: 8 internal tristates are replaced by logic (pull-up yes): db<0>, db<1>, db<2>, db<3>, db<4>, db<5>, db<6>, db<7>.
+WARNING:Xst:2040 - Unit alu: 8 multi-source signals are replaced by logic (pull-up yes): db_high<0>, db_high<1>, db_high<2>, db_high<3>, db_low<0>, db_low<1>, db_low<2>, db_low<3>.
+WARNING:Xst:2042 - Unit address_latch: 16 internal tristates are replaced by logic (pull-up yes): abus<0>, abus<10>, abus<11>, abus<12>, abus<13>, abus<14>, abus<15>, abus<1>, abus<2>, abus<3>, abus<4>, abus<5>, abus<6>, abus<7>, abus<8>, abus<9>.
+WARNING:Xst:2042 - Unit reg_latch: 8 internal tristates are replaced by logic (pull-up yes): db<0>, db<1>, db<2>, db<3>, db<4>, db<5>, db<6>, db<7>.
+
+Optimizing unit <top> ...
+
+Optimizing unit <decode_state> ...
+
+Optimizing unit <execute> ...
+
+Optimizing unit <ir> ...
+
+Optimizing unit <resets> ...
+
+Optimizing unit <memory_ifc> ...
+
+Optimizing unit <sequencer> ...
+
+Optimizing unit <reg_control> ...
+
+Optimizing unit <inc_dec> ...
+WARNING:Xst:2677 - Node <inst1/memory_ifc_/DFFE_iorq_ff4> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <inst1/memory_ifc_/q2> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <inst1/memory_ifc_/mwr_wr> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <inst1/memory_ifc_/DFFE_mreq_ff2> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <inst1/memory_ifc_/DFFE_mrd_ff3> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <inst1/memory_ifc_/DFFE_m1_ff3> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <inst1/memory_ifc_/wait_iorq> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <inst1/memory_ifc_/q1> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <inst1/memory_ifc_/wait_mwr> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <inst1/memory_ifc_/SYNTHESIZED_WIRE_17> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <inst1/memory_ifc_/wait_mrd> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <inst1/memory_ifc_/wait_m_ALTERA_SYNTHESIZED1> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <inst1/memory_ifc_/SYNTHESIZED_WIRE_15> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <inst1/memory_ifc_/DFFE_intr_ff3> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <inst1/memory_ifc_/DFFE_mwr_ff1> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <inst1/memory_ifc_/DFFE_mrd_ff1> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <inst1/memory_ifc_/DFFE_m1_ff1> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <inst1/memory_ifc_/wait_iorqinta> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <inst1/memory_ifc_/DFFE_iorq_ff1> of sequential type is unconnected in block <top>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <inst1/interrupts_/im1> is unconnected in block <top>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <inst1/interrupts_/im2> is unconnected in block <top>.
+
+Mapping all equations...
+WARNING:Xst:2170 - Unit top : the following signal(s) form a combinatorial loop: N357, inst1/reg_file_/gdfx_temp0<0>, inst1/address_latch_/abusz<0>, inst1/db_lo_as<0>, inst1/reg_file_/gdfx_temp0<0>LogicTrst172, inst1/address<0>, inst1/reg_file_/gdfx_temp0<0>LogicTrst55, inst1/reg_file_/gdfx_temp0<0>LogicTrst4.
+WARNING:Xst:2170 - Unit top : the following signal(s) form a combinatorial loop: inst1/db_lo_as<1>LogicTrst7, inst1/address_latch_/abusz<1>, inst1/address<1>, inst1/db_lo_as<1>, inst1/reg_file_/gdfx_temp0<1>, N146.
+WARNING:Xst:2170 - Unit top : the following signal(s) form a combinatorial loop: N152, inst1/reg_file_/gdfx_temp0<2>, inst1/db_lo_as<2>, inst1/db_lo_as<2>LogicTrst7, inst1/address_latch_/abusz<2>, inst1/address<2>.
+WARNING:Xst:2170 - Unit top : the following signal(s) form a combinatorial loop: inst1/address_latch_/abusz<3>, inst1/reg_file_/gdfx_temp0<3>, inst1/db_lo_as<3>, inst1/db_lo_as<3>LogicTrst7, N149, inst1/address<3>.
+WARNING:Xst:2170 - Unit top : the following signal(s) form a combinatorial loop: inst1/address<4>, inst1/db0<4>, inst1/reg_file_/gdfx_temp0<4>LogicTrst17, N161, inst1/db_lo_as<4>LogicTrst7, inst1/reg_file_/gdfx_temp0<4>LogicTrst4, inst1/db1<4>LogicTrst26, inst1/address_latch_/abusz<4>, inst1/db_lo_as<4>, inst1/db1<4>, inst1/reg_file_/gdfx_temp0<4>, inst1/reg_file_/gdfx_temp0<4>LogicTrst55, inst1/db1<4>LogicTrst2.
+WARNING:Xst:2170 - Unit top : the following signal(s) form a combinatorial loop: inst1/address<5>, inst1/address_latch_/abusz<5>, inst1/db_lo_as<5>LogicTrst7, inst1/reg_file_/gdfx_temp0<5>, N158, inst1/db_lo_as<5>.
+WARNING:Xst:2170 - Unit top : the following signal(s) form a combinatorial loop: N155, inst1/db2<6>, inst1/db_lo_as<6>LogicTrst7, inst1/db_hi_as<6>, inst1/reg_file_/gdfx_temp0<6>LogicTrst4, inst1/address_latch_/abusz<6>, inst1/db_hi_as<6>LogicTrst7, inst1/db1<6>, inst1/reg_file_/gdfx_temp0<6>LogicTrst55, inst1/db1<6>LogicTrst13, inst1/reg_file_/gdfx_temp1<6>, inst1/address<6>, inst1/reg_file_/gdfx_temp0<6>LogicTrst17, inst1/db_hi_as<6>LogicTrst9, inst1/reg_file_/gdfx_temp0<6>, inst1/db_lo_as<6>.
+WARNING:Xst:2170 - Unit top : the following signal(s) form a combinatorial loop: inst1/db1<7>, inst1/data_pins_/SYNTHESIZED_WIRE_0<7>, inst1/alu_shift_db7, inst1/db_hi_as<7>LogicTrst9, inst1/db1<7>LogicTrst7, inst1/db0<7>, inst1/db_hi_as<7>, inst1/reg_file_/gdfx_temp1<7>, inst1/db_hi_as<7>LogicTrst7.
+WARNING:Xst:2170 - Unit top : the following signal(s) form a combinatorial loop: inst1/data_pins_/SYNTHESIZED_WIRE_0<5>, inst1/db0<5>, inst1/db1<5>LogicTrst13, inst1/db1<5>.
+WARNING:Xst:2170 - Unit top : the following signal(s) form a combinatorial loop: inst1/db1<3>LogicTrst7, inst1/db1<3>, inst1/data_pins_/SYNTHESIZED_WIRE_0<3>, inst1/db0<3>.
+WARNING:Xst:2170 - Unit top : the following signal(s) form a combinatorial loop: inst1/db2<3>, inst1/reg_file_/gdfx_temp1<3>, inst1/db_hi_as<3>LogicTrst9, inst1/db1<2>, inst1/db1<2>LogicTrst13, inst1/alu_/db_low<2>LogicTrst82, inst1/data_pins_/SYNTHESIZED_WIRE_0<2>, inst1/db_hi_as<3>LogicTrst0, inst1/db2<2>, inst1/alu_/db_low<2>, inst1/db0<2>, N372, inst1/db_hi_as<3>.
+WARNING:Xst:2170 - Unit top : the following signal(s) form a combinatorial loop: inst1/db1<0>, inst1/alu_/db_low<1>LogicTrst87, inst1/db1<1>LogicTrst13, inst1/db1<0>LogicTrst11, inst1/data_pins_/SYNTHESIZED_WIRE_0<1>, inst1/alu_/db_low<1>LogicTrst18, inst1/db1<1>, inst1/alu_shift_db0, inst1/alu_/db_low<1>LogicTrst39, inst1/alu_/db_low<1>, inst1/db2<1>, inst1/db0<1>, inst1/db0<0>.
+WARNING:Xst:2170 - Unit top : the following signal(s) form a combinatorial loop: inst1/db_hi_as<5>LogicTrst9, inst1/alu_/db_high<0>LogicTrst34, inst1/db_hi_as<5>, N368, inst1/alu_/db_high<0>, inst1/reg_file_/gdfx_temp1<5>, inst1/db2<5>, inst1/db_hi_as<5>LogicTrst0, inst1/alu_flags_/SYNTHESIZED_WIRE_3725, inst1/alu_/db_high<0>LogicTrst62, inst1/alu_flags_/SYNTHESIZED_WIRE_376, inst1/alu_flags_/SYNTHESIZED_WIRE_3758, inst1/alu_/db_high<0>LogicTrst46, inst1/alu_flags_/SYNTHESIZED_WIRE_37.
+WARNING:Xst:2170 - Unit top : the following signal(s) form a combinatorial loop: inst1/db2<4>, inst1/db_hi_as<4>LogicTrst9, inst1/alu_flags_/SYNTHESIZED_WIRE_36, inst1/reg_file_/gdfx_temp1<4>, inst1/db_hi_as<4>, inst1/db_hi_as<4>LogicTrst7, N370, inst1/alu_yf_outLogicTrst92, inst1/alu_yf_out.
+WARNING:Xst:2170 - Unit top : the following signal(s) form a combinatorial loop: inst1/reg_file_/gdfx_temp1<0>, inst1/db_hi_as<0>LogicTrst9, inst1/db_hi_as<0>LogicTrst0, inst1/db_hi_as<0>.
+WARNING:Xst:2170 - Unit top : the following signal(s) form a combinatorial loop: inst1/db_hi_as<1>LogicTrst0, inst1/db_hi_as<1>LogicTrst9, inst1/db_hi_as<1>, inst1/reg_file_/gdfx_temp1<1>.
+WARNING:Xst:2170 - Unit top : the following signal(s) form a combinatorial loop: inst1/db_hi_as<2>LogicTrst0, inst1/db_hi_as<2>LogicTrst9, inst1/reg_file_/gdfx_temp1<2>, inst1/db_hi_as<2>.
+WARNING:Xst:2170 - Unit top : the following signal(s) form a combinatorial loop: inst1/db_lo_as<7>LogicTrst7, inst1/reg_file_/gdfx_temp0<7>, inst1/db_lo_as<7>, inst1/db_lo_as<7>LogicTrst9.
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 45.
+FlipFlop inst1/decode_state_/DFFE_inst4 has been replicated 1 time(s)
+FlipFlop inst1/decode_state_/DFFE_instCB has been replicated 4 time(s)
+FlipFlop inst1/decode_state_/DFFE_instED has been replicated 2 time(s)
+FlipFlop inst1/decode_state_/DFFE_instIY1 has been replicated 1 time(s)
+FlipFlop inst1/decode_state_/in_halt has been replicated 1 time(s)
+FlipFlop inst1/ir_/opcode_0 has been replicated 7 time(s)
+FlipFlop inst1/ir_/opcode_1 has been replicated 9 time(s)
+FlipFlop inst1/ir_/opcode_2 has been replicated 8 time(s)
+FlipFlop inst1/ir_/opcode_5 has been replicated 2 time(s)
+FlipFlop inst1/sequencer_/DFFE_M2_ff has been replicated 1 time(s)
+FlipFlop inst1/sequencer_/DFFE_M3_ff has been replicated 1 time(s)
+FlipFlop inst1/sequencer_/DFFE_T5_ff has been replicated 1 time(s)
+FlipFlop inst1/sequencer_/M5 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 391
+ Flip-Flops                                            : 391
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : top.ngr
+Top Level Output File Name         : top
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 9
+
+Cell Usage :
+# BELS                             : 2829
+#      GND                         : 1
+#      INV                         : 3
+#      LUT1                        : 25
+#      LUT2                        : 125
+#      LUT2_D                      : 43
+#      LUT2_L                      : 25
+#      LUT3                        : 259
+#      LUT3_D                      : 58
+#      LUT3_L                      : 61
+#      LUT4                        : 1436
+#      LUT4_D                      : 301
+#      LUT4_L                      : 290
+#      MUXCY                       : 92
+#      MUXF5                       : 83
+#      VCC                         : 1
+#      XORCY                       : 26
+# FlipFlops/Latches                : 391
+#      FD                          : 1
+#      FDC                         : 3
+#      FDCE                        : 82
+#      FDE                         : 275
+#      FDP                         : 2
+#      FDPE                        : 2
+#      FDR                         : 26
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 8
+#      OBUF                        : 1
+#      OBUFT                       : 7
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s250ecp132-5 
+
+ Number of Slices:                     1371  out of   2448    56%  
+ Number of Slice Flip Flops:            391  out of   4896     7%  
+ Number of 4 input LUTs:               2626  out of   4896    53%  
+ Number of IOs:                           9
+ Number of bonded IOBs:                   9  out of     92     9%  
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+mclk                               | BUFGP                  | 27    |
+clk_out1                           | BUFG                   | 364   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+----------------------------------------------------------------------+----------------------------------------+-------+
+Control Signal                                                        | Buffer(FF name)                        | Load  |
+----------------------------------------------------------------------+----------------------------------------+-------+
+inst1/resets_/SYNTHESIZED_WIRE_12(inst1/resets_/SYNTHESIZED_WIRE_12:Q)| NONE(inst1/address_latch_/Q_0)         | 87    |
+inst1/fpga_reset(inst1/fpga_reset:Q)                                  | NONE(inst1/resets_/SYNTHESIZED_WIRE_12)| 2     |
+----------------------------------------------------------------------+----------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 108.346ns (Maximum Frequency: 9.230MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 5.894ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'mclk'
+  Clock period: 4.474ns (frequency: 223.489MHz)
+  Total number of paths / destination ports: 1054 / 54
+-------------------------------------------------------------------------
+Delay:               4.474ns (Levels of Logic = 8)
+  Source:            count_9 (FF)
+  Destination:       count_0 (FF)
+  Source Clock:      mclk rising
+  Destination Clock: mclk rising
+
+  Data Path: count_9 to count_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.514   0.532  count_9 (count_9)
+     LUT2:I0->O            1   0.612   0.000  clk_out_cmp_eq0000_wg_lut<0> (clk_out_cmp_eq0000_wg_lut<0>)
+     MUXCY:S->O            1   0.404   0.000  clk_out_cmp_eq0000_wg_cy<0> (clk_out_cmp_eq0000_wg_cy<0>)
+     MUXCY:CI->O           1   0.052   0.000  clk_out_cmp_eq0000_wg_cy<1> (clk_out_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  clk_out_cmp_eq0000_wg_cy<2> (clk_out_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  clk_out_cmp_eq0000_wg_cy<3> (clk_out_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  clk_out_cmp_eq0000_wg_cy<4> (clk_out_cmp_eq0000_wg_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  clk_out_cmp_eq0000_wg_cy<5> (clk_out_cmp_eq0000_wg_cy<5>)
+     MUXCY:CI->O          27   0.289   1.072  clk_out_cmp_eq0000_wg_cy<6> (clk_out_cmp_eq0000)
+     FDR:R                     0.795          count_0
+    ----------------------------------------
+    Total                      4.474ns (2.871ns logic, 1.603ns route)
+                                       (64.2% logic, 35.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_out1'
+  Clock period: 108.346ns (frequency: 9.230MHz)
+  Total number of paths / destination ports: 282676447 / 705
+-------------------------------------------------------------------------
+Delay:               54.173ns (Levels of Logic = 52)
+  Source:            inst1/ir_/opcode_6 (FF)
+  Destination:       inst1/address_pins_/DFFE_apin_latch_0 (FF)
+  Source Clock:      clk_out1 rising
+  Destination Clock: clk_out1 falling
+
+  Data Path: inst1/ir_/opcode_6 to inst1/address_pins_/DFFE_apin_latch_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q           120   0.514   1.126  inst1/ir_/opcode_6 (inst1/ir_/opcode_6)
+     LUT4_D:I2->O         17   0.612   0.896  inst1/pla_decode_/pla_40_cmp_eq000011_1 (inst1/pla_decode_/pla_40_cmp_eq000011)
+     LUT4_D:I3->O         14   0.612   0.853  inst1/pla_decode_/pla_30_cmp_eq00001 (inst1/pla<30>)
+     LUT4_D:I3->LO         1   0.612   0.103  inst1/execute_/_old_setM1_516512_SW0 (N3059)
+     LUT4:I3->O            3   0.612   0.454  inst1/execute_/_old_setM1_516512 (inst1/execute_/N1051)
+     LUT4:I3->O            6   0.612   0.572  inst1/execute_/ctl_reg_in_lo11 (inst1/execute_/N36)
+     LUT4_D:I3->LO         1   0.612   0.103  inst1/execute_/ctl_reg_gp_sel_or0000181 (N3117)
+     LUT4:I3->O           10   0.612   0.753  inst1/execute_/ctl_reg_gp_sel_or00009 (inst1/execute_/ctl_reg_gp_sel_or00009)
+     LUT4_D:I3->O         11   0.612   0.796  inst1/execute_/ctl_reg_gp_sel_or000019_1 (inst1/execute_/ctl_reg_gp_sel_or0000191)
+     LUT4_D:I3->LO         1   0.612   0.169  inst1/reg_file_/SYNTHESIZED_WIRE_301 (N3085)
+     LUT4:I1->O            1   0.612   0.360  inst1/reg_file_/gdfx_temp0<1>LogicTrst53 (inst1/reg_file_/gdfx_temp0<1>LogicTrst53)
+     LUT4_L:I3->LO         1   0.612   0.252  inst1/reg_file_/gdfx_temp0<1>LogicTrst64 (inst1/reg_file_/gdfx_temp0<1>LogicTrst64)
+     LUT2:I0->O            1   0.612   0.360  inst1/reg_file_/gdfx_temp0<1>LogicTrst76 (inst1/reg_file_/gdfx_temp0<1>LogicTrst76)
+     LUT4:I3->O           14   0.612   0.880  inst1/reg_file_/gdfx_temp0<1>LogicTrst101 (inst1/reg_file_/gdfx_temp0<1>)
+     LUT4:I2->O            4   0.612   0.502  inst1/db1<1>LogicTrst36 (inst1/db1<1>)
+     LUT4_L:I3->LO         1   0.612   0.103  inst1/db2<1>LogicTrst_SW0 (N376)
+     LUT4:I3->O            5   0.612   0.541  inst1/db2<1>LogicTrst (inst1/db2<1>)
+     LUT4:I3->O            1   0.612   0.426  inst1/alu_/db_low<2>LogicTrst82 (inst1/alu_/db_low<2>LogicTrst82)
+     LUT4_D:I1->LO         1   0.612   0.169  inst1/alu_/db_low<2>LogicTrst105 (N3027)
+     LUT4:I1->O            5   0.612   0.541  inst1/db2<2>LogicTrst (inst1/db2<2>)
+     LUT4:I3->O            1   0.612   0.426  inst1/alu_xf_outLogicTrst82 (inst1/alu_xf_outLogicTrst82)
+     LUT4_D:I1->LO         1   0.612   0.103  inst1/alu_xf_outLogicTrst105 (N3025)
+     LUT4:I3->O            1   0.612   0.360  inst1/db2<3>LogicTrst_SW0 (N372)
+     LUT4_D:I3->O          4   0.612   0.568  inst1/db2<3>LogicTrst (inst1/db2<3>)
+     LUT3:I1->O            1   0.612   0.000  inst1/alu_/db_high<0>LogicTrst462 (inst1/alu_/db_high<0>LogicTrst462)
+     MUXF5:I0->O           1   0.278   0.387  inst1/alu_/db_high<0>LogicTrst46_f5 (inst1/alu_/db_high<0>LogicTrst46)
+     LUT4_L:I2->LO         1   0.612   0.252  inst1/alu_/db_high<0>LogicTrst62 (inst1/alu_/db_high<0>LogicTrst62)
+     LUT4:I0->O            5   0.612   0.607  inst1/alu_/db_high<0>LogicTrst114 (inst1/alu_/db_high<0>)
+     LUT4_D:I1->LO         1   0.612   0.130  inst1/db2<4>LogicTrst (N3019)
+     LUT4:I2->O            4   0.612   0.568  inst1/db1<4>LogicTrst44 (inst1/db1<4>)
+     LUT4:I1->O            9   0.612   0.849  inst1/db0<4>LogicTrst (inst1/db0<4>)
+     LUT2:I0->O            2   0.612   0.449  inst1/alu_/b2v_input_bit_select/bs_out_high_ALTERA_SYNTHESIZED_3_and000011 (inst1/interrupts_/SYNTHESIZED_WIRE_20)
+     LUT4_D:I1->LO         1   0.612   0.169  inst1/alu_sf_outLogicTrst111 (N3026)
+     LUT4:I1->O            1   0.612   0.360  inst1/alu_shift_db7LogicTrst_SW0 (N378)
+     LUT4_D:I3->LO         1   0.612   0.130  inst1/alu_shift_db7LogicTrst (N3021)
+     LUT4:I2->O            1   0.612   0.426  inst1/alu_/db_high<2>LogicTrst86 (inst1/alu_/db_high<2>LogicTrst86)
+     LUT4_D:I1->LO         1   0.612   0.169  inst1/alu_/db_high<2>LogicTrst109 (N3028)
+     LUT4:I1->O            1   0.612   0.360  inst1/db2<6>LogicTrst_SW0 (N366)
+     LUT4_D:I3->LO         1   0.612   0.130  inst1/db2<6>LogicTrst (N3017)
+     LUT4:I2->O            1   0.612   0.426  inst1/alu_yf_outLogicTrst92 (inst1/alu_yf_outLogicTrst92)
+     LUT4_D:I1->LO         1   0.612   0.103  inst1/alu_yf_outLogicTrst115 (N3029)
+     LUT4:I3->O            1   0.612   0.360  inst1/db2<5>LogicTrst_SW0 (N368)
+     LUT4_D:I3->LO         1   0.612   0.130  inst1/db2<5>LogicTrst (N3018)
+     LUT4:I2->O            4   0.612   0.499  inst1/db1<5>LogicTrst29 (inst1/db1<5>)
+     MUXF5:S->O           13   0.641   0.905  inst1/db0<5>LogicTrst_f5 (inst1/db0<5>)
+     LUT3:I1->O            1   0.612   0.426  inst1/alu_/db_low<0>LogicTrst103 (inst1/alu_/db_low<0>LogicTrst103)
+     LUT4_D:I1->LO         1   0.612   0.103  inst1/alu_/db_low<0>LogicTrst114 (N3030)
+     LUT4:I3->O            1   0.612   0.360  inst1/alu_shift_db0LogicTrst_SW0 (N380)
+     LUT4_D:I3->LO         1   0.612   0.169  inst1/alu_shift_db0LogicTrst (N3022)
+     LUT4:I1->O            4   0.612   0.529  inst1/db1<0>LogicTrst27 (inst1/db1<0>)
+     LUT4:I2->O           14   0.612   0.919  inst1/reg_file_/gdfx_temp0<0>LogicTrst95 (inst1/reg_file_/gdfx_temp0<0>)
+     LUT4:I1->O            5   0.612   0.541  inst1/db_lo_as<0>LogicTrst19 (inst1/db_lo_as<0>)
+     LUT4:I3->O            1   0.612   0.000  inst1/address_latch_/b2v_inst7/out<0> (inst1/address<0>)
+     FDE:D                     0.268          inst1/address_pins_/DFFE_apin_latch_0
+    ----------------------------------------
+    Total                     54.173ns (32.301ns logic, 21.872ns route)
+                                       (59.6% logic, 40.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_out1'
+  Total number of paths / destination ports: 16 / 8
+-------------------------------------------------------------------------
+Offset:              5.894ns (Levels of Logic = 2)
+  Source:            inst1/resets_/SYNTHESIZED_WIRE_12 (FF)
+  Destination:       Led<0> (PAD)
+  Source Clock:      clk_out1 rising
+
+  Data Path: inst1/resets_/SYNTHESIZED_WIRE_12 to Led<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q             96   0.514   1.242  inst1/resets_/SYNTHESIZED_WIRE_12 (inst1/resets_/SYNTHESIZED_WIRE_12)
+     LUT2:I0->O            1   0.612   0.357  inst1/memory_ifc_/nM1_out1 (Led_0_OBUF)
+     OBUF:I->O                 3.169          Led_0_OBUF (Led<0>)
+    ----------------------------------------
+    Total                      5.894ns (4.295ns logic, 1.599ns route)
+                                       (72.9% logic, 27.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 47.00 secs
+Total CPU time to Xst completion: 46.46 secs
+ 
+--> 
+
+Total memory usage is 4662508 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  838 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
