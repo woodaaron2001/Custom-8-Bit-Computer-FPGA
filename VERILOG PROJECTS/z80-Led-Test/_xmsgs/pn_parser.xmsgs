@@ -8,10 +8,155 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/redbr/Desktop/fpga-files/CPU FILES/Aaron a-z80 - Py Export/address_latch.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/redbr/Desktop/fpga-files/CPU FILES/Aaron a-z80 - Py Export/address_mux.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/redbr/Desktop/fpga-files/CPU FILES/Aaron a-z80 - Py Export/address_pins.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/redbr/Desktop/fpga-files/CPU FILES/Aaron a-z80 - Py Export/alu.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/redbr/Desktop/fpga-files/CPU FILES/Aaron a-z80 - Py Export/alu_bit_select.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/redbr/Desktop/fpga-files/CPU FILES/Aaron a-z80 - Py Export/alu_control.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/redbr/Desktop/fpga-files/CPU FILES/Aaron a-z80 - Py Export/alu_core.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/redbr/Desktop/fpga-files/CPU FILES/Aaron a-z80 - Py Export/alu_flags.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/redbr/Desktop/fpga-files/CPU FILES/Aaron a-z80 - Py Export/alu_mux_2.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/redbr/Desktop/fpga-files/CPU FILES/Aaron a-z80 - Py Export/alu_mux_2z.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/redbr/Desktop/fpga-files/CPU FILES/Aaron a-z80 - Py Export/alu_mux_3z.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/redbr/Desktop/fpga-files/CPU FILES/Aaron a-z80 - Py Export/alu_mux_4.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/redbr/Desktop/fpga-files/CPU FILES/Aaron a-z80 - Py Export/alu_mux_8.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/redbr/Desktop/fpga-files/CPU FILES/Aaron a-z80 - Py Export/alu_prep_daa.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/redbr/Desktop/fpga-files/CPU FILES/Aaron a-z80 - Py Export/alu_select.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/redbr/Desktop/fpga-files/CPU FILES/Aaron a-z80 - Py Export/alu_shifter_core.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/redbr/Desktop/fpga-files/CPU FILES/Aaron a-z80 - Py Export/alu_slice.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/redbr/Desktop/fpga-files/CPU FILES/Aaron a-z80 - Py Export/bus_control.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/redbr/Desktop/fpga-files/CPU FILES/Aaron a-z80 - Py Export/bus_switch.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/redbr/Desktop/fpga-files/CPU FILES/Aaron a-z80 - Py Export/clk_delay.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/redbr/Desktop/fpga-files/CPU FILES/Aaron a-z80 - Py Export/control_pins_n.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/redbr/Desktop/fpga-files/CPU FILES/Aaron a-z80 - Py Export/data_pins.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/redbr/Desktop/fpga-files/CPU FILES/Aaron a-z80 - Py Export/data_switch.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/redbr/Desktop/fpga-files/CPU FILES/Aaron a-z80 - Py Export/data_switch_mask.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/redbr/Desktop/fpga-files/CPU FILES/Aaron a-z80 - Py Export/decode_state.v&quot; into library work</arg>
+</msg>
+
 <msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/redbr/Desktop/fpga-files/CPU FILES/Aaron a-z80 - Py Export/exec_matrix.vh&quot; into library work</arg>
 </msg>
 
 <msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">C:/Users/redbr/Desktop/fpga-files/CPU FILES/Aaron a-z80 - Py Export/exec_matrix.vh</arg>&quot; Line <arg fmt="%d" index="2">17</arg>. <arg fmt="%s" index="3">Syntax error near &quot;if&quot;.</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/redbr/Desktop/fpga-files/CPU FILES/Aaron a-z80 - Py Export/execute.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">C:/Users/redbr/Desktop/fpga-files/CPU FILES/Aaron a-z80 - Py Export/execute.v</arg>&quot; Line <arg fmt="%d" index="2">43</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/redbr/Desktop/fpga-files/CPU FILES/Aaron a-z80 - Py Export/exec_module.vh&apos; in file &quot;C:/Users/redbr/Desktop/fpga-files/CPU FILES/Aaron a-z80 - Py Export/execute.v&quot; line 43
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">C:/Users/redbr/Desktop/fpga-files/CPU FILES/Aaron a-z80 - Py Export/execute.v</arg>&quot; Line <arg fmt="%d" index="2">134</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/redbr/Desktop/fpga-files/CPU FILES/Aaron a-z80 - Py Export/temp_wires.vh&apos; in file &quot;C:/Users/redbr/Desktop/fpga-files/CPU FILES/Aaron a-z80 - Py Export/execute.v&quot; line 134
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">C:/Users/redbr/Desktop/fpga-files/CPU FILES/Aaron a-z80 - Py Export/execute.v</arg>&quot; Line <arg fmt="%d" index="2">142</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/redbr/Desktop/fpga-files/CPU FILES/Aaron a-z80 - Py Export/exec_zero.vh&apos; in file &quot;C:/Users/redbr/Desktop/fpga-files/CPU FILES/Aaron a-z80 - Py Export/execute.v&quot; line 142
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">C:/Users/redbr/Desktop/fpga-files/CPU FILES/Aaron a-z80 - Py Export/execute.v</arg>&quot; Line <arg fmt="%d" index="2">161</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/redbr/Desktop/fpga-files/CPU FILES/Aaron a-z80 - Py Export/exec_matrix_compiled.vh&apos; in file &quot;C:/Users/redbr/Desktop/fpga-files/CPU FILES/Aaron a-z80 - Py Export/execute.v&quot; line 161
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/redbr/Desktop/fpga-files/CPU FILES/Aaron a-z80 - Py Export/inc_dec.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/redbr/Desktop/fpga-files/CPU FILES/Aaron a-z80 - Py Export/inc_dec_2bit.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/redbr/Desktop/fpga-files/CPU FILES/Aaron a-z80 - Py Export/interrupts.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/redbr/Desktop/fpga-files/CPU FILES/Aaron a-z80 - Py Export/ir.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/redbr/Desktop/fpga-files/CPU FILES/Aaron a-z80 - Py Export/memory_ifc.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/redbr/Desktop/fpga-files/CPU FILES/Aaron a-z80 - Py Export/pin_control.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/redbr/Desktop/fpga-files/CPU FILES/Aaron a-z80 - Py Export/pla_decode.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/redbr/Desktop/fpga-files/CPU FILES/Aaron a-z80 - Py Export/reg_control.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/redbr/Desktop/fpga-files/CPU FILES/Aaron a-z80 - Py Export/reg_file.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/redbr/Desktop/fpga-files/CPU FILES/Aaron a-z80 - Py Export/reg_latch.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/redbr/Desktop/fpga-files/CPU FILES/Aaron a-z80 - Py Export/resets.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/redbr/Desktop/fpga-files/CPU FILES/Aaron a-z80 - Py Export/sequencer.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/redbr/Desktop/fpga-files/CPU FILES/Aaron a-z80 - Py Export/z80_top_direct_n.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">C:/Users/redbr/Desktop/fpga-files/CPU FILES/Aaron a-z80 - Py Export/z80_top_direct_n.v</arg>&quot; Line <arg fmt="%d" index="2">43</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/redbr/Desktop/fpga-files/CPU FILES/Aaron a-z80 - Py Export/core.vh&apos; in file &quot;C:/Users/redbr/Desktop/fpga-files/CPU FILES/Aaron a-z80 - Py Export/z80_top_direct_n.v&quot; line 43
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">C:/Users/redbr/Desktop/fpga-files/CPU FILES/Aaron a-z80 - Py Export/core.vh</arg>&quot; Line <arg fmt="%d" index="2">22</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/redbr/Desktop/fpga-files/CPU FILES/Aaron a-z80 - Py Export/globals.vh&apos; in file &quot;C:/Users/redbr/Desktop/fpga-files/CPU FILES/Aaron a-z80 - Py Export/core.vh&quot; line 22
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">C:/Users/redbr/Desktop/fpga-files/CPU FILES/Aaron a-z80 - Py Export/core.vh</arg>&quot; Line <arg fmt="%d" index="2">46</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/redbr/Desktop/fpga-files/CPU FILES/Aaron a-z80 - Py Export/coremodules.vh&apos; in file &quot;C:/Users/redbr/Desktop/fpga-files/CPU FILES/Aaron a-z80 - Py Export/core.vh&quot; line 46
+</arg>
 </msg>
 
 <msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/redbr/Desktop/fpga-files/VERILOG PROJECTS/z80-Led-Test/top.v&quot; into library work</arg>
