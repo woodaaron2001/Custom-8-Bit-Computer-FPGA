@@ -12,11 +12,11 @@
 -g UnusedPin:PullDown
 -g UserID:0xFFFFFFFF
 -g DCMShutdown:Disable
--g StartUpClk:JtagClk
+-g StartUpClk:CClk
 -g DONE_cycle:4
 -g GTS_cycle:5
 -g GWE_cycle:6
 -g LCK_cycle:NoWait
 -g Security:None
--g DonePipe:No
+-g DonePipe:Yes
 -g DriveDone:No

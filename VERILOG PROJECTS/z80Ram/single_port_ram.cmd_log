@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Users/redbr/Desktop/fpga-files/VERILOG PROJECTS/z80Ram/single_port_ram.xst" -ofn "C:/Users/redbr/Desktop/fpga-files/VERILOG PROJECTS/z80Ram/single_port_ram.syr" 
+xst -intstyle ise -ifn "C:/Users/redbr/Desktop/fpga-files/VERILOG PROJECTS/z80Ram/single_port_ram.xst" -ofn "C:/Users/redbr/Desktop/fpga-files/VERILOG PROJECTS/z80Ram/single_port_ram.syr" 

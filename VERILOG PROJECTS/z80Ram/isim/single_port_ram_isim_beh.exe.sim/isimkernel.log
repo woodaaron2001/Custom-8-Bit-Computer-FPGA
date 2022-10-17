@@ -1,0 +1,10 @@
+Command line:
+   single_port_ram_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  22905
+
+Mon Oct 17 13:47:24 2022
+
+
+ Elaboration Time: 0.015625 sec

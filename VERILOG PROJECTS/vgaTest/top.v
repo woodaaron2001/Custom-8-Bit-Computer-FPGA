@@ -29,7 +29,7 @@ module top(
     );
 
 	 integer count = 0;
-	 reg clk_out;
+	 reg clk_out = 0;
 	 
 	 always@(posedge mclk)
 	 begin
@@ -45,8 +45,8 @@ module top(
 	 wire [15:0] H_Count_Value;
 	 wire [15:0] V_Count_Value;
 	 
-	 HCounter vgaH(mclk,enable_V_Count,H_Count_Value);
-	 VCounter vgaV(mclk,enable_V_Count,V_Count_Value);
+	 HCounter vgaH(clk_out,enable_V_Count,H_Count_Value);
+	 VCounter vgaV(clk_out,enable_V_Count,V_Count_Value);
 	 
 	 
 	assign Hsync = (H_Count_Value < 96) ? 1'b1:1'b0;

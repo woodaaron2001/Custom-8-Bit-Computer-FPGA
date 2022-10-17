@@ -39,34 +39,23 @@ Data Sheet report:
 -----------------
 All values displayed in nanoseconds (ns)
 
-Clock mclk to Pad
-------------+------------+------------------+--------+
-            | clk (edge) |                  | Clock  |
-Destination |   to PAD   |Internal Clock(s) | Phase  |
-------------+------------+------------------+--------+
-Hsync       |   13.180(R)|mclk_BUFGP        |   0.000|
-Led<0>      |    7.979(R)|mclk_BUFGP        |   0.000|
-OutBlue<1>  |   15.389(R)|mclk_BUFGP        |   0.000|
-OutBlue<2>  |   15.606(R)|mclk_BUFGP        |   0.000|
-OutGreen<0> |   15.044(R)|mclk_BUFGP        |   0.000|
-OutGreen<1> |   15.031(R)|mclk_BUFGP        |   0.000|
-OutGreen<2> |   15.279(R)|mclk_BUFGP        |   0.000|
-OutRed<0>   |   15.653(R)|mclk_BUFGP        |   0.000|
-OutRed<1>   |   15.636(R)|mclk_BUFGP        |   0.000|
-OutRed<2>   |   15.047(R)|mclk_BUFGP        |   0.000|
-Vsync       |   13.360(R)|mclk_BUFGP        |   0.000|
-------------+------------+------------------+--------+
-
 Clock to Setup on destination clock mclk
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-mclk           |    4.780|         |         |         |
+mclk           |    4.690|         |         |         |
 ---------------+---------+---------+---------+---------+
 
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+mclk           |Led<0>         |    5.830|
+---------------+---------------+---------+
 
-Analysis completed Sun Oct 09 17:20:14 2022 
+
+Analysis completed Sun Oct 09 17:32:30 2022 
 --------------------------------------------------------------------------------
 
 Trace Settings:

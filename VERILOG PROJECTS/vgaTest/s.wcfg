@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/redbr/Desktop/fpga-files/VERILOG PROJECTS/vgaTest/test_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="test" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="10" />
+   <wvobject fp_name="/test/Hsync" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Hsync</obj_property>
+      <obj_property name="ObjectShortName">Hsync</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/Vsync" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Vsync</obj_property>
+      <obj_property name="ObjectShortName">Vsync</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/OutRed" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">OutRed[2:0]</obj_property>
+      <obj_property name="ObjectShortName">OutRed[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/OutGreen" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">OutGreen[2:0]</obj_property>
+      <obj_property name="ObjectShortName">OutGreen[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/OutBlue" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">OutBlue[2:1]</obj_property>
+      <obj_property name="ObjectShortName">OutBlue[2:1]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/Led" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Led[0:0]</obj_property>
+      <obj_property name="ObjectShortName">Led[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/uut/H_Count_Value" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">H_Count_Value[15:0]</obj_property>
+      <obj_property name="ObjectShortName">H_Count_Value[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/uut/V_Count_Value" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">V_Count_Value[15:0]</obj_property>
+      <obj_property name="ObjectShortName">V_Count_Value[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/uut/clk_out" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_out</obj_property>
+      <obj_property name="ObjectShortName">clk_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/mclk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mclk</obj_property>
+      <obj_property name="ObjectShortName">mclk</obj_property>
+   </wvobject>
+</wave_config>

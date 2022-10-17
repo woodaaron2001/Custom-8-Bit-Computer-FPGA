@@ -39,18 +39,18 @@ module top(
 	 
 	 reg [7:0] DataHold = 0;
 	 wire [7:0] data;
-	 wire [8:0] tmp;
+	 wire [7:0] tmp;
 	 
 	 z80_top_direct_n inst1 
 	 (.CLK(clk_out),
-	  .nM1(Led[0]),
+	  //.nM1(Led[0]),
 	  .nWAIT(1),
 	  .nINT(1),
 	  .nNMI(1),
 	  .nRESET(1),
 	  .nBUSRQ(1),
 	  .D(data),
-	  .A({tmp,Led[7:1]}) );
+	  .A({Led[7:0],tmp}) );
 	 
 	 
 

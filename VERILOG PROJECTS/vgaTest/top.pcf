@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Sun Oct 09 17:20:05 2022
+// Written by: Map P.20131013 on Sun Oct 09 17:32:21 2022
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -17,6 +17,5 @@ COMP "Led<0>" LOCATE = SITE "M5" LEVEL 1;
 COMP "OutGreen<0>" LOCATE = SITE "F14" LEVEL 1;
 COMP "OutGreen<1>" LOCATE = SITE "G13" LEVEL 1;
 COMP "OutGreen<2>" LOCATE = SITE "G14" LEVEL 1;
-NET "mclk_BUFGP/IBUFG" BEL "mclk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
 SCHEMATIC END;
 
