@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=C:\Users\redbr\Desktop\fpga-files\VERILOG PROJECTS\z80-Led-Test\top.ncd
-OUTFILE=C:\Users\redbr\Desktop\fpga-files\VERILOG PROJECTS\z80-Led-Test\top.bit
-FAMILY=Spartan3E
-PART=xc3s250e-5cp132
-WORKINGDIR=C:\Users\redbr\Desktop\fpga-files\VERILOG PROJECTS\z80-Led-Test
-LICENSE=WebPack
-USER_INFO=212564408_0_0_357

@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Sun Oct 23 14:11:28 2022
+# Process ID: 9044
+# Log file: C:/Users/redbr/Desktop/fpga-files/VERILOG PROJECTS/reset/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/redbr/Desktop/fpga-files/VERILOG PROJECTS/reset/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {C:/Users/redbr/Desktop/fpga-files/VERILOG PROJECTS/reset/pa.fromHdl.tcl}
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin M5 [get_ports Led]
+endgroup
+startgroup
+set_property package_pin G12 [get_ports reset]
+endgroup
+save_constraints

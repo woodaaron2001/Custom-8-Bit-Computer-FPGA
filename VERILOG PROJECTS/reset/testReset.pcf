@@ -1,0 +1,9 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sun Oct 23 14:13:48 2022
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "Led" LOCATE = SITE "M5" LEVEL 1;
+COMP "reset" LOCATE = SITE "G12" LEVEL 1;
+SCHEMATIC END;
+
