@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2022-10-23T14:11:10</DateModified>
+  <DateModified>2022-11-14T15:07:58</DateModified>
   <ModuleName>testReset</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/Users/redbr/Desktop/fpga-files/VERILOG PROJECTS/reset/iseconfig/testReset.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/redbr/Desktop/fpga-files/VERILOG PROJECTS/reset</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Users/redbr/Desktop/fpga-files/VERILOG PROJECTS/reset\</ImplementationReportsDirectory>
   <DateInitialized>2022-10-23T14:11:10</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

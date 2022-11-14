@@ -45,12 +45,11 @@ module top(
 	 
 	 z80_top_direct_n inst1 
 	 (.CLK(clk_out),
-	  //.nM1(Led[0]),
-	  .nWAIT(1),
-	  .nINT(1),
-	  .nNMI(1),
+	  .nWAIT(~reset),
+	  .nINT(~reset),
+	  .nNMI(~reset),
 	  .nRESET(~reset),
-	  .nBUSRQ(1),
+	  .nBUSRQ(~reset),
 	  .D(data),
 	  .A({Led[7:0],tmp}) );
 

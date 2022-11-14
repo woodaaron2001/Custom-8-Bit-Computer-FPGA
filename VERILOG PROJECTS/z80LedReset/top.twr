@@ -44,11 +44,11 @@ Clock to Setup on destination clock mclk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-mclk           |    4.594|         |         |         |
+mclk           |    4.595|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Sun Oct 23 14:49:26 2022 
+Analysis completed Sun Oct 23 15:09:10 2022 
 --------------------------------------------------------------------------------
 
 Trace Settings:

@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=C:\Users\redbr\Desktop\fpga-files\VERILOG PROJECTS\z80LedReset\impact.xsl
+OUTFILE=C:\Users\redbr\Desktop\fpga-files\VERILOG PROJECTS\z80LedReset\impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=C:\Users\redbr\Desktop\fpga-files\VERILOG PROJECTS\z80LedReset
+LICENSE=iMPACT
+USER_INFO=iMPACT

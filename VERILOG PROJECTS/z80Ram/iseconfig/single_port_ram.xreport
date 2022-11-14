@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2022-10-19T13:09:32</DateModified>
+  <DateModified>2022-11-14T14:55:59</DateModified>
   <ModuleName>single_port_ram</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/Users/redbr/Desktop/fpga-files/VERILOG PROJECTS/z80Ram/iseconfig/single_port_ram.xreport</SavedFilePath>

@@ -1,0 +1,14 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "PS2C" LOC = B1;
+NET "PS2C" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "PS2D" LOC = C3;
+NET "Led[0]" LOC = M5;
+NET "Led[1]" LOC = M11;
+NET "Led[2]" LOC = P7;
+NET "Led[3]" LOC = P6;
+NET "Led[4]" LOC = N5;
+NET "Led[5]" LOC = N4;
+NET "Led[6]" LOC = P4;
+NET "Led[7]" LOC = G1;

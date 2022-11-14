@@ -1,7 +1,7 @@
 
 # PlanAhead Launch Script for Pre-Synthesis Floorplanning, created by Project Navigator
 
-create_project -name reset -dir "C:/Users/redbr/Desktop/fpga-files/VERILOG PROJECTS/reset/planAhead_run_1" -part xc3s250ecp132-5
+create_project -name reset -dir "C:/Users/redbr/Desktop/fpga-files/VERILOG PROJECTS/reset/planAhead_run_4" -part xc3s250ecp132-5
 set_param project.pinAheadLayout yes
 set srcset [get_property srcset [current_run -impl]]
 set_property target_constrs_file "testReset.ucf" [current_fileset -constrset]

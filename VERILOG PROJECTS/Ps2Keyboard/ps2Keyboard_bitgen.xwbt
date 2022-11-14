@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\redbr\Desktop\fpga-files\VERILOG PROJECTS\Ps2Keyboard\ps2Keyboard.ncd
+OUTFILE=C:\Users\redbr\Desktop\fpga-files\VERILOG PROJECTS\Ps2Keyboard\ps2Keyboard.bit
+FAMILY=Spartan3E
+PART=xc3s250e-5cp132
+WORKINGDIR=C:\Users\redbr\Desktop\fpga-files\VERILOG PROJECTS\Ps2Keyboard
+LICENSE=WebPack
+USER_INFO=212564408_0_0_357

@@ -1,0 +1,57 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Mon Nov 14 15:08:09 2022
+# Process ID: 16308
+# Log file: C:/Users/redbr/Desktop/fpga-files/VERILOG PROJECTS/reset/planAhead_run_4/planAhead.log
+# Journal file: C:/Users/redbr/Desktop/fpga-files/VERILOG PROJECTS/reset/planAhead_run_4/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source {C:/Users/redbr/Desktop/fpga-files/VERILOG PROJECTS/reset/pa.fromHdl.tcl}
+# create_project -name reset -dir "C:/Users/redbr/Desktop/fpga-files/VERILOG PROJECTS/reset/planAhead_run_4" -part xc3s250ecp132-5
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "testReset.ucf" [current_fileset -constrset]
+Adding file 'C:/Users/redbr/Desktop/fpga-files/VERILOG PROJECTS/reset/testReset.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {testReset.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set_property top testReset $srcset
+# add_files [list {testReset.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc3s250ecp132-5
+Using Verific elaboration
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Analyzing Verilog file "C:/Users/redbr/Desktop/fpga-files/VERILOG PROJECTS/reset/testReset.v" into library work
+INFO: [Designutils 20-910] Reading macro library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn
+Parsing EDIF File [C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Finished Parsing EDIF File [C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Loading clock regions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s250e/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s250e/ClockBuffers.xml
+Loading package from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s250e/cp132/Package.xml
+Loading io standards from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/IOStandards.xml
+INFO: [Device 21-19] Loading pkg sso from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s250e/cp132/SSORules.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/drc.xml
+INFO: [Timing 38-77] Reading timing library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-5.lib.
+INFO: [Timing 38-34] Done reading timing library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-5.lib.
+Parsing UCF File [C:/Users/redbr/Desktop/fpga-files/VERILOG PROJECTS/reset/testReset.ucf]
+Finished Parsing UCF File [C:/Users/redbr/Desktop/fpga-files/VERILOG PROJECTS/reset/testReset.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: f850f4f9
+update_compile_order -fileset sim_1
+exit
+ERROR: [PlanAhead 12-106] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+ (See C:/Users/redbr/Desktop/fpga-files/VERILOG PROJECTS/reset\planAhead_pid16308.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Mon Nov 14 15:10:24 2022...
+INFO: [Common 17-83] Releasing license: PlanAhead

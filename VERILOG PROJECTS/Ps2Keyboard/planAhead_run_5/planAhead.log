@@ -1,0 +1,94 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Mon Nov 14 15:07:22 2022
+# Process ID: 17060
+# Log file: C:/Users/redbr/Desktop/fpga-files/VERILOG PROJECTS/Ps2Keyboard/planAhead_run_5/planAhead.log
+# Journal file: C:/Users/redbr/Desktop/fpga-files/VERILOG PROJECTS/Ps2Keyboard/planAhead_run_5/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source {C:/Users/redbr/Desktop/fpga-files/VERILOG PROJECTS/Ps2Keyboard/pa.fromHdl.tcl}
+# create_project -name Ps2Keyboard -dir "C:/Users/redbr/Desktop/fpga-files/VERILOG PROJECTS/Ps2Keyboard/planAhead_run_5" -part xc3s250ecp132-5
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "C:/Users/redbr/Desktop/fpga-files/VERILOG PROJECTS/Ps2Keyboard/ps2Keyboard.ucf" [current_fileset -constrset]
+Adding file 'C:/Users/redbr/Desktop/fpga-files/VERILOG PROJECTS/Ps2Keyboard/ps2Keyboard.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {top.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set_property top ps2Keyboard $srcset
+# add_files [list {ps2Keyboard.ucf}] -fileset [get_property constrset [current_run]]
+# add_files [list {const.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc3s250ecp132-5
+Using Verific elaboration
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Analyzing Verilog file "C:/Users/redbr/Desktop/fpga-files/VERILOG PROJECTS/Ps2Keyboard/top.v" into library work
+INFO: [Designutils 20-910] Reading macro library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn
+Parsing EDIF File [C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Finished Parsing EDIF File [C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Loading clock regions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s250e/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s250e/ClockBuffers.xml
+Loading package from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s250e/cp132/Package.xml
+Loading io standards from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/IOStandards.xml
+INFO: [Device 21-19] Loading pkg sso from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s250e/cp132/SSORules.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/drc.xml
+INFO: [Timing 38-77] Reading timing library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-5.lib.
+INFO: [Timing 38-34] Done reading timing library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-5.lib.
+Parsing UCF File [C:/Users/redbr/Desktop/fpga-files/VERILOG PROJECTS/Ps2Keyboard/ps2Keyboard.ucf]
+Finished Parsing UCF File [C:/Users/redbr/Desktop/fpga-files/VERILOG PROJECTS/Ps2Keyboard/ps2Keyboard.ucf]
+Parsing UCF File [C:/Users/redbr/Desktop/fpga-files/VERILOG PROJECTS/Ps2Keyboard/const.ucf]
+Finished Parsing UCF File [C:/Users/redbr/Desktop/fpga-files/VERILOG PROJECTS/Ps2Keyboard/const.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: df018842
+update_compile_order -fileset sim_1
+set_property package_pin "" [get_ports [list  {Led[6]}]]
+startgroup
+set_property package_pin B1 [get_ports PS2C]
+endgroup
+startgroup
+set_property package_pin C3 [get_ports PS2D]
+endgroup
+set_property is_loc_fixed false [get_ports [list  PS2D]]
+set_property is_loc_fixed true [get_ports [list  PS2D]]
+startgroup
+set_property package_pin M5 [get_ports {Led[0]}]
+endgroup
+startgroup
+set_property package_pin M11 [get_ports {Led[1]}]
+endgroup
+startgroup
+set_property package_pin P7 [get_ports {Led[2]}]
+endgroup
+startgroup
+set_property package_pin P6 [get_ports {Led[3]}]
+endgroup
+startgroup
+set_property package_pin N5 [get_ports {Led[4]}]
+endgroup
+startgroup
+set_property package_pin N4 [get_ports {Led[5]}]
+endgroup
+startgroup
+set_property package_pin P4 [get_ports {Led[6]}]
+endgroup
+startgroup
+set_property package_pin G1 [get_ports {Led[7]}]
+endgroup
+save_constraints
+exit
+ERROR: [PlanAhead 12-106] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+ (See C:/Users/redbr/Desktop/fpga-files/VERILOG PROJECTS/Ps2Keyboard\planAhead_pid17060.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Mon Nov 14 15:10:18 2022...
+INFO: [Common 17-83] Releasing license: PlanAhead

@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="par" timeStamp="Sun Oct 23 14:47:42 2022">
+  <application stringID="par" timeStamp="Sun Oct 23 15:13:48 2022">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -63,20 +63,10 @@
     </task>
     <task stringID="PAR_DEVICE_UTILIZATION">
       <section stringID="PAR_DESIGN_SUMMARY">
-        <item AVAILABLE="2448" dataType="int" stringID="PAR_SLICES" value="1425"></item>
+        <item AVAILABLE="2448" dataType="int" stringID="PAR_SLICES" value="1511"></item>
       </section>
     </task>
     <task stringID="PAR_PAR">
-      <section stringID="PAR_DESIGN_SUMMARY">
-        <item stringID="PAR_REAL_TIME_COMPLETION_ROUTER" value="1 mins 39 secs "/>
-        <item stringID="PAR_CPU_TIME_COMPLETION_ROUTER" value="1 mins 39 secs "/>
-        <item dataType="int" stringID="PAR_UNROUTES" value="0"/>
-        <item dataType="float" stringID="PAR_TIMING_SCORE" value="0.000000"/>
-        <item stringID="PAR_REAL_TIME_COMPLETION_PAR" value="1 mins 40 secs "/>
-        <item stringID="PAR_CPU_TIME_COMPLETION_PAR" value="1 mins 40 secs "/>
-      </section>
-    </task>
-    <task stringID="PAR_par">
       <section stringID="PAR_DLY_CLK_REPORT"/>
       <section stringID="PAR_CLOCK_REPORT">
         <table stringID="PAR_CLOCK_TABLE">
@@ -89,23 +79,32 @@
           <column label="Max Delay(ns)" stringID="MAX_DELAY"/>
           <row stringID="row" value="1">
             <item label="Clock Net" stringID="CLOCK_NET" value="mclk_BUFGP"/>
-            <item label="Routed" stringID="ROUTED" value="ROUTED"/>
             <item label="Resource" stringID="RESOURCE" value="BUFGMUX_X2Y11"/>
             <item label="Locked" stringID="LOCKED" value="No"/>
             <item dataType="float" label="Fanout" stringID="FANOUT" value="17.000000"/>
-            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.011000"/>
-            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="0.088000"/>
+            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.000000"/>
           </row>
           <row stringID="row" value="2">
             <item label="Clock Net" stringID="CLOCK_NET" value="clk_out"/>
-            <item label="Routed" stringID="ROUTED" value="ROUTED"/>
-            <item label="Resource" stringID="RESOURCE" value="BUFGMUX_X1Y10"/>
+            <item label="Resource" stringID="RESOURCE" value="BUFGMUX_X1Y11"/>
             <item label="Locked" stringID="LOCKED" value="No"/>
-            <item dataType="float" label="Fanout" stringID="FANOUT" value="240.000000"/>
-            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.043000"/>
-            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="0.104000"/>
+            <item dataType="float" label="Fanout" stringID="FANOUT" value="256.000000"/>
+            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.000000"/>
+          </row>
+          <row stringID="row" value="3">
+            <item label="Clock Net" stringID="CLOCK_NET" value="inst1/busrq"/>
+            <item label="Resource" stringID="RESOURCE" value="BUFGMUX_X2Y10"/>
+            <item label="Locked" stringID="LOCKED" value="No"/>
+            <item dataType="float" label="Fanout" stringID="FANOUT" value="1.000000"/>
+            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.000000"/>
           </row>
         </table>
+      </section>
+      <section stringID="PAR_DESIGN_SUMMARY">
+        <item dataType="int" stringID="PAR_UNROUTES" value="2834"/>
+        <item dataType="float" stringID="PAR_TIMING_SCORE" value="1619180.000000"/>
+        <item stringID="PAR_REAL_TIME_COMPLETION_PAR" value="2 secs "/>
+        <item stringID="PAR_CPU_TIME_COMPLETION_PAR" value="2 secs "/>
       </section>
       <section stringID="PAR_PAD_PIN_REPORT">
         <table stringID="PAR_PINOUT_BY_PIN_NUMBER">
@@ -1029,6 +1028,10 @@
             <item label="Pin&#xA;Name" sort="smart" stringID="Pin_Name" value="GND"/>
           </row>
         </table>
+      </section>
+    </task>
+    <task stringID="PAR_par">
+      <section stringID="PAR_PAD_PIN_REPORT">
         <table stringID="PAR_PSEUDO_LOGIC">
           <column label="Signal&#xA;Name" stringID="Signal_Name"/>
           <column stringID="Type"/>
@@ -1036,7 +1039,7 @@
         </table>
       </section>
       <section stringID="PAR_UNROUTES_REPORT">
-        <item dataType="int" stringID="PAR_UNROUTED_NETS" value="0"/>
+        <item dataType="int" stringID="PAR_UNROUTED_NETS" value="2834"/>
         <item dataType="int" stringID="PAR_TOTAL_SOURCELESS_NETS" value="0"/>
         <item dataType="int" stringID="PAR_TOTAL_LOADLESS_NETS" value="0"/>
       </section>

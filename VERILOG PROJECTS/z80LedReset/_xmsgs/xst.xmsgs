@@ -5,19 +5,7 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompilers" num="259" delta="old" ><arg fmt="%s" index="1">&quot;top.v&quot; line 49 </arg>Connection to input port &apos;<arg fmt="%s" index="2">nWAIT</arg>&apos; does not match port size
-</msg>
-
-<msg type="warning" file="HDLCompilers" num="259" delta="old" ><arg fmt="%s" index="1">&quot;top.v&quot; line 50 </arg>Connection to input port &apos;<arg fmt="%s" index="2">nINT</arg>&apos; does not match port size
-</msg>
-
-<msg type="warning" file="HDLCompilers" num="259" delta="old" ><arg fmt="%s" index="1">&quot;top.v&quot; line 51 </arg>Connection to input port &apos;<arg fmt="%s" index="2">nNMI</arg>&apos; does not match port size
-</msg>
-
-<msg type="warning" file="HDLCompilers" num="259" delta="old" ><arg fmt="%s" index="1">&quot;top.v&quot; line 53 </arg>Connection to input port &apos;<arg fmt="%s" index="2">nBUSRQ</arg>&apos; does not match port size
-</msg>
-
-<msg type="warning" file="HDLCompilers" num="261" delta="new" ><arg fmt="%s" index="1">&quot;top.v&quot; line 55 </arg>Connection to output port &apos;<arg fmt="%s" index="2">A</arg>&apos; does not match port size
+<msg type="warning" file="HDLCompilers" num="261" delta="old" ><arg fmt="%s" index="1">&quot;top.v&quot; line 54 </arg>Connection to output port &apos;<arg fmt="%s" index="2">A</arg>&apos; does not match port size
 </msg>
 
 <msg type="warning" file="Xst" num="863" delta="old" >&quot;<arg fmt="%s" index="1">../../CPU FILES/Aaron a-z80 - Py Export/z80_top_direct_n.v</arg>&quot; line <arg fmt="%d" index="2">35</arg>: Name conflict (<arg fmt="%s" index="3">&lt;clk&gt; and &lt;CLK&gt;, renaming clk as clk_rnm0</arg>).
@@ -2217,33 +2205,6 @@
 You should achieve better results by setting this init to <arg fmt="%i" index="3">0</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">SYNTHESIZED_WIRE_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">clk_delay_</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">SYNTHESIZED_WIRE_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">clk_delay_</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">SYNTHESIZED_WIRE_8</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">clk_delay_</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">nmi_armed</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">interrupts_</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">int_armed</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">interrupts_</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">hold_clk_busrq_ALTERA_SYNTHESIZED</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">clk_delay_</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">DFF_inst5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">clk_delay_</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">in_nmi_ALTERA_SYNTHESIZED</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">interrupts_</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">DFFE_inst44</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">interrupts_</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DFFE_apin_latch_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">address_pins_</arg>&gt;.
 </msg>
 
@@ -2269,40 +2230,6 @@ You should achieve better results by setting this init to <arg fmt="%i" index="3
 </msg>
 
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DFFE_apin_latch_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">address_pins_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">DFFE_mrd_ff1</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">memory_ifc_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">wait_mrd</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">memory_ifc_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">wait_iorqinta</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">memory_ifc_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">DFFE_iorq_ff1</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">memory_ifc_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">SYNTHESIZED_WIRE_15</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">memory_ifc_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">wait_iorq</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">memory_ifc_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">DFFE_mwr_ff1</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">memory_ifc_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">wait_mwr</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">memory_ifc_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">im1</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">interrupts_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">im2</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">interrupts_</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">memory_ifc_</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">inst1</arg>&gt;.
-It will be removed from the design.
 </msg>
 
 <msg type="warning" file="Xst" num="1426" delta="old" >The value init of the FF/Latch <arg fmt="%s" index="1">fpga_reset</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">z80_top_direct_n</arg>.
@@ -2344,7 +2271,7 @@ You should achieve better results by setting this init to <arg fmt="%i" index="3
 
 <msg type="warning" file="Xst" num="2042" delta="old" >Unit <arg fmt="%s" index="1">data_pins</arg>: <arg fmt="%d" index="2">16</arg> internal tristates are replaced by logic (pull-up <arg fmt="%s" index="3">yes</arg>): </msg>
 
-<msg type="warning" file="Xst" num="2042" delta="new" >Unit <arg fmt="%s" index="1">control_pins_n</arg>: <arg fmt="%d" index="2">4</arg> internal tristates are replaced by logic (pull-up <arg fmt="%s" index="3">yes</arg>): </msg>
+<msg type="warning" file="Xst" num="2042" delta="old" >Unit <arg fmt="%s" index="1">control_pins_n</arg>: <arg fmt="%d" index="2">4</arg> internal tristates are replaced by logic (pull-up <arg fmt="%s" index="3">yes</arg>): </msg>
 
 <msg type="warning" file="Xst" num="2042" delta="old" >Unit <arg fmt="%s" index="1">alu_control</arg>: <arg fmt="%d" index="2">8</arg> internal tristates are replaced by logic (pull-up <arg fmt="%s" index="3">yes</arg>): </msg>
 
@@ -2362,100 +2289,34 @@ You should achieve better results by setting this init to <arg fmt="%i" index="3
 
 <msg type="warning" file="Xst" num="2042" delta="old" >Unit <arg fmt="%s" index="1">reg_latch</arg>: <arg fmt="%d" index="2">8</arg> internal tristates are replaced by logic (pull-up <arg fmt="%s" index="3">yes</arg>): </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">inst1/clk_delay_/SYNTHESIZED_WIRE_8</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">inst1/memory_ifc_/DFFE_iorq_ff4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">inst1/clk_delay_/SYNTHESIZED_WIRE_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">inst1/memory_ifc_/q2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">inst1/clk_delay_/SYNTHESIZED_WIRE_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">inst1/memory_ifc_/mwr_wr</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">inst1/interrupts_/int_armed</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">inst1/memory_ifc_/DFFE_mreq_ff2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">inst1/interrupts_/nmi_armed</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">inst1/memory_ifc_/DFFE_mrd_ff3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">inst1/clk_delay_/hold_clk_busrq_ALTERA_SYNTHESIZED</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">inst1/memory_ifc_/DFFE_m1_ff3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">inst1/interrupts_/DFFE_inst44</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">inst1/memory_ifc_/q1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">inst1/interrupts_/in_nmi_ALTERA_SYNTHESIZED</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">inst1/memory_ifc_/SYNTHESIZED_WIRE_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">inst1/memory_ifc_/DFFE_iorq_ff4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">inst1/memory_ifc_/DFFE_intr_ff3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">inst1/memory_ifc_/q2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">inst1/memory_ifc_/mwr_wr</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">inst1/memory_ifc_/DFFE_mreq_ff2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">inst1/memory_ifc_/DFFE_mrd_ff3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">inst1/memory_ifc_/DFFE_m1_ff3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">inst1/memory_ifc_/q1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">inst1/memory_ifc_/SYNTHESIZED_WIRE_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">inst1/memory_ifc_/DFFE_intr_ff3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">inst1/memory_ifc_/SYNTHESIZED_WIRE_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">inst1/memory_ifc_/DFFE_m1_ff1</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">inst1/memory_ifc_/wait_m_ALTERA_SYNTHESIZED1</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">inst1/memory_ifc_/DFFE_mwr_ff1</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">inst1/memory_ifc_/wait_mwr</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">inst1/memory_ifc_/wait_iorqinta</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">inst1/memory_ifc_/DFFE_iorq_ff1</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">inst1/memory_ifc_/SYNTHESIZED_WIRE_15</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">inst1/memory_ifc_/wait_iorq</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">inst1/memory_ifc_/DFFE_mrd_ff1</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">inst1/memory_ifc_/wait_mrd</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">inst1/interrupts_/iff1</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">inst1/clk_delay_/DFF_inst5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">inst1/interrupts_/im1</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">inst1/interrupts_/im2</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">inst1/memory_ifc_/SYNTHESIZED_WIRE_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="2170" delta="old" >Unit <arg fmt="%s" index="1">top</arg> : the following signal(s) form a combinatorial loop: </msg>
