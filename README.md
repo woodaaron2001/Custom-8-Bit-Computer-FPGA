@@ -46,6 +46,7 @@ Once the program has been written and loaded to the rom. an RTL simulation can b
 
 <br>
 - Run RTL Simulation  
+<br>
 <img src="https://csgitlab.ucd.ie/fyp-fpga/fpga-files/-/raw/main/README_images/rtlButton.png" />
 
 <br>
