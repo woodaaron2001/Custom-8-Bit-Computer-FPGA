@@ -1,5 +1,0 @@
-
-# PlanAhead Generated physical constraints 
-
-NET "Led" LOC = M5;
-NET "reset" LOC = G12;

@@ -1,1 +1,0 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/redbr/Desktop/fpga-files/VERILOG PROJECTS/z80Ram/single_port_ram_isim_beh.exe" -prj "C:/Users/redbr/Desktop/fpga-files/VERILOG PROJECTS/z80Ram/single_port_ram_beh.prj" "work.single_port_ram" "work.glbl" 

@@ -1,0 +1,19 @@
+module rom # (
+	parameter RAM_FILENAME = "../../../roms/test.hex"
+)
+(
+  input [15:0] addr,
+  input read_en,
+  output [7:0] data 
+  
+  );
+		  
+  reg [7:0] mem [0:65535]; //change size
+ 
+  initial
+      $readmemh(RAM_FILENAME, mem, 0, 26);
+  
+	assign data = (read_en && (addr >= 0) && (addr < 32768)) ? mem[addr] : 8'bz;
+  
+endmodule
+

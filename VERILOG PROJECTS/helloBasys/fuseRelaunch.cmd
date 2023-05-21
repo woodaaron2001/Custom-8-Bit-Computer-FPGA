@@ -1,1 +1,0 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/redbr/ise_projects/helloBasys/stimulus_isim_beh.exe" -prj "C:/Users/redbr/ise_projects/helloBasys/stimulus_beh.prj" "work.stimulus" "work.glbl" 

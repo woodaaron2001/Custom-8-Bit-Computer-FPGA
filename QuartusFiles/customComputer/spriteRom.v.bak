@@ -1,0 +1,25 @@
+`timescale 1 ps / 1 ps
+module spriteRom # (
+	parameter SPRITE_ROM_FILENAME = "../roms/sprites.bin"
+)
+(
+  input [12:0] redAddr,
+  input [12:0] greenAddr,
+  input [12:0] blueAddr,
+  output [3:0] dataR,
+  output [3:0] dataG,
+  output [3:0] dataB
+  
+  );
+		  
+  reg [3:0] mem [0:2303];
+  
+  initial
+		$readmemb(SPRITE_ROM_FILENAME, mem, 0, 2303);
+	
+	assign dataR = mem[redAddr];
+	assign dataG = mem[greenAddr];
+	assign dataB = mem[blueAddr];	
+	
+  
+endmodule

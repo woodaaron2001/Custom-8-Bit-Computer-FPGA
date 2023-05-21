@@ -1,0 +1,106 @@
+                                      1 ;--------------------------------------------------------
+                                      2 ; File Created by SDCC : free open source ANSI-C Compiler
+                                      3 ; Version 4.2.0 #13081 (MINGW64)
+                                      4 ;--------------------------------------------------------
+                                      5 	.module screenTest
+                                      6 	.optsdcc -mz80
+                                      7 	
+                                      8 ;--------------------------------------------------------
+                                      9 ; Public variables in this module
+                                     10 ;--------------------------------------------------------
+                                     11 	.globl _main
+                                     12 	.globl _vramIndex
+                                     13 	.globl _count
+                                     14 	.globl _vramLayer2
+                                     15 	.globl _vramLayer1
+                                     16 ;--------------------------------------------------------
+                                     17 ; special function registers
+                                     18 ;--------------------------------------------------------
+                                     19 ;--------------------------------------------------------
+                                     20 ; ram data
+                                     21 ;--------------------------------------------------------
+                                     22 	.area _DATA
+      000000                         23 _vramLayer1::
+      000000                         24 	.ds 2
+      000002                         25 _vramLayer2::
+      000002                         26 	.ds 2
+      000004                         27 _count::
+      000004                         28 	.ds 1
+      000005                         29 _vramIndex::
+      000005                         30 	.ds 2
+                                     31 ;--------------------------------------------------------
+                                     32 ; ram data
+                                     33 ;--------------------------------------------------------
+                                     34 	.area _INITIALIZED
+                                     35 ;--------------------------------------------------------
+                                     36 ; absolute external ram data
+                                     37 ;--------------------------------------------------------
+                                     38 	.area _DABS (ABS)
+                                     39 ;--------------------------------------------------------
+                                     40 ; global & static initialisations
+                                     41 ;--------------------------------------------------------
+                                     42 	.area _HOME
+                                     43 	.area _GSINIT
+                                     44 	.area _GSFINAL
+                                     45 	.area _GSINIT
+                                     46 ;--------------------------------------------------------
+                                     47 ; Home
+                                     48 ;--------------------------------------------------------
+                                     49 	.area _HOME
+                                     50 	.area _HOME
+                                     51 ;--------------------------------------------------------
+                                     52 ; code
+                                     53 ;--------------------------------------------------------
+                                     54 	.area _CODE
+                                     55 ;screenTest.c:6: void main(void) {
+                                     56 ;	---------------------------------
+                                     57 ; Function main
+                                     58 ; ---------------------------------
+      000000                         59 _main::
+                                     60 ;screenTest.c:7: while (1) {
+      000000                         61 00104$:
+                                     62 ;screenTest.c:9: for(count = 0; count <2; count++){
+      000000 21r04r00         [10]   63 	ld	hl, #_count
+      000003 36 00            [10]   64 	ld	(hl), #0x00
+      000005                         65 00110$:
+      000005 3Ar04r00         [13]   66 	ld	a, (_count+0)
+      000008 D6 02            [ 7]   67 	sub	a, #0x02
+      00000A 30 F4            [12]   68 	jr	NC, 00104$
+                                     69 ;screenTest.c:10: vramLayer1 = (volatile unsigned char*)0x3019;
+      00000C 21 19 30         [10]   70 	ld	hl, #0x3019
+      00000F 22r00r00         [16]   71 	ld	(_vramLayer1), hl
+                                     72 ;screenTest.c:11: for (vramIndex = 0; vramIndex < 10; vramIndex++) {
+      000012 21 00 00         [10]   73 	ld	hl, #0x0000
+      000015 22r05r00         [16]   74 	ld	(_vramIndex), hl
+      000018                         75 00107$:
+      000018 3Ar05r00         [13]   76 	ld	a, (_vramIndex+0)
+      00001B D6 0A            [ 7]   77 	sub	a, #0x0a
+      00001D 3Ar06r00         [13]   78 	ld	a, (_vramIndex+1)
+      000020 17               [ 4]   79 	rla
+      000021 3F               [ 4]   80 	ccf
+      000022 1F               [ 4]   81 	rra
+      000023 DE 80            [ 7]   82 	sbc	a, #0x80
+      000025 30 19            [12]   83 	jr	NC, 00111$
+                                     84 ;screenTest.c:12: *vramLayer1 = count;
+      000027 2Ar00r00         [16]   85 	ld	hl, (_vramLayer1)
+      00002A 3Ar04r00         [13]   86 	ld	a, (_count+0)
+      00002D 77               [ 7]   87 	ld	(hl), a
+                                     88 ;screenTest.c:13: vramLayer1 =  vramLayer1 + sizeof(unsigned char);
+      00002E 2Ar00r00         [16]   89 	ld	hl, (_vramLayer1)
+      000031 23               [ 6]   90 	inc	hl
+      000032 22r00r00         [16]   91 	ld	(_vramLayer1), hl
+                                     92 ;screenTest.c:11: for (vramIndex = 0; vramIndex < 10; vramIndex++) {
+      000035 ED 4Br05r00      [20]   93 	ld	bc, (_vramIndex)
+      000039 03               [ 6]   94 	inc	bc
+      00003A ED 43r05r00      [20]   95 	ld	(_vramIndex), bc
+      00003E 18 D8            [12]   96 	jr	00107$
+      000040                         97 00111$:
+                                     98 ;screenTest.c:9: for(count = 0; count <2; count++){
+      000040 3Ar04r00         [13]   99 	ld	a, (_count+0)
+      000043 3C               [ 4]  100 	inc	a
+      000044 32r04r00         [13]  101 	ld	(_count+0), a
+                                    102 ;screenTest.c:18: }
+      000047 18 BC            [12]  103 	jr	00110$
+                                    104 	.area _CODE
+                                    105 	.area _INITIALIZER
+                                    106 	.area _CABS (ABS)

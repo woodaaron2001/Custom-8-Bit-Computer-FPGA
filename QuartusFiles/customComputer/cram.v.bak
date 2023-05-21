@@ -1,0 +1,31 @@
+`timescale 1us/ 100 ns
+module vram 
+   #(parameter VRAM_FILENAME = "../../roms/vram.hex")
+(
+  input clk,
+  input [10:0] vga_abus,
+  input [15:0] cpu_abus,
+  input [7:0] data_in,
+  input write_en,
+  
+  
+  output [7:0] vga_out,
+  output [7:0] cpu_out
+);
+
+	reg [7:0] mem[0:1199];
+	
+	
+	initial begin
+		$readmemh(VRAM_FILENAME, mem, 0, 1199);
+	end
+
+	always @(posedge clk) begin
+	  if(write_en)
+		 mem[cpu_abus] <= data_in;
+	end
+	
+	assign vga_out = mem[vga_abus];
+	assign cpu_out = mem[cpu_abus];
+
+endmodule

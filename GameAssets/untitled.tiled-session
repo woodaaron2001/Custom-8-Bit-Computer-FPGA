@@ -1,0 +1,25 @@
+{
+    "activeFile": "gameMap.tmx",
+    "expandedProjectPaths": [
+        "."
+    ],
+    "fileStates": {
+        "gameMap.tmx": {
+            "scale": 2.390833333333333,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 320.3903799233182,
+                "y": 240.29278494248865
+            }
+        },
+        "test.tsx": {
+            "scaleInDock": 1
+        }
+    },
+    "openFiles": [
+        "gameMap.tmx"
+    ],
+    "recentFiles": [
+        "gameMap.tmx"
+    ]
+}

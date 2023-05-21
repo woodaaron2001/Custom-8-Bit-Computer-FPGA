@@ -1,0 +1,9 @@
+-mjwx
+-i game.ihx
+-b _CODE = 0x0000
+-b _DATA = 0x3979
+-k C:\Program Files\SDCC\bin\..\lib\z80
+-l z80
+game.rel
+
+-e

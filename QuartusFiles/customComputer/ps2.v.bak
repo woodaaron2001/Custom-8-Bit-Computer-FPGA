@@ -1,0 +1,90 @@
+module ps2_keyboard(
+    input clk,
+    input reset_n,
+    input ps2_clk,
+    input ps2_data,
+    output reg [7:0] keycode,
+    output reg valid
+);
+
+    parameter IDLE = 1'b1;
+    parameter START = 1'b0;
+    parameter DATA = 1'b1;
+    parameter PARITY = 1'b0;
+    parameter STOP = 1'b1;
+    parameter ERROR = 1'bX;
+
+    reg [3:0] state;
+    reg [7:0] shift_reg;
+    reg parity;
+    reg error;
+
+    always @(posedge clk) begin
+        if (!reset_n) begin
+            state <= IDLE;
+            shift_reg <= 0;
+            keycode <= 0;
+            valid <= 0;
+            parity <= 0;
+            error <= 0;
+        end else begin
+            case (state)
+                IDLE: begin
+                    if (!ps2_clk) begin
+                        state <= START;
+                        shift_reg <= 0;
+                        parity <= 0;
+                        error <= 0;
+                    end
+                end
+					START: begin
+						 if (ps2_clk) begin
+							  state <= ERROR;
+							  error <= 1;
+						 end else if (!ps2_data) begin
+							  state <= DATA;
+						 end
+					end
+					DATA: begin
+						 if (ps2_clk) begin
+							  state <= ERROR;
+							  error <= 1;
+						 end else begin
+							  shift_reg <= {shift_reg[6:0], ps2_data};
+							  parity <= parity ^ ps2_data;
+							  state <= PARITY;
+						 end
+					end
+                PARITY: begin
+                    if (ps2_clk) begin
+                        if (parity == ps2_data) begin
+                            state <= STOP;
+                        end else begin
+                            state <= ERROR;
+                            error <= 1;
+                        end
+                    end
+                end
+                STOP: begin
+                    if (ps2_clk) begin
+                        keycode <= shift_reg;
+                        valid <= 1;
+                        state <= IDLE;
+                    end
+                end
+                ERROR: begin
+                    if (ps2_clk && ps2_data) begin
+                        state <= IDLE;
+                        shift_reg <= 0;
+                        keycode <= 0;
+                        valid <= 0;
+                        parity <= 0;
+                        error <= 0;
+                    end
+                end
+            endcase
+        end
+    end
+
+endmodule
+

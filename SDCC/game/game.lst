@@ -1,0 +1,556 @@
+                                      1 ;--------------------------------------------------------
+                                      2 ; File Created by SDCC : free open source ANSI-C Compiler
+                                      3 ; Version 4.2.0 #13081 (MINGW64)
+                                      4 ;--------------------------------------------------------
+                                      5 	.module game
+                                      6 	.optsdcc -mz80
+                                      7 	
+                                      8 ;--------------------------------------------------------
+                                      9 ; Public variables in this module
+                                     10 ;--------------------------------------------------------
+                                     11 	.globl _main
+                                     12 	.globl _keyboard
+                                     13 	.globl _enemy2MovementCounter
+                                     14 	.globl _enemy2Sprite
+                                     15 	.globl _enemy2Y
+                                     16 	.globl _enemy2X
+                                     17 	.globl _enemy2Show
+                                     18 	.globl _enemy1MovementCounter
+                                     19 	.globl _enemy1Sprite
+                                     20 	.globl _enemy1Y
+                                     21 	.globl _enemy1X
+                                     22 	.globl _enemy1Show
+                                     23 	.globl _bulletMovementCounter
+                                     24 	.globl _bulletSprite
+                                     25 	.globl _bulletY
+                                     26 	.globl _bulletX
+                                     27 	.globl _bulletShow
+                                     28 	.globl _charMovementCounter
+                                     29 	.globl _charSprite
+                                     30 	.globl _charY
+                                     31 	.globl _charX
+                                     32 	.globl _charShow
+                                     33 ;--------------------------------------------------------
+                                     34 ; special function registers
+                                     35 ;--------------------------------------------------------
+                                     36 ;--------------------------------------------------------
+                                     37 ; ram data
+                                     38 ;--------------------------------------------------------
+                                     39 	.area _DATA
+      000000                         40 _charShow::
+      000000                         41 	.ds 2
+      000002                         42 _charX::
+      000002                         43 	.ds 2
+      000004                         44 _charY::
+      000004                         45 	.ds 2
+      000006                         46 _charSprite::
+      000006                         47 	.ds 2
+      000008                         48 _charMovementCounter::
+      000008                         49 	.ds 2
+      00000A                         50 _bulletShow::
+      00000A                         51 	.ds 2
+      00000C                         52 _bulletX::
+      00000C                         53 	.ds 2
+      00000E                         54 _bulletY::
+      00000E                         55 	.ds 2
+      000010                         56 _bulletSprite::
+      000010                         57 	.ds 2
+      000012                         58 _bulletMovementCounter::
+      000012                         59 	.ds 2
+      000014                         60 _enemy1Show::
+      000014                         61 	.ds 2
+      000016                         62 _enemy1X::
+      000016                         63 	.ds 2
+      000018                         64 _enemy1Y::
+      000018                         65 	.ds 2
+      00001A                         66 _enemy1Sprite::
+      00001A                         67 	.ds 2
+      00001C                         68 _enemy1MovementCounter::
+      00001C                         69 	.ds 2
+      00001E                         70 _enemy2Show::
+      00001E                         71 	.ds 2
+      000020                         72 _enemy2X::
+      000020                         73 	.ds 2
+      000022                         74 _enemy2Y::
+      000022                         75 	.ds 2
+      000024                         76 _enemy2Sprite::
+      000024                         77 	.ds 2
+      000026                         78 _enemy2MovementCounter::
+      000026                         79 	.ds 2
+      000028                         80 _keyboard::
+      000028                         81 	.ds 2
+                                     82 ;--------------------------------------------------------
+                                     83 ; ram data
+                                     84 ;--------------------------------------------------------
+                                     85 	.area _INITIALIZED
+                                     86 ;--------------------------------------------------------
+                                     87 ; absolute external ram data
+                                     88 ;--------------------------------------------------------
+                                     89 	.area _DABS (ABS)
+                                     90 ;--------------------------------------------------------
+                                     91 ; global & static initialisations
+                                     92 ;--------------------------------------------------------
+                                     93 	.area _HOME
+                                     94 	.area _GSINIT
+                                     95 	.area _GSFINAL
+                                     96 	.area _GSINIT
+                                     97 ;--------------------------------------------------------
+                                     98 ; Home
+                                     99 ;--------------------------------------------------------
+                                    100 	.area _HOME
+                                    101 	.area _HOME
+                                    102 ;--------------------------------------------------------
+                                    103 ; code
+                                    104 ;--------------------------------------------------------
+                                    105 	.area _CODE
+                                    106 ;game.c:29: void main(void) {
+                                    107 ;	---------------------------------
+                                    108 ; Function main
+                                    109 ; ---------------------------------
+      000000                        110 _main::
+                                    111 ;game.c:30: charMovementCounter = 0;
+      000000 21 00 00         [10]  112 	ld	hl, #0x0000
+      000003 22r08r00         [16]  113 	ld	(_charMovementCounter), hl
+                                    114 ;game.c:31: bulletMovementCounter = 0;
+      000006 22r12r00         [16]  115 	ld	(_bulletMovementCounter), hl
+                                    116 ;game.c:32: enemy1MovementCounter = 0;
+      000009 22r1Cr00         [16]  117 	ld	(_enemy1MovementCounter), hl
+                                    118 ;game.c:33: enemy2MovementCounter = 0;
+      00000C 22r26r00         [16]  119 	ld	(_enemy2MovementCounter), hl
+                                    120 ;game.c:35: keyboard = (volatile unsigned char*)0x3000; 
+      00000F 26 30            [ 7]  121 	ld	h, #0x30
+      000011 22r28r00         [16]  122 	ld	(_keyboard), hl
+                                    123 ;game.c:37: charShow = (volatile unsigned char*)0x3001;
+      000014 2E 01            [ 7]  124 	ld	l, #0x01
+      000016 22r00r00         [16]  125 	ld	(_charShow), hl
+                                    126 ;game.c:38: charX = (volatile int16_t*)0x3002;
+      000019 2E 02            [ 7]  127 	ld	l, #0x02
+      00001B 22r02r00         [16]  128 	ld	(_charX), hl
+                                    129 ;game.c:39: charY = (volatile int16_t*)0x3004;
+      00001E 2E 04            [ 7]  130 	ld	l, #0x04
+      000020 22r04r00         [16]  131 	ld	(_charY), hl
+                                    132 ;game.c:40: charSprite = (volatile unsigned char*)0x3006; 
+      000023 2E 06            [ 7]  133 	ld	l, #0x06
+      000025 22r06r00         [16]  134 	ld	(_charSprite), hl
+                                    135 ;game.c:42: bulletShow = (volatile unsigned char*)0x3007;
+      000028 2E 07            [ 7]  136 	ld	l, #0x07
+      00002A 22r0Ar00         [16]  137 	ld	(_bulletShow), hl
+                                    138 ;game.c:43: bulletX = (volatile int16_t*)0x3008;
+      00002D 2E 08            [ 7]  139 	ld	l, #0x08
+      00002F 22r0Cr00         [16]  140 	ld	(_bulletX), hl
+                                    141 ;game.c:44: bulletY = (volatile int16_t*)0x300A;
+      000032 2E 0A            [ 7]  142 	ld	l, #0x0a
+      000034 22r0Er00         [16]  143 	ld	(_bulletY), hl
+                                    144 ;game.c:45: bulletSprite = (volatile unsigned char*)0x300C; 
+      000037 2E 0C            [ 7]  145 	ld	l, #0x0c
+      000039 22r10r00         [16]  146 	ld	(_bulletSprite), hl
+                                    147 ;game.c:47: enemy1Show = (volatile unsigned char*)0x300D;
+      00003C 2E 0D            [ 7]  148 	ld	l, #0x0d
+      00003E 22r14r00         [16]  149 	ld	(_enemy1Show), hl
+                                    150 ;game.c:48: enemy1X = (volatile int16_t*)0x300E;
+      000041 2E 0E            [ 7]  151 	ld	l, #0x0e
+      000043 22r16r00         [16]  152 	ld	(_enemy1X), hl
+                                    153 ;game.c:49: enemy1Y = (volatile int16_t*)0x3010;
+      000046 2E 10            [ 7]  154 	ld	l, #0x10
+      000048 22r18r00         [16]  155 	ld	(_enemy1Y), hl
+                                    156 ;game.c:50: enemy1Sprite = (volatile unsigned char*)0x3012;
+      00004B 2E 12            [ 7]  157 	ld	l, #0x12
+      00004D 22r1Ar00         [16]  158 	ld	(_enemy1Sprite), hl
+                                    159 ;game.c:52: enemy2Show = (volatile unsigned char*)0x3013;
+      000050 2E 13            [ 7]  160 	ld	l, #0x13
+      000052 22r1Er00         [16]  161 	ld	(_enemy2Show), hl
+                                    162 ;game.c:53: enemy2X = (volatile int16_t*)0x3014;
+      000055 2E 14            [ 7]  163 	ld	l, #0x14
+      000057 22r20r00         [16]  164 	ld	(_enemy2X), hl
+                                    165 ;game.c:54: enemy2Y = (volatile int16_t*)0x3016;
+      00005A 2E 16            [ 7]  166 	ld	l, #0x16
+      00005C 22r22r00         [16]  167 	ld	(_enemy2Y), hl
+                                    168 ;game.c:55: enemy2Sprite = (volatile unsigned char*)0x3018; 
+      00005F 2E 18            [ 7]  169 	ld	l, #0x18
+      000061 22r24r00         [16]  170 	ld	(_enemy2Sprite), hl
+                                    171 ;game.c:58: *charX = 320;
+      000064 21 40 01         [10]  172 	ld	hl, #0x0140
+      000067 22 02 30         [16]  173 	ld	(0x3002), hl
+                                    174 ;game.c:59: *charY = 240;
+      00006A 2Ar04r00         [16]  175 	ld	hl, (_charY)
+      00006D 36 F0            [10]  176 	ld	(hl), #0xf0
+      00006F 23               [ 6]  177 	inc	hl
+      000070 36 00            [10]  178 	ld	(hl), #0x00
+                                    179 ;game.c:62: *bulletX = 100;
+      000072 2Ar0Cr00         [16]  180 	ld	hl, (_bulletX)
+      000075 36 64            [10]  181 	ld	(hl), #0x64
+      000077 23               [ 6]  182 	inc	hl
+      000078 36 00            [10]  183 	ld	(hl), #0x00
+                                    184 ;game.c:63: *bulletY = 100;
+      00007A 2Ar0Er00         [16]  185 	ld	hl, (_bulletY)
+      00007D 36 64            [10]  186 	ld	(hl), #0x64
+      00007F 23               [ 6]  187 	inc	hl
+      000080 36 00            [10]  188 	ld	(hl), #0x00
+                                    189 ;game.c:64: *bulletShow = 1;
+      000082 2Ar0Ar00         [16]  190 	ld	hl, (_bulletShow)
+      000085 36 01            [10]  191 	ld	(hl), #0x01
+                                    192 ;game.c:67: *enemy1X = 500;
+      000087 2Ar16r00         [16]  193 	ld	hl, (_enemy1X)
+      00008A 36 F4            [10]  194 	ld	(hl), #0xf4
+      00008C 23               [ 6]  195 	inc	hl
+      00008D 36 01            [10]  196 	ld	(hl), #0x01
+                                    197 ;game.c:68: *enemy1Y = 50;
+      00008F 2Ar18r00         [16]  198 	ld	hl, (_enemy1Y)
+      000092 36 32            [10]  199 	ld	(hl), #0x32
+      000094 23               [ 6]  200 	inc	hl
+      000095 36 00            [10]  201 	ld	(hl), #0x00
+                                    202 ;game.c:69: *enemy1Show = 1;
+      000097 2Ar14r00         [16]  203 	ld	hl, (_enemy1Show)
+      00009A 36 01            [10]  204 	ld	(hl), #0x01
+                                    205 ;game.c:72: *enemy2X = 50;
+      00009C 2Ar20r00         [16]  206 	ld	hl, (_enemy2X)
+      00009F 36 32            [10]  207 	ld	(hl), #0x32
+      0000A1 23               [ 6]  208 	inc	hl
+      0000A2 36 00            [10]  209 	ld	(hl), #0x00
+                                    210 ;game.c:73: *enemy2Y = 300;
+      0000A4 2Ar22r00         [16]  211 	ld	hl, (_enemy2Y)
+      0000A7 36 2C            [10]  212 	ld	(hl), #0x2c
+      0000A9 23               [ 6]  213 	inc	hl
+      0000AA 36 01            [10]  214 	ld	(hl), #0x01
+                                    215 ;game.c:74: *enemy2Show = 1;
+      0000AC 2Ar1Er00         [16]  216 	ld	hl, (_enemy2Show)
+      0000AF 36 01            [10]  217 	ld	(hl), #0x01
+                                    218 ;game.c:78: while (1) {
+      0000B1                        219 00140$:
+                                    220 ;game.c:79: bulletMovementCounter = bulletMovementCounter + 1;
+      0000B1 2Ar12r00         [16]  221 	ld	hl, (_bulletMovementCounter)
+      0000B4 23               [ 6]  222 	inc	hl
+      0000B5 22r12r00         [16]  223 	ld	(_bulletMovementCounter), hl
+                                    224 ;game.c:80: enemy1MovementCounter = enemy1MovementCounter + 1;
+      0000B8 2Ar1Cr00         [16]  225 	ld	hl, (_enemy1MovementCounter)
+      0000BB 23               [ 6]  226 	inc	hl
+      0000BC 22r1Cr00         [16]  227 	ld	(_enemy1MovementCounter), hl
+                                    228 ;game.c:81: enemy2MovementCounter = enemy2MovementCounter + 1;
+      0000BF 2Ar26r00         [16]  229 	ld	hl, (_enemy2MovementCounter)
+      0000C2 23               [ 6]  230 	inc	hl
+      0000C3 22r26r00         [16]  231 	ld	(_enemy2MovementCounter), hl
+                                    232 ;game.c:83: if(enemy1MovementCounter == 1000){
+      0000C6 2Ar1Cr00         [16]  233 	ld	hl, (_enemy1MovementCounter)
+      0000C9 7D               [ 4]  234 	ld	a, l
+      0000CA D6 E8            [ 7]  235 	sub	a, #0xe8
+      0000CC 20 61            [12]  236 	jr	NZ, 00108$
+      0000CE 7C               [ 4]  237 	ld	a, h
+      0000CF D6 03            [ 7]  238 	sub	a, #0x03
+      0000D1 20 5C            [12]  239 	jr	NZ, 00108$
+                                    240 ;game.c:84: enemy1MovementCounter = 0;
+      0000D3 21 00 00         [10]  241 	ld	hl, #0x0000
+      0000D6 22r1Cr00         [16]  242 	ld	(_enemy1MovementCounter), hl
+                                    243 ;game.c:85: if(enemy1X - charX > 0){
+      0000D9 ED 4Br02r00      [20]  244 	ld	bc, (_charX)
+      0000DD 2Ar16r00         [16]  245 	ld	hl, (_enemy1X)
+      0000E0 BF               [ 4]  246 	cp	a, a
+      0000E1 ED 42            [15]  247 	sbc	hl, bc
+      0000E3 CB 2C            [ 8]  248 	sra	h
+      0000E5 CB 1D            [ 8]  249 	rr	l
+      0000E7 AF               [ 4]  250 	xor	a, a
+      0000E8 BD               [ 4]  251 	cp	a, l
+      0000E9 9C               [ 4]  252 	sbc	a, h
+      0000EA E2rEFr00         [10]  253 	jp	PO, 00231$
+      0000ED EE 80            [ 7]  254 	xor	a, #0x80
+      0000EF                        255 00231$:
+      0000EF F2rFCr00         [10]  256 	jp	P, 00102$
+                                    257 ;game.c:86: enemy1X = enemy1X -1;
+      0000F2 2Ar16r00         [16]  258 	ld	hl, (_enemy1X)
+      0000F5 2B               [ 6]  259 	dec	hl
+      0000F6 2B               [ 6]  260 	dec	hl
+      0000F7 22r16r00         [16]  261 	ld	(_enemy1X), hl
+      0000FA 18 08            [12]  262 	jr	00103$
+      0000FC                        263 00102$:
+                                    264 ;game.c:89: enemy1X = enemy1X +1;
+      0000FC 2Ar16r00         [16]  265 	ld	hl, (_enemy1X)
+      0000FF 23               [ 6]  266 	inc	hl
+      000100 23               [ 6]  267 	inc	hl
+      000101 22r16r00         [16]  268 	ld	(_enemy1X), hl
+      000104                        269 00103$:
+                                    270 ;game.c:92: if(enemy1Y - charY > 0){
+      000104 ED 4Br04r00      [20]  271 	ld	bc, (_charY)
+      000108 2Ar18r00         [16]  272 	ld	hl, (_enemy1Y)
+      00010B BF               [ 4]  273 	cp	a, a
+      00010C ED 42            [15]  274 	sbc	hl, bc
+      00010E CB 2C            [ 8]  275 	sra	h
+      000110 CB 1D            [ 8]  276 	rr	l
+      000112 AF               [ 4]  277 	xor	a, a
+      000113 BD               [ 4]  278 	cp	a, l
+      000114 9C               [ 4]  279 	sbc	a, h
+      000115 E2r1Ar01         [10]  280 	jp	PO, 00232$
+      000118 EE 80            [ 7]  281 	xor	a, #0x80
+      00011A                        282 00232$:
+      00011A F2r27r01         [10]  283 	jp	P, 00105$
+                                    284 ;game.c:93: enemy1Y = enemy1Y -1;
+      00011D 2Ar18r00         [16]  285 	ld	hl, (_enemy1Y)
+      000120 2B               [ 6]  286 	dec	hl
+      000121 2B               [ 6]  287 	dec	hl
+      000122 22r18r00         [16]  288 	ld	(_enemy1Y), hl
+      000125 18 08            [12]  289 	jr	00108$
+      000127                        290 00105$:
+                                    291 ;game.c:96: enemy1Y = enemy1Y +1;
+      000127 2Ar18r00         [16]  292 	ld	hl, (_enemy1Y)
+      00012A 23               [ 6]  293 	inc	hl
+      00012B 23               [ 6]  294 	inc	hl
+      00012C 22r18r00         [16]  295 	ld	(_enemy1Y), hl
+      00012F                        296 00108$:
+                                    297 ;game.c:102: if(enemy2MovementCounter == 1000){
+      00012F 2Ar26r00         [16]  298 	ld	hl, (_enemy2MovementCounter)
+      000132 7D               [ 4]  299 	ld	a, l
+      000133 D6 E8            [ 7]  300 	sub	a, #0xe8
+      000135 20 61            [12]  301 	jr	NZ, 00116$
+      000137 7C               [ 4]  302 	ld	a, h
+      000138 D6 03            [ 7]  303 	sub	a, #0x03
+      00013A 20 5C            [12]  304 	jr	NZ, 00116$
+                                    305 ;game.c:103: enemy2MovementCounter = 0;
+      00013C 21 00 00         [10]  306 	ld	hl, #0x0000
+      00013F 22r26r00         [16]  307 	ld	(_enemy2MovementCounter), hl
+                                    308 ;game.c:104: if(enemy2X - charX > 0){
+      000142 ED 4Br02r00      [20]  309 	ld	bc, (_charX)
+      000146 2Ar20r00         [16]  310 	ld	hl, (_enemy2X)
+      000149 BF               [ 4]  311 	cp	a, a
+      00014A ED 42            [15]  312 	sbc	hl, bc
+      00014C CB 2C            [ 8]  313 	sra	h
+      00014E CB 1D            [ 8]  314 	rr	l
+      000150 AF               [ 4]  315 	xor	a, a
+      000151 BD               [ 4]  316 	cp	a, l
+      000152 9C               [ 4]  317 	sbc	a, h
+      000153 E2r58r01         [10]  318 	jp	PO, 00235$
+      000156 EE 80            [ 7]  319 	xor	a, #0x80
+      000158                        320 00235$:
+      000158 F2r65r01         [10]  321 	jp	P, 00110$
+                                    322 ;game.c:105: enemy2X = enemy2X -1;
+      00015B 2Ar20r00         [16]  323 	ld	hl, (_enemy2X)
+      00015E 2B               [ 6]  324 	dec	hl
+      00015F 2B               [ 6]  325 	dec	hl
+      000160 22r20r00         [16]  326 	ld	(_enemy2X), hl
+      000163 18 08            [12]  327 	jr	00111$
+      000165                        328 00110$:
+                                    329 ;game.c:108: enemy2X = enemy2X +1;
+      000165 2Ar20r00         [16]  330 	ld	hl, (_enemy2X)
+      000168 23               [ 6]  331 	inc	hl
+      000169 23               [ 6]  332 	inc	hl
+      00016A 22r20r00         [16]  333 	ld	(_enemy2X), hl
+      00016D                        334 00111$:
+                                    335 ;game.c:111: if(enemy2Y - charY > 0){
+      00016D ED 4Br04r00      [20]  336 	ld	bc, (_charY)
+      000171 2Ar22r00         [16]  337 	ld	hl, (_enemy2Y)
+      000174 BF               [ 4]  338 	cp	a, a
+      000175 ED 42            [15]  339 	sbc	hl, bc
+      000177 CB 2C            [ 8]  340 	sra	h
+      000179 CB 1D            [ 8]  341 	rr	l
+      00017B AF               [ 4]  342 	xor	a, a
+      00017C BD               [ 4]  343 	cp	a, l
+      00017D 9C               [ 4]  344 	sbc	a, h
+      00017E E2r83r01         [10]  345 	jp	PO, 00236$
+      000181 EE 80            [ 7]  346 	xor	a, #0x80
+      000183                        347 00236$:
+      000183 F2r90r01         [10]  348 	jp	P, 00113$
+                                    349 ;game.c:112: enemy2Y = enemy2Y -1;
+      000186 2Ar22r00         [16]  350 	ld	hl, (_enemy2Y)
+      000189 2B               [ 6]  351 	dec	hl
+      00018A 2B               [ 6]  352 	dec	hl
+      00018B 22r22r00         [16]  353 	ld	(_enemy2Y), hl
+      00018E 18 08            [12]  354 	jr	00116$
+      000190                        355 00113$:
+                                    356 ;game.c:115: enemy2Y = enemy2Y +1;
+      000190 2Ar22r00         [16]  357 	ld	hl, (_enemy2Y)
+      000193 23               [ 6]  358 	inc	hl
+      000194 23               [ 6]  359 	inc	hl
+      000195 22r22r00         [16]  360 	ld	(_enemy2Y), hl
+      000198                        361 00116$:
+                                    362 ;game.c:121: if(*keyboard == 0x1D){
+      000198 2Ar28r00         [16]  363 	ld	hl, (_keyboard)
+      00019B 7E               [ 7]  364 	ld	a, (hl)
+      00019C D6 1D            [ 7]  365 	sub	a, #0x1d
+      00019E 20 29            [12]  366 	jr	NZ, 00120$
+                                    367 ;game.c:122: charMovementCounter = charMovementCounter +1;
+      0001A0 2Ar08r00         [16]  368 	ld	hl, (_charMovementCounter)
+      0001A3 23               [ 6]  369 	inc	hl
+      0001A4 22r08r00         [16]  370 	ld	(_charMovementCounter), hl
+                                    371 ;game.c:123: if(charMovementCounter == 1000){
+      0001A7 2Ar08r00         [16]  372 	ld	hl, (_charMovementCounter)
+      0001AA 7D               [ 4]  373 	ld	a, l
+      0001AB D6 E8            [ 7]  374 	sub	a, #0xe8
+      0001AD 20 1A            [12]  375 	jr	NZ, 00120$
+      0001AF 7C               [ 4]  376 	ld	a, h
+      0001B0 D6 03            [ 7]  377 	sub	a, #0x03
+      0001B2 20 15            [12]  378 	jr	NZ, 00120$
+                                    379 ;game.c:124: charMovementCounter = 0;
+      0001B4 21 00 00         [10]  380 	ld	hl, #0x0000
+      0001B7 22r08r00         [16]  381 	ld	(_charMovementCounter), hl
+                                    382 ;game.c:59: *charY = 240;
+      0001BA ED 4Br04r00      [20]  383 	ld	bc, (_charY)
+                                    384 ;game.c:125: *charY = *charY-1;
+      0001BE 69               [ 4]  385 	ld	l, c
+      0001BF 60               [ 4]  386 	ld	h, b
+      0001C0 5E               [ 7]  387 	ld	e, (hl)
+      0001C1 23               [ 6]  388 	inc	hl
+      0001C2 56               [ 7]  389 	ld	d, (hl)
+      0001C3 1B               [ 6]  390 	dec	de
+      0001C4 7B               [ 4]  391 	ld	a, e
+      0001C5 02               [ 7]  392 	ld	(bc), a
+      0001C6 03               [ 6]  393 	inc	bc
+      0001C7 7A               [ 4]  394 	ld	a, d
+      0001C8 02               [ 7]  395 	ld	(bc), a
+      0001C9                        396 00120$:
+                                    397 ;game.c:130: if(*keyboard == 0x1B){
+      0001C9 2Ar28r00         [16]  398 	ld	hl, (_keyboard)
+      0001CC 7E               [ 7]  399 	ld	a, (hl)
+      0001CD D6 1B            [ 7]  400 	sub	a, #0x1b
+      0001CF 20 25            [12]  401 	jr	NZ, 00124$
+                                    402 ;game.c:131: charMovementCounter = charMovementCounter +1;
+      0001D1 2Ar08r00         [16]  403 	ld	hl, (_charMovementCounter)
+      0001D4 23               [ 6]  404 	inc	hl
+      0001D5 22r08r00         [16]  405 	ld	(_charMovementCounter), hl
+                                    406 ;game.c:132: if(charMovementCounter == 1000){
+      0001D8 2Ar08r00         [16]  407 	ld	hl, (_charMovementCounter)
+      0001DB 7D               [ 4]  408 	ld	a, l
+      0001DC D6 E8            [ 7]  409 	sub	a, #0xe8
+      0001DE 20 16            [12]  410 	jr	NZ, 00124$
+      0001E0 7C               [ 4]  411 	ld	a, h
+      0001E1 D6 03            [ 7]  412 	sub	a, #0x03
+      0001E3 20 11            [12]  413 	jr	NZ, 00124$
+                                    414 ;game.c:133: charMovementCounter = 0;
+      0001E5 21 00 00         [10]  415 	ld	hl, #0x0000
+      0001E8 22r08r00         [16]  416 	ld	(_charMovementCounter), hl
+                                    417 ;game.c:59: *charY = 240;
+      0001EB 2Ar04r00         [16]  418 	ld	hl, (_charY)
+                                    419 ;game.c:134: *charY = *charY+1;
+      0001EE 4E               [ 7]  420 	ld	c, (hl)
+      0001EF 23               [ 6]  421 	inc	hl
+      0001F0 46               [ 7]  422 	ld	b, (hl)
+      0001F1 2B               [ 6]  423 	dec	hl
+      0001F2 03               [ 6]  424 	inc	bc
+      0001F3 71               [ 7]  425 	ld	(hl), c
+      0001F4 23               [ 6]  426 	inc	hl
+      0001F5 70               [ 7]  427 	ld	(hl), b
+      0001F6                        428 00124$:
+                                    429 ;game.c:138: if(*keyboard == 0x23){
+      0001F6 2Ar28r00         [16]  430 	ld	hl, (_keyboard)
+      0001F9 7E               [ 7]  431 	ld	a, (hl)
+      0001FA D6 23            [ 7]  432 	sub	a, #0x23
+      0001FC 20 29            [12]  433 	jr	NZ, 00128$
+                                    434 ;game.c:139: charMovementCounter = charMovementCounter +1;
+      0001FE 2Ar08r00         [16]  435 	ld	hl, (_charMovementCounter)
+      000201 23               [ 6]  436 	inc	hl
+      000202 22r08r00         [16]  437 	ld	(_charMovementCounter), hl
+                                    438 ;game.c:140: if(charMovementCounter == 1000){
+      000205 2Ar08r00         [16]  439 	ld	hl, (_charMovementCounter)
+      000208 7D               [ 4]  440 	ld	a, l
+      000209 D6 E8            [ 7]  441 	sub	a, #0xe8
+      00020B 20 1A            [12]  442 	jr	NZ, 00128$
+      00020D 7C               [ 4]  443 	ld	a, h
+      00020E D6 03            [ 7]  444 	sub	a, #0x03
+      000210 20 15            [12]  445 	jr	NZ, 00128$
+                                    446 ;game.c:141: charMovementCounter = 0;
+      000212 21 00 00         [10]  447 	ld	hl, #0x0000
+      000215 22r08r00         [16]  448 	ld	(_charMovementCounter), hl
+                                    449 ;game.c:142: *charX = *charX+1;
+      000218 ED 4Br02r00      [20]  450 	ld	bc, (_charX)
+      00021C 69               [ 4]  451 	ld	l, c
+      00021D 60               [ 4]  452 	ld	h, b
+      00021E 5E               [ 7]  453 	ld	e, (hl)
+      00021F 23               [ 6]  454 	inc	hl
+      000220 56               [ 7]  455 	ld	d, (hl)
+      000221 13               [ 6]  456 	inc	de
+      000222 7B               [ 4]  457 	ld	a, e
+      000223 02               [ 7]  458 	ld	(bc), a
+      000224 03               [ 6]  459 	inc	bc
+      000225 7A               [ 4]  460 	ld	a, d
+      000226 02               [ 7]  461 	ld	(bc), a
+      000227                        462 00128$:
+                                    463 ;game.c:147: if(*keyboard == 0x1C){
+      000227 2Ar28r00         [16]  464 	ld	hl, (_keyboard)
+      00022A 7E               [ 7]  465 	ld	a, (hl)
+      00022B D6 1C            [ 7]  466 	sub	a, #0x1c
+      00022D 20 25            [12]  467 	jr	NZ, 00132$
+                                    468 ;game.c:148: charMovementCounter = charMovementCounter +1;
+      00022F 2Ar08r00         [16]  469 	ld	hl, (_charMovementCounter)
+      000232 23               [ 6]  470 	inc	hl
+      000233 22r08r00         [16]  471 	ld	(_charMovementCounter), hl
+                                    472 ;game.c:149: if(charMovementCounter == 1000){
+      000236 2Ar08r00         [16]  473 	ld	hl, (_charMovementCounter)
+      000239 7D               [ 4]  474 	ld	a, l
+      00023A D6 E8            [ 7]  475 	sub	a, #0xe8
+      00023C 20 16            [12]  476 	jr	NZ, 00132$
+      00023E 7C               [ 4]  477 	ld	a, h
+      00023F D6 03            [ 7]  478 	sub	a, #0x03
+      000241 20 11            [12]  479 	jr	NZ, 00132$
+                                    480 ;game.c:150: charMovementCounter = 0;
+      000243 21 00 00         [10]  481 	ld	hl, #0x0000
+      000246 22r08r00         [16]  482 	ld	(_charMovementCounter), hl
+                                    483 ;game.c:142: *charX = *charX+1;
+      000249 2Ar02r00         [16]  484 	ld	hl, (_charX)
+                                    485 ;game.c:151: *charX = *charX-1;
+      00024C 4E               [ 7]  486 	ld	c, (hl)
+      00024D 23               [ 6]  487 	inc	hl
+      00024E 46               [ 7]  488 	ld	b, (hl)
+      00024F 2B               [ 6]  489 	dec	hl
+      000250 0B               [ 6]  490 	dec	bc
+      000251 71               [ 7]  491 	ld	(hl), c
+      000252 23               [ 6]  492 	inc	hl
+      000253 70               [ 7]  493 	ld	(hl), b
+      000254                        494 00132$:
+                                    495 ;game.c:142: *charX = *charX+1;
+      000254 ED 4Br02r00      [20]  496 	ld	bc, (_charX)
+                                    497 ;game.c:156: if(*charX > 640 || *charX < 0){
+      000258 69               [ 4]  498 	ld	l, c
+      000259 60               [ 4]  499 	ld	h, b
+      00025A 5E               [ 7]  500 	ld	e, (hl)
+      00025B 23               [ 6]  501 	inc	hl
+      00025C 56               [ 7]  502 	ld	d, (hl)
+      00025D 3E 80            [ 7]  503 	ld	a, #0x80
+      00025F BB               [ 4]  504 	cp	a, e
+      000260 3E 02            [ 7]  505 	ld	a, #0x02
+      000262 9A               [ 4]  506 	sbc	a, d
+      000263 E2r68r02         [10]  507 	jp	PO, 00253$
+      000266 EE 80            [ 7]  508 	xor	a, #0x80
+      000268                        509 00253$:
+      000268 FAr73r02         [10]  510 	jp	M, 00133$
+      00026B 69               [ 4]  511 	ld	l, c
+      00026C 60               [ 4]  512 	ld	h, b
+      00026D 5E               [ 7]  513 	ld	e, (hl)
+      00026E 23               [ 6]  514 	inc	hl
+      00026F CB 7E            [12]  515 	bit	7, (hl)
+      000271 28 04            [12]  516 	jr	Z, 00134$
+      000273                        517 00133$:
+                                    518 ;game.c:157: *charX = 0;
+      000273 AF               [ 4]  519 	xor	a, a
+      000274 02               [ 7]  520 	ld	(bc), a
+      000275 03               [ 6]  521 	inc	bc
+      000276 02               [ 7]  522 	ld	(bc), a
+      000277                        523 00134$:
+                                    524 ;game.c:59: *charY = 240;
+      000277 ED 4Br04r00      [20]  525 	ld	bc, (_charY)
+                                    526 ;game.c:162: if(*charY > 480 || *charY < 0){
+      00027B 69               [ 4]  527 	ld	l, c
+      00027C 60               [ 4]  528 	ld	h, b
+      00027D 5E               [ 7]  529 	ld	e, (hl)
+      00027E 23               [ 6]  530 	inc	hl
+      00027F 56               [ 7]  531 	ld	d, (hl)
+      000280 3E E0            [ 7]  532 	ld	a, #0xe0
+      000282 BB               [ 4]  533 	cp	a, e
+      000283 3E 01            [ 7]  534 	ld	a, #0x01
+      000285 9A               [ 4]  535 	sbc	a, d
+      000286 E2r8Br02         [10]  536 	jp	PO, 00254$
+      000289 EE 80            [ 7]  537 	xor	a, #0x80
+      00028B                        538 00254$:
+      00028B FAr97r02         [10]  539 	jp	M, 00136$
+      00028E 69               [ 4]  540 	ld	l, c
+      00028F 60               [ 4]  541 	ld	h, b
+      000290 5E               [ 7]  542 	ld	e, (hl)
+      000291 23               [ 6]  543 	inc	hl
+      000292 CB 7E            [12]  544 	bit	7, (hl)
+      000294 CArB1r00         [10]  545 	jp	Z, 00140$
+      000297                        546 00136$:
+                                    547 ;game.c:163: *charY = 0;
+      000297 AF               [ 4]  548 	xor	a, a
+      000298 02               [ 7]  549 	ld	(bc), a
+      000299 03               [ 6]  550 	inc	bc
+      00029A 02               [ 7]  551 	ld	(bc), a
+                                    552 ;game.c:167: }
+      00029B C3rB1r00         [10]  553 	jp	00140$
+                                    554 	.area _CODE
+                                    555 	.area _INITIALIZER
+                                    556 	.area _CABS (ABS)

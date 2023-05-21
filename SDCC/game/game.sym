@@ -1,0 +1,48 @@
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (Zilog Z80 / Hitachi HD64180 / ZX-Next / eZ80), page 1.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+    .__.$$$.                                                    =  002710 L
+    .__.ABS.                                                    =  000000 G
+    .__.CPU.                                                    =  000000 L
+    .__.H$L.                                                    =  000000 L
+  1 _bulletMovementCounter                                         000012 GR
+  1 _bulletShow                                                    00000A GR
+  1 _bulletSprite                                                  000010 GR
+  1 _bulletX                                                       00000C GR
+  1 _bulletY                                                       00000E GR
+  1 _charMovementCounter                                           000008 GR
+  1 _charShow                                                      000000 GR
+  1 _charSprite                                                    000006 GR
+  1 _charX                                                         000002 GR
+  1 _charY                                                         000004 GR
+  1 _enemy1MovementCounter                                         00001C GR
+  1 _enemy1Show                                                    000014 GR
+  1 _enemy1Sprite                                                  00001A GR
+  1 _enemy1X                                                       000016 GR
+  1 _enemy1Y                                                       000018 GR
+  1 _enemy2MovementCounter                                         000026 GR
+  1 _enemy2Show                                                    00001E GR
+  1 _enemy2Sprite                                                  000024 GR
+  1 _enemy2X                                                       000020 GR
+  1 _enemy2Y                                                       000022 GR
+  1 _keyboard                                                      000028 GR
+  0 _main                                                          000000 GR
+
+
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (Zilog Z80 / Hitachi HD64180 / ZX-Next / eZ80), page 2.
+Hexadecimal [24-Bits]
+
+Area Table
+
+   0 _CODE                                      size    29E   flags    0
+   1 _DATA                                      size     2A   flags    0
+   2 _INITIALIZED                               size      0   flags    0
+   3 _DABS                                      size      0   flags    8
+   4 _HOME                                      size      0   flags    0
+   5 _GSINIT                                    size      0   flags    0
+   6 _GSFINAL                                   size      0   flags    0
+   7 _INITIALIZER                               size      0   flags    0
+   8 _CABS                                      size      0   flags    8
+

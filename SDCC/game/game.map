@@ -1,0 +1,84 @@
+ASxxxx Linker V03.00 + NoICE + sdld,  page 1.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00000000  .__.ABS.                           game
+     00000000  l__CABS                         
+     00000000  l__DABS                         
+     00000000  l__GSFINAL                      
+     00000000  l__GSINIT                       
+     00000000  l__HOME                         
+     00000000  l__INITIALIZED                  
+     00000000  l__INITIALIZER                  
+     00000000  s__CABS                         
+     00000000  s__CODE                         
+     00000000  s__DABS                         
+     0000002A  l__DATA                         
+     0000029E  l__CODE                         
+     00003979  s__DATA                         
+     000039A3  s__GSFINAL                      
+     000039A3  s__GSINIT                       
+     000039A3  s__HOME                         
+     000039A3  s__INITIALIZED                  
+     000039A3  s__INITIALIZER                  
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 2.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+_CODE                               00000000    0000029E =         670. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00000000  _main                              game
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 3.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+_DATA                               00003979    0000002A =          42. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00003979  _charShow                          game
+     0000397B  _charX                             game
+     0000397D  _charY                             game
+     0000397F  _charSprite                        game
+     00003981  _charMovementCounter               game
+     00003983  _bulletShow                        game
+     00003985  _bulletX                           game
+     00003987  _bulletY                           game
+     00003989  _bulletSprite                      game
+     0000398B  _bulletMovementCounter             game
+     0000398D  _enemy1Show                        game
+     0000398F  _enemy1X                           game
+     00003991  _enemy1Y                           game
+     00003993  _enemy1Sprite                      game
+     00003995  _enemy1MovementCounter             game
+     00003997  _enemy2Show                        game
+     00003999  _enemy2X                           game
+     0000399B  _enemy2Y                           game
+     0000399D  _enemy2Sprite                      game
+     0000399F  _enemy2MovementCounter             game
+     000039A1  _keyboard                          game
+ASxxxx Linker V03.00 + NoICE + sdld,  page 4.
+
+Files Linked                              [ module(s) ]
+
+game.rel                                  [ game ]
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 5.
+
+User Base Address Definitions
+
+_CODE = 0x0000
+_DATA = 0x3979
+
+
