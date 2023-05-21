@@ -34,42 +34,48 @@ Since the computer uses the Z80 microprocessor a resource is needed to flash the
 Examples of SDCC programs can be found in the [SDCC](https://csgitlab.ucd.ie/fyp-fpga/fpga-files/-/tree/main/SDCC) section of the project.
 
 Example use of bashscript which compiles C file, formats the output and loads it to the rom directory
-![Alt Text](path/to/image.jpg)
+![bashScript](https://csgitlab.ucd.ie/fyp-fpga/fpga-files/-/blob/main/README_images/bashScript.png)
 
 ## RTL Simulation
 
 Once the program has been written and loaded to the rom. an RTL simulation can be done using Modelsim.
 
 - Run analysis and synthesis 
-![Alt Text](path/to/image.jpg)
+![Analysis/synthesis](https://csgitlab.ucd.ie/fyp-fpga/fpga-files/-/blob/main/README_images/analysis.png)
 - Run RTL Simulation
-![Alt Text](path/to/image.jpg)
+![RTLButton](https://csgitlab.ucd.ie/fyp-fpga/fpga-files/-/blob/main/README_images/rtlButton.png)
 - Add the respective wires and registers you wish to observe
-![Alt Text](path/to/image.jpg)
+![RTLSim](https://csgitlab.ucd.ie/fyp-fpga/fpga-files/-/blob/main/README_images/vgaTiming.png)
 
 ## Designing tile maps
 
 Additional helper scripts can be used to design the game maps and the sprites to be used. Since the computer has a custom memory layout the [bitMap](https://csgitlab.ucd.ie/fyp-fpga/fpga-files/-/tree/main/pythonScripts/bitMapConverter) script to convert a 16x16 sprite map to binary.
 
 Example sprite map
-![Alt Text](path/to/image.jpg)
+![sMap](https://csgitlab.ucd.ie/fyp-fpga/fpga-files/-/blob/main/README_images/spriteMap.png)
 
 Python program
+![script1](https://csgitlab.ucd.ie/fyp-fpga/fpga-files/-/blob/main/README_images/pythonScript1.png)
 
 Additionally when designing the map the user can use the [Tiled Map Editor](https://www.mapeditor.org/) to design worlds and convert them to the memory layout needed for the computer using the python [script](https://csgitlab.ucd.ie/fyp-fpga/fpga-files/-/tree/main/pythonScripts/tiledMapConverter)
 
 ![Alt Text](path/to/image.jpg)
 
 Save the map as game.tls and the script will automatically convert it to hex and load it to the VRAM hex files.
-![Alt Text](path/to/image.jpg)
+![script2](https://csgitlab.ucd.ie/fyp-fpga/fpga-files/-/blob/main/README_images/pythonScript2.png)
 
 
 
 ## Loading program onto device
 
-Once the design is compiled and software has been written switch the board to "program" via the switch on the board.
+Once the design is compiled and software has been written switch the board to "program" via the sw10 on the board.
+
+![programSwitch](https://csgitlab.ucd.ie/fyp-fpga/fpga-files/-/blob/main/README_images/switch.png)
 
 Using Quartus programmer set to "Active serial programming" and USB Blaster press start to load the design to the FPGA
+![programmer](https://csgitlab.ucd.ie/fyp-fpga/fpga-files/-/blob/main/README_images/programmer.png)
+
+Switch SW10 back to RUN
 
 This [video](https://www.youtube.com/watch?v=GjGi8DC8lgs) shows an example program running.
 
