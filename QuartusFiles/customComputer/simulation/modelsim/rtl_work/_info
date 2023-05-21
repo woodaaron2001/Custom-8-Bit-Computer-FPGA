@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/simulation/modelsim
 vaddress_latch
-Z1 !s110 1684626147
+Z1 !s110 1684674079
 !i10b 1
 !s100 dAg4P;AL0<FDoR9A`l2O_2
 I^c]lIa<zh6Lg[b[C2zJe=2
@@ -23,7 +23,7 @@ Z5 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z6 !s108 1684626146.000000
+Z6 !s108 1684674079.000000
 !s107 C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/address_latch.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer|C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/address_latch.v|
 !i113 1
@@ -31,7 +31,7 @@ Z7 o-vlog01compat -work work
 Z8 !s92 -vlog01compat -work work +incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer
 Z9 tCvgOpt 0
 vaddress_mux
-Z10 !s110 1684626146
+R1
 !i10b 1
 !s100 B>[;N^lbmHUVE;>0=6>lX0
 IMWOIRYTcLc8I=3j2Ld:1B3
@@ -53,7 +53,7 @@ R7
 R8
 R9
 vaddress_pins
-R10
+R1
 !i10b 1
 !s100 Xm=ZCnUzI]W9@4J=XPMaF1
 IoUJ@6S9i;1UU@YLe1JdG]0
@@ -75,7 +75,7 @@ R7
 R8
 R9
 valu
-R10
+R1
 !i10b 1
 !s100 ^1JifU45gMf`3HW^Aoj0b0
 IA3;5C189W@QHGo?0;`kU60
@@ -97,7 +97,7 @@ R7
 R8
 R9
 valu_bit_select
-R10
+R1
 !i10b 1
 !s100 ORE7]E>13ih1_j7]?Vj^Z2
 I`2^RG];[5TkZE<>Y`jFGb2
@@ -119,7 +119,7 @@ R7
 R8
 R9
 valu_control
-R10
+R1
 !i10b 1
 !s100 E2`D6N3zZM^g0Sni]`OT91
 IdYJO>j@`SnLL81P:^lYYl3
@@ -141,7 +141,7 @@ R7
 R8
 R9
 valu_core
-R10
+R1
 !i10b 1
 !s100 zPB4Q2A@[dkS;zYgJBGeb3
 IJYQ;j[G6^dl8TSShIl7[J0
@@ -163,7 +163,7 @@ R7
 R8
 R9
 valu_flags
-R10
+R1
 !i10b 1
 !s100 5N[c_?[CA_`YQjKZaC8gh3
 IddYko9OMzS^c3ic^_^5K?2
@@ -185,7 +185,7 @@ R7
 R8
 R9
 valu_mux_2
-R10
+R1
 !i10b 1
 !s100 XRFaFO<RaM_nWH0D[Jez70
 I86ZI6YXaH5CIHgDGTz<9O1
@@ -207,7 +207,7 @@ R7
 R8
 R9
 valu_mux_2z
-R10
+R1
 !i10b 1
 !s100 DTT3k:>`Sh>^k9?]KC5TW1
 I?J]RcfROz:b>gmzN9e?MC0
@@ -229,7 +229,7 @@ R7
 R8
 R9
 valu_mux_3z
-R10
+R1
 !i10b 1
 !s100 U805QhQ>a]4JhFJgA>XBz2
 I4mW[mIh;^E^^[>UlcJoe`3
@@ -251,7 +251,7 @@ R7
 R8
 R9
 valu_mux_4
-R10
+R1
 !i10b 1
 !s100 hM_`O5`QnFc^jM59hnmMe3
 I]ET5X]l=VnGWRiSKQzT?C2
@@ -273,7 +273,7 @@ R7
 R8
 R9
 valu_mux_8
-R10
+R1
 !i10b 1
 !s100 IH^h6OMYhIG8@MZSY`;7B0
 I>kXVmEHPjJYNVS[hLn^f[3
@@ -287,7 +287,7 @@ R5
 r1
 !s85 0
 31
-R6
+Z10 !s108 1684674078.000000
 !s107 C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/alu_mux_8.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer|C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/alu_mux_8.v|
 !i113 1
@@ -295,7 +295,7 @@ R7
 R8
 R9
 valu_prep_daa
-R10
+Z11 !s110 1684674078
 !i10b 1
 !s100 SZazfQMXidHOjU9e:cMRg2
 I_ogbO3RAcB@hao1HWlTed0
@@ -309,7 +309,7 @@ R5
 r1
 !s85 0
 31
-R6
+R10
 !s107 C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/alu_prep_daa.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer|C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/alu_prep_daa.v|
 !i113 1
@@ -317,7 +317,7 @@ R7
 R8
 R9
 valu_select
-R10
+R11
 !i10b 1
 !s100 ^5GA>acO`d2PIJ`9DgGeh2
 IzW2?C@I7i[hcK;I05_[023
@@ -331,7 +331,7 @@ R5
 r1
 !s85 0
 31
-R6
+R10
 !s107 C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/alu_select.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer|C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/alu_select.v|
 !i113 1
@@ -339,7 +339,7 @@ R7
 R8
 R9
 valu_shifter_core
-R10
+R11
 !i10b 1
 !s100 ;j9MMkiYoTz`:_HHK>zEC3
 I[H]FAVkK0XI3kleCJj`RC2
@@ -353,7 +353,7 @@ R5
 r1
 !s85 0
 31
-R6
+R10
 !s107 C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/alu_shifter_core.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer|C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/alu_shifter_core.v|
 !i113 1
@@ -361,7 +361,7 @@ R7
 R8
 R9
 valu_slice
-R10
+R11
 !i10b 1
 !s100 hAc`_F<=gV=QEM7659jK[1
 Ibe3L<H@^lk@o4_ITgOVfz1
@@ -375,7 +375,7 @@ R5
 r1
 !s85 0
 31
-R6
+R10
 !s107 C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/alu_slice.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer|C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/alu_slice.v|
 !i113 1
@@ -383,7 +383,7 @@ R7
 R8
 R9
 vbus_control
-R10
+R11
 !i10b 1
 !s100 O7i5:l^:kT3<o<TWh2_WK0
 IDLQWF0C51g^]G@bV2hNaT3
@@ -397,7 +397,7 @@ R5
 r1
 !s85 0
 31
-R6
+R10
 !s107 C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/bus_control.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer|C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/bus_control.v|
 !i113 1
@@ -405,7 +405,7 @@ R7
 R8
 R9
 vbus_switch
-Z11 !s110 1684626145
+R11
 !i10b 1
 !s100 7`QzXgcRg^o5QB4DWoK5n2
 I@8h:gU72[bDNe3zzRGD]z2
@@ -419,7 +419,7 @@ R5
 r1
 !s85 0
 31
-Z12 !s108 1684626145.000000
+R10
 !s107 C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/bus_switch.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer|C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/bus_switch.v|
 !i113 1
@@ -427,13 +427,13 @@ R7
 R8
 R9
 vcharRom
-R1
+Z12 !s110 1684674080
 !i10b 1
-!s100 k]PiGm7:T]IEj_;C2Pj==1
-IV_W4T7;z6C1Y<VH@:T27:3
+!s100 `H940nl]bFT:Kc:4QKIJe0
+IoF9_k_^1N>l6]`bQNkmhk0
 R2
 R0
-w1684622452
+w1684639506
 8C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/charRom.v
 FC:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/charRom.v
 L0 2
@@ -441,7 +441,7 @@ R5
 r1
 !s85 0
 31
-Z13 !s108 1684626147.000000
+Z13 !s108 1684674080.000000
 !s107 C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/charRom.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer|C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/charRom.v|
 !i113 1
@@ -464,7 +464,7 @@ R5
 r1
 !s85 0
 31
-R12
+R10
 !s107 C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/clk_delay.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer|C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/clk_delay.v|
 !i113 1
@@ -486,7 +486,7 @@ R5
 r1
 !s85 0
 31
-R12
+R10
 !s107 C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/control_pins_n.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer|C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/control_pins_n.v|
 !i113 1
@@ -494,13 +494,13 @@ R7
 R8
 R9
 vcram
-R1
+R12
 !i10b 1
-!s100 odon5PE^a^kOL]HQGf_?D1
-IBhYN8L02RCg@_o[YF6@d23
+!s100 KIWFE>hzNeAe@;XXgAooI1
+I_1]6l^H^m=jB6_bacdRBj0
 R2
 R0
-w1683281400
+w1684661935
 8C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/cram.v
 FC:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/cram.v
 L0 2
@@ -516,13 +516,13 @@ R7
 R8
 R9
 vcramController
-R1
+R12
 !i10b 1
-!s100 7IO1`KTH8Rk[?mAd<1nPc1
-Ia<[c;OQeYlI1`jCjFXOh33
+!s100 XM2ECjf4EQAmPm<o23_210
+Ik17Z]HCo?:IQGFYWo9UFf2
 R2
 R0
-w1683279939
+w1684661911
 8C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/cramController.v
 FC:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/cramController.v
 L0 2
@@ -541,11 +541,11 @@ ncram@controller
 vcustomComputer
 R1
 !i10b 1
-!s100 cSmnb]m]9BiKU]@mU6E5U3
-IAcXMF`fo3`DM7?2U7Czoj2
+!s100 0_GKTK>5o`XC^XmgaW@RX0
+I5P68jU4WHkjd;g7U18]Q<1
 R2
 R0
-w1684624215
+w1684664855
 8C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v
 FC:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v
 L0 6
@@ -553,7 +553,7 @@ R5
 r1
 !s85 0
 31
-R13
+R6
 !s107 C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer|C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v|
 !i113 1
@@ -576,7 +576,7 @@ R5
 r1
 !s85 0
 31
-R12
+R10
 !s107 C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/data_pins.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer|C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/data_pins.v|
 !i113 1
@@ -598,7 +598,7 @@ R5
 r1
 !s85 0
 31
-R12
+R10
 !s107 C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/data_switch.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer|C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/data_switch.v|
 !i113 1
@@ -620,7 +620,7 @@ R5
 r1
 !s85 0
 31
-R12
+R10
 !s107 C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/data_switch_mask.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer|C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/data_switch_mask.v|
 !i113 1
@@ -642,7 +642,7 @@ R5
 r1
 !s85 0
 31
-R12
+R10
 !s107 C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/decode_state.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer|C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/decode_state.v|
 !i113 1
@@ -650,7 +650,7 @@ R7
 R8
 R9
 vexecute
-Z14 !s110 1684626148
+Z14 !s110 1684674081
 !i10b 1
 !s100 d^DfNHB9_imzCZ8_o4H9U0
 I;QfOoVP]4?jC08W6NTc`53
@@ -690,7 +690,7 @@ R5
 r1
 !s85 0
 31
-R12
+R10
 !s107 C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/inc_dec.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer|C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/inc_dec.v|
 !i113 1
@@ -712,7 +712,7 @@ R5
 r1
 !s85 0
 31
-R12
+R10
 !s107 C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/inc_dec_2bit.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer|C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/inc_dec_2bit.v|
 !i113 1
@@ -734,7 +734,7 @@ R5
 r1
 !s85 0
 31
-R12
+R10
 !s107 C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/interrupts.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer|C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/interrupts.v|
 !i113 1
@@ -756,7 +756,7 @@ R5
 r1
 !s85 0
 31
-R12
+R10
 !s107 C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/ir.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer|C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/ir.v|
 !i113 1
@@ -778,7 +778,7 @@ R5
 r1
 !s85 0
 31
-R12
+R10
 !s107 C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/memory_ifc.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer|C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/memory_ifc.v|
 !i113 1
@@ -786,7 +786,7 @@ R7
 R8
 R9
 vpin_control
-R11
+Z15 !s110 1684674077
 !i10b 1
 !s100 hQ@`T>Xh89zznIFGn:ez]0
 Ie0IR1NoVggmlP`CSSMDBa2
@@ -800,7 +800,7 @@ R5
 r1
 !s85 0
 31
-R12
+Z16 !s108 1684674077.000000
 !s107 C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/pin_control.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer|C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/pin_control.v|
 !i113 1
@@ -808,7 +808,7 @@ R7
 R8
 R9
 vpla_decode
-R11
+R15
 !i10b 1
 !s100 D6Nje0Uh1MoE2KT3KIFES0
 I196A4Wf88YU6:@hUB2Qmd0
@@ -822,21 +822,43 @@ R5
 r1
 !s85 0
 31
-R12
+R16
 !s107 C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/pla_decode.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer|C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/pla_decode.v|
 !i113 1
 R7
 R8
 R9
+vps2
+R15
+!i10b 1
+!s100 AnY6e8IR5m6iUW=d3W6HJ3
+I=lokC3kjaG6Am7;:5]]BP3
+R2
+R0
+w1684664481
+8C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/ps2.v
+FC:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/ps2.v
+L0 2
+R5
+r1
+!s85 0
+31
+R16
+!s107 C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/ps2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer|C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/ps2.v|
+!i113 1
+R7
+R8
+R9
 vram
-R11
+R15
 !i10b 1
 !s100 `QHZ;]c:U5aZR]]jW]Sh?1
 Ig5DWXC4M:Z?z7IB6?IAa91
 R2
 R0
-w1683114344
+w1684662657
 8C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/ram.v
 FC:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/ram.v
 L0 2
@@ -844,7 +866,7 @@ R5
 r1
 !s85 0
 31
-R12
+R16
 !s107 C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/ram.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer|C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/ram.v|
 !i113 1
@@ -852,7 +874,7 @@ R7
 R8
 R9
 vreg_control
-R11
+R15
 !i10b 1
 !s100 :O=T]cCJEQ3?ZVk5In_DK3
 IbIjC3mhV?4P19ZFl5R^9e1
@@ -866,7 +888,7 @@ R5
 r1
 !s85 0
 31
-R12
+R16
 !s107 C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/reg_control.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer|C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/reg_control.v|
 !i113 1
@@ -874,7 +896,7 @@ R7
 R8
 R9
 vreg_file
-Z15 !s110 1684626144
+R15
 !i10b 1
 !s100 Y6@<H>V57lBmcMXegKHgX0
 IeC>;13D<fQ3BhPhOV=mCK0
@@ -888,7 +910,7 @@ R5
 r1
 !s85 0
 31
-Z16 !s108 1684626144.000000
+R16
 !s107 C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/reg_file.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer|C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/reg_file.v|
 !i113 1
@@ -940,13 +962,13 @@ R7
 R8
 R9
 vrom
-R1
+R12
 !i10b 1
-!s100 SFg2GY^[YgeLODFDj]VWz1
-Ii68M?1]SjfDYbbJ:1KCMT0
+!s100 9dzPYk;m`CB]l3IeT_Rfg2
+IN31C0OARPzFnHVdd?0G>e1
 R2
 R0
-w1683114298
+w1684662349
 8C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/rom.v
 FC:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/rom.v
 L0 2
@@ -954,7 +976,7 @@ R5
 r1
 !s85 0
 31
-R13
+R6
 !s107 C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/rom.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer|C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/rom.v|
 !i113 1
@@ -984,13 +1006,13 @@ R7
 R8
 R9
 vspriteRom
-R1
+R12
 !i10b 1
-!s100 c?4jgCmEf3;ng3fbFnF_J1
-I1ZKHRCAz4Ib>IcW2lZTQg3
+!s100 2GJ[hF:EdYm9QJTLz:ki=0
+I2a@>m?>Lhf8^G4P@H4LhY0
 R2
 R0
-w1684622219
+w1684662009
 8C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/spriteRom.v
 FC:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/spriteRom.v
 L0 2
@@ -1021,7 +1043,7 @@ R5
 r1
 !s85 0
 31
-!s108 1684626148.000000
+!s108 1684674081.000000
 !s107 C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/test.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer|C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/test.v|
 !i113 1
@@ -1049,13 +1071,13 @@ R16
 !i113 1
 R9
 vvgaController
-R1
+R12
 !i10b 1
-!s100 ce>cFK>CNYC?1?4hCnCBf0
-Il_^FjZcCoO_P?;f3gb@g;0
+!s100 CQ>BDfPGgQIbW>S9SgoM;1
+IWNM;YgWhlXG?cn8MEK0Qj2
 R2
 R0
-w1684624721
+w1684662854
 8C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vgaController.v
 FC:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vgaController.v
 L0 1
@@ -1072,13 +1094,13 @@ R8
 R9
 nvga@controller
 vvram
-R1
+R12
 !i10b 1
-!s100 a9c5cPz@UmbDb]FQ_bj5]0
-IA[A_1bgKTHa>RQ>]GeP`40
+!s100 zznfI4kJbGM>_D;icXj7d2
+I4YKT=e:3]lU6P^B8zV`mk2
 R2
 R0
-w1683112404
+w1684662063
 8C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vram.v
 FC:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vram.v
 L0 2
@@ -1094,7 +1116,7 @@ R7
 R8
 R9
 vz80_top_direct_n
-R1
+R12
 !i10b 1
 !s100 b`S8X9DQE10YhCX2XV@ag1
 I1im?cUGll8<M6:i`<Uf?]2

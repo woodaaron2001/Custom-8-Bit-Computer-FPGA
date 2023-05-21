@@ -62,6 +62,7 @@ vlog -vlog01compat -work work +incdir+C:/Users/redbr/Desktop/fpga-files/QuartusF
 vlog -vlog01compat -work work +incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer {C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/reg_file.v}
 vlog -vlog01compat -work work +incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer {C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/reg_control.v}
 vlog -vlog01compat -work work +incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer {C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/ram.v}
+vlog -vlog01compat -work work +incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer {C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/ps2.v}
 vlog -vlog01compat -work work +incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer {C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/pla_decode.v}
 vlog -vlog01compat -work work +incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer {C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/pin_control.v}
 vlog -vlog01compat -work work +incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer {C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/memory_ifc.v}

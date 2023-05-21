@@ -17,7 +17,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work altera_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_primitives.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:42:10 on May 21,2023
+# Start time: 14:01:01 on May 21,2023
 # vlog -reportprogress 300 -vlog01compat -work altera_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_primitives.v 
 # -- Compiling module global
 # -- Compiling module carry
@@ -99,7 +99,7 @@
 # 	alt_iobuf_diff
 # 	alt_bidir_diff
 # 	alt_bidir_buf
-# End time: 00:42:11 on May 21,2023, Elapsed time: 0:00:01
+# End time: 14:01:02 on May 21,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/lpm_ver
@@ -110,7 +110,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work lpm_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/220model.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:42:11 on May 21,2023
+# Start time: 14:01:02 on May 21,2023
 # vlog -reportprogress 300 -vlog01compat -work lpm_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/220model.v 
 # -- Compiling module LPM_MEMORY_INITIALIZATION
 # -- Compiling module LPM_HINT_EVALUATION
@@ -174,7 +174,7 @@
 # 	lpm_inpad
 # 	lpm_outpad
 # 	lpm_bipad
-# End time: 00:42:11 on May 21,2023, Elapsed time: 0:00:00
+# End time: 14:01:02 on May 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/sgate_ver
@@ -185,7 +185,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work sgate_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/sgate.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:42:12 on May 21,2023
+# Start time: 14:01:02 on May 21,2023
 # vlog -reportprogress 300 -vlog01compat -work sgate_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/sgate.v 
 # -- Compiling module oper_add
 # -- Compiling module oper_addsub
@@ -227,7 +227,7 @@
 # 	oper_decoder
 # 	oper_bus_mux
 # 	oper_latch
-# End time: 00:42:12 on May 21,2023, Elapsed time: 0:00:00
+# End time: 14:01:02 on May 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_mf_ver
@@ -238,7 +238,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work altera_mf_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_mf.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:42:12 on May 21,2023
+# Start time: 14:01:03 on May 21,2023
 # vlog -reportprogress 300 -vlog01compat -work altera_mf_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_mf.v 
 # -- Compiling module lcell
 # -- Compiling module ALTERA_MF_MEMORY_INITIALIZATION
@@ -368,7 +368,7 @@
 # 	alt_fault_injection
 # 	sld_virtual_jtag_basic
 # 	altsource_probe
-# End time: 00:42:13 on May 21,2023, Elapsed time: 0:00:01
+# End time: 14:01:04 on May 21,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_lnsim_ver
@@ -379,7 +379,7 @@
 # Modifying modelsim.ini
 # vlog -sv -work altera_lnsim_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_lnsim.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:42:13 on May 21,2023
+# Start time: 14:01:04 on May 21,2023
 # vlog -reportprogress 300 -sv -work altera_lnsim_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_lnsim.sv 
 # -- Compiling package altera_lnsim_functions
 # -- Compiling package altera_generic_pll_functions
@@ -462,7 +462,7 @@
 # 	altera_iopll
 # 	fourteennm_altera_iopll
 # 	fourteennm_simple_iopll
-# End time: 00:42:14 on May 21,2023, Elapsed time: 0:00:01
+# End time: 14:01:05 on May 21,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/cyclonev_ver
@@ -473,7 +473,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work cyclonev_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:42:14 on May 21,2023
+# Start time: 14:01:05 on May 21,2023
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_atoms_ncrypt.v 
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
@@ -487,19 +487,19 @@
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # 
 # Top level modules:
-# End time: 00:42:16 on May 21,2023, Elapsed time: 0:00:02
+# End time: 14:01:08 on May 21,2023, Elapsed time: 0:00:03
 # Errors: 0, Warnings: 20
 # vlog -vlog01compat -work cyclonev_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_hmi_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:42:17 on May 21,2023
+# Start time: 14:01:08 on May 21,2023
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_hmi_atoms_ncrypt.v 
 # 
 # Top level modules:
-# End time: 00:42:18 on May 21,2023, Elapsed time: 0:00:01
+# End time: 14:01:10 on May 21,2023, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work cyclonev_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_atoms.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:42:18 on May 21,2023
+# Start time: 14:01:10 on May 21,2023
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_atoms.v 
 # -- Compiling UDP CYCLONEV_PRIM_DFFE
 # -- Compiling UDP CYCLONEV_PRIM_DFFEAS
@@ -639,7 +639,7 @@
 # 	cyclonev_mem_phy
 # 	cyclonev_oscillator
 # 	cyclonev_hps_interface_fpga2sdram
-# End time: 00:42:19 on May 21,2023, Elapsed time: 0:00:01
+# End time: 14:01:10 on May 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/cyclonev_hssi_ver
@@ -650,15 +650,15 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work cyclonev_hssi_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_hssi_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:42:19 on May 21,2023
+# Start time: 14:01:10 on May 21,2023
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_hssi_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_hssi_atoms_ncrypt.v 
 # 
 # Top level modules:
-# End time: 00:42:21 on May 21,2023, Elapsed time: 0:00:02
+# End time: 14:01:13 on May 21,2023, Elapsed time: 0:00:03
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work cyclonev_hssi_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_hssi_atoms.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:42:21 on May 21,2023
+# Start time: 14:01:13 on May 21,2023
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_hssi_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_hssi_atoms.v 
 # -- Compiling module cyclonev_hssi_8g_pcs_aggregate
 # -- Compiling module cyclonev_hssi_8g_rx_pcs
@@ -758,7 +758,7 @@
 # 	arriav_hssi_avmm_interface
 # 	arriav_hssi_pma_hi_pmaif
 # 	arriav_hssi_pma_hi_xcvrif
-# End time: 00:42:21 on May 21,2023, Elapsed time: 0:00:00
+# End time: 14:01:13 on May 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/cyclonev_pcie_hip_ver
@@ -769,7 +769,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work cyclonev_pcie_hip_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_pcie_hip_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:42:22 on May 21,2023
+# Start time: 14:01:13 on May 21,2023
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_pcie_hip_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_pcie_hip_atoms_ncrypt.v 
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
@@ -779,18 +779,18 @@
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # 
 # Top level modules:
-# End time: 00:42:24 on May 21,2023, Elapsed time: 0:00:02
+# End time: 14:01:16 on May 21,2023, Elapsed time: 0:00:03
 # Errors: 0, Warnings: 12
 # vlog -vlog01compat -work cyclonev_pcie_hip_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_pcie_hip_atoms.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:42:24 on May 21,2023
+# Start time: 14:01:16 on May 21,2023
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_pcie_hip_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_pcie_hip_atoms.v 
 # -- Compiling module cyclonev_hd_altpe2_hip_top
 # -- Compiling module arriav_hd_altpe2_hip_top
 # 
 # Top level modules:
 # 	cyclonev_hd_altpe2_hip_top
-# End time: 00:42:24 on May 21,2023, Elapsed time: 0:00:00
+# End time: 14:01:17 on May 21,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # if {[file exists rtl_work]} {
@@ -809,512 +809,523 @@
 # 
 # vlog "C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo"
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:42:24 on May 21,2023
+# Start time: 14:01:17 on May 21,2023
 # vlog -reportprogress 300 C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo 
 # -- Compiling module vga_pll
 # 
 # Top level modules:
 # 	vga_pll
-# End time: 00:42:24 on May 21,2023, Elapsed time: 0:00:00
+# End time: 14:01:17 on May 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer {C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/sequencer.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:42:24 on May 21,2023
+# Start time: 14:01:17 on May 21,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer" C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/sequencer.v 
 # -- Compiling module sequencer
 # 
 # Top level modules:
 # 	sequencer
-# End time: 00:42:24 on May 21,2023, Elapsed time: 0:00:00
+# End time: 14:01:17 on May 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer {C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/resets.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:42:24 on May 21,2023
+# Start time: 14:01:17 on May 21,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer" C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/resets.v 
 # -- Compiling module resets
 # 
 # Top level modules:
 # 	resets
-# End time: 00:42:24 on May 21,2023, Elapsed time: 0:00:00
+# End time: 14:01:17 on May 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer {C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/reg_latch.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:42:24 on May 21,2023
+# Start time: 14:01:17 on May 21,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer" C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/reg_latch.v 
 # -- Compiling module reg_latch
 # 
 # Top level modules:
 # 	reg_latch
-# End time: 00:42:24 on May 21,2023, Elapsed time: 0:00:00
+# End time: 14:01:17 on May 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer {C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/reg_file.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:42:24 on May 21,2023
+# Start time: 14:01:17 on May 21,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer" C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/reg_file.v 
 # -- Compiling module reg_file
 # 
 # Top level modules:
 # 	reg_file
-# End time: 00:42:24 on May 21,2023, Elapsed time: 0:00:00
+# End time: 14:01:17 on May 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer {C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/reg_control.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:42:25 on May 21,2023
+# Start time: 14:01:17 on May 21,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer" C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/reg_control.v 
 # -- Compiling module reg_control
 # 
 # Top level modules:
 # 	reg_control
-# End time: 00:42:25 on May 21,2023, Elapsed time: 0:00:00
+# End time: 14:01:17 on May 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer {C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/ram.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:42:25 on May 21,2023
+# Start time: 14:01:17 on May 21,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer" C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/ram.v 
 # -- Compiling module ram
 # 
 # Top level modules:
 # 	ram
-# End time: 00:42:25 on May 21,2023, Elapsed time: 0:00:00
+# End time: 14:01:17 on May 21,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer {C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/ps2.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:01:17 on May 21,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer" C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/ps2.v 
+# -- Compiling module ps2
+# 
+# Top level modules:
+# 	ps2
+# End time: 14:01:17 on May 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer {C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/pla_decode.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:42:25 on May 21,2023
+# Start time: 14:01:17 on May 21,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer" C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/pla_decode.v 
 # -- Compiling module pla_decode
 # 
 # Top level modules:
 # 	pla_decode
-# End time: 00:42:25 on May 21,2023, Elapsed time: 0:00:00
+# End time: 14:01:17 on May 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer {C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/pin_control.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:42:25 on May 21,2023
+# Start time: 14:01:17 on May 21,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer" C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/pin_control.v 
 # -- Compiling module pin_control
 # 
 # Top level modules:
 # 	pin_control
-# End time: 00:42:25 on May 21,2023, Elapsed time: 0:00:00
+# End time: 14:01:17 on May 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer {C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/memory_ifc.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:42:25 on May 21,2023
+# Start time: 14:01:18 on May 21,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer" C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/memory_ifc.v 
 # -- Compiling module memory_ifc
 # 
 # Top level modules:
 # 	memory_ifc
-# End time: 00:42:25 on May 21,2023, Elapsed time: 0:00:00
+# End time: 14:01:18 on May 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer {C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/ir.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:42:25 on May 21,2023
+# Start time: 14:01:18 on May 21,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer" C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/ir.v 
 # -- Compiling module ir
 # 
 # Top level modules:
 # 	ir
-# End time: 00:42:25 on May 21,2023, Elapsed time: 0:00:00
+# End time: 14:01:18 on May 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer {C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/interrupts.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:42:25 on May 21,2023
+# Start time: 14:01:18 on May 21,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer" C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/interrupts.v 
 # -- Compiling module interrupts
 # 
 # Top level modules:
 # 	interrupts
-# End time: 00:42:25 on May 21,2023, Elapsed time: 0:00:00
+# End time: 14:01:18 on May 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer {C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/inc_dec_2bit.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:42:25 on May 21,2023
+# Start time: 14:01:18 on May 21,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer" C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/inc_dec_2bit.v 
 # -- Compiling module inc_dec_2bit
 # 
 # Top level modules:
 # 	inc_dec_2bit
-# End time: 00:42:25 on May 21,2023, Elapsed time: 0:00:00
+# End time: 14:01:18 on May 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer {C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/inc_dec.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:42:25 on May 21,2023
+# Start time: 14:01:18 on May 21,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer" C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/inc_dec.v 
 # -- Compiling module inc_dec
 # 
 # Top level modules:
 # 	inc_dec
-# End time: 00:42:25 on May 21,2023, Elapsed time: 0:00:00
+# End time: 14:01:18 on May 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer {C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/decode_state.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:42:25 on May 21,2023
+# Start time: 14:01:18 on May 21,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer" C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/decode_state.v 
 # -- Compiling module decode_state
 # 
 # Top level modules:
 # 	decode_state
-# End time: 00:42:25 on May 21,2023, Elapsed time: 0:00:00
+# End time: 14:01:18 on May 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer {C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/data_switch_mask.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:42:25 on May 21,2023
+# Start time: 14:01:18 on May 21,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer" C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/data_switch_mask.v 
 # -- Compiling module data_switch_mask
 # 
 # Top level modules:
 # 	data_switch_mask
-# End time: 00:42:25 on May 21,2023, Elapsed time: 0:00:00
+# End time: 14:01:18 on May 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer {C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/data_switch.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:42:25 on May 21,2023
+# Start time: 14:01:18 on May 21,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer" C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/data_switch.v 
 # -- Compiling module data_switch
 # 
 # Top level modules:
 # 	data_switch
-# End time: 00:42:25 on May 21,2023, Elapsed time: 0:00:00
+# End time: 14:01:18 on May 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer {C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/data_pins.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:42:25 on May 21,2023
+# Start time: 14:01:18 on May 21,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer" C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/data_pins.v 
 # -- Compiling module data_pins
 # 
 # Top level modules:
 # 	data_pins
-# End time: 00:42:25 on May 21,2023, Elapsed time: 0:00:00
+# End time: 14:01:18 on May 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer {C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/control_pins_n.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:42:25 on May 21,2023
+# Start time: 14:01:18 on May 21,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer" C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/control_pins_n.v 
 # -- Compiling module control_pins_n
 # 
 # Top level modules:
 # 	control_pins_n
-# End time: 00:42:25 on May 21,2023, Elapsed time: 0:00:00
+# End time: 14:01:18 on May 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer {C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/clk_delay.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:42:25 on May 21,2023
+# Start time: 14:01:18 on May 21,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer" C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/clk_delay.v 
 # -- Compiling module clk_delay
 # 
 # Top level modules:
 # 	clk_delay
-# End time: 00:42:25 on May 21,2023, Elapsed time: 0:00:00
+# End time: 14:01:18 on May 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer {C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/bus_switch.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:42:25 on May 21,2023
+# Start time: 14:01:18 on May 21,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer" C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/bus_switch.v 
 # -- Compiling module bus_switch
 # 
 # Top level modules:
 # 	bus_switch
-# End time: 00:42:25 on May 21,2023, Elapsed time: 0:00:00
+# End time: 14:01:18 on May 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer {C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/bus_control.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:42:26 on May 21,2023
+# Start time: 14:01:18 on May 21,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer" C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/bus_control.v 
 # -- Compiling module bus_control
 # 
 # Top level modules:
 # 	bus_control
-# End time: 00:42:26 on May 21,2023, Elapsed time: 0:00:00
+# End time: 14:01:18 on May 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer {C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/alu_slice.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:42:26 on May 21,2023
+# Start time: 14:01:18 on May 21,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer" C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/alu_slice.v 
 # -- Compiling module alu_slice
 # 
 # Top level modules:
 # 	alu_slice
-# End time: 00:42:26 on May 21,2023, Elapsed time: 0:00:00
+# End time: 14:01:18 on May 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer {C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/alu_shifter_core.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:42:26 on May 21,2023
+# Start time: 14:01:18 on May 21,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer" C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/alu_shifter_core.v 
 # -- Compiling module alu_shifter_core
 # 
 # Top level modules:
 # 	alu_shifter_core
-# End time: 00:42:26 on May 21,2023, Elapsed time: 0:00:00
+# End time: 14:01:18 on May 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer {C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/alu_select.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:42:26 on May 21,2023
+# Start time: 14:01:18 on May 21,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer" C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/alu_select.v 
 # -- Compiling module alu_select
 # 
 # Top level modules:
 # 	alu_select
-# End time: 00:42:26 on May 21,2023, Elapsed time: 0:00:00
+# End time: 14:01:18 on May 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer {C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/alu_prep_daa.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:42:26 on May 21,2023
+# Start time: 14:01:18 on May 21,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer" C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/alu_prep_daa.v 
 # -- Compiling module alu_prep_daa
 # 
 # Top level modules:
 # 	alu_prep_daa
-# End time: 00:42:26 on May 21,2023, Elapsed time: 0:00:00
+# End time: 14:01:18 on May 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer {C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/alu_mux_8.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:42:26 on May 21,2023
+# Start time: 14:01:18 on May 21,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer" C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/alu_mux_8.v 
 # -- Compiling module alu_mux_8
 # 
 # Top level modules:
 # 	alu_mux_8
-# End time: 00:42:26 on May 21,2023, Elapsed time: 0:00:00
+# End time: 14:01:19 on May 21,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer {C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/alu_mux_4.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:42:26 on May 21,2023
+# Start time: 14:01:19 on May 21,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer" C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/alu_mux_4.v 
 # -- Compiling module alu_mux_4
 # 
 # Top level modules:
 # 	alu_mux_4
-# End time: 00:42:26 on May 21,2023, Elapsed time: 0:00:00
+# End time: 14:01:19 on May 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer {C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/alu_mux_3z.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:42:26 on May 21,2023
+# Start time: 14:01:19 on May 21,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer" C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/alu_mux_3z.v 
 # -- Compiling module alu_mux_3z
 # 
 # Top level modules:
 # 	alu_mux_3z
-# End time: 00:42:26 on May 21,2023, Elapsed time: 0:00:00
+# End time: 14:01:19 on May 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer {C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/alu_mux_2z.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:42:26 on May 21,2023
+# Start time: 14:01:19 on May 21,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer" C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/alu_mux_2z.v 
 # -- Compiling module alu_mux_2z
 # 
 # Top level modules:
 # 	alu_mux_2z
-# End time: 00:42:26 on May 21,2023, Elapsed time: 0:00:00
+# End time: 14:01:19 on May 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer {C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/alu_mux_2.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:42:26 on May 21,2023
+# Start time: 14:01:19 on May 21,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer" C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/alu_mux_2.v 
 # -- Compiling module alu_mux_2
 # 
 # Top level modules:
 # 	alu_mux_2
-# End time: 00:42:26 on May 21,2023, Elapsed time: 0:00:00
+# End time: 14:01:19 on May 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer {C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/alu_flags.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:42:26 on May 21,2023
+# Start time: 14:01:19 on May 21,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer" C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/alu_flags.v 
 # -- Compiling module alu_flags
 # 
 # Top level modules:
 # 	alu_flags
-# End time: 00:42:26 on May 21,2023, Elapsed time: 0:00:00
+# End time: 14:01:19 on May 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer {C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/alu_core.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:42:26 on May 21,2023
+# Start time: 14:01:19 on May 21,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer" C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/alu_core.v 
 # -- Compiling module alu_core
 # 
 # Top level modules:
 # 	alu_core
-# End time: 00:42:26 on May 21,2023, Elapsed time: 0:00:00
+# End time: 14:01:19 on May 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer {C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/alu_control.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:42:26 on May 21,2023
+# Start time: 14:01:19 on May 21,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer" C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/alu_control.v 
 # -- Compiling module alu_control
 # 
 # Top level modules:
 # 	alu_control
-# End time: 00:42:26 on May 21,2023, Elapsed time: 0:00:00
+# End time: 14:01:19 on May 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer {C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/alu_bit_select.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:42:26 on May 21,2023
+# Start time: 14:01:19 on May 21,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer" C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/alu_bit_select.v 
 # -- Compiling module alu_bit_select
 # 
 # Top level modules:
 # 	alu_bit_select
-# End time: 00:42:26 on May 21,2023, Elapsed time: 0:00:00
+# End time: 14:01:19 on May 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer {C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/alu.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:42:26 on May 21,2023
+# Start time: 14:01:19 on May 21,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer" C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/alu.v 
 # -- Compiling module alu
 # 
 # Top level modules:
 # 	alu
-# End time: 00:42:26 on May 21,2023, Elapsed time: 0:00:00
+# End time: 14:01:19 on May 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer {C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/address_pins.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:42:26 on May 21,2023
+# Start time: 14:01:19 on May 21,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer" C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/address_pins.v 
 # -- Compiling module address_pins
 # 
 # Top level modules:
 # 	address_pins
-# End time: 00:42:26 on May 21,2023, Elapsed time: 0:00:00
+# End time: 14:01:19 on May 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer {C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/address_mux.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:42:26 on May 21,2023
+# Start time: 14:01:19 on May 21,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer" C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/address_mux.v 
 # -- Compiling module address_mux
 # 
 # Top level modules:
 # 	address_mux
-# End time: 00:42:26 on May 21,2023, Elapsed time: 0:00:00
+# End time: 14:01:19 on May 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer {C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/address_latch.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:42:26 on May 21,2023
+# Start time: 14:01:19 on May 21,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer" C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/address_latch.v 
 # -- Compiling module address_latch
 # 
 # Top level modules:
 # 	address_latch
-# End time: 00:42:27 on May 21,2023, Elapsed time: 0:00:01
+# End time: 14:01:19 on May 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer {C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:42:27 on May 21,2023
+# Start time: 14:01:19 on May 21,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer" C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v 
 # -- Compiling module customComputer
 # 
 # Top level modules:
 # 	customComputer
-# End time: 00:42:27 on May 21,2023, Elapsed time: 0:00:00
+# End time: 14:01:19 on May 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer {C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/rom.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:42:27 on May 21,2023
+# Start time: 14:01:19 on May 21,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer" C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/rom.v 
 # -- Compiling module rom
 # 
 # Top level modules:
 # 	rom
-# End time: 00:42:27 on May 21,2023, Elapsed time: 0:00:00
+# End time: 14:01:20 on May 21,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer {C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vgaController.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:42:27 on May 21,2023
+# Start time: 14:01:20 on May 21,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer" C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vgaController.v 
 # -- Compiling module vgaController
 # 
 # Top level modules:
 # 	vgaController
-# End time: 00:42:27 on May 21,2023, Elapsed time: 0:00:00
+# End time: 14:01:20 on May 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer {C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vram.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:42:27 on May 21,2023
+# Start time: 14:01:20 on May 21,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer" C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vram.v 
 # -- Compiling module vram
 # 
 # Top level modules:
 # 	vram
-# End time: 00:42:27 on May 21,2023, Elapsed time: 0:00:00
+# End time: 14:01:20 on May 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer {C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/spriteRom.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:42:27 on May 21,2023
+# Start time: 14:01:20 on May 21,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer" C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/spriteRom.v 
 # -- Compiling module spriteRom
 # 
 # Top level modules:
 # 	spriteRom
-# End time: 00:42:27 on May 21,2023, Elapsed time: 0:00:00
+# End time: 14:01:20 on May 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer {C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/cram.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:42:27 on May 21,2023
+# Start time: 14:01:20 on May 21,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer" C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/cram.v 
 # -- Compiling module cram
 # 
 # Top level modules:
 # 	cram
-# End time: 00:42:27 on May 21,2023, Elapsed time: 0:00:00
+# End time: 14:01:20 on May 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer {C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/cramController.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:42:27 on May 21,2023
+# Start time: 14:01:20 on May 21,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer" C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/cramController.v 
 # -- Compiling module cramController
 # 
 # Top level modules:
 # 	cramController
-# End time: 00:42:27 on May 21,2023, Elapsed time: 0:00:00
+# End time: 14:01:20 on May 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer {C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/charRom.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:42:27 on May 21,2023
+# Start time: 14:01:20 on May 21,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer" C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/charRom.v 
 # -- Compiling module charRom
 # 
 # Top level modules:
 # 	charRom
-# End time: 00:42:27 on May 21,2023, Elapsed time: 0:00:00
+# End time: 14:01:20 on May 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer {C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:42:27 on May 21,2023
+# Start time: 14:01:20 on May 21,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer" C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v 
 # -- Compiling module z80_top_direct_n
 # 
 # Top level modules:
 # 	z80_top_direct_n
-# End time: 00:42:27 on May 21,2023, Elapsed time: 0:00:00
+# End time: 14:01:20 on May 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer {C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/execute.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:42:27 on May 21,2023
+# Start time: 14:01:20 on May 21,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer" C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/execute.v 
 # -- Compiling module execute
 # 
 # Top level modules:
 # 	execute
-# End time: 00:42:28 on May 21,2023, Elapsed time: 0:00:01
+# End time: 14:01:21 on May 21,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer {C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/test.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:42:28 on May 21,2023
+# Start time: 14:01:21 on May 21,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer" C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/test.v 
 # -- Compiling module test
 # 
 # Top level modules:
 # 	test
-# End time: 00:42:28 on May 21,2023, Elapsed time: 0:00:00
+# End time: 14:01:21 on May 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  test
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" test 
-# Start time: 00:42:28 on May 21,2023
+# Start time: 14:01:21 on May 21,2023
 # Loading work.test
 # Loading work.customComputer
+# Loading work.ps2
 # Loading work.z80_top_direct_n
 # Loading work.clk_delay
 # Loading work.decode_state
@@ -1381,32 +1392,34 @@
 # ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/test.v(10): [TFMPC] - Missing connection for port 'VGA_HS'.
 # ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/test.v(10): [TFMPC] - Missing connection for port 'VGA_R'.
 # ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/test.v(10): [TFMPC] - Missing connection for port 'VGA_VS'.
-# ** Warning: (vsim-3017) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [TFMPC] - Too few port connections. Expected 16, found 10.
+# ** Warning: (vsim-3015) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(117): [PCDPC] - Port size (8) does not match connection size (10) for port 'LEDR'. The port definition is at: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/ps2.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /test/uut/ps2_inst File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/ps2.v
+# ** Warning: (vsim-3017) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(128): [TFMPC] - Too few port connections. Expected 16, found 10.
 #    Time: 0 ps  Iteration: 0  Instance: /test/uut/inst1 File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v
-# ** Warning: (vsim-3015) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [PCDPC] - Port size (1) does not match connection size (32) for port 'nWAIT'. The port definition is at: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v(29).
+# ** Warning: (vsim-3015) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(128): [PCDPC] - Port size (1) does not match connection size (32) for port 'nWAIT'. The port definition is at: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v(29).
 #    Time: 0 ps  Iteration: 0  Instance: /test/uut/inst1 File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v
-# ** Warning: (vsim-3015) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [PCDPC] - Port size (1) does not match connection size (32) for port 'nINT'. The port definition is at: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v(30).
+# ** Warning: (vsim-3015) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(128): [PCDPC] - Port size (1) does not match connection size (32) for port 'nINT'. The port definition is at: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v(30).
 #    Time: 0 ps  Iteration: 0  Instance: /test/uut/inst1 File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v
-# ** Warning: (vsim-3015) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [PCDPC] - Port size (1) does not match connection size (32) for port 'nNMI'. The port definition is at: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v(31).
+# ** Warning: (vsim-3015) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(128): [PCDPC] - Port size (1) does not match connection size (32) for port 'nNMI'. The port definition is at: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v(31).
 #    Time: 0 ps  Iteration: 0  Instance: /test/uut/inst1 File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v
-# ** Warning: (vsim-3015) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [PCDPC] - Port size (1) does not match connection size (32) for port 'nRESET'. The port definition is at: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v(32).
+# ** Warning: (vsim-3015) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(128): [PCDPC] - Port size (1) does not match connection size (32) for port 'nRESET'. The port definition is at: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v(32).
 #    Time: 0 ps  Iteration: 0  Instance: /test/uut/inst1 File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v
-# ** Warning: (vsim-3015) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [PCDPC] - Port size (1) does not match connection size (32) for port 'nBUSRQ'. The port definition is at: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v(33).
+# ** Warning: (vsim-3015) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(128): [PCDPC] - Port size (1) does not match connection size (32) for port 'nBUSRQ'. The port definition is at: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v(33).
 #    Time: 0 ps  Iteration: 0  Instance: /test/uut/inst1 File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [TFMPC] - Missing connection for port 'nM1'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [TFMPC] - Missing connection for port 'nMREQ'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [TFMPC] - Missing connection for port 'nIORQ'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [TFMPC] - Missing connection for port 'nRFSH'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [TFMPC] - Missing connection for port 'nHALT'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [TFMPC] - Missing connection for port 'nBUSACK'.
-# ** Warning: (vsim-3017) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(201): [TFMPC] - Too few port connections. Expected 6, found 5.
+# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(128): [TFMPC] - Missing connection for port 'nM1'.
+# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(128): [TFMPC] - Missing connection for port 'nMREQ'.
+# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(128): [TFMPC] - Missing connection for port 'nIORQ'.
+# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(128): [TFMPC] - Missing connection for port 'nRFSH'.
+# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(128): [TFMPC] - Missing connection for port 'nHALT'.
+# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(128): [TFMPC] - Missing connection for port 'nBUSACK'.
+# ** Warning: (vsim-3017) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(144): [TFMPC] - Too few port connections. Expected 6, found 5.
 #    Time: 0 ps  Iteration: 0  Instance: /test/uut/ram_inst File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/ram.v
-# ** Warning: (vsim-3015) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(201): [PCDPC] - Port size (15) does not match connection size (16) for port 'addr'. The port definition is at: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/ram.v(6).
+# ** Warning: (vsim-3015) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(144): [PCDPC] - Port size (15) does not match connection size (16) for port 'addr'. The port definition is at: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/ram.v(6).
 #    Time: 0 ps  Iteration: 0  Instance: /test/uut/ram_inst File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/ram.v
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(201): [TFMPC] - Missing connection for port 'read_en'.
-# ** Warning: (vsim-3017) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(218): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(144): [TFMPC] - Missing connection for port 'read_en'.
+# ** Warning: (vsim-3017) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(159): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ps  Iteration: 0  Instance: /test/uut/clkControl File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(218): [TFMPC] - Missing connection for port 'locked'.
+# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(159): [TFMPC] - Missing connection for port 'locked'.
 # ** Warning: (vsim-3017) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Too few port connections. Expected 26, found 5.
 #    Time: 0 ps  Iteration: 0  Instance: /test/uut/clkControl/vga_pll_altera_pll_altera_pll_i_639 File: c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_lnsim.sv
 # ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'refclk1'.
@@ -1430,15 +1443,15 @@
 # ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'extclk_out'.
 # ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'cascade_out'.
 # ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'zdbfbclk'.
-# ** Warning: Design size of 11036 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# ** Warning: Design size of 11078 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
 # 
 # add wave *
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: redbr  Hostname: DESKTOP-E6QAJTT  ProcessID: 7476
-#           Attempting to use alternate WLF file "./wlftwnc287".
+#           Attempting to use alternate WLF file "./wlfterwh22".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftwnc287
+#           Using alternate file: ./wlfterwh22
 # view structure
 # .main_pane.structure.interior.cs.body.struct
 # view signals
@@ -1446,8 +1459,7 @@
 # run -all
 # ** Warning: (vsim-PLI-3407) Too many data words read on line 50824 of file "../../roms/emptyRam.hex". (Current address [50823], address range [0:50822])    : C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/ram.v(17)
 #    Time: 0 ps  Iteration: 0  Instance: /test/uut/ram_inst
-# ** Warning: (vsim-7) Failed to open readmem file "../../roms/rom.hex" in read mode.
-# No such file or directory. (errno = ENOENT)    : C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/rom.v(14)
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 12288 of file "../../roms/rom.hex". (Current address [12287], address range [0:12286])    : C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/rom.v(15)
 #    Time: 0 ps  Iteration: 0  Instance: /test/uut/rom_inst
 # Info: hierarchical_name = test.uut.clkControl.vga_pll_altera_pll_altera_pll_i_639.new_model.gpll.no_need_to_gen
 # Adjusting output period from 39721.946375 to 40000.000000
@@ -1463,159 +1475,7 @@
 # Info: sim_additional_refclk_cycles_to_lock = 0
 # Info: output_clock_high_period = 20000.000000
 # Info: output_clock_low_period = 20000.000000
-# ** Warning: (vsim-7) Failed to open readmem file "../../roms/charSprites.bin" in read mode.
-# No such file or directory. (errno = ENOENT)    : C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/charRom.v(15)
-#    Time: 0 ps  Iteration: 0  Instance: /test/uut/vC/charRom_inst
-# Info: hierarchical_name = test.uut.clkControl.vga_pll_altera_pll_altera_pll_i_639.new_model.gpll.UI
-# Warning: The frequency of the reference clock signal differs from the specified frequency (50.0 MHz).
-# Break key hit
-# Simulation stop requested.
-add wave -position end  sim:/test/uut/ram_inst/mem
-add wave -position end  sim:/test/uut/rom_inst/mem
-restart -f
-# ** Warning: (vsim-3017) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/test.v(10): [TFMPC] - Too few port connections. Expected 10, found 1.
-#    Time: 0 ps  Iteration: 0  Instance: /test/uut File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/test.v(10): [TFMPC] - Missing connection for port 'RESET_N'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/test.v(10): [TFMPC] - Missing connection for port 'LEDR'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/test.v(10): [TFMPC] - Missing connection for port 'PS2_CLK'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/test.v(10): [TFMPC] - Missing connection for port 'PS2_DAT'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/test.v(10): [TFMPC] - Missing connection for port 'VGA_B'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/test.v(10): [TFMPC] - Missing connection for port 'VGA_G'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/test.v(10): [TFMPC] - Missing connection for port 'VGA_HS'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/test.v(10): [TFMPC] - Missing connection for port 'VGA_R'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/test.v(10): [TFMPC] - Missing connection for port 'VGA_VS'.
-# ** Warning: (vsim-3017) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [TFMPC] - Too few port connections. Expected 16, found 10.
-#    Time: 0 ps  Iteration: 0  Instance: /test/uut/inst1 File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v
-# ** Warning: (vsim-3015) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [PCDPC] - Port size (1) does not match connection size (32) for port 'nWAIT'. The port definition is at: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v(29).
-#    Time: 0 ps  Iteration: 0  Instance: /test/uut/inst1 File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v
-# ** Warning: (vsim-3015) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [PCDPC] - Port size (1) does not match connection size (32) for port 'nINT'. The port definition is at: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v(30).
-#    Time: 0 ps  Iteration: 0  Instance: /test/uut/inst1 File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v
-# ** Warning: (vsim-3015) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [PCDPC] - Port size (1) does not match connection size (32) for port 'nNMI'. The port definition is at: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v(31).
-#    Time: 0 ps  Iteration: 0  Instance: /test/uut/inst1 File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v
-# ** Warning: (vsim-3015) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [PCDPC] - Port size (1) does not match connection size (32) for port 'nRESET'. The port definition is at: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v(32).
-#    Time: 0 ps  Iteration: 0  Instance: /test/uut/inst1 File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v
-# ** Warning: (vsim-3015) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [PCDPC] - Port size (1) does not match connection size (32) for port 'nBUSRQ'. The port definition is at: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v(33).
-#    Time: 0 ps  Iteration: 0  Instance: /test/uut/inst1 File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [TFMPC] - Missing connection for port 'nM1'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [TFMPC] - Missing connection for port 'nMREQ'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [TFMPC] - Missing connection for port 'nIORQ'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [TFMPC] - Missing connection for port 'nRFSH'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [TFMPC] - Missing connection for port 'nHALT'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [TFMPC] - Missing connection for port 'nBUSACK'.
-# ** Warning: (vsim-3017) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(201): [TFMPC] - Too few port connections. Expected 6, found 5.
-#    Time: 0 ps  Iteration: 0  Instance: /test/uut/ram_inst File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/ram.v
-# ** Warning: (vsim-3015) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(201): [PCDPC] - Port size (15) does not match connection size (16) for port 'addr'. The port definition is at: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/ram.v(6).
-#    Time: 0 ps  Iteration: 0  Instance: /test/uut/ram_inst File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/ram.v
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(201): [TFMPC] - Missing connection for port 'read_en'.
-# ** Warning: (vsim-3017) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(218): [TFMPC] - Too few port connections. Expected 4, found 3.
-#    Time: 0 ps  Iteration: 0  Instance: /test/uut/clkControl File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(218): [TFMPC] - Missing connection for port 'locked'.
-# ** Warning: (vsim-3017) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Too few port connections. Expected 26, found 5.
-#    Time: 0 ps  Iteration: 0  Instance: /test/uut/clkControl/vga_pll_altera_pll_altera_pll_i_639 File: c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_lnsim.sv
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'refclk1'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'phase_en'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'updn'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'num_phase_shifts'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'scanclk'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'cntsel'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'reconfig_to_pll'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'extswitch'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'adjpllin'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'cclk'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'fboutclk'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'phase_done'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'reconfig_from_pll'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'activeclk'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'clkbad'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'phout'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'lvds_clk'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'loaden'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'extclk_out'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'cascade_out'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'zdbfbclk'.
-add wave -position 1  sim:/test/uut/address_bus
-add wave -position 2  sim:/test/uut/data_bus
-restart -f
-# ** Warning: (vsim-3017) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/test.v(10): [TFMPC] - Too few port connections. Expected 10, found 1.
-#    Time: 0 ps  Iteration: 0  Instance: /test/uut File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/test.v(10): [TFMPC] - Missing connection for port 'RESET_N'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/test.v(10): [TFMPC] - Missing connection for port 'LEDR'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/test.v(10): [TFMPC] - Missing connection for port 'PS2_CLK'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/test.v(10): [TFMPC] - Missing connection for port 'PS2_DAT'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/test.v(10): [TFMPC] - Missing connection for port 'VGA_B'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/test.v(10): [TFMPC] - Missing connection for port 'VGA_G'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/test.v(10): [TFMPC] - Missing connection for port 'VGA_HS'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/test.v(10): [TFMPC] - Missing connection for port 'VGA_R'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/test.v(10): [TFMPC] - Missing connection for port 'VGA_VS'.
-# ** Warning: (vsim-3017) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [TFMPC] - Too few port connections. Expected 16, found 10.
-#    Time: 0 ps  Iteration: 0  Instance: /test/uut/inst1 File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v
-# ** Warning: (vsim-3015) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [PCDPC] - Port size (1) does not match connection size (32) for port 'nWAIT'. The port definition is at: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v(29).
-#    Time: 0 ps  Iteration: 0  Instance: /test/uut/inst1 File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v
-# ** Warning: (vsim-3015) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [PCDPC] - Port size (1) does not match connection size (32) for port 'nINT'. The port definition is at: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v(30).
-#    Time: 0 ps  Iteration: 0  Instance: /test/uut/inst1 File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v
-# ** Warning: (vsim-3015) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [PCDPC] - Port size (1) does not match connection size (32) for port 'nNMI'. The port definition is at: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v(31).
-#    Time: 0 ps  Iteration: 0  Instance: /test/uut/inst1 File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v
-# ** Warning: (vsim-3015) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [PCDPC] - Port size (1) does not match connection size (32) for port 'nRESET'. The port definition is at: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v(32).
-#    Time: 0 ps  Iteration: 0  Instance: /test/uut/inst1 File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v
-# ** Warning: (vsim-3015) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [PCDPC] - Port size (1) does not match connection size (32) for port 'nBUSRQ'. The port definition is at: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v(33).
-#    Time: 0 ps  Iteration: 0  Instance: /test/uut/inst1 File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [TFMPC] - Missing connection for port 'nM1'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [TFMPC] - Missing connection for port 'nMREQ'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [TFMPC] - Missing connection for port 'nIORQ'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [TFMPC] - Missing connection for port 'nRFSH'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [TFMPC] - Missing connection for port 'nHALT'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [TFMPC] - Missing connection for port 'nBUSACK'.
-# ** Warning: (vsim-3017) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(201): [TFMPC] - Too few port connections. Expected 6, found 5.
-#    Time: 0 ps  Iteration: 0  Instance: /test/uut/ram_inst File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/ram.v
-# ** Warning: (vsim-3015) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(201): [PCDPC] - Port size (15) does not match connection size (16) for port 'addr'. The port definition is at: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/ram.v(6).
-#    Time: 0 ps  Iteration: 0  Instance: /test/uut/ram_inst File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/ram.v
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(201): [TFMPC] - Missing connection for port 'read_en'.
-# ** Warning: (vsim-3017) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(218): [TFMPC] - Too few port connections. Expected 4, found 3.
-#    Time: 0 ps  Iteration: 0  Instance: /test/uut/clkControl File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(218): [TFMPC] - Missing connection for port 'locked'.
-# ** Warning: (vsim-3017) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Too few port connections. Expected 26, found 5.
-#    Time: 0 ps  Iteration: 0  Instance: /test/uut/clkControl/vga_pll_altera_pll_altera_pll_i_639 File: c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_lnsim.sv
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'refclk1'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'phase_en'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'updn'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'num_phase_shifts'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'scanclk'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'cntsel'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'reconfig_to_pll'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'extswitch'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'adjpllin'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'cclk'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'fboutclk'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'phase_done'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'reconfig_from_pll'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'activeclk'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'clkbad'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'phout'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'lvds_clk'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'loaden'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'extclk_out'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'cascade_out'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'zdbfbclk'.
-run -continue
-# ** Warning: (vsim-PLI-3407) Too many data words read on line 50824 of file "../../roms/emptyRam.hex". (Current address [50823], address range [0:50822])    : C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/ram.v(17)
-#    Time: 0 ps  Iteration: 0  Instance: /test/uut/ram_inst
-# ** Warning: (vsim-PLI-3407) Too many data words read on line 12288 of file "../../roms/rom.hex". (Current address [12287], address range [0:12286])    : C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/rom.v(14)
-#    Time: 0 ps  Iteration: 0  Instance: /test/uut/rom_inst
-# Info: hierarchical_name = test.uut.clkControl.vga_pll_altera_pll_altera_pll_i_639.new_model.gpll.no_need_to_gen
-# Adjusting output period from 39721.946375 to 40000.000000
-# Info: =================================================
-# Info:           Generic PLL Summary
-# Info: =================================================
-# Time scale of (test.uut.clkControl.vga_pll_altera_pll_altera_pll_i_639.new_model.gpll.no_need_to_gen) is  1ps /  1ps
-# Info: hierarchical_name = test.uut.clkControl.vga_pll_altera_pll_altera_pll_i_639.new_model.gpll.no_need_to_gen
-# Info: reference_clock_frequency = 50.0 MHz
-# Info: output_clock_frequency = 25.175 MHZ
-# Info: phase_shift = 0 ps
-# Info: duty_cycle = 50
-# Info: sim_additional_refclk_cycles_to_lock = 0
-# Info: output_clock_high_period = 20000.000000
-# Info: output_clock_low_period = 20000.000000
-# ** Warning: (vsim-PLI-3407) Too many data words read on line 16385 of file "../../roms/charSprites.bin". (Current address [16384], address range [0:16383])    : C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/charRom.v(15)
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 16385 of file "../../roms/charSprites.bin". (Current address [16384], address range [0:16383])    : C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/charRom.v(16)
 #    Time: 0 ps  Iteration: 0  Instance: /test/uut/vC/charRom_inst
 # Info: hierarchical_name = test.uut.clkControl.vga_pll_altera_pll_altera_pll_i_639.new_model.gpll.UI
 # Warning: The frequency of the reference clock signal differs from the specified frequency (50.0 MHz).
@@ -1623,259 +1483,5 @@ run -continue
 #    Time: 1000001 us  Iteration: 1  Instance: /test
 # 1
 # Break in Module test at C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/test.v line 25
-add wave -position end  sim:/test/uut/vC/vramL2_cs
-add wave -position end  sim:/test/uut/vC/vramL2_out
-add wave -position 1  sim:/test/uut/vC/h_cnt
-add wave -position 2  sim:/test/uut/vC/v_cnt
-add wave -position 3  sim:/test/uut/vC/h_active
-add wave -position 4  sim:/test/uut/vC/v_active
-add wave -position end  sim:/test/uut/vC/spriterom_indexL2
-add wave -position end  sim:/test/uut/vC/spriterom_redL2
-add wave -position end  sim:/test/uut/vC/spriterom_greenL2
-add wave -position end  sim:/test/uut/vC/spriterom_blueL2
-add wave -position end  sim:/test/uut/vC/is_layer2
-restart -f
-# ** Warning: (vsim-3017) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/test.v(10): [TFMPC] - Too few port connections. Expected 10, found 1.
-#    Time: 0 ps  Iteration: 0  Instance: /test/uut File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/test.v(10): [TFMPC] - Missing connection for port 'RESET_N'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/test.v(10): [TFMPC] - Missing connection for port 'LEDR'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/test.v(10): [TFMPC] - Missing connection for port 'PS2_CLK'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/test.v(10): [TFMPC] - Missing connection for port 'PS2_DAT'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/test.v(10): [TFMPC] - Missing connection for port 'VGA_B'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/test.v(10): [TFMPC] - Missing connection for port 'VGA_G'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/test.v(10): [TFMPC] - Missing connection for port 'VGA_HS'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/test.v(10): [TFMPC] - Missing connection for port 'VGA_R'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/test.v(10): [TFMPC] - Missing connection for port 'VGA_VS'.
-# ** Warning: (vsim-3017) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [TFMPC] - Too few port connections. Expected 16, found 10.
-#    Time: 0 ps  Iteration: 0  Instance: /test/uut/inst1 File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v
-# ** Warning: (vsim-3015) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [PCDPC] - Port size (1) does not match connection size (32) for port 'nWAIT'. The port definition is at: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v(29).
-#    Time: 0 ps  Iteration: 0  Instance: /test/uut/inst1 File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v
-# ** Warning: (vsim-3015) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [PCDPC] - Port size (1) does not match connection size (32) for port 'nINT'. The port definition is at: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v(30).
-#    Time: 0 ps  Iteration: 0  Instance: /test/uut/inst1 File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v
-# ** Warning: (vsim-3015) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [PCDPC] - Port size (1) does not match connection size (32) for port 'nNMI'. The port definition is at: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v(31).
-#    Time: 0 ps  Iteration: 0  Instance: /test/uut/inst1 File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v
-# ** Warning: (vsim-3015) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [PCDPC] - Port size (1) does not match connection size (32) for port 'nRESET'. The port definition is at: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v(32).
-#    Time: 0 ps  Iteration: 0  Instance: /test/uut/inst1 File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v
-# ** Warning: (vsim-3015) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [PCDPC] - Port size (1) does not match connection size (32) for port 'nBUSRQ'. The port definition is at: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v(33).
-#    Time: 0 ps  Iteration: 0  Instance: /test/uut/inst1 File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [TFMPC] - Missing connection for port 'nM1'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [TFMPC] - Missing connection for port 'nMREQ'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [TFMPC] - Missing connection for port 'nIORQ'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [TFMPC] - Missing connection for port 'nRFSH'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [TFMPC] - Missing connection for port 'nHALT'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [TFMPC] - Missing connection for port 'nBUSACK'.
-# ** Warning: (vsim-3017) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(201): [TFMPC] - Too few port connections. Expected 6, found 5.
-#    Time: 0 ps  Iteration: 0  Instance: /test/uut/ram_inst File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/ram.v
-# ** Warning: (vsim-3015) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(201): [PCDPC] - Port size (15) does not match connection size (16) for port 'addr'. The port definition is at: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/ram.v(6).
-#    Time: 0 ps  Iteration: 0  Instance: /test/uut/ram_inst File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/ram.v
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(201): [TFMPC] - Missing connection for port 'read_en'.
-# ** Warning: (vsim-3017) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(218): [TFMPC] - Too few port connections. Expected 4, found 3.
-#    Time: 0 ps  Iteration: 0  Instance: /test/uut/clkControl File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(218): [TFMPC] - Missing connection for port 'locked'.
-# ** Warning: (vsim-3017) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Too few port connections. Expected 26, found 5.
-#    Time: 0 ps  Iteration: 0  Instance: /test/uut/clkControl/vga_pll_altera_pll_altera_pll_i_639 File: c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_lnsim.sv
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'refclk1'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'phase_en'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'updn'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'num_phase_shifts'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'scanclk'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'cntsel'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'reconfig_to_pll'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'extswitch'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'adjpllin'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'cclk'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'fboutclk'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'phase_done'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'reconfig_from_pll'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'activeclk'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'clkbad'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'phout'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'lvds_clk'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'loaden'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'extclk_out'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'cascade_out'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'zdbfbclk'.
-add wave -position 5  sim:/test/uut/vC/vramL2_abus
-add wave -position 6  sim:/test/uut/vC/vramL2_dbus
-restart -f
-# ** Warning: (vsim-3017) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/test.v(10): [TFMPC] - Too few port connections. Expected 10, found 1.
-#    Time: 0 ps  Iteration: 0  Instance: /test/uut File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/test.v(10): [TFMPC] - Missing connection for port 'RESET_N'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/test.v(10): [TFMPC] - Missing connection for port 'LEDR'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/test.v(10): [TFMPC] - Missing connection for port 'PS2_CLK'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/test.v(10): [TFMPC] - Missing connection for port 'PS2_DAT'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/test.v(10): [TFMPC] - Missing connection for port 'VGA_B'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/test.v(10): [TFMPC] - Missing connection for port 'VGA_G'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/test.v(10): [TFMPC] - Missing connection for port 'VGA_HS'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/test.v(10): [TFMPC] - Missing connection for port 'VGA_R'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/test.v(10): [TFMPC] - Missing connection for port 'VGA_VS'.
-# ** Warning: (vsim-3017) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [TFMPC] - Too few port connections. Expected 16, found 10.
-#    Time: 0 ps  Iteration: 0  Instance: /test/uut/inst1 File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v
-# ** Warning: (vsim-3015) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [PCDPC] - Port size (1) does not match connection size (32) for port 'nWAIT'. The port definition is at: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v(29).
-#    Time: 0 ps  Iteration: 0  Instance: /test/uut/inst1 File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v
-# ** Warning: (vsim-3015) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [PCDPC] - Port size (1) does not match connection size (32) for port 'nINT'. The port definition is at: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v(30).
-#    Time: 0 ps  Iteration: 0  Instance: /test/uut/inst1 File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v
-# ** Warning: (vsim-3015) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [PCDPC] - Port size (1) does not match connection size (32) for port 'nNMI'. The port definition is at: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v(31).
-#    Time: 0 ps  Iteration: 0  Instance: /test/uut/inst1 File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v
-# ** Warning: (vsim-3015) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [PCDPC] - Port size (1) does not match connection size (32) for port 'nRESET'. The port definition is at: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v(32).
-#    Time: 0 ps  Iteration: 0  Instance: /test/uut/inst1 File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v
-# ** Warning: (vsim-3015) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [PCDPC] - Port size (1) does not match connection size (32) for port 'nBUSRQ'. The port definition is at: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v(33).
-#    Time: 0 ps  Iteration: 0  Instance: /test/uut/inst1 File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [TFMPC] - Missing connection for port 'nM1'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [TFMPC] - Missing connection for port 'nMREQ'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [TFMPC] - Missing connection for port 'nIORQ'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [TFMPC] - Missing connection for port 'nRFSH'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [TFMPC] - Missing connection for port 'nHALT'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [TFMPC] - Missing connection for port 'nBUSACK'.
-# ** Warning: (vsim-3017) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(201): [TFMPC] - Too few port connections. Expected 6, found 5.
-#    Time: 0 ps  Iteration: 0  Instance: /test/uut/ram_inst File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/ram.v
-# ** Warning: (vsim-3015) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(201): [PCDPC] - Port size (15) does not match connection size (16) for port 'addr'. The port definition is at: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/ram.v(6).
-#    Time: 0 ps  Iteration: 0  Instance: /test/uut/ram_inst File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/ram.v
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(201): [TFMPC] - Missing connection for port 'read_en'.
-# ** Warning: (vsim-3017) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(218): [TFMPC] - Too few port connections. Expected 4, found 3.
-#    Time: 0 ps  Iteration: 0  Instance: /test/uut/clkControl File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(218): [TFMPC] - Missing connection for port 'locked'.
-# ** Warning: (vsim-3017) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Too few port connections. Expected 26, found 5.
-#    Time: 0 ps  Iteration: 0  Instance: /test/uut/clkControl/vga_pll_altera_pll_altera_pll_i_639 File: c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_lnsim.sv
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'refclk1'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'phase_en'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'updn'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'num_phase_shifts'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'scanclk'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'cntsel'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'reconfig_to_pll'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'extswitch'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'adjpllin'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'cclk'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'fboutclk'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'phase_done'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'reconfig_from_pll'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'activeclk'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'clkbad'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'phout'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'lvds_clk'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'loaden'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'extclk_out'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'cascade_out'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'zdbfbclk'.
-run -continue
-# ** Warning: (vsim-PLI-3407) Too many data words read on line 50824 of file "../../roms/emptyRam.hex". (Current address [50823], address range [0:50822])    : C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/ram.v(17)
-#    Time: 0 ps  Iteration: 0  Instance: /test/uut/ram_inst
-# ** Warning: (vsim-PLI-3407) Too many data words read on line 12288 of file "../../roms/rom.hex". (Current address [12287], address range [0:12286])    : C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/rom.v(14)
-#    Time: 0 ps  Iteration: 0  Instance: /test/uut/rom_inst
-# Info: hierarchical_name = test.uut.clkControl.vga_pll_altera_pll_altera_pll_i_639.new_model.gpll.no_need_to_gen
-# Adjusting output period from 39721.946375 to 40000.000000
-# Info: =================================================
-# Info:           Generic PLL Summary
-# Info: =================================================
-# Time scale of (test.uut.clkControl.vga_pll_altera_pll_altera_pll_i_639.new_model.gpll.no_need_to_gen) is  1ps /  1ps
-# Info: hierarchical_name = test.uut.clkControl.vga_pll_altera_pll_altera_pll_i_639.new_model.gpll.no_need_to_gen
-# Info: reference_clock_frequency = 50.0 MHz
-# Info: output_clock_frequency = 25.175 MHZ
-# Info: phase_shift = 0 ps
-# Info: duty_cycle = 50
-# Info: sim_additional_refclk_cycles_to_lock = 0
-# Info: output_clock_high_period = 20000.000000
-# Info: output_clock_low_period = 20000.000000
-# ** Warning: (vsim-PLI-3407) Too many data words read on line 16385 of file "../../roms/charSprites.bin". (Current address [16384], address range [0:16383])    : C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/charRom.v(15)
-#    Time: 0 ps  Iteration: 0  Instance: /test/uut/vC/charRom_inst
-# Info: hierarchical_name = test.uut.clkControl.vga_pll_altera_pll_altera_pll_i_639.new_model.gpll.UI
-# Warning: The frequency of the reference clock signal differs from the specified frequency (50.0 MHz).
-# ** Note: $finish    : C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/test.v(25)
-#    Time: 1000001 us  Iteration: 1  Instance: /test
-# 1
-# Break in Module test at C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/test.v line 25
-add wave -position end  sim:/test/uut/vC/vramL1_abus
-add wave -position end  sim:/test/uut/vC/vramL1_dbus
-add wave -position end  sim:/test/uut/vC/spriterom_indexL1
-add wave -position end  sim:/test/uut/vC/spriterom_redL1
-add wave -position end  sim:/test/uut/vC/spriterom_greenL1
-add wave -position end  sim:/test/uut/vC/spriterom_blueL1
-restart -f
-# ** Warning: (vsim-3017) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/test.v(10): [TFMPC] - Too few port connections. Expected 10, found 1.
-#    Time: 0 ps  Iteration: 0  Instance: /test/uut File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/test.v(10): [TFMPC] - Missing connection for port 'RESET_N'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/test.v(10): [TFMPC] - Missing connection for port 'LEDR'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/test.v(10): [TFMPC] - Missing connection for port 'PS2_CLK'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/test.v(10): [TFMPC] - Missing connection for port 'PS2_DAT'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/test.v(10): [TFMPC] - Missing connection for port 'VGA_B'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/test.v(10): [TFMPC] - Missing connection for port 'VGA_G'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/test.v(10): [TFMPC] - Missing connection for port 'VGA_HS'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/test.v(10): [TFMPC] - Missing connection for port 'VGA_R'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/test.v(10): [TFMPC] - Missing connection for port 'VGA_VS'.
-# ** Warning: (vsim-3017) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [TFMPC] - Too few port connections. Expected 16, found 10.
-#    Time: 0 ps  Iteration: 0  Instance: /test/uut/inst1 File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v
-# ** Warning: (vsim-3015) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [PCDPC] - Port size (1) does not match connection size (32) for port 'nWAIT'. The port definition is at: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v(29).
-#    Time: 0 ps  Iteration: 0  Instance: /test/uut/inst1 File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v
-# ** Warning: (vsim-3015) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [PCDPC] - Port size (1) does not match connection size (32) for port 'nINT'. The port definition is at: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v(30).
-#    Time: 0 ps  Iteration: 0  Instance: /test/uut/inst1 File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v
-# ** Warning: (vsim-3015) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [PCDPC] - Port size (1) does not match connection size (32) for port 'nNMI'. The port definition is at: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v(31).
-#    Time: 0 ps  Iteration: 0  Instance: /test/uut/inst1 File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v
-# ** Warning: (vsim-3015) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [PCDPC] - Port size (1) does not match connection size (32) for port 'nRESET'. The port definition is at: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v(32).
-#    Time: 0 ps  Iteration: 0  Instance: /test/uut/inst1 File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v
-# ** Warning: (vsim-3015) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [PCDPC] - Port size (1) does not match connection size (32) for port 'nBUSRQ'. The port definition is at: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v(33).
-#    Time: 0 ps  Iteration: 0  Instance: /test/uut/inst1 File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [TFMPC] - Missing connection for port 'nM1'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [TFMPC] - Missing connection for port 'nMREQ'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [TFMPC] - Missing connection for port 'nIORQ'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [TFMPC] - Missing connection for port 'nRFSH'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [TFMPC] - Missing connection for port 'nHALT'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(185): [TFMPC] - Missing connection for port 'nBUSACK'.
-# ** Warning: (vsim-3017) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(201): [TFMPC] - Too few port connections. Expected 6, found 5.
-#    Time: 0 ps  Iteration: 0  Instance: /test/uut/ram_inst File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/ram.v
-# ** Warning: (vsim-3015) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(201): [PCDPC] - Port size (15) does not match connection size (16) for port 'addr'. The port definition is at: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/ram.v(6).
-#    Time: 0 ps  Iteration: 0  Instance: /test/uut/ram_inst File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/ram.v
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(201): [TFMPC] - Missing connection for port 'read_en'.
-# ** Warning: (vsim-3017) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(218): [TFMPC] - Too few port connections. Expected 4, found 3.
-#    Time: 0 ps  Iteration: 0  Instance: /test/uut/clkControl File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v(218): [TFMPC] - Missing connection for port 'locked'.
-# ** Warning: (vsim-3017) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Too few port connections. Expected 26, found 5.
-#    Time: 0 ps  Iteration: 0  Instance: /test/uut/clkControl/vga_pll_altera_pll_altera_pll_i_639 File: c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_lnsim.sv
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'refclk1'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'phase_en'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'updn'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'num_phase_shifts'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'scanclk'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'cntsel'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'reconfig_to_pll'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'extswitch'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'adjpllin'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'cclk'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'fboutclk'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'phase_done'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'reconfig_from_pll'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'activeclk'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'clkbad'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'phout'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'lvds_clk'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'loaden'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'extclk_out'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'cascade_out'.
-# ** Warning: (vsim-3722) C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll_sim/vga_pll.vo(46): [TFMPC] - Missing connection for port 'zdbfbclk'.
-run -continue
-# ** Warning: (vsim-PLI-3407) Too many data words read on line 50824 of file "../../roms/emptyRam.hex". (Current address [50823], address range [0:50822])    : C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/ram.v(17)
-#    Time: 0 ps  Iteration: 0  Instance: /test/uut/ram_inst
-# ** Warning: (vsim-PLI-3407) Too many data words read on line 12288 of file "../../roms/rom.hex". (Current address [12287], address range [0:12286])    : C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/rom.v(14)
-#    Time: 0 ps  Iteration: 0  Instance: /test/uut/rom_inst
-# Info: hierarchical_name = test.uut.clkControl.vga_pll_altera_pll_altera_pll_i_639.new_model.gpll.no_need_to_gen
-# Adjusting output period from 39721.946375 to 40000.000000
-# Info: =================================================
-# Info:           Generic PLL Summary
-# Info: =================================================
-# Time scale of (test.uut.clkControl.vga_pll_altera_pll_altera_pll_i_639.new_model.gpll.no_need_to_gen) is  1ps /  1ps
-# Info: hierarchical_name = test.uut.clkControl.vga_pll_altera_pll_altera_pll_i_639.new_model.gpll.no_need_to_gen
-# Info: reference_clock_frequency = 50.0 MHz
-# Info: output_clock_frequency = 25.175 MHZ
-# Info: phase_shift = 0 ps
-# Info: duty_cycle = 50
-# Info: sim_additional_refclk_cycles_to_lock = 0
-# Info: output_clock_high_period = 20000.000000
-# Info: output_clock_low_period = 20000.000000
-# ** Warning: (vsim-PLI-3407) Too many data words read on line 16385 of file "../../roms/charSprites.bin". (Current address [16384], address range [0:16383])    : C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/charRom.v(15)
-#    Time: 0 ps  Iteration: 0  Instance: /test/uut/vC/charRom_inst
-# Info: hierarchical_name = test.uut.clkControl.vga_pll_altera_pll_altera_pll_i_639.new_model.gpll.UI
-# Warning: The frequency of the reference clock signal differs from the specified frequency (50.0 MHz).
-# ** Note: $finish    : C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/test.v(25)
-#    Time: 1000001 us  Iteration: 1  Instance: /test
-# 1
-# Break in Module test at C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/test.v line 25
+# End time: 14:08:22 on May 21,2023, Elapsed time: 0:07:01
+# Errors: 0, Warnings: 56

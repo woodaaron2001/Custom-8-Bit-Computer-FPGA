@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/simulation/modelsim
 va_graycounter
-Z1 !s110 1684626133
+Z1 !s110 1684674064
 !i10b 1
 !s100 dbSQenUhE^>zo5H5zAI>X2
 IB7GNNK5L3:=>31ZRV0P[42
@@ -23,7 +23,7 @@ Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1684626132.000000
+Z7 !s108 1684674063.000000
 Z8 !s107 c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_mf.v|
 Z9 !s90 -reportprogress|300|-vlog01compat|-work|altera_mf_ver|c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_mf.v|
 !i113 1
@@ -366,7 +366,7 @@ R9
 R10
 R11
 vALTERA_DEVICE_FAMILIES
-Z12 !s110 1684626132
+Z12 !s110 1684674063
 !i10b 1
 !s100 Ie0_`X3Yi6=65^n?0c5aN3
 IO1Q^aSdgS@lkiMh9jONl=3
@@ -558,7 +558,7 @@ R9
 R10
 R11
 valtlvds_tx
-R12
+R1
 !i10b 1
 !s100 QaneNi:AiJ_?o9UQZAJJD0
 Ih6j6DOg5KIlBBi_I;kE8T0
@@ -1020,7 +1020,7 @@ R9
 R10
 R11
 vdcfifo_dffpipe
-R12
+R1
 !i10b 1
 !s100 ia3^jk>5PlXYlWnk=0^bA2
 I9k@R]0o8YLAA`^n:92jCz0
@@ -1041,7 +1041,7 @@ R9
 R10
 R11
 vdcfifo_fefifo
-R12
+R1
 !i10b 1
 !s100 lF2^;262N2^VfPCdeD[XC0
 IF^;[Sc0cNT5S>]:BJVON>2
@@ -1188,7 +1188,7 @@ R9
 R10
 R11
 vflexible_lvds_tx
-R12
+R1
 !i10b 1
 !s100 @Q<BJQzK]C0CKO3JZ;zaT1
 IN72:hH?knfYf[06VhlDYS3
@@ -1617,7 +1617,7 @@ R9
 R10
 R11
 vstratix_tx_outclk
-R12
+R1
 !i10b 1
 !s100 iTzn2jz]7YkRDOSCc:d^U1
 I7MPn5`bkOE`n2jo]06VfY3
@@ -1680,7 +1680,7 @@ R9
 R10
 R11
 vstratixii_tx_outclk
-R12
+R1
 !i10b 1
 !s100 0kHYaz:U=bPn4Bh]]Y:140
 I1lAlZmV0V=1?[mmf3:8MQ2
@@ -1764,7 +1764,7 @@ R9
 R10
 R11
 vstratixv_local_clk_divider
-R12
+R1
 !i10b 1
 !s100 PARB0<==A6G<0l35>Vj9B0
 Ij9HOgWoK0RR:@BX1XT[M;1
