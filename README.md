@@ -1,4 +1,4 @@
-#Custom 8 Bit Computer on an FPGA
+# Custom 8 Bit Computer on an FPGA
 -
 
 # Required software and hardware
@@ -17,5 +17,5 @@
 
 
 
-#acknowledgements
+# acknowledgements
 Many thanks to my supervisor Pavel Gladyshev for their guidance and support in this project.
