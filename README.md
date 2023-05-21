@@ -41,25 +41,25 @@ Example use of bashscript which compiles C file, formats the output and loads it
 
 Once the program has been written and loaded to the rom. an RTL simulation can be done using Modelsim.
 
-- Run analysis and synthesis 
+- Run analysis and synthesis  
 <img src="https://csgitlab.ucd.ie/fyp-fpga/fpga-files/-/raw/main/README_images/analysis.png" />
 
 <br>
-- Run RTL Simulation
+- Run RTL Simulation  
 <img src="https://csgitlab.ucd.ie/fyp-fpga/fpga-files/-/raw/main/README_images/rtlButton.png" />
 
 <br>
-- Add the respective wires and registers you wish to observe
+- Add the respective wires and registers you wish to observe  
 <img src="https://csgitlab.ucd.ie/fyp-fpga/fpga-files/-/raw/main/README_images/vgaTiming.png" />
 
 ## Designing tile maps
 
 Additional helper scripts can be used to design the game maps and the sprites to be used. Since the computer has a custom memory layout the [bitMap](https://csgitlab.ucd.ie/fyp-fpga/fpga-files/-/tree/main/pythonScripts/bitMapConverter) script to convert a 16x16 sprite map to binary.
 
-Example sprite map
+Example sprite map  
 <img src="https://csgitlab.ucd.ie/fyp-fpga/fpga-files/-/raw/main/README_images/spriteMap.png" />
 
-Python program
+Python program  
 <img src="https://csgitlab.ucd.ie/fyp-fpga/fpga-files/-/raw/main/README_images/pythonScript1.png" />
 
 Additionally when designing the map the user can use the [Tiled Map Editor](https://www.mapeditor.org/) to design worlds and convert them to the memory layout needed for the computer using the python [script](https://csgitlab.ucd.ie/fyp-fpga/fpga-files/-/tree/main/pythonScripts/tiledMapConverter)
