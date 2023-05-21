@@ -34,6 +34,7 @@ Since the computer uses the Z80 microprocessor a resource is needed to flash the
 Examples of SDCC programs can be found in the [SDCC](https://csgitlab.ucd.ie/fyp-fpga/fpga-files/-/tree/main/SDCC) section of the project.
 
 Example use of bashscript which compiles C file, formats the output and loads it to the rom directory
+
 <img src="https://csgitlab.ucd.ie/fyp-fpga/fpga-files/-/raw/main/README_images/bashScript.png" />
 
 ## RTL Simulation
@@ -43,9 +44,11 @@ Once the program has been written and loaded to the rom. an RTL simulation can b
 - Run analysis and synthesis 
 <img src="https://csgitlab.ucd.ie/fyp-fpga/fpga-files/-/raw/main/README_images/analysis.png" />
 
+<br>
 - Run RTL Simulation
 <img src="https://csgitlab.ucd.ie/fyp-fpga/fpga-files/-/raw/main/README_images/rtlButton.png" />
 
+<br>
 - Add the respective wires and registers you wish to observe
 <img src="https://csgitlab.ucd.ie/fyp-fpga/fpga-files/-/raw/main/README_images/vgaTiming.png" />
 
@@ -61,9 +64,10 @@ Python program
 
 Additionally when designing the map the user can use the [Tiled Map Editor](https://www.mapeditor.org/) to design worlds and convert them to the memory layout needed for the computer using the python [script](https://csgitlab.ucd.ie/fyp-fpga/fpga-files/-/tree/main/pythonScripts/tiledMapConverter)
 
-<img src="https://csgitlab.ucd.ie/fyp-fpga/fpga-files/-/raw/main/README_images/vgaTiming.png" />
+<img src="https://csgitlab.ucd.ie/fyp-fpga/fpga-files/-/raw/main/README_images/tiledImage.png" />
 
-Save the map as game.tls and the script will automatically convert it to hex and load it to the VRAM hex files.
+Save the map as game.tls and the script will automatically convert it to hex and load it to the VRAM hex files.  
+
 <img src="https://csgitlab.ucd.ie/fyp-fpga/fpga-files/-/raw/main/README_images/pythonScript2.png" />
 
 
