@@ -359,10 +359,10 @@
       000194 23               [ 6]  359 	inc	hl
       000195 22r22r00         [16]  360 	ld	(_enemy2Y), hl
       000198                        361 00116$:
-                                    362 ;game.c:121: if(*keyboard == 0x1D){
+                                    362 ;game.c:121: if(*keyboard == 'W'){
       000198 2Ar28r00         [16]  363 	ld	hl, (_keyboard)
       00019B 7E               [ 7]  364 	ld	a, (hl)
-      00019C D6 1D            [ 7]  365 	sub	a, #0x1d
+      00019C D6 57            [ 7]  365 	sub	a, #0x57
       00019E 20 29            [12]  366 	jr	NZ, 00120$
                                     367 ;game.c:122: charMovementCounter = charMovementCounter +1;
       0001A0 2Ar08r00         [16]  368 	ld	hl, (_charMovementCounter)
@@ -394,10 +394,10 @@
       0001C7 7A               [ 4]  394 	ld	a, d
       0001C8 02               [ 7]  395 	ld	(bc), a
       0001C9                        396 00120$:
-                                    397 ;game.c:130: if(*keyboard == 0x1B){
+                                    397 ;game.c:130: if(*keyboard == 'S'){
       0001C9 2Ar28r00         [16]  398 	ld	hl, (_keyboard)
       0001CC 7E               [ 7]  399 	ld	a, (hl)
-      0001CD D6 1B            [ 7]  400 	sub	a, #0x1b
+      0001CD D6 53            [ 7]  400 	sub	a, #0x53
       0001CF 20 25            [12]  401 	jr	NZ, 00124$
                                     402 ;game.c:131: charMovementCounter = charMovementCounter +1;
       0001D1 2Ar08r00         [16]  403 	ld	hl, (_charMovementCounter)
@@ -426,10 +426,10 @@
       0001F4 23               [ 6]  426 	inc	hl
       0001F5 70               [ 7]  427 	ld	(hl), b
       0001F6                        428 00124$:
-                                    429 ;game.c:138: if(*keyboard == 0x23){
+                                    429 ;game.c:138: if(*keyboard == 'D'){
       0001F6 2Ar28r00         [16]  430 	ld	hl, (_keyboard)
       0001F9 7E               [ 7]  431 	ld	a, (hl)
-      0001FA D6 23            [ 7]  432 	sub	a, #0x23
+      0001FA D6 44            [ 7]  432 	sub	a, #0x44
       0001FC 20 29            [12]  433 	jr	NZ, 00128$
                                     434 ;game.c:139: charMovementCounter = charMovementCounter +1;
       0001FE 2Ar08r00         [16]  435 	ld	hl, (_charMovementCounter)
@@ -460,10 +460,10 @@
       000225 7A               [ 4]  460 	ld	a, d
       000226 02               [ 7]  461 	ld	(bc), a
       000227                        462 00128$:
-                                    463 ;game.c:147: if(*keyboard == 0x1C){
+                                    463 ;game.c:147: if(*keyboard == 'A'){
       000227 2Ar28r00         [16]  464 	ld	hl, (_keyboard)
       00022A 7E               [ 7]  465 	ld	a, (hl)
-      00022B D6 1C            [ 7]  466 	sub	a, #0x1c
+      00022B D6 41            [ 7]  466 	sub	a, #0x41
       00022D 20 25            [12]  467 	jr	NZ, 00132$
                                     468 ;game.c:148: charMovementCounter = charMovementCounter +1;
       00022F 2Ar08r00         [16]  469 	ld	hl, (_charMovementCounter)

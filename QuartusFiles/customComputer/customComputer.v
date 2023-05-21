@@ -84,7 +84,7 @@ module customComputer
 	wire [7:0] rom_out;
 	wire rom_cs = (address_bus >= 16'h0000) && (address_bus <= 16'h2FFF); 
 	
-	reg [7:0] ps2_out;
+	wire [7:0] ps2_out;
 	wire ps2_cs = (address_bus == 16'h3000); 
 
 	wire [7:0] cram1_out;
@@ -108,11 +108,23 @@ module customComputer
 	wire [7:0] ram_out;
 	wire ram_cs = (address_bus >= 16'h3979) && (address_bus <= 16'hFFFF);
 
-		
+	wire [9:0] LEDR_wire;
+	
 //=======================================================
 //  Structural coding
 //=======================================================
 
+	ps2 ps2_inst(
+		.PS2_CLK(PS2_CLK),
+		.PS2_DAT(PS2_DAT),
+		.PS2OUT(ps2_out),
+		.LEDR(LEDR_wire)
+	);
+
+	always@(posedge PS2_CLK) begin
+		LEDR <= LEDR_wire;
+	end
+	
 	z80_top_direct_n inst1 
 	 (.CLK(vga_clk),
 	  .nWR(z80_write),

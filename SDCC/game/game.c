@@ -118,7 +118,7 @@ void main(void) {
         }
 
 
-        if(*keyboard == 0x1D){
+        if(*keyboard == 'W'){
             charMovementCounter = charMovementCounter +1;
             if(charMovementCounter == 1000){
                 charMovementCounter = 0;
@@ -127,7 +127,7 @@ void main(void) {
 
         }
         
-        if(*keyboard == 0x1B){
+        if(*keyboard == 'S'){
             charMovementCounter = charMovementCounter +1;
             if(charMovementCounter == 1000){
                 charMovementCounter = 0;
@@ -135,7 +135,7 @@ void main(void) {
             }
         }
 
-        if(*keyboard == 0x23){
+        if(*keyboard == 'D'){
             charMovementCounter = charMovementCounter +1;
             if(charMovementCounter == 1000){
                 charMovementCounter = 0;
@@ -144,7 +144,7 @@ void main(void) {
             
         }
         
-        if(*keyboard == 0x1C){
+        if(*keyboard == 'A'){
             charMovementCounter = charMovementCounter +1;
             if(charMovementCounter == 1000){
                 charMovementCounter = 0;

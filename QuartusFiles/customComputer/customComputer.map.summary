@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Sun May 21 00:23:25 2023
+Analysis & Synthesis Status : Successful - Sun May 21 11:36:43 2023
 Quartus Prime Version : 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 Revision Name : customComputer
 Top-level Entity Name : customComputer
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 627
+Total registers : 635
 Total pins : 28
 Total virtual pins : 0
 Total block memory bits : 300,544

@@ -2,7 +2,8 @@
 module ps2(
     input PS2_CLK,
     input PS2_DAT,
-	 output reg [7:0] PS2OUT
+	 output reg [7:0] PS2OUT,
+	 output reg [7:0] LEDR
     );
 	 
 	reg [15:0] debounceCounter = 16'd0;
@@ -59,7 +60,7 @@ module ps2(
 					debounceCounter <= 16'd0;
 					//convert scan code to ascii value
 					asciiValue = scancode_to_ascii(currentData);
-					ps2_out <= asciiValue;
+					PS2OUT <= asciiValue;
 					LEDR <= asciiValue;
 			  end
 		 end

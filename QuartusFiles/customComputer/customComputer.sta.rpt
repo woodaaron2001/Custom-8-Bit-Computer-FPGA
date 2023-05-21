@@ -1,5 +1,5 @@
 Timing Analyzer report for customComputer
-Sat May 20 23:48:52 2023
+Sun May 21 11:39:56 2023
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
@@ -104,26 +104,26 @@ Parallel compilation attempted to use more processors than were available, which
 ; Number detected on machine   ; 6           ;
 ; Maximum allowed              ; 16          ;
 ;                              ;             ;
-; Average used                 ; 6.80        ;
+; Average used                 ; 6.70        ;
 ; Maximum used                 ; 16          ;
 ;                              ;             ;
 ; Usage by Processor           ; % Time Used ;
 ;     Processor 1              ; 100.0%      ;
-;     Processor 2              ;  42.2%      ;
-;     Processor 3              ;  41.8%      ;
-;     Processor 4              ;  41.4%      ;
-;     Processor 5              ;  38.0%      ;
-;     Processor 6              ;  38.0%      ;
-;     Processors 7 (overused)  ;  38.0%      ;
-;     Processors 8 (overused)  ;  37.9%      ;
-;     Processors 9 (overused)  ;  37.9%      ;
-;     Processors 10 (overused) ;  37.9%      ;
-;     Processors 11 (overused) ;  37.9%      ;
-;     Processors 12 (overused) ;  37.9%      ;
-;     Processors 13 (overused) ;  37.9%      ;
-;     Processors 14 (overused) ;  37.8%      ;
-;     Processors 15 (overused) ;  37.8%      ;
-;     Processors 16 (overused) ;  37.8%      ;
+;     Processor 2              ;  42.0%      ;
+;     Processor 3              ;  41.4%      ;
+;     Processor 4              ;  40.5%      ;
+;     Processor 5              ;  37.3%      ;
+;     Processor 6              ;  37.3%      ;
+;     Processors 7 (overused)  ;  37.3%      ;
+;     Processors 8 (overused)  ;  37.3%      ;
+;     Processors 9 (overused)  ;  37.3%      ;
+;     Processors 10 (overused) ;  37.3%      ;
+;     Processors 11 (overused) ;  37.2%      ;
+;     Processors 12 (overused) ;  37.2%      ;
+;     Processors 13 (overused) ;  36.9%      ;
+;     Processors 14 (overused) ;  36.9%      ;
+;     Processors 15 (overused) ;  36.9%      ;
+;     Processors 16 (overused) ;  36.9%      ;
 +------------------------------+-------------+
 
 
@@ -132,7 +132,7 @@ Parallel compilation attempted to use more processors than were available, which
 +--------------------+--------+--------------------------+
 ; SDC File Path      ; Status ; Read at                  ;
 +--------------------+--------+--------------------------+
-; customComputer.SDC ; OK     ; Sat May 20 23:48:38 2023 ;
+; customComputer.SDC ; OK     ; Sun May 21 11:39:44 2023 ;
 +--------------------+--------+--------------------------+
 
 
@@ -152,7 +152,7 @@ Parallel compilation attempted to use more processors than were available, which
 +-----------+-----------------+--------------------------------------------------------------------------------+------+
 ; Fmax      ; Restricted Fmax ; Clock Name                                                                     ; Note ;
 +-----------+-----------------+--------------------------------------------------------------------------------+------+
-; 20.33 MHz ; 20.33 MHz       ; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;      ;
+; 25.19 MHz ; 25.19 MHz       ; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;      ;
 +-----------+-----------------+--------------------------------------------------------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -163,13 +163,13 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 HTML report is unavailable in plain text report export.
 
 
-+---------------------------------------------------------------------------------------------------------+
-; Slow 1100mV 85C Model Setup Summary                                                                     ;
-+--------------------------------------------------------------------------------+--------+---------------+
-; Clock                                                                          ; Slack  ; End Point TNS ;
-+--------------------------------------------------------------------------------+--------+---------------+
-; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -4.735 ; -50.492       ;
-+--------------------------------------------------------------------------------+--------+---------------+
++--------------------------------------------------------------------------------------------------------+
+; Slow 1100mV 85C Model Setup Summary                                                                    ;
++--------------------------------------------------------------------------------+-------+---------------+
+; Clock                                                                          ; Slack ; End Point TNS ;
++--------------------------------------------------------------------------------+-------+---------------+
+; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.008 ; 0.000         ;
++--------------------------------------------------------------------------------+-------+---------------+
 
 
 +--------------------------------------------------------------------------------------------------------+
@@ -177,7 +177,7 @@ HTML report is unavailable in plain text report export.
 +--------------------------------------------------------------------------------+-------+---------------+
 ; Clock                                                                          ; Slack ; End Point TNS ;
 +--------------------------------------------------------------------------------+-------+---------------+
-; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.453 ; 0.000         ;
+; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.321 ; 0.000         ;
 +--------------------------------------------------------------------------------+-------+---------------+
 
 
@@ -186,7 +186,7 @@ HTML report is unavailable in plain text report export.
 +--------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                          ; Slack  ; End Point TNS ;
 +--------------------------------------------------------------------------------+--------+---------------+
-; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 16.385 ; 0.000         ;
+; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 16.256 ; 0.000         ;
 +--------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -195,7 +195,7 @@ HTML report is unavailable in plain text report export.
 +--------------------------------------------------------------------------------+-------+---------------+
 ; Clock                                                                          ; Slack ; End Point TNS ;
 +--------------------------------------------------------------------------------+-------+---------------+
-; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.687 ; 0.000         ;
+; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.783 ; 0.000         ;
 +--------------------------------------------------------------------------------+-------+---------------+
 
 
@@ -206,7 +206,7 @@ HTML report is unavailable in plain text report export.
 +--------------------------------------------------------------------------------+--------+---------------+
 ; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; 0.325  ; 0.000         ;
 ; CLOCK_50                                                                       ; 9.731  ; 0.000         ;
-; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 18.490 ; 0.000         ;
+; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 18.489 ; 0.000         ;
 +--------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -216,23 +216,23 @@ HTML report is unavailable in plain text report export.
 No synchronizer chains to report.
 
 
-+---------------------------------------------------------------------------------------------------------------------+
-; Slow 1100mV 0C Model Fmax Summary                                                                                   ;
-+-----------+-----------------+--------------------------------------------------------------------------------+------+
-; Fmax      ; Restricted Fmax ; Clock Name                                                                     ; Note ;
-+-----------+-----------------+--------------------------------------------------------------------------------+------+
-; 20.79 MHz ; 20.79 MHz       ; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;      ;
-+-----------+-----------------+--------------------------------------------------------------------------------+------+
++--------------------------------------------------------------------------------------------------------------------+
+; Slow 1100mV 0C Model Fmax Summary                                                                                  ;
++----------+-----------------+--------------------------------------------------------------------------------+------+
+; Fmax     ; Restricted Fmax ; Clock Name                                                                     ; Note ;
++----------+-----------------+--------------------------------------------------------------------------------+------+
+; 25.7 MHz ; 25.7 MHz        ; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;      ;
++----------+-----------------+--------------------------------------------------------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
-+---------------------------------------------------------------------------------------------------------+
-; Slow 1100mV 0C Model Setup Summary                                                                      ;
-+--------------------------------------------------------------------------------+--------+---------------+
-; Clock                                                                          ; Slack  ; End Point TNS ;
-+--------------------------------------------------------------------------------+--------+---------------+
-; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -4.185 ; -39.479       ;
-+--------------------------------------------------------------------------------+--------+---------------+
++--------------------------------------------------------------------------------------------------------+
+; Slow 1100mV 0C Model Setup Summary                                                                     ;
++--------------------------------------------------------------------------------+-------+---------------+
+; Clock                                                                          ; Slack ; End Point TNS ;
++--------------------------------------------------------------------------------+-------+---------------+
+; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.408 ; 0.000         ;
++--------------------------------------------------------------------------------+-------+---------------+
 
 
 +--------------------------------------------------------------------------------------------------------+
@@ -240,7 +240,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +--------------------------------------------------------------------------------+-------+---------------+
 ; Clock                                                                          ; Slack ; End Point TNS ;
 +--------------------------------------------------------------------------------+-------+---------------+
-; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.460 ; 0.000         ;
+; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.307 ; 0.000         ;
 +--------------------------------------------------------------------------------+-------+---------------+
 
 
@@ -249,7 +249,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +--------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                          ; Slack  ; End Point TNS ;
 +--------------------------------------------------------------------------------+--------+---------------+
-; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 16.505 ; 0.000         ;
+; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 16.355 ; 0.000         ;
 +--------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -258,7 +258,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +--------------------------------------------------------------------------------+-------+---------------+
 ; Clock                                                                          ; Slack ; End Point TNS ;
 +--------------------------------------------------------------------------------+-------+---------------+
-; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.637 ; 0.000         ;
+; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.734 ; 0.000         ;
 +--------------------------------------------------------------------------------+-------+---------------+
 
 
@@ -269,7 +269,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +--------------------------------------------------------------------------------+--------+---------------+
 ; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; 0.325  ; 0.000         ;
 ; CLOCK_50                                                                       ; 9.741  ; 0.000         ;
-; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 18.439 ; 0.000         ;
+; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 18.438 ; 0.000         ;
 +--------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -284,7 +284,7 @@ No synchronizer chains to report.
 +--------------------------------------------------------------------------------+-------+---------------+
 ; Clock                                                                          ; Slack ; End Point TNS ;
 +--------------------------------------------------------------------------------+-------+---------------+
-; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 6.419 ; 0.000         ;
+; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 9.187 ; 0.000         ;
 +--------------------------------------------------------------------------------+-------+---------------+
 
 
@@ -293,7 +293,7 @@ No synchronizer chains to report.
 +--------------------------------------------------------------------------------+-------+---------------+
 ; Clock                                                                          ; Slack ; End Point TNS ;
 +--------------------------------------------------------------------------------+-------+---------------+
-; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.180 ; 0.000         ;
+; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.165 ; 0.000         ;
 +--------------------------------------------------------------------------------+-------+---------------+
 
 
@@ -302,7 +302,7 @@ No synchronizer chains to report.
 +--------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                          ; Slack  ; End Point TNS ;
 +--------------------------------------------------------------------------------+--------+---------------+
-; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 17.763 ; 0.000         ;
+; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 17.564 ; 0.000         ;
 +--------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -311,7 +311,7 @@ No synchronizer chains to report.
 +--------------------------------------------------------------------------------+-------+---------------+
 ; Clock                                                                          ; Slack ; End Point TNS ;
 +--------------------------------------------------------------------------------+-------+---------------+
-; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.294 ; 0.000         ;
+; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.354 ; 0.000         ;
 +--------------------------------------------------------------------------------+-------+---------------+
 
 
@@ -322,7 +322,7 @@ No synchronizer chains to report.
 +--------------------------------------------------------------------------------+--------+---------------+
 ; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; 0.325  ; 0.000         ;
 ; CLOCK_50                                                                       ; 9.336  ; 0.000         ;
-; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 18.754 ; 0.000         ;
+; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 18.753 ; 0.000         ;
 +--------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -332,13 +332,13 @@ No synchronizer chains to report.
 No synchronizer chains to report.
 
 
-+--------------------------------------------------------------------------------------------------------+
-; Fast 1100mV 0C Model Setup Summary                                                                     ;
-+--------------------------------------------------------------------------------+-------+---------------+
-; Clock                                                                          ; Slack ; End Point TNS ;
-+--------------------------------------------------------------------------------+-------+---------------+
-; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 7.819 ; 0.000         ;
-+--------------------------------------------------------------------------------+-------+---------------+
++---------------------------------------------------------------------------------------------------------+
+; Fast 1100mV 0C Model Setup Summary                                                                      ;
++--------------------------------------------------------------------------------+--------+---------------+
+; Clock                                                                          ; Slack  ; End Point TNS ;
++--------------------------------------------------------------------------------+--------+---------------+
+; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 10.342 ; 0.000         ;
++--------------------------------------------------------------------------------+--------+---------------+
 
 
 +--------------------------------------------------------------------------------------------------------+
@@ -346,7 +346,7 @@ No synchronizer chains to report.
 +--------------------------------------------------------------------------------+-------+---------------+
 ; Clock                                                                          ; Slack ; End Point TNS ;
 +--------------------------------------------------------------------------------+-------+---------------+
-; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.171 ; 0.000         ;
+; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.149 ; 0.000         ;
 +--------------------------------------------------------------------------------+-------+---------------+
 
 
@@ -355,7 +355,7 @@ No synchronizer chains to report.
 +--------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                          ; Slack  ; End Point TNS ;
 +--------------------------------------------------------------------------------+--------+---------------+
-; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 17.983 ; 0.000         ;
+; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 17.815 ; 0.000         ;
 +--------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -364,7 +364,7 @@ No synchronizer chains to report.
 +--------------------------------------------------------------------------------+-------+---------------+
 ; Clock                                                                          ; Slack ; End Point TNS ;
 +--------------------------------------------------------------------------------+-------+---------------+
-; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.268 ; 0.000         ;
+; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.318 ; 0.000         ;
 +--------------------------------------------------------------------------------+-------+---------------+
 
 
@@ -385,20 +385,20 @@ No synchronizer chains to report.
 No synchronizer chains to report.
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------+
-; Multicorner Timing Analysis Summary                                                                                                          ;
-+---------------------------------------------------------------------------------+---------+-------+----------+---------+---------------------+
-; Clock                                                                           ; Setup   ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
-+---------------------------------------------------------------------------------+---------+-------+----------+---------+---------------------+
-; Worst-case Slack                                                                ; -4.735  ; 0.171 ; 16.385   ; 0.268   ; 0.325               ;
-;  CLOCK_50                                                                       ; N/A     ; N/A   ; N/A      ; N/A     ; 9.286               ;
-;  clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; N/A     ; N/A   ; N/A      ; N/A     ; 0.325               ;
-;  clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -4.735  ; 0.171 ; 16.385   ; 0.268   ; 18.439              ;
-; Design-wide TNS                                                                 ; -50.492 ; 0.0   ; 0.0      ; 0.0     ; 0.0                 ;
-;  CLOCK_50                                                                       ; N/A     ; N/A   ; N/A      ; N/A     ; 0.000               ;
-;  clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; N/A     ; N/A   ; N/A      ; N/A     ; 0.000               ;
-;  clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -50.492 ; 0.000 ; 0.000    ; 0.000   ; 0.000               ;
-+---------------------------------------------------------------------------------+---------+-------+----------+---------+---------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                                                                                        ;
++---------------------------------------------------------------------------------+-------+-------+----------+---------+---------------------+
+; Clock                                                                           ; Setup ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++---------------------------------------------------------------------------------+-------+-------+----------+---------+---------------------+
+; Worst-case Slack                                                                ; 0.008 ; 0.149 ; 16.256   ; 0.318   ; 0.325               ;
+;  CLOCK_50                                                                       ; N/A   ; N/A   ; N/A      ; N/A     ; 9.286               ;
+;  clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; N/A   ; N/A   ; N/A      ; N/A     ; 0.325               ;
+;  clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.008 ; 0.149 ; 16.256   ; 0.318   ; 18.438              ;
+; Design-wide TNS                                                                 ; 0.0   ; 0.0   ; 0.0      ; 0.0     ; 0.0                 ;
+;  CLOCK_50                                                                       ; N/A   ; N/A   ; N/A      ; N/A     ; 0.000               ;
+;  clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; N/A   ; N/A   ; N/A      ; N/A     ; 0.000               ;
+;  clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.000 ; 0.000 ; 0.000    ; 0.000   ; 0.000               ;
++---------------------------------------------------------------------------------+-------+-------+----------+---------+---------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -588,7 +588,7 @@ No synchronizer chains to report.
 +--------------------------------------------------------------------------------+--------------------------------------------------------------------------------+-----------+----------+-----------+----------+
 ; From Clock                                                                     ; To Clock                                                                       ; RR Paths  ; FR Paths ; RF Paths  ; FF Paths ;
 +--------------------------------------------------------------------------------+--------------------------------------------------------------------------------+-----------+----------+-----------+----------+
-; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 463941194 ; 382725   ; 134180792 ; 13006    ;
+; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 482823264 ; 382158   ; 124714874 ; 11961    ;
 +--------------------------------------------------------------------------------+--------------------------------------------------------------------------------+-----------+----------+-----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -598,7 +598,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +--------------------------------------------------------------------------------+--------------------------------------------------------------------------------+-----------+----------+-----------+----------+
 ; From Clock                                                                     ; To Clock                                                                       ; RR Paths  ; FR Paths ; RF Paths  ; FF Paths ;
 +--------------------------------------------------------------------------------+--------------------------------------------------------------------------------+-----------+----------+-----------+----------+
-; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 463941194 ; 382725   ; 134180792 ; 13006    ;
+; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 482823264 ; 382158   ; 124714874 ; 11961    ;
 +--------------------------------------------------------------------------------+--------------------------------------------------------------------------------+-----------+----------+-----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -608,7 +608,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +--------------------------------------------------------------------------------+--------------------------------------------------------------------------------+----------+----------+----------+----------+
 ; From Clock                                                                     ; To Clock                                                                       ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +--------------------------------------------------------------------------------+--------------------------------------------------------------------------------+----------+----------+----------+----------+
-; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 77       ; 0        ; 11       ; 0        ;
+; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 71       ; 0        ; 10       ; 0        ;
 +--------------------------------------------------------------------------------+--------------------------------------------------------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -618,7 +618,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +--------------------------------------------------------------------------------+--------------------------------------------------------------------------------+----------+----------+----------+----------+
 ; From Clock                                                                     ; To Clock                                                                       ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +--------------------------------------------------------------------------------+--------------------------------------------------------------------------------+----------+----------+----------+----------+
-; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 77       ; 0        ; 11       ; 0        ;
+; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 71       ; 0        ; 10       ; 0        ;
 +--------------------------------------------------------------------------------+--------------------------------------------------------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -643,9 +643,9 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 2     ; 2    ;
 ; Unconstrained Input Ports       ; 2     ; 2    ;
-; Unconstrained Input Port Paths  ; 35    ; 35   ;
-; Unconstrained Output Ports      ; 17    ; 17   ;
-; Unconstrained Output Port Paths ; 2921  ; 2921 ;
+; Unconstrained Input Port Paths  ; 34    ; 34   ;
+; Unconstrained Output Ports      ; 21    ; 21   ;
+; Unconstrained Output Port Paths ; 2937  ; 2937 ;
 +---------------------------------+-------+------+
 
 
@@ -658,7 +658,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; PS2_CLK                                                                        ;                                                                                ; Base      ; Unconstrained ;
 ; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; Generated ; Constrained   ;
 ; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; Generated ; Constrained   ;
-; newDataClock                                                                   ;                                                                                ; Base      ; Unconstrained ;
+; ps2:ps2_inst|newDataClock                                                      ;                                                                                ; Base      ; Unconstrained ;
 +--------------------------------------------------------------------------------+--------------------------------------------------------------------------------+-----------+---------------+
 
 
@@ -679,6 +679,10 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +-------------+---------------------------------------------------------------------------------------+
 ; LEDR[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; LEDR[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; LEDR[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; LEDR[3]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; LEDR[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; LEDR[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; LEDR[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; VGA_B[0]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; VGA_B[1]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
@@ -714,6 +718,10 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +-------------+---------------------------------------------------------------------------------------+
 ; LEDR[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; LEDR[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; LEDR[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; LEDR[3]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; LEDR[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; LEDR[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; LEDR[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; VGA_B[0]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; VGA_B[1]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
@@ -738,7 +746,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
-    Info: Processing started: Sat May 20 23:48:35 2023
+    Info: Processing started: Sun May 21 11:39:41 2023
 Info: Command: quartus_sta customComputer -c customComputer
 Info: qsta_default_script.tcl version: #1
 Info (20032): Parallel compilation is enabled and will use up to 16 processors
@@ -761,337 +769,310 @@ Info (332110): Deriving PLL clocks
 Info (332151): Clock uncertainty is not calculated until you update the timing netlist.
 Warning (332125): Found combinational loop of 394 nodes File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/reg_file.v Line: 100
     Warning (332126): Node "inst1|reg_file_|db_lo_as[0]~8|combout"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[0]~46|dataa"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[0]~46|datad"
     Warning (332126): Node "inst1|reg_file_|gdfx_temp0[0]~46|combout"
-    Warning (332126): Node "inst1|alu_control_|db[0]~14|dataf"
+    Warning (332126): Node "inst1|alu_control_|db[0]~14|datae"
     Warning (332126): Node "inst1|alu_control_|db[0]~14|combout"
     Warning (332126): Node "inst1|bus_control_|db[0]~9|datae"
     Warning (332126): Node "inst1|bus_control_|db[0]~9|combout"
-    Warning (332126): Node "inst1|alu_control_|db[0]~14|datae"
-    Warning (332126): Node "inst1|alu_control_|db[0]~28|datae"
+    Warning (332126): Node "inst1|alu_control_|db[0]~14|dataf"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[0]~64|dataf"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[0]~64|combout"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[0]~39|datac"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[0]~39|combout"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[0]~46|dataa"
+    Warning (332126): Node "inst1|alu_control_|db[0]~28|dataf"
     Warning (332126): Node "inst1|alu_control_|db[0]~28|combout"
-    Warning (332126): Node "inst1|alu_|db[0]~11|datac"
+    Warning (332126): Node "inst1|alu_|db[0]~11|datae"
     Warning (332126): Node "inst1|alu_|db[0]~11|combout"
-    Warning (332126): Node "inst1|alu_|db_low[0]~0|dataa"
-    Warning (332126): Node "inst1|alu_|db_low[0]~0|combout"
-    Warning (332126): Node "inst1|alu_|db_low[0]~19|datac"
-    Warning (332126): Node "inst1|alu_|db_low[0]~19|combout"
-    Warning (332126): Node "inst1|alu_|db[0]~11|dataf"
-    Warning (332126): Node "inst1|alu_control_|b2v_inst_shift_mux|out~0|datac"
+    Warning (332126): Node "inst1|alu_control_|b2v_inst_shift_mux|out~0|datad"
     Warning (332126): Node "inst1|alu_control_|b2v_inst_shift_mux|out~0|combout"
-    Warning (332126): Node "inst1|alu_|db_high[3]~3|datad"
+    Warning (332126): Node "inst1|alu_|db_high[3]~3|dataf"
     Warning (332126): Node "inst1|alu_|db_high[3]~3|combout"
-    Warning (332126): Node "inst1|alu_|db_high[3]~5|datac"
+    Warning (332126): Node "inst1|alu_|db_high[3]~5|datad"
     Warning (332126): Node "inst1|alu_|db_high[3]~5|combout"
-    Warning (332126): Node "inst1|alu_|db[7]~10|dataf"
+    Warning (332126): Node "inst1|alu_|db[7]~10|datab"
     Warning (332126): Node "inst1|alu_|db[7]~10|combout"
-    Warning (332126): Node "inst1|alu_|db_low[0]~0|datae"
     Warning (332126): Node "inst1|alu_control_|db[7]~23|dataf"
     Warning (332126): Node "inst1|alu_control_|db[7]~23|combout"
-    Warning (332126): Node "inst1|alu_control_|db[7]~24|datad"
+    Warning (332126): Node "inst1|alu_control_|db[7]~24|datab"
     Warning (332126): Node "inst1|alu_control_|db[7]~24|combout"
-    Warning (332126): Node "inst1|alu_|db[7]~9|datae"
-    Warning (332126): Node "inst1|alu_|db[7]~9|combout"
-    Warning (332126): Node "inst1|alu_|db[7]~10|datac"
     Warning (332126): Node "inst1|reg_file_|gdfx_temp0[7]~15|dataf"
     Warning (332126): Node "inst1|reg_file_|gdfx_temp0[7]~15|combout"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[7]~17|datae"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[7]~17|dataf"
     Warning (332126): Node "inst1|reg_file_|gdfx_temp0[7]~17|combout"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[7]~18|datac"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[7]~18|datad"
     Warning (332126): Node "inst1|reg_file_|gdfx_temp0[7]~18|combout"
-    Warning (332126): Node "inst1|alu_control_|db[7]~23|datad"
-    Warning (332126): Node "inst1|reg_file_|db_lo_as[7]~14|dataf"
+    Warning (332126): Node "inst1|alu_control_|db[7]~23|datae"
+    Warning (332126): Node "inst1|reg_file_|db_lo_as[7]~14|datad"
     Warning (332126): Node "inst1|reg_file_|db_lo_as[7]~14|combout"
     Warning (332126): Node "inst1|reg_file_|gdfx_temp0[7]~18|dataf"
-    Warning (332126): Node "inst1|bus_control_|db[7]~5|dataf"
+    Warning (332126): Node "inst1|alu_|db[7]~9|datae"
+    Warning (332126): Node "inst1|alu_|db[7]~9|combout"
+    Warning (332126): Node "inst1|alu_|db[7]~10|dataa"
+    Warning (332126): Node "inst1|bus_control_|db[7]~5|datae"
     Warning (332126): Node "inst1|bus_control_|db[7]~5|combout"
     Warning (332126): Node "inst1|alu_control_|db[7]~24|dataf"
+    Warning (332126): Node "inst1|alu_|db_high[3]~3|datae"
+    Warning (332126): Node "inst1|alu_control_|b2v_inst_shift_mux|out~0|datae"
     Warning (332126): Node "inst1|alu_|db_high[2]~10|datac"
     Warning (332126): Node "inst1|alu_|db_high[2]~10|combout"
-    Warning (332126): Node "inst1|alu_|db[6]~29|dataf"
+    Warning (332126): Node "inst1|alu_|db[6]~29|datac"
     Warning (332126): Node "inst1|alu_|db[6]~29|combout"
-    Warning (332126): Node "inst1|alu_control_|db[6]~26|datad"
-    Warning (332126): Node "inst1|alu_control_|db[6]~26|combout"
-    Warning (332126): Node "inst1|alu_control_|db[6]~27|datad"
-    Warning (332126): Node "inst1|alu_control_|db[6]~27|combout"
-    Warning (332126): Node "inst1|alu_|db[6]~19|datae"
-    Warning (332126): Node "inst1|alu_|db[6]~19|combout"
-    Warning (332126): Node "inst1|alu_|db[6]~20|datae"
-    Warning (332126): Node "inst1|alu_|db[6]~20|combout"
-    Warning (332126): Node "inst1|alu_|db[6]~21|dataf"
-    Warning (332126): Node "inst1|alu_|db[6]~21|combout"
-    Warning (332126): Node "inst1|alu_|db[6]~29|datad"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[6]~54|dataf"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[6]~54|combout"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[6]~56|datad"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[6]~56|combout"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[6]~57|datae"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[6]~57|combout"
-    Warning (332126): Node "inst1|reg_file_|db_lo_as[6]~15|dataf"
-    Warning (332126): Node "inst1|reg_file_|db_lo_as[6]~15|combout"
-    Warning (332126): Node "inst1|reg_file_|db_lo_as[6]~16|dataf"
-    Warning (332126): Node "inst1|reg_file_|db_lo_as[6]~16|combout"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[6]~57|dataa"
-    Warning (332126): Node "inst1|alu_control_|db[6]~26|dataf"
-    Warning (332126): Node "inst1|bus_control_|db[6]~6|dataf"
-    Warning (332126): Node "inst1|bus_control_|db[6]~6|combout"
-    Warning (332126): Node "inst1|alu_control_|db[6]~27|dataf"
-    Warning (332126): Node "inst1|alu_|db_high[3]~3|datac"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[6]~41|datae"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[6]~41|combout"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[6]~42|datae"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[6]~42|combout"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[6]~43|datac"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[6]~43|combout"
-    Warning (332126): Node "inst1|alu_|db[6]~19|dataf"
-    Warning (332126): Node "inst1|reg_file_|db_hi_as[6]~14|dataf"
-    Warning (332126): Node "inst1|reg_file_|db_hi_as[6]~14|combout"
-    Warning (332126): Node "inst1|reg_file_|db_hi_as[6]~15|dataf"
-    Warning (332126): Node "inst1|reg_file_|db_hi_as[6]~15|combout"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[6]~43|dataf"
-    Warning (332126): Node "inst1|alu_|db_high[2]~10|datae"
-    Warning (332126): Node "inst1|alu_|db_high[1]~14|datac"
+    Warning (332126): Node "inst1|alu_|db_high[3]~3|dataa"
+    Warning (332126): Node "inst1|alu_|db_high[2]~10|datad"
+    Warning (332126): Node "inst1|alu_|db_high[1]~14|datad"
     Warning (332126): Node "inst1|alu_|db_high[1]~14|combout"
-    Warning (332126): Node "inst1|alu_|db[5]~13|dataf"
+    Warning (332126): Node "inst1|alu_|db[5]~13|datab"
     Warning (332126): Node "inst1|alu_|db[5]~13|combout"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[5]~36|datae"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[5]~36|combout"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[5]~37|dataf"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[5]~37|combout"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[5]~38|dataf"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[5]~38|combout"
-    Warning (332126): Node "inst1|alu_|db[5]~12|dataf"
-    Warning (332126): Node "inst1|alu_|db[5]~12|combout"
-    Warning (332126): Node "inst1|alu_|db[5]~13|datac"
-    Warning (332126): Node "inst1|reg_file_|db_hi_as[5]~13|dataf"
-    Warning (332126): Node "inst1|reg_file_|db_hi_as[5]~13|combout"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[5]~38|datae"
-    Warning (332126): Node "inst1|sw2_|db_up[5]~1|dataf"
-    Warning (332126): Node "inst1|sw2_|db_up[5]~1|combout"
-    Warning (332126): Node "inst1|alu_control_|db[5]~17|datae"
-    Warning (332126): Node "inst1|alu_control_|db[5]~17|combout"
-    Warning (332126): Node "inst1|alu_|db[5]~22|dataf"
-    Warning (332126): Node "inst1|alu_|db[5]~22|combout"
-    Warning (332126): Node "inst1|alu_|db[5]~23|datae"
-    Warning (332126): Node "inst1|alu_|db[5]~23|combout"
-    Warning (332126): Node "inst1|alu_|db[5]~13|datad"
-    Warning (332126): Node "inst1|alu_control_|db[5]~18|dataf"
-    Warning (332126): Node "inst1|alu_control_|db[5]~18|combout"
-    Warning (332126): Node "inst1|bus_control_|db[5]~8|dataf"
-    Warning (332126): Node "inst1|bus_control_|db[5]~8|combout"
-    Warning (332126): Node "inst1|alu_|db_low[1]~15|datae"
-    Warning (332126): Node "inst1|alu_|db_low[1]~15|combout"
-    Warning (332126): Node "inst1|alu_|db[1]~28|dataf"
-    Warning (332126): Node "inst1|alu_|db[1]~28|combout"
-    Warning (332126): Node "inst1|alu_|db[1]~15|dataf"
-    Warning (332126): Node "inst1|alu_|db[1]~15|combout"
-    Warning (332126): Node "inst1|alu_|db_low[0]~17|dataf"
-    Warning (332126): Node "inst1|alu_|db_low[0]~17|combout"
-    Warning (332126): Node "inst1|alu_|db_low[0]~0|dataf"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[1]~26|datae"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[1]~26|combout"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[1]~27|dataf"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[1]~27|combout"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[1]~28|datad"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[1]~28|combout"
-    Warning (332126): Node "inst1|alu_|db[1]~27|dataf"
-    Warning (332126): Node "inst1|alu_|db[1]~27|combout"
-    Warning (332126): Node "inst1|alu_|db[1]~15|datae"
-    Warning (332126): Node "inst1|reg_file_|db_hi_as[1]~8|dataf"
-    Warning (332126): Node "inst1|reg_file_|db_hi_as[1]~8|combout"
-    Warning (332126): Node "inst1|reg_file_|db_hi_as[1]~9|dataf"
-    Warning (332126): Node "inst1|reg_file_|db_hi_as[1]~9|combout"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[1]~28|dataf"
-    Warning (332126): Node "inst1|alu_|db_low[1]~14|datad"
-    Warning (332126): Node "inst1|alu_|db_low[1]~14|combout"
-    Warning (332126): Node "inst1|alu_|db[1]~15|datad"
-    Warning (332126): Node "inst1|alu_|db_low[2]~9|dataf"
-    Warning (332126): Node "inst1|alu_|db_low[2]~9|combout"
-    Warning (332126): Node "inst1|alu_|db_low[2]~11|datad"
-    Warning (332126): Node "inst1|alu_|db_low[2]~11|combout"
-    Warning (332126): Node "inst1|alu_|db[2]~16|dataf"
-    Warning (332126): Node "inst1|alu_|db[2]~16|combout"
-    Warning (332126): Node "inst1|alu_|db_low[3]~4|datad"
+    Warning (332126): Node "inst1|alu_|db_high[1]~14|datac"
+    Warning (332126): Node "inst1|alu_|db_high[0]~22|datae"
+    Warning (332126): Node "inst1|alu_|db_high[0]~22|combout"
+    Warning (332126): Node "inst1|alu_|db[4]~30|dataf"
+    Warning (332126): Node "inst1|alu_|db[4]~30|combout"
+    Warning (332126): Node "inst1|alu_|db_high[1]~14|dataf"
+    Warning (332126): Node "inst1|alu_|db_low[3]~4|datac"
     Warning (332126): Node "inst1|alu_|db_low[3]~4|combout"
     Warning (332126): Node "inst1|alu_|db_low[3]~6|dataf"
     Warning (332126): Node "inst1|alu_|db_low[3]~6|combout"
     Warning (332126): Node "inst1|alu_|db[3]~26|dataf"
     Warning (332126): Node "inst1|alu_|db[3]~26|combout"
-    Warning (332126): Node "inst1|alu_|db[3]~14|dataa"
-    Warning (332126): Node "inst1|alu_|db[3]~14|combout"
-    Warning (332126): Node "inst1|alu_control_|db[3]~13|datae"
-    Warning (332126): Node "inst1|alu_control_|db[3]~13|combout"
-    Warning (332126): Node "inst1|alu_|db[3]~25|datad"
-    Warning (332126): Node "inst1|alu_|db[3]~25|combout"
     Warning (332126): Node "inst1|alu_|db[3]~14|datae"
+    Warning (332126): Node "inst1|alu_|db[3]~14|combout"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[3]~16|datae"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[3]~16|combout"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[3]~17|datac"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[3]~17|combout"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[3]~18|dataa"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[3]~18|combout"
+    Warning (332126): Node "inst1|reg_file_|db_hi_as[3]~19|datac"
+    Warning (332126): Node "inst1|reg_file_|db_hi_as[3]~19|combout"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[3]~18|datac"
+    Warning (332126): Node "inst1|alu_|db[3]~25|dataa"
+    Warning (332126): Node "inst1|alu_|db[3]~25|combout"
+    Warning (332126): Node "inst1|alu_|db[3]~14|dataf"
+    Warning (332126): Node "inst1|alu_control_|db[3]~13|datac"
+    Warning (332126): Node "inst1|alu_control_|db[3]~13|combout"
+    Warning (332126): Node "inst1|alu_control_|db[3]~31|dataf"
+    Warning (332126): Node "inst1|alu_control_|db[3]~31|combout"
+    Warning (332126): Node "inst1|bus_control_|db[3]~11|datad"
+    Warning (332126): Node "inst1|bus_control_|db[3]~11|combout"
+    Warning (332126): Node "inst1|alu_|db_high[0]~20|dataa"
+    Warning (332126): Node "inst1|alu_|db_high[0]~20|combout"
+    Warning (332126): Node "inst1|alu_|db[4]~18|dataa"
+    Warning (332126): Node "inst1|alu_|db[4]~18|combout"
+    Warning (332126): Node "inst1|alu_|db[4]~30|datac"
+    Warning (332126): Node "inst1|alu_|db_low[2]~10|datae"
+    Warning (332126): Node "inst1|alu_|db_low[2]~10|combout"
+    Warning (332126): Node "inst1|alu_|db_low[2]~11|datae"
+    Warning (332126): Node "inst1|alu_|db_low[2]~11|combout"
+    Warning (332126): Node "inst1|alu_|db[2]~16|dataf"
+    Warning (332126): Node "inst1|alu_|db[2]~16|combout"
+    Warning (332126): Node "inst1|alu_control_|db[2]~20|datae"
+    Warning (332126): Node "inst1|alu_control_|db[2]~20|combout"
+    Warning (332126): Node "inst1|alu_control_|db[2]~21|datad"
+    Warning (332126): Node "inst1|alu_control_|db[2]~21|combout"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[2]~32|datab"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[2]~32|combout"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[2]~38|dataa"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[2]~38|combout"
+    Warning (332126): Node "inst1|reg_file_|db_lo_as[2]~6|datae"
+    Warning (332126): Node "inst1|reg_file_|db_lo_as[2]~6|combout"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[2]~38|datac"
+    Warning (332126): Node "inst1|reg_file_|db_lo_ds[2]~1|dataf"
+    Warning (332126): Node "inst1|reg_file_|db_lo_ds[2]~1|combout"
+    Warning (332126): Node "inst1|alu_control_|db[2]~21|datae"
+    Warning (332126): Node "inst1|alu_|db[2]~16|datae"
+    Warning (332126): Node "inst1|bus_control_|db[2]~4|dataf"
+    Warning (332126): Node "inst1|bus_control_|db[2]~4|combout"
+    Warning (332126): Node "inst1|alu_control_|db[2]~21|dataf"
+    Warning (332126): Node "inst1|alu_|db_low[1]~14|datae"
+    Warning (332126): Node "inst1|alu_|db_low[1]~14|combout"
+    Warning (332126): Node "inst1|alu_|db[1]~15|datad"
+    Warning (332126): Node "inst1|alu_|db[1]~15|combout"
+    Warning (332126): Node "inst1|alu_|db_low[1]~14|dataa"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[1]~26|datab"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[1]~26|combout"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[1]~27|datac"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[1]~27|combout"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[1]~28|datab"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[1]~28|combout"
+    Warning (332126): Node "inst1|reg_file_|db_hi_as[1]~8|dataf"
+    Warning (332126): Node "inst1|reg_file_|db_hi_as[1]~8|combout"
+    Warning (332126): Node "inst1|reg_file_|db_hi_as[1]~9|dataf"
+    Warning (332126): Node "inst1|reg_file_|db_hi_as[1]~9|combout"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[1]~28|dataf"
+    Warning (332126): Node "inst1|alu_|db[1]~27|dataf"
+    Warning (332126): Node "inst1|alu_|db[1]~27|combout"
+    Warning (332126): Node "inst1|alu_|db[1]~15|dataf"
+    Warning (332126): Node "inst1|alu_|db_low[2]~9|datab"
+    Warning (332126): Node "inst1|alu_|db_low[2]~9|combout"
+    Warning (332126): Node "inst1|alu_|db_low[2]~11|dataf"
+    Warning (332126): Node "inst1|alu_control_|db[1]~29|datae"
+    Warning (332126): Node "inst1|alu_control_|db[1]~29|combout"
+    Warning (332126): Node "inst1|alu_control_|db[1]~30|dataf"
+    Warning (332126): Node "inst1|alu_control_|db[1]~30|combout"
+    Warning (332126): Node "inst1|bus_control_|db[1]~7|datac"
+    Warning (332126): Node "inst1|bus_control_|db[1]~7|combout"
+    Warning (332126): Node "inst1|alu_control_|db[1]~30|datad"
+    Warning (332126): Node "inst1|alu_|db[1]~27|datae"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[1]~48|dataf"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[1]~48|combout"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[1]~50|datab"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[1]~50|combout"
+    Warning (332126): Node "inst1|reg_file_|db_lo_ds[1]~2|dataf"
+    Warning (332126): Node "inst1|reg_file_|db_lo_ds[1]~2|combout"
+    Warning (332126): Node "inst1|alu_control_|db[1]~30|datae"
+    Warning (332126): Node "inst1|reg_file_|db_lo_as[1]~10|datac"
+    Warning (332126): Node "inst1|reg_file_|db_lo_as[1]~10|combout"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[1]~50|dataf"
+    Warning (332126): Node "inst1|alu_|db_low[0]~17|dataf"
+    Warning (332126): Node "inst1|alu_|db_low[0]~17|combout"
+    Warning (332126): Node "inst1|alu_|db_low[0]~0|dataf"
+    Warning (332126): Node "inst1|alu_|db_low[0]~0|combout"
+    Warning (332126): Node "inst1|alu_|db_low[0]~19|datac"
+    Warning (332126): Node "inst1|alu_|db_low[0]~19|combout"
+    Warning (332126): Node "inst1|alu_|db[0]~11|datab"
+    Warning (332126): Node "inst1|alu_|db_low[3]~4|dataf"
+    Warning (332126): Node "inst1|alu_|db_low[2]~9|dataf"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[2]~11|datae"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[2]~11|combout"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[2]~12|datac"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[2]~12|combout"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[2]~13|dataf"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[2]~13|combout"
+    Warning (332126): Node "inst1|alu_|db[2]~16|datac"
+    Warning (332126): Node "inst1|reg_file_|db_hi_as[2]~2|datab"
+    Warning (332126): Node "inst1|reg_file_|db_hi_as[2]~2|combout"
+    Warning (332126): Node "inst1|reg_file_|db_hi_as[2]~3|dataa"
+    Warning (332126): Node "inst1|reg_file_|db_hi_as[2]~3|combout"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[2]~13|datad"
+    Warning (332126): Node "inst1|alu_|db[3]~14|datab"
+    Warning (332126): Node "inst1|alu_control_|db[3]~31|datae"
     Warning (332126): Node "inst1|reg_file_|gdfx_temp0[3]~26|datae"
     Warning (332126): Node "inst1|reg_file_|gdfx_temp0[3]~26|combout"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[3]~30|dataf"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[3]~30|dataa"
     Warning (332126): Node "inst1|reg_file_|gdfx_temp0[3]~30|combout"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[3]~31|dataf"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[3]~31|datae"
     Warning (332126): Node "inst1|reg_file_|gdfx_temp0[3]~31|combout"
     Warning (332126): Node "inst1|reg_file_|db_lo_as[3]~4|dataf"
     Warning (332126): Node "inst1|reg_file_|db_lo_as[3]~4|combout"
     Warning (332126): Node "inst1|reg_file_|db_lo_as[3]~5|dataf"
     Warning (332126): Node "inst1|reg_file_|db_lo_as[3]~5|combout"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[3]~31|datae"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[3]~31|dataf"
     Warning (332126): Node "inst1|alu_control_|db[3]~13|dataf"
-    Warning (332126): Node "inst1|alu_control_|db[3]~31|datae"
-    Warning (332126): Node "inst1|alu_control_|db[3]~31|combout"
-    Warning (332126): Node "inst1|bus_control_|db[3]~11|dataf"
-    Warning (332126): Node "inst1|bus_control_|db[3]~11|combout"
-    Warning (332126): Node "inst1|alu_|db_low[0]~1|dataf"
+    Warning (332126): Node "inst1|alu_|db_low[3]~5|datae"
+    Warning (332126): Node "inst1|alu_|db_low[3]~5|combout"
+    Warning (332126): Node "inst1|alu_|db_low[3]~6|datae"
+    Warning (332126): Node "inst1|alu_|db_low[0]~1|datae"
     Warning (332126): Node "inst1|alu_|db_low[0]~1|combout"
     Warning (332126): Node "inst1|alu_|db_low[0]~19|dataf"
-    Warning (332126): Node "inst1|alu_|db_high[2]~9|dataf"
+    Warning (332126): Node "inst1|alu_|db_high[2]~9|datad"
     Warning (332126): Node "inst1|alu_|db_high[2]~9|combout"
-    Warning (332126): Node "inst1|alu_|db[6]~21|datad"
-    Warning (332126): Node "inst1|alu_|db_high[1]~15|dataf"
+    Warning (332126): Node "inst1|alu_|db[6]~21|datac"
+    Warning (332126): Node "inst1|alu_|db[6]~21|combout"
+    Warning (332126): Node "inst1|alu_|db[6]~29|datad"
+    Warning (332126): Node "inst1|alu_|db_high[3]~4|datae"
+    Warning (332126): Node "inst1|alu_|db_high[3]~4|combout"
+    Warning (332126): Node "inst1|alu_|db_high[3]~5|datae"
+    Warning (332126): Node "inst1|alu_|db_high[1]~15|datad"
     Warning (332126): Node "inst1|alu_|db_high[1]~15|combout"
-    Warning (332126): Node "inst1|alu_|db[5]~13|datab"
+    Warning (332126): Node "inst1|alu_|db[5]~13|datac"
     Warning (332126): Node "inst1|alu_|db[5]~24|dataf"
     Warning (332126): Node "inst1|alu_|db[5]~24|combout"
     Warning (332126): Node "inst1|alu_|db[5]~13|datae"
-    Warning (332126): Node "inst1|alu_|db[3]~14|dataf"
-    Warning (332126): Node "inst1|alu_|db_low[2]~10|dataf"
-    Warning (332126): Node "inst1|alu_|db_low[2]~10|combout"
-    Warning (332126): Node "inst1|alu_|db_low[2]~11|datae"
-    Warning (332126): Node "inst1|alu_|db_high[0]~20|datae"
-    Warning (332126): Node "inst1|alu_|db_high[0]~20|combout"
-    Warning (332126): Node "inst1|alu_|db[4]~18|dataf"
-    Warning (332126): Node "inst1|alu_|db[4]~18|combout"
-    Warning (332126): Node "inst1|alu_|db[4]~30|datae"
-    Warning (332126): Node "inst1|alu_|db[4]~30|combout"
-    Warning (332126): Node "inst1|alu_|db_high[0]~22|datac"
-    Warning (332126): Node "inst1|alu_|db_high[0]~22|combout"
-    Warning (332126): Node "inst1|alu_|db[4]~30|dataf"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[4]~31|datae"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[4]~31|combout"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[4]~32|datad"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[4]~32|combout"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[4]~33|dataf"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[4]~33|combout"
-    Warning (332126): Node "inst1|alu_|db[4]~17|datad"
-    Warning (332126): Node "inst1|alu_|db[4]~17|combout"
-    Warning (332126): Node "inst1|alu_|db[4]~18|datae"
-    Warning (332126): Node "inst1|reg_file_|db_hi_as[4]~20|dataf"
-    Warning (332126): Node "inst1|reg_file_|db_hi_as[4]~20|combout"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[4]~33|datac"
-    Warning (332126): Node "inst1|alu_|db_low[3]~4|datac"
-    Warning (332126): Node "inst1|alu_|db_high[1]~14|datad"
+    Warning (332126): Node "inst1|alu_|db_low[1]~15|datae"
+    Warning (332126): Node "inst1|alu_|db_low[1]~15|combout"
+    Warning (332126): Node "inst1|alu_|db[1]~28|datae"
+    Warning (332126): Node "inst1|alu_|db[1]~28|combout"
+    Warning (332126): Node "inst1|alu_|db[1]~15|datae"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[3]~26|dataf"
+    Warning (332126): Node "inst1|alu_|db[3]~25|datad"
+    Warning (332126): Node "inst1|alu_|db_low[3]~4|datae"
+    Warning (332126): Node "inst1|alu_|db_high[0]~22|datad"
+    Warning (332126): Node "inst1|alu_|db_low[2]~9|datae"
     Warning (332126): Node "inst1|alu_control_|db[4]~10|dataf"
     Warning (332126): Node "inst1|alu_control_|db[4]~10|combout"
-    Warning (332126): Node "inst1|alu_control_|db[4]~11|datae"
-    Warning (332126): Node "inst1|alu_control_|db[4]~11|combout"
-    Warning (332126): Node "inst1|alu_|db[4]~17|dataf"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[4]~23|dataf"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[4]~23|combout"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[4]~24|dataf"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[4]~24|combout"
-    Warning (332126): Node "inst1|bus_control_|db[4]~10|datad"
+    Warning (332126): Node "inst1|bus_control_|db[4]~13|datae"
+    Warning (332126): Node "inst1|bus_control_|db[4]~13|combout"
+    Warning (332126): Node "inst1|bus_control_|db[4]~10|datae"
     Warning (332126): Node "inst1|bus_control_|db[4]~10|combout"
-    Warning (332126): Node "inst1|alu_|db_low[1]~15|datad"
-    Warning (332126): Node "inst1|alu_|db_low[0]~1|datac"
-    Warning (332126): Node "inst1|alu_|db_high[2]~9|datac"
-    Warning (332126): Node "inst1|alu_|db_high[1]~15|datad"
-    Warning (332126): Node "inst1|alu_|db_low[2]~10|datac"
+    Warning (332126): Node "inst1|alu_|db_low[2]~10|datab"
+    Warning (332126): Node "inst1|alu_|db_low[3]~5|dataf"
     Warning (332126): Node "inst1|sw1_|db_down[4]~0|dataf"
     Warning (332126): Node "inst1|sw1_|db_down[4]~0|combout"
     Warning (332126): Node "inst1|bus_control_|db[4]~14|dataf"
     Warning (332126): Node "inst1|bus_control_|db[4]~14|combout"
-    Warning (332126): Node "inst1|bus_control_|db[4]~10|datae"
-    Warning (332126): Node "inst1|alu_control_|db[4]~11|dataf"
-    Warning (332126): Node "inst1|alu_|db_high[0]~20|datad"
-    Warning (332126): Node "inst1|alu_|db_high[3]~4|datab"
-    Warning (332126): Node "inst1|alu_|db_high[3]~4|combout"
-    Warning (332126): Node "inst1|alu_|db_high[3]~5|dataf"
-    Warning (332126): Node "inst1|alu_|db_low[3]~5|datab"
-    Warning (332126): Node "inst1|alu_|db_low[3]~5|combout"
-    Warning (332126): Node "inst1|alu_|db_low[3]~6|datae"
-    Warning (332126): Node "inst1|reg_file_|db_lo_as[4]~2|dataf"
+    Warning (332126): Node "inst1|bus_control_|db[4]~10|datac"
+    Warning (332126): Node "inst1|alu_control_|db[4]~11|datac"
+    Warning (332126): Node "inst1|alu_control_|db[4]~11|combout"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[4]~23|datae"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[4]~23|combout"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[4]~24|datab"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[4]~24|combout"
+    Warning (332126): Node "inst1|reg_file_|db_lo_as[4]~2|datae"
     Warning (332126): Node "inst1|reg_file_|db_lo_as[4]~2|combout"
     Warning (332126): Node "inst1|reg_file_|db_lo_as[4]~3|dataf"
     Warning (332126): Node "inst1|reg_file_|db_lo_as[4]~3|combout"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[4]~24|datab"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[4]~24|datae"
     Warning (332126): Node "inst1|alu_control_|db[4]~11|datad"
-    Warning (332126): Node "inst1|bus_control_|db[4]~13|dataf"
-    Warning (332126): Node "inst1|bus_control_|db[4]~13|combout"
     Warning (332126): Node "inst1|bus_control_|db[4]~10|dataf"
-    Warning (332126): Node "inst1|alu_|db_high[3]~4|dataf"
-    Warning (332126): Node "inst1|alu_|db_low[3]~5|dataf"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[3]~26|dataf"
-    Warning (332126): Node "inst1|alu_control_|db[3]~31|dataf"
-    Warning (332126): Node "inst1|alu_|db_low[1]~15|dataf"
-    Warning (332126): Node "inst1|alu_|db_high[0]~22|datad"
-    Warning (332126): Node "inst1|alu_|db_low[3]~4|dataf"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[3]~16|datae"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[3]~16|combout"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[3]~17|dataf"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[3]~17|combout"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[3]~18|dataf"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[3]~18|combout"
-    Warning (332126): Node "inst1|reg_file_|db_hi_as[3]~19|datad"
-    Warning (332126): Node "inst1|reg_file_|db_hi_as[3]~19|combout"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[3]~18|datae"
-    Warning (332126): Node "inst1|alu_|db[3]~25|dataf"
-    Warning (332126): Node "inst1|alu_|db_low[2]~9|datac"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[2]~11|datae"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[2]~11|combout"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[2]~12|dataf"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[2]~12|combout"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[2]~13|datad"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[2]~13|combout"
-    Warning (332126): Node "inst1|alu_|db[2]~16|datae"
-    Warning (332126): Node "inst1|reg_file_|db_hi_as[2]~2|dataf"
-    Warning (332126): Node "inst1|reg_file_|db_hi_as[2]~2|combout"
-    Warning (332126): Node "inst1|reg_file_|db_hi_as[2]~3|dataf"
-    Warning (332126): Node "inst1|reg_file_|db_hi_as[2]~3|combout"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[2]~13|dataf"
-    Warning (332126): Node "inst1|alu_|db_low[1]~14|datac"
-    Warning (332126): Node "inst1|alu_|db_low[2]~9|datad"
-    Warning (332126): Node "inst1|alu_control_|db[2]~20|dataf"
-    Warning (332126): Node "inst1|alu_control_|db[2]~20|combout"
-    Warning (332126): Node "inst1|alu_control_|db[2]~21|dataf"
-    Warning (332126): Node "inst1|alu_control_|db[2]~21|combout"
-    Warning (332126): Node "inst1|bus_control_|db[2]~4|datae"
-    Warning (332126): Node "inst1|bus_control_|db[2]~4|combout"
-    Warning (332126): Node "inst1|alu_control_|db[2]~21|datac"
-    Warning (332126): Node "inst1|alu_|db[2]~16|datad"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[2]~32|dataf"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[2]~32|combout"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[2]~38|datad"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[2]~38|combout"
-    Warning (332126): Node "inst1|reg_file_|db_lo_ds[2]~1|dataf"
-    Warning (332126): Node "inst1|reg_file_|db_lo_ds[2]~1|combout"
-    Warning (332126): Node "inst1|alu_control_|db[2]~21|datae"
-    Warning (332126): Node "inst1|reg_file_|db_lo_as[2]~6|dataf"
-    Warning (332126): Node "inst1|reg_file_|db_lo_as[2]~6|combout"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[2]~38|dataf"
-    Warning (332126): Node "inst1|alu_control_|db[1]~29|dataf"
-    Warning (332126): Node "inst1|alu_control_|db[1]~29|combout"
-    Warning (332126): Node "inst1|alu_control_|db[1]~30|datae"
-    Warning (332126): Node "inst1|alu_control_|db[1]~30|combout"
-    Warning (332126): Node "inst1|alu_|db[1]~27|datae"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[1]~48|dataf"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[1]~48|combout"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[1]~50|dataf"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[1]~50|combout"
-    Warning (332126): Node "inst1|reg_file_|db_lo_ds[1]~2|dataf"
-    Warning (332126): Node "inst1|reg_file_|db_lo_ds[1]~2|combout"
-    Warning (332126): Node "inst1|alu_control_|db[1]~30|datac"
-    Warning (332126): Node "inst1|reg_file_|db_lo_as[1]~10|dataf"
-    Warning (332126): Node "inst1|reg_file_|db_lo_as[1]~10|combout"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[1]~50|datae"
-    Warning (332126): Node "inst1|bus_control_|db[1]~7|dataf"
-    Warning (332126): Node "inst1|bus_control_|db[1]~7|combout"
-    Warning (332126): Node "inst1|alu_control_|db[1]~30|dataf"
-    Warning (332126): Node "inst1|alu_|db_low[0]~1|datad"
-    Warning (332126): Node "inst1|alu_|db_high[2]~9|datab"
+    Warning (332126): Node "inst1|alu_|db[4]~17|datae"
+    Warning (332126): Node "inst1|alu_|db[4]~17|combout"
+    Warning (332126): Node "inst1|alu_|db[4]~18|datae"
+    Warning (332126): Node "inst1|alu_|db_low[0]~1|datac"
+    Warning (332126): Node "inst1|alu_|db_high[0]~20|dataf"
+    Warning (332126): Node "inst1|alu_|db_high[2]~9|dataf"
+    Warning (332126): Node "inst1|alu_|db_high[3]~4|datab"
     Warning (332126): Node "inst1|alu_|db_high[1]~15|datae"
+    Warning (332126): Node "inst1|alu_|db_low[1]~15|datad"
+    Warning (332126): Node "inst1|alu_control_|db[4]~11|dataf"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[4]~31|datad"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[4]~31|combout"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[4]~32|datac"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[4]~32|combout"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[4]~33|datad"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[4]~33|combout"
+    Warning (332126): Node "inst1|reg_file_|db_hi_as[4]~20|datac"
+    Warning (332126): Node "inst1|reg_file_|db_hi_as[4]~20|combout"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[4]~33|datab"
+    Warning (332126): Node "inst1|alu_|db[4]~17|dataf"
+    Warning (332126): Node "inst1|alu_|db_high[0]~22|dataf"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[5]~36|datab"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[5]~36|combout"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[5]~37|datab"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[5]~37|combout"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[5]~38|dataf"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[5]~38|combout"
+    Warning (332126): Node "inst1|alu_|db[5]~12|dataf"
+    Warning (332126): Node "inst1|alu_|db[5]~12|combout"
+    Warning (332126): Node "inst1|alu_|db[5]~13|datad"
+    Warning (332126): Node "inst1|reg_file_|db_hi_as[5]~13|dataf"
+    Warning (332126): Node "inst1|reg_file_|db_hi_as[5]~13|combout"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[5]~38|datad"
+    Warning (332126): Node "inst1|sw2_|db_up[5]~1|dataf"
+    Warning (332126): Node "inst1|sw2_|db_up[5]~1|combout"
+    Warning (332126): Node "inst1|alu_control_|db[5]~17|dataf"
+    Warning (332126): Node "inst1|alu_control_|db[5]~17|combout"
+    Warning (332126): Node "inst1|alu_control_|db[5]~18|datae"
+    Warning (332126): Node "inst1|alu_control_|db[5]~18|combout"
+    Warning (332126): Node "inst1|bus_control_|db[5]~8|dataf"
+    Warning (332126): Node "inst1|bus_control_|db[5]~8|combout"
+    Warning (332126): Node "inst1|alu_|db_low[2]~10|dataf"
+    Warning (332126): Node "inst1|alu_|db_low[3]~5|datac"
+    Warning (332126): Node "inst1|alu_|db_low[0]~1|dataf"
+    Warning (332126): Node "inst1|alu_|db_high[0]~20|datae"
+    Warning (332126): Node "inst1|alu_|db_high[2]~9|datab"
+    Warning (332126): Node "inst1|alu_|db_high[3]~4|dataf"
+    Warning (332126): Node "inst1|alu_|db_high[1]~15|dataf"
+    Warning (332126): Node "inst1|alu_|db_low[1]~15|dataf"
     Warning (332126): Node "inst1|sw1_|db_down[5]~1|dataf"
     Warning (332126): Node "inst1|sw1_|db_down[5]~1|combout"
-    Warning (332126): Node "inst1|alu_|db[5]~22|datae"
-    Warning (332126): Node "inst1|alu_control_|db[5]~18|datae"
+    Warning (332126): Node "inst1|alu_|db[5]~22|dataa"
+    Warning (332126): Node "inst1|alu_|db[5]~22|combout"
+    Warning (332126): Node "inst1|alu_|db[5]~23|datae"
+    Warning (332126): Node "inst1|alu_|db[5]~23|combout"
+    Warning (332126): Node "inst1|alu_|db[5]~13|dataf"
     Warning (332126): Node "inst1|reg_file_|gdfx_temp0[5]~70|datae"
     Warning (332126): Node "inst1|reg_file_|gdfx_temp0[5]~70|combout"
     Warning (332126): Node "inst1|reg_file_|gdfx_temp0[5]~62|datae"
@@ -1101,64 +1082,91 @@ Warning (332125): Found combinational loop of 394 nodes File: C:/Users/redbr/Des
     Warning (332126): Node "inst1|alu_control_|db[5]~18|datac"
     Warning (332126): Node "inst1|reg_file_|db_lo_as[5]~12|dataf"
     Warning (332126): Node "inst1|reg_file_|db_lo_as[5]~12|combout"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[5]~63|datae"
-    Warning (332126): Node "inst1|reg_file_|db_lo_ds[5]~0|dataf"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[5]~63|datad"
+    Warning (332126): Node "inst1|reg_file_|db_lo_ds[5]~0|datae"
     Warning (332126): Node "inst1|reg_file_|db_lo_ds[5]~0|combout"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[5]~70|datac"
+    Warning (332126): Node "inst1|alu_|db[5]~22|dataf"
+    Warning (332126): Node "inst1|alu_control_|db[5]~18|dataf"
     Warning (332126): Node "inst1|alu_|db[5]~22|datad"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[5]~70|datad"
-    Warning (332126): Node "inst1|alu_|db_low[2]~10|datad"
-    Warning (332126): Node "inst1|alu_|db_high[0]~20|dataf"
-    Warning (332126): Node "inst1|alu_|db_high[3]~4|datae"
-    Warning (332126): Node "inst1|alu_|db_low[3]~5|datae"
     Warning (332126): Node "inst1|reg_file_|gdfx_temp0[5]~70|dataf"
     Warning (332126): Node "inst1|alu_|db_high[2]~10|dataf"
-    Warning (332126): Node "inst1|alu_|db_high[1]~14|dataf"
-    Warning (332126): Node "inst1|alu_|db_high[0]~22|dataf"
-    Warning (332126): Node "inst1|alu_control_|b2v_inst_shift_mux|out~0|dataf"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[7]~46|dataf"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[6]~41|datab"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[6]~41|combout"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[6]~42|datab"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[6]~42|combout"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[6]~43|datad"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[6]~43|combout"
+    Warning (332126): Node "inst1|alu_|db[6]~19|datae"
+    Warning (332126): Node "inst1|alu_|db[6]~19|combout"
+    Warning (332126): Node "inst1|alu_|db[6]~20|datae"
+    Warning (332126): Node "inst1|alu_|db[6]~20|combout"
+    Warning (332126): Node "inst1|alu_|db[6]~21|datad"
+    Warning (332126): Node "inst1|reg_file_|db_hi_as[6]~14|dataf"
+    Warning (332126): Node "inst1|reg_file_|db_hi_as[6]~14|combout"
+    Warning (332126): Node "inst1|reg_file_|db_hi_as[6]~15|datae"
+    Warning (332126): Node "inst1|reg_file_|db_hi_as[6]~15|combout"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[6]~43|dataf"
+    Warning (332126): Node "inst1|alu_control_|db[6]~26|datae"
+    Warning (332126): Node "inst1|alu_control_|db[6]~26|combout"
+    Warning (332126): Node "inst1|alu_control_|db[6]~27|datae"
+    Warning (332126): Node "inst1|alu_control_|db[6]~27|combout"
+    Warning (332126): Node "inst1|bus_control_|db[6]~6|datad"
+    Warning (332126): Node "inst1|bus_control_|db[6]~6|combout"
+    Warning (332126): Node "inst1|alu_control_|db[6]~27|dataf"
+    Warning (332126): Node "inst1|alu_|db[6]~19|dataf"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[6]~54|datad"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[6]~54|combout"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[6]~56|datad"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[6]~56|combout"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[6]~57|datac"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[6]~57|combout"
+    Warning (332126): Node "inst1|alu_control_|db[6]~26|datab"
+    Warning (332126): Node "inst1|reg_file_|db_lo_as[6]~15|dataf"
+    Warning (332126): Node "inst1|reg_file_|db_lo_as[6]~15|combout"
+    Warning (332126): Node "inst1|reg_file_|db_lo_as[6]~16|dataf"
+    Warning (332126): Node "inst1|reg_file_|db_lo_as[6]~16|combout"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[6]~57|datab"
+    Warning (332126): Node "inst1|alu_|db_low[0]~0|datac"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[7]~46|datae"
     Warning (332126): Node "inst1|reg_file_|gdfx_temp1[7]~46|combout"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[7]~47|datae"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[7]~47|datad"
     Warning (332126): Node "inst1|reg_file_|gdfx_temp1[7]~47|combout"
     Warning (332126): Node "inst1|reg_file_|gdfx_temp1[7]~48|dataf"
     Warning (332126): Node "inst1|reg_file_|gdfx_temp1[7]~48|combout"
-    Warning (332126): Node "inst1|reg_file_|db_hi_as[7]~17|dataf"
+    Warning (332126): Node "inst1|reg_file_|db_hi_as[7]~17|datac"
     Warning (332126): Node "inst1|reg_file_|db_hi_as[7]~17|combout"
-    Warning (332126): Node "inst1|reg_file_|db_hi_as[7]~18|datae"
+    Warning (332126): Node "inst1|reg_file_|db_hi_as[7]~18|dataf"
     Warning (332126): Node "inst1|reg_file_|db_hi_as[7]~18|combout"
     Warning (332126): Node "inst1|reg_file_|gdfx_temp1[7]~48|datad"
     Warning (332126): Node "inst1|alu_|db[7]~9|dataf"
-    Warning (332126): Node "inst1|alu_|db_high[3]~3|dataf"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[0]~20|dataf"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[0]~20|combout"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[0]~22|datae"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[0]~22|combout"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[0]~23|datae"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[0]~23|combout"
-    Warning (332126): Node "inst1|alu_|db[0]~11|datae"
-    Warning (332126): Node "inst1|reg_file_|db_hi_as[0]~7|datae"
-    Warning (332126): Node "inst1|reg_file_|db_hi_as[0]~7|combout"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[0]~23|dataf"
+    Warning (332126): Node "inst1|alu_|db_low[0]~0|datae"
     Warning (332126): Node "inst1|alu_|db_low[1]~14|dataf"
-    Warning (332126): Node "inst1|sw2_|db_up[0]~0|datae"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[0]~20|datac"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[0]~20|combout"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[0]~22|datad"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[0]~22|combout"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[0]~23|dataf"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[0]~23|combout"
+    Warning (332126): Node "inst1|reg_file_|db_hi_as[0]~7|datac"
+    Warning (332126): Node "inst1|reg_file_|db_hi_as[0]~7|combout"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp1[0]~23|datad"
+    Warning (332126): Node "inst1|alu_|db[0]~11|dataf"
+    Warning (332126): Node "inst1|sw2_|db_up[0]~0|dataf"
     Warning (332126): Node "inst1|sw2_|db_up[0]~0|combout"
+    Warning (332126): Node "inst1|bus_control_|db[0]~9|datad"
     Warning (332126): Node "inst1|alu_control_|db[0]~34|dataf"
     Warning (332126): Node "inst1|alu_control_|db[0]~34|combout"
-    Warning (332126): Node "inst1|alu_control_|db[0]~28|dataf"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[0]~39|datae"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[0]~39|combout"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[0]~46|datad"
-    Warning (332126): Node "inst1|bus_control_|db[0]~9|dataf"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[0]~64|dataf"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[0]~64|combout"
+    Warning (332126): Node "inst1|alu_control_|db[0]~28|datac"
     Warning (332126): Node "inst1|reg_file_|gdfx_temp0[0]~39|dataf"
-    Warning (332126): Node "inst1|alu_control_|db[0]~28|datad"
-    Warning (332126): Node "inst1|reg_file_|db_lo_as[0]~8|datad"
-    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[0]~39|datad"
+    Warning (332126): Node "inst1|reg_file_|gdfx_temp0[0]~39|datae"
+    Warning (332126): Node "inst1|alu_control_|db[0]~28|datae"
+    Warning (332126): Node "inst1|reg_file_|db_lo_as[0]~8|datac"
 Critical Warning (332081): Design contains combinational loop of 394 nodes. Estimating the delays through the loop.
-Warning (332060): Node: newDataClock was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register ps2_out[6] is being clocked by newDataClock
+Warning (332060): Node: ps2:ps2_inst|newDataClock was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register ps2:ps2_inst|LEDR[4] is being clocked by ps2:ps2_inst|newDataClock
 Warning (332060): Node: PS2_CLK was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register newDataClock is being clocked by PS2_CLK
+    Info (13166): Register ps2:ps2_inst|newDataClock is being clocked by PS2_CLK
 Info (332097): The following timing edges are non-unate.  The Timing Analyzer will assume pos-unate behavior for these edges in the clock network.
     Info (332098): Cell: clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL  from: refclkin  to: fbclk
     Info (332098): Cell: clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER  from: vco0ph[0]  to: divclk
@@ -1166,126 +1174,122 @@ Info (332097): The following timing edges are non-unate.  The Timing Analyzer wi
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1100mV 85C Model
-Critical Warning (332148): Timing requirements not met
-    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -4.735
+Info (332146): Worst-case setup slack is 0.008
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -4.735             -50.492 clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-Info (332146): Worst-case hold slack is 0.453
+    Info (332119):     0.008               0.000 clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+Info (332146): Worst-case hold slack is 0.321
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.453               0.000 clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-Info (332146): Worst-case recovery slack is 16.385
+    Info (332119):     0.321               0.000 clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+Info (332146): Worst-case recovery slack is 16.256
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    16.385               0.000 clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-Info (332146): Worst-case removal slack is 0.687
+    Info (332119):    16.256               0.000 clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+Info (332146): Worst-case removal slack is 0.783
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.687               0.000 clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.783               0.000 clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
 Info (332146): Worst-case minimum pulse width slack is 0.325
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):     0.325               0.000 clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] 
     Info (332119):     9.731               0.000 CLOCK_50 
-    Info (332119):    18.490               0.000 clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    18.489               0.000 clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
 Info: Analyzing Slow 1100mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Warning (332060): Node: newDataClock was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register ps2_out[6] is being clocked by newDataClock
+Warning (332060): Node: ps2:ps2_inst|newDataClock was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register ps2:ps2_inst|LEDR[4] is being clocked by ps2:ps2_inst|newDataClock
 Warning (332060): Node: PS2_CLK was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register newDataClock is being clocked by PS2_CLK
+    Info (13166): Register ps2:ps2_inst|newDataClock is being clocked by PS2_CLK
 Info (332097): The following timing edges are non-unate.  The Timing Analyzer will assume pos-unate behavior for these edges in the clock network.
     Info (332098): Cell: clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL  from: refclkin  to: fbclk
     Info (332098): Cell: clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER  from: vco0ph[0]  to: divclk
     Info (332098): Cell: clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_REFCLK_SELECT  from: clkin[0]  to: clkout
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
-Critical Warning (332148): Timing requirements not met
-    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -4.185
+Info (332146): Worst-case setup slack is 0.408
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -4.185             -39.479 clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-Info (332146): Worst-case hold slack is 0.460
+    Info (332119):     0.408               0.000 clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+Info (332146): Worst-case hold slack is 0.307
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.460               0.000 clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-Info (332146): Worst-case recovery slack is 16.505
+    Info (332119):     0.307               0.000 clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+Info (332146): Worst-case recovery slack is 16.355
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    16.505               0.000 clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-Info (332146): Worst-case removal slack is 0.637
+    Info (332119):    16.355               0.000 clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+Info (332146): Worst-case removal slack is 0.734
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.637               0.000 clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.734               0.000 clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
 Info (332146): Worst-case minimum pulse width slack is 0.325
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):     0.325               0.000 clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] 
     Info (332119):     9.741               0.000 CLOCK_50 
-    Info (332119):    18.439               0.000 clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    18.438               0.000 clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
 Info: Analyzing Fast 1100mV 85C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Warning (332060): Node: newDataClock was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register ps2_out[6] is being clocked by newDataClock
+Warning (332060): Node: ps2:ps2_inst|newDataClock was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register ps2:ps2_inst|LEDR[4] is being clocked by ps2:ps2_inst|newDataClock
 Warning (332060): Node: PS2_CLK was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register newDataClock is being clocked by PS2_CLK
+    Info (13166): Register ps2:ps2_inst|newDataClock is being clocked by PS2_CLK
 Info (332097): The following timing edges are non-unate.  The Timing Analyzer will assume pos-unate behavior for these edges in the clock network.
     Info (332098): Cell: clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL  from: refclkin  to: fbclk
     Info (332098): Cell: clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER  from: vco0ph[0]  to: divclk
     Info (332098): Cell: clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_REFCLK_SELECT  from: clkin[0]  to: clkout
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
-Info (332146): Worst-case setup slack is 6.419
+Info (332146): Worst-case setup slack is 9.187
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     6.419               0.000 clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-Info (332146): Worst-case hold slack is 0.180
+    Info (332119):     9.187               0.000 clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+Info (332146): Worst-case hold slack is 0.165
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.180               0.000 clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-Info (332146): Worst-case recovery slack is 17.763
+    Info (332119):     0.165               0.000 clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+Info (332146): Worst-case recovery slack is 17.564
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    17.763               0.000 clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-Info (332146): Worst-case removal slack is 0.294
+    Info (332119):    17.564               0.000 clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+Info (332146): Worst-case removal slack is 0.354
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.294               0.000 clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.354               0.000 clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
 Info (332146): Worst-case minimum pulse width slack is 0.325
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):     0.325               0.000 clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] 
     Info (332119):     9.336               0.000 CLOCK_50 
-    Info (332119):    18.754               0.000 clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    18.753               0.000 clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
 Info: Analyzing Fast 1100mV 0C Model
-Warning (332060): Node: newDataClock was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register ps2_out[6] is being clocked by newDataClock
+Warning (332060): Node: ps2:ps2_inst|newDataClock was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register ps2:ps2_inst|LEDR[4] is being clocked by ps2:ps2_inst|newDataClock
 Warning (332060): Node: PS2_CLK was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register newDataClock is being clocked by PS2_CLK
+    Info (13166): Register ps2:ps2_inst|newDataClock is being clocked by PS2_CLK
 Info (332097): The following timing edges are non-unate.  The Timing Analyzer will assume pos-unate behavior for these edges in the clock network.
     Info (332098): Cell: clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL  from: refclkin  to: fbclk
     Info (332098): Cell: clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER  from: vco0ph[0]  to: divclk
     Info (332098): Cell: clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_REFCLK_SELECT  from: clkin[0]  to: clkout
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
-Info (332146): Worst-case setup slack is 7.819
+Info (332146): Worst-case setup slack is 10.342
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     7.819               0.000 clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-Info (332146): Worst-case hold slack is 0.171
+    Info (332119):    10.342               0.000 clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+Info (332146): Worst-case hold slack is 0.149
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.171               0.000 clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-Info (332146): Worst-case recovery slack is 17.983
+    Info (332119):     0.149               0.000 clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+Info (332146): Worst-case recovery slack is 17.815
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    17.983               0.000 clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-Info (332146): Worst-case removal slack is 0.268
+    Info (332119):    17.815               0.000 clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+Info (332146): Worst-case removal slack is 0.318
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.268               0.000 clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.318               0.000 clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
 Info (332146): Worst-case minimum pulse width slack is 0.325
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
@@ -1294,10 +1298,10 @@ Info (332146): Worst-case minimum pulse width slack is 0.325
     Info (332119):    18.754               0.000 clkControl|vga_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
-Info: Quartus Prime Timing Analyzer was successful. 0 errors, 413 warnings
-    Info: Peak virtual memory: 5470 megabytes
-    Info: Processing ended: Sat May 20 23:48:52 2023
-    Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:40
+Info: Quartus Prime Timing Analyzer was successful. 0 errors, 411 warnings
+    Info: Peak virtual memory: 5471 megabytes
+    Info: Processing ended: Sun May 21 11:39:56 2023
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:38
 
 

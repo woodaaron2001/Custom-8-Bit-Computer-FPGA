@@ -359,10 +359,10 @@ _main::
 	inc	hl
 	ld	(_enemy2Y), hl
 00116$:
-;game.c:121: if(*keyboard == 0x1D){
+;game.c:121: if(*keyboard == 'W'){
 	ld	hl, (_keyboard)
 	ld	a, (hl)
-	sub	a, #0x1d
+	sub	a, #0x57
 	jr	NZ, 00120$
 ;game.c:122: charMovementCounter = charMovementCounter +1;
 	ld	hl, (_charMovementCounter)
@@ -394,10 +394,10 @@ _main::
 	ld	a, d
 	ld	(bc), a
 00120$:
-;game.c:130: if(*keyboard == 0x1B){
+;game.c:130: if(*keyboard == 'S'){
 	ld	hl, (_keyboard)
 	ld	a, (hl)
-	sub	a, #0x1b
+	sub	a, #0x53
 	jr	NZ, 00124$
 ;game.c:131: charMovementCounter = charMovementCounter +1;
 	ld	hl, (_charMovementCounter)
@@ -426,10 +426,10 @@ _main::
 	inc	hl
 	ld	(hl), b
 00124$:
-;game.c:138: if(*keyboard == 0x23){
+;game.c:138: if(*keyboard == 'D'){
 	ld	hl, (_keyboard)
 	ld	a, (hl)
-	sub	a, #0x23
+	sub	a, #0x44
 	jr	NZ, 00128$
 ;game.c:139: charMovementCounter = charMovementCounter +1;
 	ld	hl, (_charMovementCounter)
@@ -460,10 +460,10 @@ _main::
 	ld	a, d
 	ld	(bc), a
 00128$:
-;game.c:147: if(*keyboard == 0x1C){
+;game.c:147: if(*keyboard == 'A'){
 	ld	hl, (_keyboard)
 	ld	a, (hl)
-	sub	a, #0x1c
+	sub	a, #0x41
 	jr	NZ, 00132$
 ;game.c:148: charMovementCounter = charMovementCounter +1;
 	ld	hl, (_charMovementCounter)

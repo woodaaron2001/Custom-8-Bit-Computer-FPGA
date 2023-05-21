@@ -1,5 +1,5 @@
 Analysis & Synthesis report for customComputer
-Sun May 21 00:23:25 2023
+Sun May 21 11:36:43 2023
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
@@ -27,36 +27,38 @@ Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
  19. Source assignments for vgaController:vC|vram:vram_L1|altsyncram:mem_rtl_1|altsyncram_jds1:auto_generated
  20. Source assignments for ram:ram_inst|altsyncram:mem_rtl_0|altsyncram_9bs1:auto_generated
  21. Parameter Settings for User Entity Instance: Top-level Entity: |customComputer
- 22. Parameter Settings for User Entity Instance: ram:ram_inst
- 23. Parameter Settings for User Entity Instance: rom:rom_inst
- 24. Parameter Settings for User Entity Instance: vga_pll:clkControl|vga_pll_0002:vga_pll_inst|altera_pll:altera_pll_i
- 25. Parameter Settings for User Entity Instance: vgaController:vC
- 26. Parameter Settings for User Entity Instance: vgaController:vC|vram:vram_L1
- 27. Parameter Settings for User Entity Instance: vgaController:vC|vram:vram_L2
- 28. Parameter Settings for User Entity Instance: vgaController:vC|cramController:cRram_inst
- 29. Parameter Settings for User Entity Instance: vgaController:vC|cramController:cRram_inst|cram:cram1
- 30. Parameter Settings for User Entity Instance: vgaController:vC|cramController:cRram_inst|cram:cram2
- 31. Parameter Settings for User Entity Instance: vgaController:vC|cramController:cRram_inst|cram:cram3
- 32. Parameter Settings for User Entity Instance: vgaController:vC|cramController:cRram_inst|cram:cram4
- 33. Parameter Settings for User Entity Instance: vgaController:vC|charRom:charRom_inst
- 34. Parameter Settings for User Entity Instance: vgaController:vC|spriteRom:spriteRom_inst
- 35. Parameter Settings for Inferred Entity Instance: vgaController:vC|vram:vram_L2|altsyncram:mem_rtl_0
- 36. Parameter Settings for Inferred Entity Instance: vgaController:vC|vram:vram_L2|altsyncram:mem_rtl_1
- 37. Parameter Settings for Inferred Entity Instance: vgaController:vC|vram:vram_L1|altsyncram:mem_rtl_0
- 38. Parameter Settings for Inferred Entity Instance: vgaController:vC|vram:vram_L1|altsyncram:mem_rtl_1
- 39. Parameter Settings for Inferred Entity Instance: ram:ram_inst|altsyncram:mem_rtl_0
- 40. altsyncram Parameter Settings by Entity Instance
- 41. Port Connectivity Checks: "vgaController:vC|charRom:charRom_inst"
- 42. Port Connectivity Checks: "ram:ram_inst"
- 43. Port Connectivity Checks: "z80_top_direct_n:inst1|alu:alu_"
- 44. Port Connectivity Checks: "z80_top_direct_n:inst1|alu_flags:alu_flags_|alu_mux_4:b2v_inst_mux_cf2"
- 45. Port Connectivity Checks: "z80_top_direct_n:inst1|alu_control:alu_control_|alu_mux_8:b2v_inst_shift_mux"
- 46. Port Connectivity Checks: "z80_top_direct_n:inst1|memory_ifc:memory_ifc_"
- 47. Port Connectivity Checks: "z80_top_direct_n:inst1"
- 48. Post-Synthesis Netlist Statistics for Top Partition
- 49. Elapsed Time Per Partition
- 50. Analysis & Synthesis Messages
- 51. Analysis & Synthesis Suppressed Messages
+ 22. Parameter Settings for User Entity Instance: ps2:ps2_inst
+ 23. Parameter Settings for User Entity Instance: ram:ram_inst
+ 24. Parameter Settings for User Entity Instance: rom:rom_inst
+ 25. Parameter Settings for User Entity Instance: vga_pll:clkControl|vga_pll_0002:vga_pll_inst|altera_pll:altera_pll_i
+ 26. Parameter Settings for User Entity Instance: vgaController:vC
+ 27. Parameter Settings for User Entity Instance: vgaController:vC|vram:vram_L1
+ 28. Parameter Settings for User Entity Instance: vgaController:vC|vram:vram_L2
+ 29. Parameter Settings for User Entity Instance: vgaController:vC|cramController:cRram_inst
+ 30. Parameter Settings for User Entity Instance: vgaController:vC|cramController:cRram_inst|cram:cram1
+ 31. Parameter Settings for User Entity Instance: vgaController:vC|cramController:cRram_inst|cram:cram2
+ 32. Parameter Settings for User Entity Instance: vgaController:vC|cramController:cRram_inst|cram:cram3
+ 33. Parameter Settings for User Entity Instance: vgaController:vC|cramController:cRram_inst|cram:cram4
+ 34. Parameter Settings for User Entity Instance: vgaController:vC|charRom:charRom_inst
+ 35. Parameter Settings for User Entity Instance: vgaController:vC|spriteRom:spriteRom_inst
+ 36. Parameter Settings for Inferred Entity Instance: vgaController:vC|vram:vram_L2|altsyncram:mem_rtl_0
+ 37. Parameter Settings for Inferred Entity Instance: vgaController:vC|vram:vram_L2|altsyncram:mem_rtl_1
+ 38. Parameter Settings for Inferred Entity Instance: vgaController:vC|vram:vram_L1|altsyncram:mem_rtl_0
+ 39. Parameter Settings for Inferred Entity Instance: vgaController:vC|vram:vram_L1|altsyncram:mem_rtl_1
+ 40. Parameter Settings for Inferred Entity Instance: ram:ram_inst|altsyncram:mem_rtl_0
+ 41. altsyncram Parameter Settings by Entity Instance
+ 42. Port Connectivity Checks: "vgaController:vC|charRom:charRom_inst"
+ 43. Port Connectivity Checks: "ram:ram_inst"
+ 44. Port Connectivity Checks: "z80_top_direct_n:inst1|alu:alu_"
+ 45. Port Connectivity Checks: "z80_top_direct_n:inst1|alu_flags:alu_flags_|alu_mux_4:b2v_inst_mux_cf2"
+ 46. Port Connectivity Checks: "z80_top_direct_n:inst1|alu_control:alu_control_|alu_mux_8:b2v_inst_shift_mux"
+ 47. Port Connectivity Checks: "z80_top_direct_n:inst1|memory_ifc:memory_ifc_"
+ 48. Port Connectivity Checks: "z80_top_direct_n:inst1"
+ 49. Port Connectivity Checks: "ps2:ps2_inst"
+ 50. Post-Synthesis Netlist Statistics for Top Partition
+ 51. Elapsed Time Per Partition
+ 52. Analysis & Synthesis Messages
+ 53. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -83,13 +85,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun May 21 00:23:25 2023          ;
+; Analysis & Synthesis Status     ; Successful - Sun May 21 11:36:43 2023          ;
 ; Quartus Prime Version           ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
 ; Revision Name                   ; customComputer                                 ;
 ; Top-level Entity Name           ; customComputer                                 ;
 ; Family                          ; Cyclone V                                      ;
 ; Logic utilization (in ALMs)     ; N/A                                            ;
-; Total registers                 ; 627                                            ;
+; Total registers                 ; 635                                            ;
 ; Total pins                      ; 28                                             ;
 ; Total virtual pins              ; 0                                              ;
 ; Total block memory bits         ; 300,544                                        ;
@@ -227,6 +229,7 @@ Parallel compilation attempted to use more processors than were available, which
 ; reg_file.v                                   ; yes             ; User Verilog HDL File                                 ; C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/reg_file.v                                   ;         ;
 ; reg_control.v                                ; yes             ; User Verilog HDL File                                 ; C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/reg_control.v                                ;         ;
 ; ram.v                                        ; yes             ; User Verilog HDL File                                 ; C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/ram.v                                        ;         ;
+; ps2.v                                        ; yes             ; User Verilog HDL File                                 ; C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/ps2.v                                        ;         ;
 ; pla_decode.v                                 ; yes             ; User Verilog HDL File                                 ; C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/pla_decode.v                                 ;         ;
 ; pin_control.v                                ; yes             ; User Verilog HDL File                                 ; C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/pin_control.v                                ;         ;
 ; memory_ifc.v                                 ; yes             ; User Verilog HDL File                                 ; C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/memory_ifc.v                                 ;         ;
@@ -288,11 +291,11 @@ Parallel compilation attempted to use more processors than were available, which
 ; altram.inc                                   ; yes             ; Megafunction                                          ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/altram.inc                                       ;         ;
 ; altdpram.inc                                 ; yes             ; Megafunction                                          ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/altdpram.inc                                     ;         ;
 ; db/altsyncram_fds1.tdf                       ; yes             ; Auto-Generated Megafunction                           ; C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/db/altsyncram_fds1.tdf                       ;         ;
-; db/customcomputer.ram0_vram_2e5ea71f.hdl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/db/customcomputer.ram0_vram_2e5ea71f.hdl.mif ;         ;
+; db/customComputer.ram0_vram_2e5ea71f.hdl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/db/customComputer.ram0_vram_2e5ea71f.hdl.mif ;         ;
 ; db/altsyncram_jds1.tdf                       ; yes             ; Auto-Generated Megafunction                           ; C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/db/altsyncram_jds1.tdf                       ;         ;
-; db/customcomputer.ram0_vram_d43fda77.hdl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/db/customcomputer.ram0_vram_d43fda77.hdl.mif ;         ;
+; db/customComputer.ram0_vram_d43fda77.hdl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/db/customComputer.ram0_vram_d43fda77.hdl.mif ;         ;
 ; db/altsyncram_9bs1.tdf                       ; yes             ; Auto-Generated Megafunction                           ; C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/db/altsyncram_9bs1.tdf                       ;         ;
-; db/customcomputer.ram0_ram_4b7593a9.hdl.mif  ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/db/customcomputer.ram0_ram_4b7593a9.hdl.mif  ;         ;
+; db/customComputer.ram0_ram_4b7593a9.hdl.mif  ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/db/customComputer.ram0_ram_4b7593a9.hdl.mif  ;         ;
 ; db/decode_cla.tdf                            ; yes             ; Auto-Generated Megafunction                           ; C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/db/decode_cla.tdf                            ;         ;
 ; db/mux_sfb.tdf                               ; yes             ; Auto-Generated Megafunction                           ; C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/db/mux_sfb.tdf                               ;         ;
 +----------------------------------------------+-----------------+-------------------------------------------------------+------------------------------------------------------------------------------------------------------------+---------+
@@ -303,16 +306,16 @@ Parallel compilation attempted to use more processors than were available, which
 +---------------------------------------------+-------------------------+
 ; Resource                                    ; Usage                   ;
 +---------------------------------------------+-------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 11315                   ;
+; Estimate of Logic utilization (ALMs needed) ; 11456                   ;
 ;                                             ;                         ;
-; Combinational ALUT usage for logic          ; 13909                   ;
-;     -- 7 input functions                    ; 1670                    ;
-;     -- 6 input functions                    ; 7011                    ;
-;     -- 5 input functions                    ; 2110                    ;
-;     -- 4 input functions                    ; 1730                    ;
-;     -- <=3 input functions                  ; 1388                    ;
+; Combinational ALUT usage for logic          ; 14060                   ;
+;     -- 7 input functions                    ; 1680                    ;
+;     -- 6 input functions                    ; 7132                    ;
+;     -- 5 input functions                    ; 2120                    ;
+;     -- 4 input functions                    ; 1732                    ;
+;     -- <=3 input functions                  ; 1396                    ;
 ;                                             ;                         ;
-; Dedicated logic registers                   ; 627                     ;
+; Dedicated logic registers                   ; 635                     ;
 ;                                             ;                         ;
 ; I/O pins                                    ; 28                      ;
 ; Total MLAB memory bits                      ; 0                       ;
@@ -324,9 +327,9 @@ Parallel compilation attempted to use more processors than were available, which
 ;     -- PLLs                                 ; 1                       ;
 ;                                             ;                         ;
 ; Maximum fan-out node                        ; vgaController:vC|Add8~1 ;
-; Maximum fan-out                             ; 1653                    ;
-; Total fan-out                               ; 77709                   ;
-; Average fan-out                             ; 5.30                    ;
+; Maximum fan-out                             ; 1654                    ;
+; Total fan-out                               ; 78613                   ;
+; Average fan-out                             ; 5.31                    ;
 +---------------------------------------------+-------------------------+
 
 
@@ -335,20 +338,21 @@ Parallel compilation attempted to use more processors than were available, which
 +----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------+------------------+--------------+
 ; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                         ; Entity Name      ; Library Name ;
 +----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------+------------------+--------------+
-; |customComputer                              ; 13909 (110)         ; 627 (35)                  ; 300544            ; 0          ; 28   ; 0            ; |customComputer                                                                                                             ; customComputer   ; work         ;
-;    |ram:ram_inst|                            ; 14 (0)              ; 2 (0)                     ; 262144            ; 0          ; 0    ; 0            ; |customComputer|ram:ram_inst                                                                                                ; ram              ; work         ;
-;       |altsyncram:mem_rtl_0|                 ; 14 (0)              ; 2 (0)                     ; 262144            ; 0          ; 0    ; 0            ; |customComputer|ram:ram_inst|altsyncram:mem_rtl_0                                                                           ; altsyncram       ; work         ;
-;          |altsyncram_9bs1:auto_generated|    ; 14 (0)              ; 2 (2)                     ; 262144            ; 0          ; 0    ; 0            ; |customComputer|ram:ram_inst|altsyncram:mem_rtl_0|altsyncram_9bs1:auto_generated                                            ; altsyncram_9bs1  ; work         ;
-;             |decode_cla:decode2|             ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |customComputer|ram:ram_inst|altsyncram:mem_rtl_0|altsyncram_9bs1:auto_generated|decode_cla:decode2                         ; decode_cla       ; work         ;
+; |customComputer                              ; 14060 (77)          ; 635 (7)                   ; 300544            ; 0          ; 28   ; 0            ; |customComputer                                                                                                             ; customComputer   ; work         ;
+;    |ps2:ps2_inst|                            ; 66 (66)             ; 36 (36)                   ; 0                 ; 0          ; 0    ; 0            ; |customComputer|ps2:ps2_inst                                                                                                ; ps2              ; work         ;
+;    |ram:ram_inst|                            ; 13 (0)              ; 2 (0)                     ; 262144            ; 0          ; 0    ; 0            ; |customComputer|ram:ram_inst                                                                                                ; ram              ; work         ;
+;       |altsyncram:mem_rtl_0|                 ; 13 (0)              ; 2 (0)                     ; 262144            ; 0          ; 0    ; 0            ; |customComputer|ram:ram_inst|altsyncram:mem_rtl_0                                                                           ; altsyncram       ; work         ;
+;          |altsyncram_9bs1:auto_generated|    ; 13 (0)              ; 2 (2)                     ; 262144            ; 0          ; 0    ; 0            ; |customComputer|ram:ram_inst|altsyncram:mem_rtl_0|altsyncram_9bs1:auto_generated                                            ; altsyncram_9bs1  ; work         ;
+;             |decode_cla:decode2|             ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |customComputer|ram:ram_inst|altsyncram:mem_rtl_0|altsyncram_9bs1:auto_generated|decode_cla:decode2                         ; decode_cla       ; work         ;
 ;             |mux_sfb:mux3|                   ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |customComputer|ram:ram_inst|altsyncram:mem_rtl_0|altsyncram_9bs1:auto_generated|mux_sfb:mux3                               ; mux_sfb          ; work         ;
-;    |rom:rom_inst|                            ; 21 (21)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |customComputer|rom:rom_inst                                                                                                ; rom              ; work         ;
-;    |vgaController:vC|                        ; 12240 (152)         ; 244 (20)                  ; 38400             ; 0          ; 0    ; 0            ; |customComputer|vgaController:vC                                                                                            ; vgaController    ; work         ;
+;    |rom:rom_inst|                            ; 136 (136)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |customComputer|rom:rom_inst                                                                                                ; rom              ; work         ;
+;    |vgaController:vC|                        ; 12242 (152)         ; 244 (20)                  ; 38400             ; 0          ; 0    ; 0            ; |customComputer|vgaController:vC                                                                                            ; vgaController    ; work         ;
 ;       |cramController:cRram_inst|            ; 731 (571)           ; 224 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |customComputer|vgaController:vC|cramController:cRram_inst                                                                  ; cramController   ; work         ;
 ;          |cram:cram1|                        ; 39 (39)             ; 56 (56)                   ; 0                 ; 0          ; 0    ; 0            ; |customComputer|vgaController:vC|cramController:cRram_inst|cram:cram1                                                       ; cram             ; work         ;
 ;          |cram:cram2|                        ; 41 (41)             ; 56 (56)                   ; 0                 ; 0          ; 0    ; 0            ; |customComputer|vgaController:vC|cramController:cRram_inst|cram:cram2                                                       ; cram             ; work         ;
 ;          |cram:cram3|                        ; 39 (39)             ; 56 (56)                   ; 0                 ; 0          ; 0    ; 0            ; |customComputer|vgaController:vC|cramController:cRram_inst|cram:cram3                                                       ; cram             ; work         ;
 ;          |cram:cram4|                        ; 41 (41)             ; 56 (56)                   ; 0                 ; 0          ; 0    ; 0            ; |customComputer|vgaController:vC|cramController:cRram_inst|cram:cram4                                                       ; cram             ; work         ;
-;       |spriteRom:spriteRom_inst|             ; 11357 (11357)       ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |customComputer|vgaController:vC|spriteRom:spriteRom_inst                                                                   ; spriteRom        ; work         ;
+;       |spriteRom:spriteRom_inst|             ; 11359 (11359)       ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |customComputer|vgaController:vC|spriteRom:spriteRom_inst                                                                   ; spriteRom        ; work         ;
 ;       |vram:vram_L1|                         ; 0 (0)               ; 0 (0)                     ; 19200             ; 0          ; 0    ; 0            ; |customComputer|vgaController:vC|vram:vram_L1                                                                               ; vram             ; work         ;
 ;          |altsyncram:mem_rtl_0|              ; 0 (0)               ; 0 (0)                     ; 9600              ; 0          ; 0    ; 0            ; |customComputer|vgaController:vC|vram:vram_L1|altsyncram:mem_rtl_0                                                          ; altsyncram       ; work         ;
 ;             |altsyncram_jds1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 9600              ; 0          ; 0    ; 0            ; |customComputer|vgaController:vC|vram:vram_L1|altsyncram:mem_rtl_0|altsyncram_jds1:auto_generated                           ; altsyncram_jds1  ; work         ;
@@ -362,7 +366,7 @@ Parallel compilation attempted to use more processors than were available, which
 ;    |vga_pll:clkControl|                      ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |customComputer|vga_pll:clkControl                                                                                          ; vga_pll          ; vga_pll      ;
 ;       |vga_pll_0002:vga_pll_inst|            ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |customComputer|vga_pll:clkControl|vga_pll_0002:vga_pll_inst                                                                ; vga_pll_0002     ; vga_pll      ;
 ;          |altera_pll:altera_pll_i|           ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |customComputer|vga_pll:clkControl|vga_pll_0002:vga_pll_inst|altera_pll:altera_pll_i                                        ; altera_pll       ; work         ;
-;    |z80_top_direct_n:inst1|                  ; 1524 (0)            ; 346 (1)                   ; 0                 ; 0          ; 0    ; 0            ; |customComputer|z80_top_direct_n:inst1                                                                                      ; z80_top_direct_n ; work         ;
+;    |z80_top_direct_n:inst1|                  ; 1526 (0)            ; 346 (1)                   ; 0                 ; 0          ; 0    ; 0            ; |customComputer|z80_top_direct_n:inst1                                                                                      ; z80_top_direct_n ; work         ;
 ;       |address_latch:address_latch_|         ; 74 (31)             ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |customComputer|z80_top_direct_n:inst1|address_latch:address_latch_                                                         ; address_latch    ; work         ;
 ;          |address_mux:b2v_inst7|             ; 16 (16)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |customComputer|z80_top_direct_n:inst1|address_latch:address_latch_|address_mux:b2v_inst7                                   ; address_mux      ; work         ;
 ;          |inc_dec:b2v_inst_inc_dec|          ; 27 (23)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |customComputer|z80_top_direct_n:inst1|address_latch:address_latch_|inc_dec:b2v_inst_inc_dec                                ; inc_dec          ; work         ;
@@ -390,10 +394,10 @@ Parallel compilation attempted to use more processors than were available, which
 ;       |data_switch:sw2_|                     ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |customComputer|z80_top_direct_n:inst1|data_switch:sw2_                                                                     ; data_switch      ; work         ;
 ;       |data_switch_mask:sw1_|                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |customComputer|z80_top_direct_n:inst1|data_switch_mask:sw1_                                                                ; data_switch_mask ; work         ;
 ;       |decode_state:decode_state_|           ; 10 (10)             ; 6 (6)                     ; 0                 ; 0          ; 0    ; 0            ; |customComputer|z80_top_direct_n:inst1|decode_state:decode_state_                                                           ; decode_state     ; work         ;
-;       |execute:execute_|                     ; 810 (810)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |customComputer|z80_top_direct_n:inst1|execute:execute_                                                                     ; execute          ; work         ;
+;       |execute:execute_|                     ; 811 (811)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |customComputer|z80_top_direct_n:inst1|execute:execute_                                                                     ; execute          ; work         ;
 ;       |interrupts:interrupts_|               ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |customComputer|z80_top_direct_n:inst1|interrupts:interrupts_                                                               ; interrupts       ; work         ;
 ;       |ir:ir_|                               ; 0 (0)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |customComputer|z80_top_direct_n:inst1|ir:ir_                                                                               ; ir               ; work         ;
-;       |memory_ifc:memory_ifc_|               ; 5 (5)               ; 13 (13)                   ; 0                 ; 0          ; 0    ; 0            ; |customComputer|z80_top_direct_n:inst1|memory_ifc:memory_ifc_                                                               ; memory_ifc       ; work         ;
+;       |memory_ifc:memory_ifc_|               ; 6 (6)               ; 13 (13)                   ; 0                 ; 0          ; 0    ; 0            ; |customComputer|z80_top_direct_n:inst1|memory_ifc:memory_ifc_                                                               ; memory_ifc       ; work         ;
 ;       |pin_control:pin_control_|             ; 12 (12)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |customComputer|z80_top_direct_n:inst1|pin_control:pin_control_                                                             ; pin_control      ; work         ;
 ;       |pla_decode:pla_decode_|               ; 70 (70)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |customComputer|z80_top_direct_n:inst1|pla_decode:pla_decode_                                                               ; pla_decode       ; work         ;
 ;       |reg_control:reg_control_|             ; 29 (29)             ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |customComputer|z80_top_direct_n:inst1|reg_control:reg_control_                                                             ; reg_control      ; work         ;
@@ -459,6 +463,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------------------------------------------------+----------------------------------------+
 ; Register name                                                                     ; Reason for Removal                     ;
 +-----------------------------------------------------------------------------------+----------------------------------------+
+; LEDR[8]~reg0                                                                      ; Stuck at GND due to stuck port data_in ;
+; LEDR[9]~reg0                                                                      ; Stuck at GND due to stuck port data_in ;
 ; z80_top_direct_n:inst1|interrupts:interrupts_|iff1                                ; Lost fanout                            ;
 ; z80_top_direct_n:inst1|interrupts:interrupts_|nmi_armed                           ; Stuck at GND due to stuck port clock   ;
 ; z80_top_direct_n:inst1|interrupts:interrupts_|in_nmi_ALTERA_SYNTHESIZED           ; Stuck at GND due to stuck port data_in ;
@@ -472,14 +478,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; z80_top_direct_n:inst1|interrupts:interrupts_|im1                                 ; Lost fanout                            ;
 ; z80_top_direct_n:inst1|clk_delay:clk_delay_|SYNTHESIZED_WIRE_7                    ; Stuck at GND due to stuck port data_in ;
 ; z80_top_direct_n:inst1|clk_delay:clk_delay_|DFF_inst5                             ; Stuck at GND due to stuck port data_in ;
-; LEDR[2]~reg0                                                                      ; Stuck at GND due to stuck port data_in ;
-; LEDR[3]~reg0                                                                      ; Stuck at GND due to stuck port data_in ;
-; LEDR[4]~reg0                                                                      ; Stuck at GND due to stuck port data_in ;
-; LEDR[5]~reg0                                                                      ; Stuck at GND due to stuck port data_in ;
+; ps2:ps2_inst|LEDR[7]                                                              ; Stuck at GND due to stuck port data_in ;
+; ps2:ps2_inst|PS2OUT[7]                                                            ; Stuck at GND due to stuck port data_in ;
 ; LEDR[7]~reg0                                                                      ; Stuck at GND due to stuck port data_in ;
-; LEDR[8]~reg0                                                                      ; Stuck at GND due to stuck port data_in ;
-; LEDR[9]~reg0                                                                      ; Stuck at GND due to stuck port data_in ;
-; ps2_out[2..5,7]                                                                   ; Stuck at GND due to stuck port data_in ;
+; ps2:ps2_inst|PS2OUT[0]                                                            ; Merged with ps2:ps2_inst|LEDR[0]       ;
+; ps2:ps2_inst|PS2OUT[1]                                                            ; Merged with ps2:ps2_inst|LEDR[1]       ;
+; ps2:ps2_inst|PS2OUT[2]                                                            ; Merged with ps2:ps2_inst|LEDR[2]       ;
+; ps2:ps2_inst|PS2OUT[3]                                                            ; Merged with ps2:ps2_inst|LEDR[3]       ;
+; ps2:ps2_inst|PS2OUT[4]                                                            ; Merged with ps2:ps2_inst|LEDR[4]       ;
+; ps2:ps2_inst|PS2OUT[5]                                                            ; Merged with ps2:ps2_inst|LEDR[5]       ;
+; ps2:ps2_inst|PS2OUT[6]                                                            ; Merged with ps2:ps2_inst|LEDR[6]       ;
 ; ram:ram_inst|altsyncram:mem_rtl_0|altsyncram_9bs1:auto_generated|address_reg_b[2] ; Stuck at GND due to stuck port data_in ;
 ; Total Number of Removed Registers = 26                                            ;                                        ;
 +-----------------------------------------------------------------------------------+----------------------------------------+
@@ -496,6 +504,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;                                                                         ; due to stuck port data_in ;                                                                               ;
 ; z80_top_direct_n:inst1|clk_delay:clk_delay_|SYNTHESIZED_WIRE_8          ; Stuck at GND              ; z80_top_direct_n:inst1|clk_delay:clk_delay_|hold_clk_busrq_ALTERA_SYNTHESIZED ;
 ;                                                                         ; due to stuck port data_in ;                                                                               ;
+; ps2:ps2_inst|LEDR[7]                                                    ; Stuck at GND              ; LEDR[7]~reg0                                                                  ;
+;                                                                         ; due to stuck port data_in ;                                                                               ;
 +-------------------------------------------------------------------------+---------------------------+-------------------------------------------------------------------------------+
 
 
@@ -504,12 +514,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 627   ;
+; Total registers                              ; 635   ;
 ; Number of registers using Synchronous Clear  ; 36    ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 82    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 507   ;
+; Number of registers using Clock Enable       ; 508   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -560,7 +570,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; vgaController:vC|cramController:cRram_inst|cram:cram2|mem[2][4] ; 4       ;
 ; vgaController:vC|cramController:cRram_inst|cram:cram2|mem[2][6] ; 4       ;
 ; z80_top_direct_n:inst1|sequencer:sequencer_|DFFE_T1_ff          ; 32      ;
-; dataIndex[0]                                                    ; 13      ;
 ; vgaController:vC|cramController:cRram_inst|cram:cram1|mem[5][3] ; 2       ;
 ; vgaController:vC|cramController:cRram_inst|cram:cram1|mem[5][2] ; 2       ;
 ; vgaController:vC|cramController:cRram_inst|cram:cram2|mem[5][3] ; 2       ;
@@ -572,6 +581,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; z80_top_direct_n:inst1|memory_ifc:memory_ifc_|DFFE_m1_ff1       ; 1       ;
 ; vgaController:vC|cramController:cRram_inst|cram:cram3|mem[5][3] ; 2       ;
 ; vgaController:vC|cramController:cRram_inst|cram:cram3|mem[5][2] ; 2       ;
+; ps2:ps2_inst|dataIndex[0]                                       ; 13      ;
 ; z80_top_direct_n:inst1|resets:resets_|x1                        ; 2       ;
 ; z80_top_direct_n:inst1|fpga_reset                               ; 2       ;
 ; Total number of inverted registers = 55                         ;         ;
@@ -591,21 +601,20 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------+-----------------------------------------+------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                      ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                            ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------+
-; 3:1                ; 16 bits   ; 32 LEs        ; 0 LEs                ; 32 LEs                 ; Yes        ; |customComputer|debounceCounter[3]                                                    ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |customComputer|z80_top_direct_n:inst1|address_pins:address_pins_|DFFE_apin_latch[15] ;
-; 6:1                ; 8 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |customComputer|vgaController:vC|cramController:cRram_inst|cram:cram1|cpu_out[2]      ;
-; 6:1                ; 8 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |customComputer|vgaController:vC|cramController:cRram_inst|cram:cram2|cpu_out[2]      ;
-; 6:1                ; 8 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |customComputer|vgaController:vC|cramController:cRram_inst|cram:cram3|cpu_out[3]      ;
-; 6:1                ; 8 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |customComputer|vgaController:vC|cramController:cRram_inst|cram:cram4|cpu_out[3]      ;
-; 7:1                ; 12 bits   ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |customComputer|vgaController:vC|v_green[0]                                           ;
-; 10:1               ; 5 bits    ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; No         ; |customComputer|data_bus[7]                                                           ;
-; 10:1               ; 3 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; No         ; |customComputer|data_bus[6]                                                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------+
+; 3:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |customComputer|z80_top_direct_n:inst1|address_pins:address_pins_|DFFE_apin_latch[1] ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 0 LEs                ; 32 LEs                 ; Yes        ; |customComputer|ps2:ps2_inst|debounceCounter[4]                                      ;
+; 6:1                ; 8 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |customComputer|vgaController:vC|cramController:cRram_inst|cram:cram1|cpu_out[7]     ;
+; 6:1                ; 8 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |customComputer|vgaController:vC|cramController:cRram_inst|cram:cram2|cpu_out[7]     ;
+; 6:1                ; 8 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |customComputer|vgaController:vC|cramController:cRram_inst|cram:cram3|cpu_out[7]     ;
+; 6:1                ; 8 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |customComputer|vgaController:vC|cramController:cRram_inst|cram:cram4|cpu_out[7]     ;
+; 7:1                ; 12 bits   ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |customComputer|vgaController:vC|v_red[2]                                            ;
+; 10:1               ; 7 bits    ; 42 LEs        ; 42 LEs               ; 0 LEs                  ; No         ; |customComputer|data_bus[6]                                                          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------+
@@ -661,6 +670,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; ROM_FILENAME   ; ../../roms/rom.hex      ; String                              ;
 ; RAM_FILENAME   ; ../../roms/emptyRam.hex ; String                              ;
 +----------------+-------------------------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ps2:ps2_inst ;
++----------------+------------------+-----------------------+
+; Parameter Name ; Value            ; Type                  ;
++----------------+------------------+-----------------------+
+; DEBOUNCE_LIMIT ; 0000000000000010 ; Unsigned Binary       ;
++----------------+------------------+-----------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -1488,37 +1507,46 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ps2:ps2_inst"                                                                                                                                                          ;
++------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                                                                ;
++------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; LEDR ; Output ; Warning  ; Output or bidir port (8 bits) is smaller than the port expression (10 bits) it drives.  The 2 most-significant bit(s) in the port expression will be connected to GND. ;
++------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 627                         ;
+; arriav_ff             ; 635                         ;
 ;     CLR               ; 36                          ;
 ;     CLR SCLR          ; 10                          ;
-;     ENA               ; 471                         ;
+;     ENA               ; 472                         ;
 ;     ENA CLR           ; 26                          ;
 ;     ENA CLR SCLR      ; 10                          ;
 ;     SCLR              ; 16                          ;
-;     plain             ; 58                          ;
+;     plain             ; 65                          ;
 ; arriav_io_obuf        ; 2                           ;
-; arriav_lcell_comb     ; 13911                       ;
+; arriav_lcell_comb     ; 14062                       ;
 ;     arith             ; 384                         ;
 ;         0 data inputs ; 14                          ;
 ;         1 data inputs ; 235                         ;
 ;         2 data inputs ; 112                         ;
 ;         3 data inputs ; 18                          ;
 ;         4 data inputs ; 5                           ;
-;     extend            ; 1670                        ;
-;         7 data inputs ; 1670                        ;
-;     normal            ; 11805                       ;
+;     extend            ; 1680                        ;
+;         7 data inputs ; 1680                        ;
+;     normal            ; 11946                       ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 51                          ;
-;         2 data inputs ; 388                         ;
-;         3 data inputs ; 519                         ;
-;         4 data inputs ; 1725                        ;
-;         5 data inputs ; 2110                        ;
-;         6 data inputs ; 7011                        ;
+;         2 data inputs ; 383                         ;
+;         3 data inputs ; 532                         ;
+;         4 data inputs ; 1727                        ;
+;         5 data inputs ; 2120                        ;
+;         6 data inputs ; 7132                        ;
 ;     shared            ; 52                          ;
 ;         0 data inputs ; 4                           ;
 ;         2 data inputs ; 16                          ;
@@ -1528,7 +1556,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; stratixv_ram_block    ; 64                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 13.00                       ;
-; Average LUT depth     ; 9.53                        ;
+; Average LUT depth     ; 9.49                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1537,7 +1565,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:02:22     ;
+; Top            ; 00:02:10     ;
 +----------------+--------------+
 
 
@@ -1547,7 +1575,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
-    Info: Processing started: Sun May 21 00:18:55 2023
+    Info: Processing started: Sun May 21 11:32:25 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off customComputer -c customComputer
 Info (20032): Parallel compilation is enabled and will use up to 16 processors
 Warning (20031): Parallel compilation is enabled for 16 processors, but there are only 6 processors in the system. Runtime may increase due to over usage of the processor space.
@@ -1659,12 +1687,10 @@ Info (12021): Found 1 design units, including 1 entities, in source file cram.v
     Info (12023): Found entity 1: cram File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/cram.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file cramcontroller.v
     Info (12023): Found entity 1: cramController File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/cramController.v Line: 2
-Info (12021): Found 0 design units, including 0 entities, in source file ps22.v
 Info (12021): Found 1 design units, including 1 entities, in source file charrom.v
     Info (12023): Found entity 1: charRom File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/charRom.v Line: 2
-Warning (10236): Verilog HDL Implicit Net warning at customComputer.v(186): created implicit net for "vga_clk" File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v Line: 186
-Warning (10236): Verilog HDL Implicit Net warning at vgaController.v(237): created implicit net for "is_charLayer" File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vgaController.v Line: 237
-Warning (10222): Verilog HDL Parameter Declaration warning at customComputer.v(116): Parameter Declaration in module "customComputer" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v Line: 116
+Warning (10236): Verilog HDL Implicit Net warning at customComputer.v(129): created implicit net for "vga_clk" File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v Line: 129
+Warning (10236): Verilog HDL Implicit Net warning at vgaController.v(249): created implicit net for "is_charLayer" File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vgaController.v Line: 249
 Warning (10222): Verilog HDL Parameter Declaration warning at vgaController.v(35): Parameter Declaration in module "vgaController" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vgaController.v Line: 35
 Warning (10222): Verilog HDL Parameter Declaration warning at vgaController.v(36): Parameter Declaration in module "vgaController" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vgaController.v Line: 36
 Warning (10222): Verilog HDL Parameter Declaration warning at vgaController.v(37): Parameter Declaration in module "vgaController" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vgaController.v Line: 37
@@ -1673,20 +1699,22 @@ Warning (10222): Verilog HDL Parameter Declaration warning at vgaController.v(39
 Warning (10222): Verilog HDL Parameter Declaration warning at vgaController.v(40): Parameter Declaration in module "vgaController" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vgaController.v Line: 40
 Warning (10222): Verilog HDL Parameter Declaration warning at vgaController.v(41): Parameter Declaration in module "vgaController" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vgaController.v Line: 41
 Warning (10222): Verilog HDL Parameter Declaration warning at vgaController.v(42): Parameter Declaration in module "vgaController" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vgaController.v Line: 42
-Warning (10222): Verilog HDL Parameter Declaration warning at vgaController.v(44): Parameter Declaration in module "vgaController" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vgaController.v Line: 44
 Warning (10222): Verilog HDL Parameter Declaration warning at vgaController.v(45): Parameter Declaration in module "vgaController" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vgaController.v Line: 45
 Warning (10222): Verilog HDL Parameter Declaration warning at vgaController.v(46): Parameter Declaration in module "vgaController" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vgaController.v Line: 46
 Warning (10222): Verilog HDL Parameter Declaration warning at vgaController.v(47): Parameter Declaration in module "vgaController" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vgaController.v Line: 47
 Warning (10222): Verilog HDL Parameter Declaration warning at vgaController.v(48): Parameter Declaration in module "vgaController" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vgaController.v Line: 48
 Warning (10222): Verilog HDL Parameter Declaration warning at vgaController.v(49): Parameter Declaration in module "vgaController" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vgaController.v Line: 49
+Warning (10222): Verilog HDL Parameter Declaration warning at vgaController.v(50): Parameter Declaration in module "vgaController" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vgaController.v Line: 50
 Warning (10222): Verilog HDL Parameter Declaration warning at cramController.v(36): Parameter Declaration in module "cramController" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/cramController.v Line: 36
 Warning (10222): Verilog HDL Parameter Declaration warning at cramController.v(37): Parameter Declaration in module "cramController" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/cramController.v Line: 37
 Warning (10222): Verilog HDL Parameter Declaration warning at cramController.v(38): Parameter Declaration in module "cramController" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/cramController.v Line: 38
 Warning (10222): Verilog HDL Parameter Declaration warning at cramController.v(39): Parameter Declaration in module "cramController" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/cramController.v Line: 39
 Info (12127): Elaborating entity "customComputer" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at customComputer.v(123): object "newDataAvailable" assigned a value but never read File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v Line: 123
-Warning (10230): Verilog HDL assignment warning at customComputer.v(162): truncated value with size 32 to match size of target (16) File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v Line: 162
-Info (12128): Elaborating entity "z80_top_direct_n" for hierarchy "z80_top_direct_n:inst1" File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v Line: 197
+Info (12128): Elaborating entity "ps2" for hierarchy "ps2:ps2_inst" File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v Line: 122
+Warning (10036): Verilog HDL or VHDL warning at ps2.v(17): object "newDataAvailable" assigned a value but never read File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/ps2.v Line: 17
+Warning (10230): Verilog HDL assignment warning at ps2.v(57): truncated value with size 32 to match size of target (16) File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/ps2.v Line: 57
+Warning (10272): Verilog HDL Case Statement warning at ps2.v(104): case item expression covers a value already covered by a previous case item File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/ps2.v Line: 104
+Info (12128): Elaborating entity "z80_top_direct_n" for hierarchy "z80_top_direct_n:inst1" File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v Line: 140
 Info (12128): Elaborating entity "clk_delay" for hierarchy "z80_top_direct_n:inst1|clk_delay:clk_delay_" File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/coremodules.vh Line: 33
 Info (12128): Elaborating entity "decode_state" for hierarchy "z80_top_direct_n:inst1|decode_state:decode_state_" File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/coremodules.vh Line: 59
 Info (12128): Elaborating entity "execute" for hierarchy "z80_top_direct_n:inst1|execute:execute_" File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/coremodules.vh Line: 193
@@ -1725,14 +1753,14 @@ Info (12128): Elaborating entity "data_switch_mask" for hierarchy "z80_top_direc
 Info (12128): Elaborating entity "address_pins" for hierarchy "z80_top_direct_n:inst1|address_pins:address_pins_" File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v Line: 54
 Info (12128): Elaborating entity "data_pins" for hierarchy "z80_top_direct_n:inst1|data_pins:data_pins_" File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v Line: 64
 Info (12128): Elaborating entity "control_pins_n" for hierarchy "z80_top_direct_n:inst1|control_pins_n:control_pins_" File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/z80_top_direct_n.v Line: 96
-Info (12128): Elaborating entity "ram" for hierarchy "ram:ram_inst" File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v Line: 207
+Info (12128): Elaborating entity "ram" for hierarchy "ram:ram_inst" File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v Line: 150
 Warning (10850): Verilog HDL warning at ram.v(17): number of words (50830) in memory file does not match the number of elements in the address range [0:50822] File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/ram.v Line: 17
-Info (12128): Elaborating entity "rom" for hierarchy "rom:rom_inst" File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v Line: 214
-Warning (10850): Verilog HDL warning at rom.v(14): number of words (40000) in memory file does not match the number of elements in the address range [0:12286] File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/rom.v Line: 14
-Warning (10030): Net "mem.data_a" at rom.v(11) has no driver or initial value, using a default initial value '0' File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/rom.v Line: 11
-Warning (10030): Net "mem.waddr_a" at rom.v(11) has no driver or initial value, using a default initial value '0' File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/rom.v Line: 11
-Warning (10030): Net "mem.we_a" at rom.v(11) has no driver or initial value, using a default initial value '0' File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/rom.v Line: 11
-Info (12128): Elaborating entity "vga_pll" for hierarchy "vga_pll:clkControl" File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v Line: 222
+Info (12128): Elaborating entity "rom" for hierarchy "rom:rom_inst" File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v Line: 157
+Warning (10850): Verilog HDL warning at rom.v(15): number of words (40000) in memory file does not match the number of elements in the address range [0:12286] File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/rom.v Line: 15
+Warning (10030): Net "mem.data_a" at rom.v(12) has no driver or initial value, using a default initial value '0' File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/rom.v Line: 12
+Warning (10030): Net "mem.waddr_a" at rom.v(12) has no driver or initial value, using a default initial value '0' File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/rom.v Line: 12
+Warning (10030): Net "mem.we_a" at rom.v(12) has no driver or initial value, using a default initial value '0' File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/rom.v Line: 12
+Info (12128): Elaborating entity "vga_pll" for hierarchy "vga_pll:clkControl" File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v Line: 163
 Info (12128): Elaborating entity "vga_pll_0002" for hierarchy "vga_pll:clkControl|vga_pll_0002:vga_pll_inst" File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll.v Line: 19
 Info (12128): Elaborating entity "altera_pll" for hierarchy "vga_pll:clkControl|vga_pll_0002:vga_pll_inst|altera_pll:altera_pll_i" File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vga_pll/vga_pll_0002.v Line: 85
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "wire_to_nowhere_64" into its bus
@@ -1798,31 +1826,31 @@ Info (12133): Instantiated megafunction "vga_pll:clkControl|vga_pll_0002:vga_pll
     Info (12134): Parameter "duty_cycle17" = "50"
     Info (12134): Parameter "pll_type" = "General"
     Info (12134): Parameter "pll_subtype" = "General"
-Info (12128): Elaborating entity "vgaController" for hierarchy "vgaController:vC" File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v Line: 250
-Warning (10230): Verilog HDL assignment warning at vgaController.v(60): truncated value with size 32 to match size of target (1) File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vgaController.v Line: 60
-Warning (10230): Verilog HDL assignment warning at vgaController.v(61): truncated value with size 32 to match size of target (1) File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vgaController.v Line: 61
-Warning (10230): Verilog HDL assignment warning at vgaController.v(73): truncated value with size 32 to match size of target (10) File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vgaController.v Line: 73
-Warning (10230): Verilog HDL assignment warning at vgaController.v(82): truncated value with size 32 to match size of target (10) File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vgaController.v Line: 82
-Warning (10230): Verilog HDL assignment warning at vgaController.v(230): truncated value with size 32 to match size of target (11) File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vgaController.v Line: 230
-Warning (10230): Verilog HDL assignment warning at vgaController.v(231): truncated value with size 32 to match size of target (11) File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vgaController.v Line: 231
-Warning (10230): Verilog HDL assignment warning at vgaController.v(233): truncated value with size 32 to match size of target (16) File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vgaController.v Line: 233
-Warning (10230): Verilog HDL assignment warning at vgaController.v(234): truncated value with size 32 to match size of target (16) File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vgaController.v Line: 234
-Info (12128): Elaborating entity "vram" for hierarchy "vgaController:vC|vram:vram_L1" File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vgaController.v Line: 138
-Info (12128): Elaborating entity "vram" for hierarchy "vgaController:vC|vram:vram_L2" File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vgaController.v Line: 152
-Info (12128): Elaborating entity "cramController" for hierarchy "vgaController:vC|cramController:cRram_inst" File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vgaController.v Line: 181
-Warning (10230): Verilog HDL assignment warning at cramController.v(111): truncated value with size 32 to match size of target (16) File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/cramController.v Line: 111
-Warning (10230): Verilog HDL assignment warning at cramController.v(112): truncated value with size 32 to match size of target (16) File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/cramController.v Line: 112
+Info (12128): Elaborating entity "vgaController" for hierarchy "vgaController:vC" File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v Line: 191
+Warning (10230): Verilog HDL assignment warning at vgaController.v(62): truncated value with size 32 to match size of target (1) File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vgaController.v Line: 62
+Warning (10230): Verilog HDL assignment warning at vgaController.v(63): truncated value with size 32 to match size of target (1) File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vgaController.v Line: 63
+Warning (10230): Verilog HDL assignment warning at vgaController.v(75): truncated value with size 32 to match size of target (10) File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vgaController.v Line: 75
+Warning (10230): Verilog HDL assignment warning at vgaController.v(84): truncated value with size 32 to match size of target (10) File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vgaController.v Line: 84
+Warning (10230): Verilog HDL assignment warning at vgaController.v(240): truncated value with size 32 to match size of target (11) File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vgaController.v Line: 240
+Warning (10230): Verilog HDL assignment warning at vgaController.v(241): truncated value with size 32 to match size of target (11) File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vgaController.v Line: 241
+Warning (10230): Verilog HDL assignment warning at vgaController.v(244): truncated value with size 32 to match size of target (16) File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vgaController.v Line: 244
+Warning (10230): Verilog HDL assignment warning at vgaController.v(245): truncated value with size 32 to match size of target (16) File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vgaController.v Line: 245
+Info (12128): Elaborating entity "vram" for hierarchy "vgaController:vC|vram:vram_L1" File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vgaController.v Line: 146
+Info (12128): Elaborating entity "vram" for hierarchy "vgaController:vC|vram:vram_L2" File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vgaController.v Line: 160
+Info (12128): Elaborating entity "cramController" for hierarchy "vgaController:vC|cramController:cRram_inst" File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vgaController.v Line: 190
 Warning (10230): Verilog HDL assignment warning at cramController.v(113): truncated value with size 32 to match size of target (16) File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/cramController.v Line: 113
 Warning (10230): Verilog HDL assignment warning at cramController.v(114): truncated value with size 32 to match size of target (16) File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/cramController.v Line: 114
-Info (12128): Elaborating entity "cram" for hierarchy "vgaController:vC|cramController:cRram_inst|cram:cram1" File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/cramController.v Line: 65
-Info (12128): Elaborating entity "cram" for hierarchy "vgaController:vC|cramController:cRram_inst|cram:cram2" File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/cramController.v Line: 80
-Info (12128): Elaborating entity "cram" for hierarchy "vgaController:vC|cramController:cRram_inst|cram:cram3" File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/cramController.v Line: 94
-Info (12128): Elaborating entity "cram" for hierarchy "vgaController:vC|cramController:cRram_inst|cram:cram4" File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/cramController.v Line: 108
-Info (12128): Elaborating entity "charRom" for hierarchy "vgaController:vC|charRom:charRom_inst" File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vgaController.v Line: 192
-Warning (10850): Verilog HDL warning at charRom.v(15): number of words (65536) in memory file does not match the number of elements in the address range [0:16383] File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/charRom.v Line: 15
-Info (12128): Elaborating entity "spriteRom" for hierarchy "vgaController:vC|spriteRom:spriteRom_inst" File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vgaController.v Line: 228
+Warning (10230): Verilog HDL assignment warning at cramController.v(115): truncated value with size 32 to match size of target (16) File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/cramController.v Line: 115
+Warning (10230): Verilog HDL assignment warning at cramController.v(116): truncated value with size 32 to match size of target (16) File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/cramController.v Line: 116
+Info (12128): Elaborating entity "cram" for hierarchy "vgaController:vC|cramController:cRram_inst|cram:cram1" File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/cramController.v Line: 67
+Info (12128): Elaborating entity "cram" for hierarchy "vgaController:vC|cramController:cRram_inst|cram:cram2" File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/cramController.v Line: 82
+Info (12128): Elaborating entity "cram" for hierarchy "vgaController:vC|cramController:cRram_inst|cram:cram3" File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/cramController.v Line: 96
+Info (12128): Elaborating entity "cram" for hierarchy "vgaController:vC|cramController:cRram_inst|cram:cram4" File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/cramController.v Line: 110
+Info (12128): Elaborating entity "charRom" for hierarchy "vgaController:vC|charRom:charRom_inst" File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vgaController.v Line: 201
+Warning (10850): Verilog HDL warning at charRom.v(16): number of words (65536) in memory file does not match the number of elements in the address range [0:16383] File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/charRom.v Line: 16
+Info (12128): Elaborating entity "spriteRom" for hierarchy "vgaController:vC|spriteRom:spriteRom_inst" File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/vgaController.v Line: 237
 Info (276014): Found 1 instances of uninferred RAM logic
-    Info (276007): RAM logic "rom:rom_inst|mem" is uninferred due to asynchronous read logic File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/rom.v Line: 11
+    Info (276007): RAM logic "rom:rom_inst|mem" is uninferred due to asynchronous read logic File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/rom.v Line: 12
 Critical Warning (127005): Memory depth (16384) in the design file differs from memory depth (12287) in the Memory Initialization File "C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/db/customComputer.ram0_rom_70fb5416.hdl.mif" -- setting initial value for remaining addresses to 0
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13048): Converted tri-state node "data_bus[7]" into a selector File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/data_pins.v Line: 55
@@ -2027,7 +2055,7 @@ Warning (14284): Synthesized away the following node(s):
         Warning (14320): Synthesized away node "ram:ram_inst|altsyncram:mem_rtl_0|altsyncram_9bs1:auto_generated|ram_block1a53" File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/db/altsyncram_9bs1.tdf Line: 1635
         Warning (14320): Synthesized away node "ram:ram_inst|altsyncram:mem_rtl_0|altsyncram_9bs1:auto_generated|ram_block1a54" File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/db/altsyncram_9bs1.tdf Line: 1665
         Warning (14320): Synthesized away node "ram:ram_inst|altsyncram:mem_rtl_0|altsyncram_9bs1:auto_generated|ram_block1a55" File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/db/altsyncram_9bs1.tdf Line: 1695
-Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (12241): 3 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13039): The following bidirectional pins have no drivers
     Warning (13040): bidirectional pin "PS2_CLK" has no driver File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v Line: 49
     Warning (13040): bidirectional pin "PS2_DAT" has no driver File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v Line: 51
@@ -2035,18 +2063,18 @@ Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13047): Converted the fan-out from the tri-state buffer "z80_top_direct_n:inst1|bus_control:bus_control_|db[0]" to the node "z80_top_direct_n:inst1|data_pins:data_pins_|SYNTHESIZED_WIRE_4[0]" into an OR gate File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/bus_control.v Line: 41
     Warning (13047): Converted the fan-out from the tri-state buffer "z80_top_direct_n:inst1|reg_file:reg_file_|db_hi_as[4]" to the node "z80_top_direct_n:inst1|address_latch:address_latch_|abusz[12]" into an OR gate File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/reg_file.v Line: 98
     Warning (13047): Converted the fan-out from the tri-state buffer "z80_top_direct_n:inst1|reg_file:reg_file_|db_hi_as[5]" to the node "z80_top_direct_n:inst1|address_latch:address_latch_|abusz[13]" into an OR gate File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/reg_file.v Line: 98
-    Warning (13047): Converted the fan-out from the tri-state buffer "z80_top_direct_n:inst1|reg_file:reg_file_|db_lo_as[5]" to the node "z80_top_direct_n:inst1|address_latch:address_latch_|abusz[5]" into an OR gate File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/reg_file.v Line: 100
-    Warning (13047): Converted the fan-out from the tri-state buffer "z80_top_direct_n:inst1|reg_file:reg_file_|db_lo_as[6]" to the node "z80_top_direct_n:inst1|address_latch:address_latch_|abusz[6]" into an OR gate File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/reg_file.v Line: 100
-    Warning (13047): Converted the fan-out from the tri-state buffer "z80_top_direct_n:inst1|reg_file:reg_file_|db_lo_as[7]" to the node "z80_top_direct_n:inst1|address_latch:address_latch_|abusz[7]" into an OR gate File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/reg_file.v Line: 100
-    Warning (13047): Converted the fan-out from the tri-state buffer "z80_top_direct_n:inst1|reg_file:reg_file_|db_hi_as[0]" to the node "z80_top_direct_n:inst1|address_latch:address_latch_|abusz[8]" into an OR gate File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/reg_file.v Line: 98
-    Warning (13047): Converted the fan-out from the tri-state buffer "z80_top_direct_n:inst1|reg_file:reg_file_|db_hi_as[1]" to the node "z80_top_direct_n:inst1|address_latch:address_latch_|abusz[9]" into an OR gate File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/reg_file.v Line: 98
     Warning (13047): Converted the fan-out from the tri-state buffer "z80_top_direct_n:inst1|reg_file:reg_file_|db_hi_as[2]" to the node "z80_top_direct_n:inst1|address_latch:address_latch_|abusz[10]" into an OR gate File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/reg_file.v Line: 98
     Warning (13047): Converted the fan-out from the tri-state buffer "z80_top_direct_n:inst1|reg_file:reg_file_|db_hi_as[3]" to the node "z80_top_direct_n:inst1|address_latch:address_latch_|abusz[11]" into an OR gate File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/reg_file.v Line: 98
-    Warning (13047): Converted the fan-out from the tri-state buffer "z80_top_direct_n:inst1|reg_file:reg_file_|db_lo_as[1]" to the node "z80_top_direct_n:inst1|address_latch:address_latch_|abusz[1]" into an OR gate File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/reg_file.v Line: 100
+    Warning (13047): Converted the fan-out from the tri-state buffer "z80_top_direct_n:inst1|reg_file:reg_file_|db_hi_as[0]" to the node "z80_top_direct_n:inst1|address_latch:address_latch_|abusz[8]" into an OR gate File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/reg_file.v Line: 98
+    Warning (13047): Converted the fan-out from the tri-state buffer "z80_top_direct_n:inst1|reg_file:reg_file_|db_hi_as[1]" to the node "z80_top_direct_n:inst1|address_latch:address_latch_|abusz[9]" into an OR gate File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/reg_file.v Line: 98
+    Warning (13047): Converted the fan-out from the tri-state buffer "z80_top_direct_n:inst1|reg_file:reg_file_|db_lo_as[0]" to the node "z80_top_direct_n:inst1|address_latch:address_latch_|abusz[0]" into an OR gate File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/reg_file.v Line: 100
+    Warning (13047): Converted the fan-out from the tri-state buffer "z80_top_direct_n:inst1|reg_file:reg_file_|db_lo_as[6]" to the node "z80_top_direct_n:inst1|address_latch:address_latch_|abusz[6]" into an OR gate File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/reg_file.v Line: 100
     Warning (13047): Converted the fan-out from the tri-state buffer "z80_top_direct_n:inst1|reg_file:reg_file_|db_lo_as[2]" to the node "z80_top_direct_n:inst1|address_latch:address_latch_|abusz[2]" into an OR gate File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/reg_file.v Line: 100
     Warning (13047): Converted the fan-out from the tri-state buffer "z80_top_direct_n:inst1|reg_file:reg_file_|db_lo_as[3]" to the node "z80_top_direct_n:inst1|address_latch:address_latch_|abusz[3]" into an OR gate File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/reg_file.v Line: 100
-    Warning (13047): Converted the fan-out from the tri-state buffer "z80_top_direct_n:inst1|reg_file:reg_file_|db_lo_as[0]" to the node "z80_top_direct_n:inst1|address_latch:address_latch_|abusz[0]" into an OR gate File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/reg_file.v Line: 100
     Warning (13047): Converted the fan-out from the tri-state buffer "z80_top_direct_n:inst1|reg_file:reg_file_|db_lo_as[4]" to the node "z80_top_direct_n:inst1|address_latch:address_latch_|abusz[4]" into an OR gate File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/reg_file.v Line: 100
+    Warning (13047): Converted the fan-out from the tri-state buffer "z80_top_direct_n:inst1|reg_file:reg_file_|db_lo_as[5]" to the node "z80_top_direct_n:inst1|address_latch:address_latch_|abusz[5]" into an OR gate File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/reg_file.v Line: 100
+    Warning (13047): Converted the fan-out from the tri-state buffer "z80_top_direct_n:inst1|reg_file:reg_file_|db_lo_as[1]" to the node "z80_top_direct_n:inst1|address_latch:address_latch_|abusz[1]" into an OR gate File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/reg_file.v Line: 100
+    Warning (13047): Converted the fan-out from the tri-state buffer "z80_top_direct_n:inst1|reg_file:reg_file_|db_lo_as[7]" to the node "z80_top_direct_n:inst1|address_latch:address_latch_|abusz[7]" into an OR gate File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/reg_file.v Line: 100
     Warning (13047): Converted the fan-out from the tri-state buffer "z80_top_direct_n:inst1|bus_control:bus_control_|db[7]" to the node "z80_top_direct_n:inst1|data_pins:data_pins_|SYNTHESIZED_WIRE_4[7]" into an OR gate File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/bus_control.v Line: 41
     Warning (13047): Converted the fan-out from the tri-state buffer "z80_top_direct_n:inst1|bus_control:bus_control_|db[6]" to the node "z80_top_direct_n:inst1|data_pins:data_pins_|SYNTHESIZED_WIRE_4[6]" into an OR gate File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/bus_control.v Line: 41
     Warning (13047): Converted the fan-out from the tri-state buffer "z80_top_direct_n:inst1|bus_control:bus_control_|db[2]" to the node "z80_top_direct_n:inst1|data_pins:data_pins_|SYNTHESIZED_WIRE_4[2]" into an OR gate File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/bus_control.v Line: 41
@@ -2068,18 +2096,18 @@ Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13047): Converted the fan-out from the tri-state buffer "z80_top_direct_n:inst1|alu_control:alu_control_|db[0]" to the node "z80_top_direct_n:inst1|alu_flags:alu_flags_|SYNTHESIZED_WIRE_22" into an OR gate File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/alu_control.v Line: 109
     Warning (13047): Converted the fan-out from the tri-state buffer "z80_top_direct_n:inst1|reg_file:reg_file_|gdfx_temp1[4]" to the node "z80_top_direct_n:inst1|reg_file:reg_file_|reg_latch:b2v_latch_af2_hi|latch[4]" into an OR gate File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/reg_file.v Line: 104
     Warning (13047): Converted the fan-out from the tri-state buffer "z80_top_direct_n:inst1|reg_file:reg_file_|gdfx_temp1[5]" to the node "z80_top_direct_n:inst1|reg_file:reg_file_|reg_latch:b2v_latch_af2_hi|latch[5]" into an OR gate File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/reg_file.v Line: 104
-    Warning (13047): Converted the fan-out from the tri-state buffer "z80_top_direct_n:inst1|reg_file:reg_file_|gdfx_temp0[5]" to the node "z80_top_direct_n:inst1|reg_file:reg_file_|reg_latch:b2v_latch_af2_lo|latch[5]" into an OR gate File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/reg_file.v Line: 103
-    Warning (13047): Converted the fan-out from the tri-state buffer "z80_top_direct_n:inst1|reg_file:reg_file_|gdfx_temp0[6]" to the node "z80_top_direct_n:inst1|reg_file:reg_file_|reg_latch:b2v_latch_af2_lo|latch[6]" into an OR gate File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/reg_file.v Line: 103
-    Warning (13047): Converted the fan-out from the tri-state buffer "z80_top_direct_n:inst1|reg_file:reg_file_|gdfx_temp0[7]" to the node "z80_top_direct_n:inst1|reg_file:reg_file_|reg_latch:b2v_latch_af2_lo|latch[7]" into an OR gate File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/reg_file.v Line: 103
-    Warning (13047): Converted the fan-out from the tri-state buffer "z80_top_direct_n:inst1|reg_file:reg_file_|gdfx_temp1[0]" to the node "z80_top_direct_n:inst1|reg_file:reg_file_|reg_latch:b2v_latch_af2_hi|latch[0]" into an OR gate File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/reg_file.v Line: 104
-    Warning (13047): Converted the fan-out from the tri-state buffer "z80_top_direct_n:inst1|reg_file:reg_file_|gdfx_temp1[1]" to the node "z80_top_direct_n:inst1|reg_file:reg_file_|reg_latch:b2v_latch_af2_hi|latch[1]" into an OR gate File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/reg_file.v Line: 104
     Warning (13047): Converted the fan-out from the tri-state buffer "z80_top_direct_n:inst1|reg_file:reg_file_|gdfx_temp1[2]" to the node "z80_top_direct_n:inst1|reg_file:reg_file_|reg_latch:b2v_latch_af2_hi|latch[2]" into an OR gate File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/reg_file.v Line: 104
     Warning (13047): Converted the fan-out from the tri-state buffer "z80_top_direct_n:inst1|reg_file:reg_file_|gdfx_temp1[3]" to the node "z80_top_direct_n:inst1|reg_file:reg_file_|reg_latch:b2v_latch_af2_hi|latch[3]" into an OR gate File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/reg_file.v Line: 104
-    Warning (13047): Converted the fan-out from the tri-state buffer "z80_top_direct_n:inst1|reg_file:reg_file_|gdfx_temp0[1]" to the node "z80_top_direct_n:inst1|reg_file:reg_file_|reg_latch:b2v_latch_af2_lo|latch[1]" into an OR gate File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/reg_file.v Line: 103
+    Warning (13047): Converted the fan-out from the tri-state buffer "z80_top_direct_n:inst1|reg_file:reg_file_|gdfx_temp1[0]" to the node "z80_top_direct_n:inst1|reg_file:reg_file_|reg_latch:b2v_latch_af2_hi|latch[0]" into an OR gate File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/reg_file.v Line: 104
+    Warning (13047): Converted the fan-out from the tri-state buffer "z80_top_direct_n:inst1|reg_file:reg_file_|gdfx_temp1[1]" to the node "z80_top_direct_n:inst1|reg_file:reg_file_|reg_latch:b2v_latch_af2_hi|latch[1]" into an OR gate File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/reg_file.v Line: 104
+    Warning (13047): Converted the fan-out from the tri-state buffer "z80_top_direct_n:inst1|reg_file:reg_file_|gdfx_temp0[0]" to the node "z80_top_direct_n:inst1|reg_file:reg_file_|reg_latch:b2v_latch_af2_lo|latch[0]" into an OR gate File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/reg_file.v Line: 103
+    Warning (13047): Converted the fan-out from the tri-state buffer "z80_top_direct_n:inst1|reg_file:reg_file_|gdfx_temp0[6]" to the node "z80_top_direct_n:inst1|reg_file:reg_file_|reg_latch:b2v_latch_af2_lo|latch[6]" into an OR gate File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/reg_file.v Line: 103
     Warning (13047): Converted the fan-out from the tri-state buffer "z80_top_direct_n:inst1|reg_file:reg_file_|gdfx_temp0[2]" to the node "z80_top_direct_n:inst1|reg_file:reg_file_|reg_latch:b2v_latch_af2_lo|latch[2]" into an OR gate File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/reg_file.v Line: 103
     Warning (13047): Converted the fan-out from the tri-state buffer "z80_top_direct_n:inst1|reg_file:reg_file_|gdfx_temp0[3]" to the node "z80_top_direct_n:inst1|reg_file:reg_file_|reg_latch:b2v_latch_af2_lo|latch[3]" into an OR gate File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/reg_file.v Line: 103
-    Warning (13047): Converted the fan-out from the tri-state buffer "z80_top_direct_n:inst1|reg_file:reg_file_|gdfx_temp0[0]" to the node "z80_top_direct_n:inst1|reg_file:reg_file_|reg_latch:b2v_latch_af2_lo|latch[0]" into an OR gate File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/reg_file.v Line: 103
     Warning (13047): Converted the fan-out from the tri-state buffer "z80_top_direct_n:inst1|reg_file:reg_file_|gdfx_temp0[4]" to the node "z80_top_direct_n:inst1|reg_file:reg_file_|reg_latch:b2v_latch_af2_lo|latch[4]" into an OR gate File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/reg_file.v Line: 103
+    Warning (13047): Converted the fan-out from the tri-state buffer "z80_top_direct_n:inst1|reg_file:reg_file_|gdfx_temp0[5]" to the node "z80_top_direct_n:inst1|reg_file:reg_file_|reg_latch:b2v_latch_af2_lo|latch[5]" into an OR gate File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/reg_file.v Line: 103
+    Warning (13047): Converted the fan-out from the tri-state buffer "z80_top_direct_n:inst1|reg_file:reg_file_|gdfx_temp0[1]" to the node "z80_top_direct_n:inst1|reg_file:reg_file_|reg_latch:b2v_latch_af2_lo|latch[1]" into an OR gate File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/reg_file.v Line: 103
+    Warning (13047): Converted the fan-out from the tri-state buffer "z80_top_direct_n:inst1|reg_file:reg_file_|gdfx_temp0[7]" to the node "z80_top_direct_n:inst1|reg_file:reg_file_|reg_latch:b2v_latch_af2_lo|latch[7]" into an OR gate File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/reg_file.v Line: 103
     Warning (13047): Converted the fan-out from the tri-state buffer "z80_top_direct_n:inst1|alu_control:alu_control_|db[2]" to the node "z80_top_direct_n:inst1|alu_flags:alu_flags_|SYNTHESIZED_WIRE_20" into an OR gate File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/alu_control.v Line: 109
     Warning (13047): Converted the fan-out from the tri-state buffer "z80_top_direct_n:inst1|alu_control:alu_control_|db[1]" to the node "z80_top_direct_n:inst1|alu_flags:alu_flags_|SYNTHESIZED_WIRE_2" into an OR gate File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/alu_control.v Line: 109
     Warning (13047): Converted the fan-out from the tri-state buffer "z80_top_direct_n:inst1|alu:alu_|db[7]" to the node "z80_top_direct_n:inst1|alu_control:alu_control_|alu_mux_8:b2v_inst_shift_mux|out" into an OR gate File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/alu.v Line: 113
@@ -2097,30 +2125,26 @@ Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13047): Converted the fan-out from the tri-state buffer "z80_top_direct_n:inst1|alu:alu_|db[2]" to the node "z80_top_direct_n:inst1|alu:alu_|alu_shifter_core:b2v_input_shift|out_low[3]" into an OR gate File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/alu.v Line: 113
     Warning (13047): Converted the fan-out from the tri-state buffer "z80_top_direct_n:inst1|alu:alu_|db[1]" to the node "z80_top_direct_n:inst1|alu:alu_|alu_shifter_core:b2v_input_shift|out_low[2]" into an OR gate File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/alu.v Line: 113
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "LEDR[2]" is stuck at GND File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v Line: 157
-    Warning (13410): Pin "LEDR[3]" is stuck at GND File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v Line: 157
-    Warning (13410): Pin "LEDR[4]" is stuck at GND File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v Line: 157
-    Warning (13410): Pin "LEDR[5]" is stuck at GND File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v Line: 157
-    Warning (13410): Pin "LEDR[7]" is stuck at GND File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v Line: 157
-    Warning (13410): Pin "LEDR[8]" is stuck at GND File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v Line: 157
-    Warning (13410): Pin "LEDR[9]" is stuck at GND File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v Line: 157
+    Warning (13410): Pin "LEDR[7]" is stuck at GND File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v Line: 124
+    Warning (13410): Pin "LEDR[8]" is stuck at GND File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v Line: 124
+    Warning (13410): Pin "LEDR[9]" is stuck at GND File: C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.v Line: 124
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 4 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file C:/Users/redbr/Desktop/fpga-files/QuartusFiles/customComputer/customComputer.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 5 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 14401 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 14553 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 24 output pins
     Info (21060): Implemented 2 bidirectional pins
-    Info (21061): Implemented 14308 logic cells
+    Info (21061): Implemented 14460 logic cells
     Info (21064): Implemented 64 RAM segments
     Info (21065): Implemented 1 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 173 warnings
-    Info: Peak virtual memory: 5493 megabytes
-    Info: Processing ended: Sun May 21 00:23:25 2023
-    Info: Elapsed time: 00:04:30
-    Info: Total CPU time (on all processors): 00:04:32
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 169 warnings
+    Info: Peak virtual memory: 5471 megabytes
+    Info: Processing ended: Sun May 21 11:36:43 2023
+    Info: Elapsed time: 00:04:18
+    Info: Total CPU time (on all processors): 00:04:23
 
 
 +------------------------------------------+
