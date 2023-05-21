@@ -1,5 +1,5 @@
 # Custom 8 Bit Computer on an FPGA
--
+This repository demonstrates the implementation of a custom 8 bit computer based off of the Apple 1 and ZXSpectrum. The repository serves as a way for students to familiarise themselves with the fundamentals of 8 bit computing. The below readme details how users can load their own software to the board and visualise both through RTL simulations and visual data how an 8 bit computer works.
 
 ## Required Software and Hardware
 
