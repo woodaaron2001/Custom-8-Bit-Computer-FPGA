@@ -41,8 +41,9 @@ Example use of bashscript which compiles C file, formats the output and loads it
 
 Once the program has been written and loaded to the rom. an RTL simulation can be done using Modelsim.
 
-- Run analysis and synthesis  
-<img src="https://csgitlab.ucd.ie/fyp-fpga/fpga-files/-/raw/main/README_images/analysis.png" />
+- Run analysis and synthesis
+- https://github.com/woodaaron2001/Custom-8-Bit-Computer-FPGA/blob/main/README_images/analysis.png
+<img src="[https://csgitlab.ucd.ie/fyp-fpga/fpga-files/-/raw/main/README_images/analysis.png](https://github.com/woodaaron2001/Custom-8-Bit-Computer-FPGA/blob/main/README_images/analysis.png)" />
 
 <br>
 - Run RTL Simulation  
