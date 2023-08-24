@@ -43,7 +43,7 @@ Once the program has been written and loaded to the rom. an RTL simulation can b
 
 - Run analysis and synthesis
 - https://github.com/woodaaron2001/Custom-8-Bit-Computer-FPGA/blob/main/README_images/analysis.png
-<img src="[https://csgitlab.ucd.ie/fyp-fpga/fpga-files/-/raw/main/README_images/analysis.png](https://github.com/woodaaron2001/Custom-8-Bit-Computer-FPGA/blob/main/README_images/analysis.png)" />
+<img src="https://github.com/woodaaron2001/Custom-8-Bit-Computer-FPGA/blob/main/README_images/analysis.png" />
 
 <br>
 - Run RTL Simulation  
